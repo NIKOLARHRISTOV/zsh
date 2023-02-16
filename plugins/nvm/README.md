@@ -38,7 +38,7 @@ Then, to define extra commands that will also trigger nvm load, you can use a si
 as you want:
 
 ```zsh
-zstyle ':omz:plugins:nvm' lazy-cmd eslint prettier typescript ...
+zstyle ':omz:plugins:nvm' lazy-cmd eslint typescript ...
 ```
 
 #### `.nvmrc` autoload
