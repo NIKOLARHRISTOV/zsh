@@ -29,6 +29,7 @@ AUR Package available at [https://aur.archlinux.org/packages/kube-ps1/](https://
 source /path/to/kube-ps1.sh
 PROMPT='$(kube_ps1)'$PROMPT
 ```
+
 #### Bash
 ```sh
 source /path/to/kube-ps1.sh
@@ -40,6 +41,7 @@ PS1='[\u@\h \W $(kube_ps1)]\$ '
 #### Using [zplugin](https://github.com/zdharma/zplugin)
 
 Update `.zshrc` with:
+
 ```sh
 zplugin light jonmosco/kube-ps1
 PROMPT='$(kube_ps1)'$PROMPT

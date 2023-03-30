@@ -303,6 +303,9 @@ NOTE: you can control how often Oh My Zsh checks for updates with the following 
 ```sh
 # This will check for updates every 7 days
 zstyle ':omz:update' frequency 7
+```
+
+```sh
 # This will check for updates every time you open the terminal (not recommended)
 zstyle ':omz:update' frequency 0
 ```

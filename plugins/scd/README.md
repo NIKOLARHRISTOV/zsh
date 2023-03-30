@@ -90,22 +90,34 @@ PAT$</dt><dd>
 ```sh
 # Index recursively some paths for the very first run
 scd -ar ~/Documents/
+```
 
+```sh
 # Change to a directory path matching "doc"
 scd doc
+```
 
+```sh
 # Change to a path matching all of "a", "b" and "c"
 scd a b c
+```
 
+```sh
 # Change to a directory path that ends with "ts"
 scd "ts$"
+```
 
+```sh
 # Show selection menu and ranking of 20 most likely directories
 scd -v
+```
 
+```sh
 # Alias current directory as "xray"
 scd --alias=xray
+```
 
+```sh
 # Jump to a previously defined aliased directory
 scd xray
 ```

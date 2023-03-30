@@ -56,16 +56,24 @@ plugins=(... lol)
 ```sh
 # mkdir new-directory
 icanhas new-directory
+```
 
+```sh
 # killall firefox
 nomnom firefox
+```
 
+```sh
 # chmod u=r,go= some.file
 nowai u=r,go= some.file
+```
 
+```sh
 # ssh root@catserver.org
 pwned root@catserver.org
+```
 
+```sh
 # git commit -m "$(curl -s https://whatthecommit.com/index.txt)"
 yolo
 ```
