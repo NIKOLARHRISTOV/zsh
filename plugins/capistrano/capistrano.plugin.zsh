@@ -2,10 +2,9 @@
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fcap-Module
 
 function capit() {
-  if [ -f Gemfile ]
-  then
-    bundle exec cap $*
-  else
-    cap $*
-  fi
+	if [ -f Gemfile ]; then
+		bundle exec cap $*
+	else
+		cap $*
+	fi
 }

@@ -1,6 +1,6 @@
 # Yii2 autocomplete plugin
 
-* Adds autocomplete commands and subcommands for yii.
+-   Adds autocomplete commands and subcommands for yii.
 
 ## Requirements
 

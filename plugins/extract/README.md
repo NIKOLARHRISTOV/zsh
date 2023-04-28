@@ -15,7 +15,7 @@ plugins=(... extract)
 ## Supported file extensions
 
 | Extension         | Description                          |
-|:------------------|:-------------------------------------|
+| :---------------- | :----------------------------------- |
 | `7z`              | 7zip file                            |
 | `Z`               | Z archive (LZW)                      |
 | `apk`             | Android app file                     |
@@ -56,5 +56,6 @@ plugins=(... extract)
 | `zip`             | Zip archive                          |
 | `zst`             | Zstandard file (zstd)                |
 
-See [list of archive formats](https://en.wikipedia.org/wiki/List_of_archive_formats) for
-more information regarding archive formats.
+See
+[list of archive formats](https://en.wikipedia.org/wiki/List_of_archive_formats)
+for more information regarding archive formats.

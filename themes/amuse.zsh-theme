@@ -15,4 +15,3 @@ PROMPT='
 $ '
 
 RPROMPT='$(ruby_prompt_info)'
-

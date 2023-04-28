@@ -5,5 +5,5 @@
 # Author: https://github.com/HalisCz
 
 if [ $commands[doctl] ]; then
-  source <(doctl completion zsh)
+	source <(doctl completion zsh)
 fi

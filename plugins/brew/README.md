@@ -10,10 +10,10 @@ plugins=(... brew)
 
 ## Shellenv
 
-If `brew` is not found in the PATH, this plugin will attempt to find it in common
-locations, and execute `brew shellenv` to set the environment appropriately.
-This plugin will also export `HOMEBREW_PREFIX="$(brew --prefix)"` if not previously
-defined for convenience.
+If `brew` is not found in the PATH, this plugin will attempt to find it in
+common locations, and execute `brew shellenv` to set the environment
+appropriately. This plugin will also export `HOMEBREW_PREFIX="$(brew --prefix)"`
+if not previously defined for convenience.
 
 ## Aliases
 
@@ -31,7 +31,7 @@ defined for convenience.
 
 ## Completion
 
-With the release of Homebrew 1.0, they decided to bundle the zsh completion as part of the
-brew installation, so we no longer ship it with the brew plugin; now it only has brew
-aliases. If you find that brew completion no longer works, make sure you have your Homebrew
-installation fully up to date.
+With the release of Homebrew 1.0, they decided to bundle the zsh completion as
+part of the brew installation, so we no longer ship it with the brew plugin; now
+it only has brew aliases. If you find that brew completion no longer works, make
+sure you have your Homebrew installation fully up to date.

@@ -10,10 +10,11 @@ plugins=(... ubuntu)
 
 ## Aliases
 
-Commands that use `$APT` will use `apt` if installed or defer to `apt-get` otherwise.
+Commands that use `$APT` will use `apt` if installed or defer to `apt-get`
+otherwise.
 
 | Alias   | Command                                                                  | Description                                                                                       |
-|---------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
 | age     | `sudo $APT`                                                              | Run apt-get with sudo                                                                             |
 | acse    | `apt-cache search`                                                       | Search the apt-cache with the specified criteria                                                  |
 | acsp    | `apt-cache showpkg`                                                      | Shows information about the listed packages                                                       |
@@ -36,15 +37,14 @@ Commands that use `$APT` will use `apt` if installed or defer to `apt-get` other
 | agar    | `sudo $APT autoremove`                                                   | Remove automatically installed packages no longer needed                                          |
 | aguu    | `sudo $APT update && sudo $APT upgrade`                                  | Update packages list and upgrade available packages                                               |
 | allpkgs | `dpkg --get-selections \| grep -v deinstall`                             | Print all installed packages                                                                      |
-| kclean  | `sudo aptitude remove -P ?and(~i~nlinux-(ima\|hea) ?not(~n$(uname -r)))` |Remove ALL kernel images and headers EXCEPT the one in use                                         |
+| kclean  | `sudo aptitude remove -P ?and(~i~nlinux-(ima\|hea) ?not(~n$(uname -r)))` | Remove ALL kernel images and headers EXCEPT the one in use                                        |
 | mydeb   | `time dpkg-buildpackage -rfakeroot -us -uc`                              | Create a basic .deb package                                                                       |
 | ppap    | `sudo ppa-purge <ppa>`                                                   | Remove the specified PPA                                                                          |
 
-
 ## Functions
 
-| Function          | Usage                                 |Description                                                               |
-|-------------------|---------------------------------------|--------------------------------------------------------------------------|
+| Function          | Usage                                 | Description                                                              |
+| ----------------- | ------------------------------------- | ------------------------------------------------------------------------ |
 | aar               | `aar ppa:xxxxxx/xxxxxx [packagename]` | apt-add-repository with automatic install/upgrade of the desired package |
 | apt-history       | `apt-history <action>`                | Prints the Apt history of the specified action                           |
 | apt-list-packages | `apt-list-packages`                   | List packages by size                                                    |
@@ -52,10 +52,10 @@ Commands that use `$APT` will use `apt` if installed or defer to `apt-get` other
 
 ## Authors:
 
-- [@AlexBio](https://github.com/AlexBio)
-- [@dbb](https://github.com/dbb)
-- [@Mappleconfusers](https://github.com/Mappleconfusers)
-- [@trinaldi](https://github.com/trinaldi)
-- [Nicolas Jonas](https://nextgenthemes.com)
-- [@loctauxphilippe](https://github.com/loctauxphilippe)
-- [@HaraldNordgren](https://github.com/HaraldNordgren)
+-   [@AlexBio](https://github.com/AlexBio)
+-   [@dbb](https://github.com/dbb)
+-   [@Mappleconfusers](https://github.com/Mappleconfusers)
+-   [@trinaldi](https://github.com/trinaldi)
+-   [Nicolas Jonas](https://nextgenthemes.com)
+-   [@loctauxphilippe](https://github.com/loctauxphilippe)
+-   [@HaraldNordgren](https://github.com/HaraldNordgren)

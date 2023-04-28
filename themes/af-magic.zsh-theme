@@ -5,16 +5,16 @@
 
 # dashed separator size
 function afmagic_dashes {
-  # check either virtualenv or condaenv variables
-  local python_env="${VIRTUAL_ENV:-$CONDA_DEFAULT_ENV}"
+	# check either virtualenv or condaenv variables
+	local python_env="${VIRTUAL_ENV:-$CONDA_DEFAULT_ENV}"
 
-  # if there is a python virtual environment and it is displayed in
-  # the prompt, account for it when returning the number of dashes
-  if [[ -n "$python_env" && "$PS1" = \(* ]]; then
-    echo $(( COLUMNS - ${#python_env} - 3 ))
-  else
-    echo $COLUMNS
-  fi
+	# if there is a python virtual environment and it is displayed in
+	# the prompt, account for it when returning the number of dashes
+	if [[ -n "$python_env" && "$PS1" = \(* ]]; then
+		echo $((COLUMNS - ${#python_env} - 3))
+	else
+		echo $COLUMNS
+	fi
 }
 
 # primary prompt: dashed separator, directory and vcs info
@@ -24,8 +24,8 @@ PS2="%{$fg[red]%}\ %{$reset_color%}"
 
 # right prompt: return code, virtualenv and context (user@host)
 RPS1="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
-if (( $+functions[virtualenv_prompt_info] )); then
-  RPS1+='$(virtualenv_prompt_info)'
+if (($ + functions[virtualenv_prompt_info])); then
+	RPS1+='$(virtualenv_prompt_info)'
 fi
 RPS1+=" ${FG[237]}%n@%m%{$reset_color%}"
 
