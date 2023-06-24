@@ -16,11 +16,12 @@ plugins=(... lando)
 | :--------: | :--------------: |
 | `artisan`  | `lando artisan`  |
 | `composer` | `lando composer` |
-|  `drush`   |  `lando drush`   |
-|   `gulp`   |   `lando gulp`   |
-|   `npm`    |   `lando npm`    |
-|    `wp`    |    `lando wp`    |
-|   `yarn`   |   `lando yarn`   |
+| `drush`    | `lando drush`    |
+| `gulp`     | `lando gulp`     |
+| `npm`      | `lando npm`      |
+| `php`      | `lando php`      |
+| `wp`       | `lando wp`       |
+| `yarn`     | `lando yarn`     |
 
 ## How It Works:
 

@@ -16,6 +16,9 @@
 #   ZSH=~/.zsh sh install.sh
 #
 # Respects the following environment variables:
+#   ZDOTDIR - path to Zsh dotfiles directory (default: unset). See [1][2]
+#             [1] https://zsh.sourceforge.io/Doc/Release/Parameters.html#index-ZDOTDIR
+#             [2] https://zsh.sourceforge.io/Doc/Release/Files.html#index-ZDOTDIR_002c-use-of
 #   ZSH     - path to the Oh My Zsh repository folder (default: $HOME/.oh-my-zsh)
 #   REPO    - name of the GitHub repo to install from (default: ohmyzsh/ohmyzsh)
 #   REMOTE  - full remote URL of the git repo to install (default: GitHub via HTTPS)
@@ -52,8 +55,17 @@ HOME="${HOME:-$(eval echo ~$USER)}"
 # Track if $ZSH was provided
 custom_zsh=${ZSH:+yes}
 
-# Default settings
+# Use $zdot to keep track of where the directory is for zsh dotfiles
+# To check if $ZDOTDIR was provided, explicitly check for $ZDOTDIR
+zdot="${ZDOTDIR:-$HOME}"
+
+# Default value for $ZSH
+# a) if $ZDOTDIR is supplied and not $HOME: $ZDOTDIR/ohmyzsh
+# b) otherwise, $HOME/.oh-my-zsh
+[ "$ZDOTDIR" = "$HOME" ] || ZSH="${ZSH:-${ZDOTDIR:+$ZDOTDIR/ohmyzsh}}"
 ZSH="${ZSH:-$HOME/.oh-my-zsh}"
+
+# Default settings
 REPO=${REPO:-ohmyzsh/ohmyzsh}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
@@ -68,27 +80,31 @@ command_exists() {
 }
 
 user_can_sudo() {
-	# Check if sudo is installed
-	command_exists sudo || return 1
-	# The following command has 3 parts:
-	#
-	# 1. Run `sudo` with `-v`. Does the following:
-	#    • with privilege: asks for a password immediately.
-	#    • without privilege: exits with error code 1 and prints the message:
-	#      Sorry, user <username> may not run sudo on <hostname>
-	#
-	# 2. Pass `-n` to `sudo` to tell it to not ask for a password. If the
-	#    password is not required, the command will finish with exit code 0.
-	#    If one is required, sudo will exit with error code 1 and print the
-	#    message:
-	#    sudo: a password is required
-	#
-	# 3. Check for the words "may not run sudo" in the output to really tell
-	#    whether the user has privileges or not. For that we have to make sure
-	#    to run `sudo` in the default locale (with `LANG=`) so that the message
-	#    stays consistent regardless of the user's locale.
-	#
-	! LANG= sudo -n -v 2>&1 | grep -q "may not run sudo"
+  # Check if sudo is installed
+  command_exists sudo || return 1
+  # Termux can't run sudo, so we can detect it and exit the function early.
+  case "$PREFIX" in
+  *com.termux*) return 1 ;;
+  esac
+  # The following command has 3 parts:
+  #
+  # 1. Run `sudo` with `-v`. Does the following:
+  #    • with privilege: asks for a password immediately.
+  #    • without privilege: exits with error code 1 and prints the message:
+  #      Sorry, user <username> may not run sudo on <hostname>
+  #
+  # 2. Pass `-n` to `sudo` to tell it to not ask for a password. If the
+  #    password is not required, the command will finish with exit code 0.
+  #    If one is required, sudo will exit with error code 1 and print the
+  #    message:
+  #    sudo: a password is required
+  #
+  # 3. Check for the words "may not run sudo" in the output to really tell
+  #    whether the user has privileges or not. For that we have to make sure
+  #    to run `sudo` in the default locale (with `LANG=`) so that the message
+  #    stays consistent regardless of the user's locale.
+  #
+  ! LANG= sudo -n -v 2>&1 | grep -q "may not run sudo"
 }
 
 # The [ -t 1 ] check only works when the function is not called from
@@ -308,36 +324,41 @@ setup_zshrc() {
 	# destroy a user's original zshrc
 	echo "${FMT_BLUE}Looking for an existing zsh config...${FMT_RESET}"
 
-	# Must use this exact name so uninstall.sh can find it
-	OLD_ZSHRC=~/.zshrc.pre-oh-my-zsh
-	if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
-		# Skip this if the user doesn't want to replace an existing .zshrc
-		if [ "$KEEP_ZSHRC" = yes ]; then
-			echo "${FMT_YELLOW}Found ~/.zshrc.${FMT_RESET} ${FMT_GREEN}Keeping...${FMT_RESET}"
-			return
-		fi
-		if [ -e "$OLD_ZSHRC" ]; then
-			OLD_OLD_ZSHRC="${OLD_ZSHRC}-$(date +%Y-%m-%d_%H-%M-%S)"
-			if [ -e "$OLD_OLD_ZSHRC" ]; then
-				fmt_error "$OLD_OLD_ZSHRC exists. Can't back up ${OLD_ZSHRC}"
-				fmt_error "re-run the installer again in a couple of seconds"
-				exit 1
-			fi
-			mv "$OLD_ZSHRC" "${OLD_OLD_ZSHRC}"
+  # Must use this exact name so uninstall.sh can find it
+  OLD_ZSHRC="$zdot/.zshrc.pre-oh-my-zsh"
+  if [ -f "$zdot/.zshrc" ] || [ -h "$zdot/.zshrc" ]; then
+    # Skip this if the user doesn't want to replace an existing .zshrc
+    if [ "$KEEP_ZSHRC" = yes ]; then
+      echo "${FMT_YELLOW}Found ${zdot}/.zshrc.${FMT_RESET} ${FMT_GREEN}Keeping...${FMT_RESET}"
+      return
+    fi
+    if [ -e "$OLD_ZSHRC" ]; then
+      OLD_OLD_ZSHRC="${OLD_ZSHRC}-$(date +%Y-%m-%d_%H-%M-%S)"
+      if [ -e "$OLD_OLD_ZSHRC" ]; then
+        fmt_error "$OLD_OLD_ZSHRC exists. Can't back up ${OLD_ZSHRC}"
+        fmt_error "re-run the installer again in a couple of seconds"
+        exit 1
+      fi
+      mv "$OLD_ZSHRC" "${OLD_OLD_ZSHRC}"
 
-			echo "${FMT_YELLOW}Found old ~/.zshrc.pre-oh-my-zsh." \
-				"${FMT_GREEN}Backing up to ${OLD_OLD_ZSHRC}${FMT_RESET}"
-		fi
-		echo "${FMT_YELLOW}Found ~/.zshrc.${FMT_RESET} ${FMT_GREEN}Backing up to ${OLD_ZSHRC}${FMT_RESET}"
-		mv ~/.zshrc "$OLD_ZSHRC"
-	fi
+      echo "${FMT_YELLOW}Found old .zshrc.pre-oh-my-zsh." \
+        "${FMT_GREEN}Backing up to ${OLD_OLD_ZSHRC}${FMT_RESET}"
+    fi
+    echo "${FMT_YELLOW}Found ${zdot}/.zshrc.${FMT_RESET} ${FMT_GREEN}Backing up to ${OLD_ZSHRC}${FMT_RESET}"
+    mv "$zdot/.zshrc" "$OLD_ZSHRC"
+  fi
 
-	echo "${FMT_GREEN}Using the Oh My Zsh template file and adding it to ~/.zshrc.${FMT_RESET}"
+  echo "${FMT_GREEN}Using the Oh My Zsh template file and adding it to $zdot/.zshrc.${FMT_RESET}"
 
-	# Replace $HOME path with '$HOME' in $ZSH variable in .zshrc file
-	omz=$(echo "$ZSH" | sed "s|^$HOME/|\$HOME/|")
-	sed "s|^export ZSH=.*$|export ZSH=\"${omz}\"|" "$ZSH/templates/zshrc.zsh-template" > ~/.zshrc-omztemp
-	mv -f ~/.zshrc-omztemp ~/.zshrc
+  # Modify $ZSH variable in .zshrc directory to use the literal $ZDOTDIR or $HOME
+  omz="$ZSH"
+  if [ -n "$ZDOTDIR" ] && [ "$ZDOTDIR" != "$HOME" ]; then
+    omz=$(echo "$omz" | sed "s|^$ZDOTDIR/|\$ZDOTDIR/|")
+  fi
+  omz=$(echo "$omz" | sed "s|^$HOME/|\$HOME/|")
+
+  sed "s|^export ZSH=.*$|export ZSH=\"${omz}\"|" "$ZSH/templates/zshrc.zsh-template" > "$zdot/.zshrc-omztemp"
+  mv -f "$zdot/.zshrc-omztemp" "$zdot/.zshrc"
 
 	echo
 }
@@ -412,12 +433,12 @@ EOF
 		fi
 	fi
 
-	# We're going to change the default shell, so back up the current one
-	if [ -n "$SHELL" ]; then
-		echo "$SHELL" > ~/.shell.pre-oh-my-zsh
-	else
-		grep "^$USER:" /etc/passwd | awk -F: '{print $7}' > ~/.shell.pre-oh-my-zsh
-	fi
+  # We're going to change the default shell, so back up the current one
+  if [ -n "$SHELL" ]; then
+    echo "$SHELL" > "$zdot/.shell.pre-oh-my-zsh"
+  else
+    grep "^$USER:" /etc/passwd | awk -F: '{print $7}' > "$zdot/.shell.pre-oh-my-zsh"
+  fi
 
 	echo "Changing your shell to $zsh..."
 
@@ -449,22 +470,22 @@ EOF
 
 # shellcheck disable=SC2183  # printf string has more %s than arguments ($FMT_RAINBOW expands to multiple arguments)
 print_success() {
-	printf '%s         %s__      %s           %s        %s       %s     %s__   %s\n' $FMT_RAINBOW $FMT_RESET
-	printf '%s  ____  %s/ /_    %s ____ ___  %s__  __  %s ____  %s_____%s/ /_  %s\n' $FMT_RAINBOW $FMT_RESET
-	printf '%s / __ \\%s/ __ \\  %s / __ `__ \\%s/ / / / %s /_  / %s/ ___/%s __ \\ %s\n' $FMT_RAINBOW $FMT_RESET
-	printf '%s/ /_/ /%s / / / %s / / / / / /%s /_/ / %s   / /_%s(__  )%s / / / %s\n' $FMT_RAINBOW $FMT_RESET
-	printf '%s\\____/%s_/ /_/ %s /_/ /_/ /_/%s\\__, / %s   /___/%s____/%s_/ /_/  %s\n' $FMT_RAINBOW $FMT_RESET
-	printf '%s    %s        %s           %s /____/ %s       %s     %s          %s....is now installed!%s\n' $FMT_RAINBOW $FMT_GREEN $FMT_RESET
-	printf '\n'
-	printf '\n'
-	printf "%s %s %s\n" "Before you scream ${FMT_BOLD}${FMT_YELLOW}Oh My Zsh!${FMT_RESET} look over the" \
-		"$(fmt_code "$(fmt_link ".zshrc" "file://$HOME/.zshrc" --text)")" \
-		"file to select plugins, themes, and options."
-	printf '\n'
-	printf '%s\n' "• Follow us on Twitter: $(fmt_link @ohmyzsh https://twitter.com/ohmyzsh)"
-	printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/ohmyzsh)"
-	printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/oh-my-zsh)"
-	printf '%s\n' $FMT_RESET
+  printf '%s         %s__      %s           %s        %s       %s     %s__   %s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s  ____  %s/ /_    %s ____ ___  %s__  __  %s ____  %s_____%s/ /_  %s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s / __ \\%s/ __ \\  %s / __ `__ \\%s/ / / / %s /_  / %s/ ___/%s __ \\ %s\n'  $FMT_RAINBOW $FMT_RESET
+  printf '%s/ /_/ /%s / / / %s / / / / / /%s /_/ / %s   / /_%s(__  )%s / / / %s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s\\____/%s_/ /_/ %s /_/ /_/ /_/%s\\__, / %s   /___/%s____/%s_/ /_/  %s\n'    $FMT_RAINBOW $FMT_RESET
+  printf '%s    %s        %s           %s /____/ %s       %s     %s          %s....is now installed!%s\n' $FMT_RAINBOW $FMT_GREEN $FMT_RESET
+  printf '\n'
+  printf '\n'
+  printf "%s %s %s\n" "Before you scream ${FMT_BOLD}${FMT_YELLOW}Oh My Zsh!${FMT_RESET} look over the" \
+    "$(fmt_code "$(fmt_link ".zshrc" "file://$zdot/.zshrc" --text)")" \
+    "file to select plugins, themes, and options."
+  printf '\n'
+  printf '%s\n' "• Follow us on Twitter: $(fmt_link @ohmyzsh https://twitter.com/ohmyzsh)"
+  printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/ohmyzsh)"
+  printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/oh-my-zsh)"
+  printf '%s\n' $FMT_RESET
 }
 
 main() {
@@ -516,9 +537,14 @@ EOF
 		exit 1
 	fi
 
-	setup_ohmyzsh
-	setup_zshrc
-	setup_shell
+  # Create ZDOTDIR folder structure if it doesn't exist
+  if [ -n "$ZDOTDIR" ]; then
+    mkdir -p "$ZDOTDIR"
+  fi
+
+  setup_ohmyzsh
+  setup_zshrc
+  setup_shell
 
 	print_success
 

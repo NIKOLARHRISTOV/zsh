@@ -1,16 +1,10 @@
 # Zsh-z
 
-Zsh-z is a command line tool that allows you to jump quickly to directories that
-you have visited frequently in the past, or recently -- but most often a
-combination of the two (a concept known as
-["frecency"](https://en.wikipedia.org/wiki/Frecency)). It works by keeping track
-of when you go to directories and how much time you spend in them. It is then in
-the position to guess where you want to go when you type a partial string, e.g.,
-`z src` might take you to `~/src/zsh`. `z zsh` might also get you there, and
-`z c/z` might prove to be even more specific -- it all depends on your habits
-and how much time you have been using Zsh-z to build up a database. After using
-Zsh-z for a little while, you will get to where you want to be by typing
-considerably less than you would need if you were using `cd`.
+[![MIT License](img/mit_license.svg)](https://opensource.org/licenses/MIT)
+![Zsh version 4.3.11 and higher](img/zsh_4.3.11_plus.svg)
+[![GitHub stars](https://img.shields.io/github/stars/agkozak/zsh-z.svg)](https://github.com/agkozak/zsh-z/stargazers)
+
+Zsh-z is a command line tool that allows you to jump quickly to directories that you have visited frequently in the past, or recently -- but most often a combination of the two (a concept known as ["frecency"](https://en.wikipedia.org/wiki/Frecency)). It works by keeping track of when you go to directories and how much time you spend in them. It is then in the position to guess where you want to go when you type a partial string, e.g., `z src` might take you to `~/src/zsh`. `z zsh` might also get you there, and `z c/z` might prove to be even more specific -- it all depends on your habits and how much time you have been using Zsh-z to build up a database. After using Zsh-z for a little while, you will get to where you want to be by typing considerably less than you would need if you were using `cd`.
 
 Zsh-z is a native Zsh port of [rupa/z](https://github.com/rupa/z), a tool
 written for `bash` and Zsh that uses embedded `awk` scripts to do the heavy
@@ -59,99 +53,69 @@ database (`~/.z`), so you can go on using `rupa/z` when you launch `bash`.
 <details>
     <summary>Here are the latest features and updates.</summary>
 
--   June 29, 2022
-    -   Zsh-z is less likely to leave temporary files sitting around (props
-        @mafredri).
--   June 27, 2022
-    -   A bug was fixed which was preventing paths with spaces in them from
-        being updated ([#61](https://github.com/agkozak/zsh-z/issues/61)).
-    -   If writing to the temporary database file fails, the database will not
-        be clobbered (props @mafredri).
--   December 19, 2021
-    -   ZSH-z will now display tildes for `HOME` during completion when
-        `ZSHZ_TILDE=1` has been set.
--   November 11, 2021
-    -   A bug was fixed which was preventing ranks from being incremented.
-    -   `--add` has been made to work with relative paths and has been
-        documented for the user.
--   October 14, 2021
-    -   Completions were being sorted alphabetically, rather than by rank; this
-        error has been fixed.
--   September 25, 2021
-    -   Orthographical change: "Zsh," not "ZSH."
--   September 23, 2021
-    -   `z -xR` will now remove a directory _and its subdirectories_ from the
-        database.
-    -   `z -x` and `z -xR` can now take an argument; without one, `PWD` is
-        assumed.
--   September 7, 2021
-    -   Fixed the unload function so that it removes the `$ZSHZ_CMD` alias
-        (default: `z`).
--   August 27, 2021
-    -   Using `print -v ... -f` instead of `print -v` to work around
-        longstanding bug in Zsh involving `print -v` and multibyte strings.
--   August 13, 2021
-    -   Fixed the explanation string printed during completion so that it may be
-        formatted with `zstyle`.
-    -   Zsh-z now declares `ZSHZ_EXCLUDE_DIRS` as an array with unique elements
-        so that you do not have to.
--   July 29, 2021
-    -   Temporarily disabling use of `print -v`, which seems to be mangling CJK
-        multibyte strings.
--   July 27, 2021
-    -   Internal escaping of path names now works with older versions of ZSH.
-    -   Zsh-z now detects and discards any incomplete or incorrectly formattted
-        database entries.
--   July 10, 2021
-    -   Setting `ZSHZ_TRAILING_SLASH=1` makes it so that a search pattern ending
-        in `/` can match the end of a path; e.g. `z foo/` can match
-        `/path/to/foo`.
--   June 25, 2021
-    -   Setting `ZSHZ_TILDE=1` displays the `HOME` directory as `~`.
--   May 7, 2021
-    -   Setting `ZSHZ_ECHO=1` will cause Zsh-z to display the new path when you
-        change directories.
-    -   Better escaping of path names to deal paths containing the characters
-        `` \`()[] ``.
--   February 15, 2021
-    -   Ranks are displayed the way `rupa/z` now displays them, i.e. as large
-        integers. This should help Zsh-z to integrate with other tools.
--   January 31, 2021
-    -   Zsh-z is now efficient enough that, on MSYS2 and Cygwin, it is faster to
-        run it in the foreground than it is to fork a subshell for it.
-    -   `_zshz_precmd` simply returns if `PWD` is `HOME` or in
-        `ZSH_EXCLUDE_DIRS`, rather than waiting for `zshz` to do that.
--   January 17, 2021
-    -   Made sure that the `PUSHD_IGNORE_DUPS` option is respected.
--   January 14, 2021
-    -   The `z -h` help text now breaks at spaces.
-    -   `z -l` was not working for Zsh version < 5.
--   January 11, 2021
-    -   Major refactoring of the code.
-    -   `z -lr` and `z -lt` work as expected.
-    -   `EXTENDED_GLOB` has been disabled within the plugin to accomodate
-        old-fashioned Windows directories with names such as `Progra~1`.
-    -   Removed `zshelldoc` documentation.
--   January 6, 2021
-    -   I have corrected the frecency routine so that it matches `rupa/z`'s
-        math, but for the present, Zsh-z will continue to display ranks as
-        1/10000th of what they are in `rupa/z` --
-        [they had to multiply theirs by 10000](https://github.com/rupa/z/commit/f1f113d9bae9effaef6b1e15853b5eeb445e0712)
-        to work around `bash`'s inadequacies at dealing with decimal fractions.
--   January 5, 2021
-    -   If you try `z foo`, and `foo` is not in the database but `${PWD}/foo` is
-        a valid directory, Zsh-z will `cd` to it.
--   December 22, 2020
-    -   `ZSHZ_CASE`: when set to `ignore`, pattern matching is case-insensitive;
-        when set to `smart`, patterns are matched case-insensitively when they
-        are all lowercase and case-sensitively when they have uppercase
-        characters in them (a behavior very much like Vim's `smartcase`
-        setting).
-    -   `ZSHZ_KEEP_DIRS` is an array of directory names that should not be
-        removed from the database, even if they are not currently available
-        (useful when a drive is not always mounted).
-    -   Symlinked datafiles were having their symlinks overwritten; this bug has
-        been fixed.
+- April 27, 2023
+    + Zsh-z now allows the user to specify the directory-changing command using the `ZSHZ_CD` environment variable (default: `builtin cd`; props @basnijholt).
+- January 27, 2023
+    + If the datafile directory specified by `ZSHZ_DATA` or `_Z_DATA` does not already exist, create it (props @mattmc3).
+- June 29, 2022
+    + Zsh-z is less likely to leave temporary files sitting around (props @mafredri).
+- June 27, 2022
+    + A bug was fixed which was preventing paths with spaces in them from being updated ([#61](https://github.com/agkozak/zsh-z/issues/61)).
+    + If writing to the temporary database file fails, the database will not be clobbered (props @mafredri).
+- December 19, 2021
+    + ZSH-z will now display tildes for `HOME` during completion when `ZSHZ_TILDE=1` has been set.
+- November 11, 2021
+    + A bug was fixed which was preventing ranks from being incremented.
+    + `--add` has been made to work with relative paths and has been documented for the user.
+- October 14, 2021
+    + Completions were being sorted alphabetically, rather than by rank; this error has been fixed.
+- September 25, 2021
+    + Orthographical change: "Zsh," not "ZSH."
+- September 23, 2021
+    + `z -xR` will now remove a directory *and its subdirectories* from the database.
+    + `z -x` and `z -xR` can now take an argument; without one, `PWD` is assumed.
+- September 7, 2021
+    + Fixed the unload function so that it removes the `$ZSHZ_CMD` alias (default: `z`).
+- August 27, 2021
+    + Using `print -v ... -f` instead of `print -v` to work around longstanding bug in Zsh involving `print -v` and multibyte strings.
+- August 13, 2021
+    + Fixed the explanation string printed during completion so that it may be formatted with `zstyle`.
+    + Zsh-z now declares `ZSHZ_EXCLUDE_DIRS` as an array with unique elements so that you do not have to.
+- July 29, 2021
+    + Temporarily disabling use of `print -v`, which seems to be mangling CJK multibyte strings.
+- July 27, 2021
+    + Internal escaping of path names now works with older versions of ZSH.
+    + Zsh-z now detects and discards any incomplete or incorrectly formattted database entries.
+- July 10, 2021
+    + Setting `ZSHZ_TRAILING_SLASH=1` makes it so that a search pattern ending in `/` can match the end of a path; e.g. `z foo/` can match `/path/to/foo`.
+- June 25, 2021
+    + Setting `ZSHZ_TILDE=1` displays the `HOME` directory as `~`.
+- May 7, 2021
+    + Setting `ZSHZ_ECHO=1` will cause Zsh-z to display the new path when you change directories.
+    + Better escaping of path names to deal paths containing the characters ``\`()[]``.
+- February 15, 2021
+    + Ranks are displayed the way `rupa/z` now displays them, i.e. as large integers. This should help Zsh-z to integrate with other tools.
+- January 31, 2021
+    + Zsh-z is now efficient enough that, on MSYS2 and Cygwin, it is faster to run it in the foreground than it is to fork a subshell for it.
+    + `_zshz_precmd` simply returns if `PWD` is `HOME` or in `ZSH_EXCLUDE_DIRS`, rather than waiting for `zshz` to do that.
+- January 17, 2021
+    + Made sure that the `PUSHD_IGNORE_DUPS` option is respected.
+- January 14, 2021
+    + The `z -h` help text now breaks at spaces.
+    + `z -l` was not working for Zsh version < 5.
+- January 11, 2021
+    + Major refactoring of the code.
+    + `z -lr` and `z -lt` work as expected.
+    + `EXTENDED_GLOB` has been disabled within the plugin to accomodate old-fashioned Windows directories with names such as `Progra~1`.
+    + Removed `zshelldoc` documentation.
+- January 6, 2021
+    + I have corrected the frecency routine so that it matches `rupa/z`'s math, but for the present, Zsh-z will continue to display ranks as 1/10000th of what they are in `rupa/z` -- [they had to multiply theirs by 10000](https://github.com/rupa/z/commit/f1f113d9bae9effaef6b1e15853b5eeb445e0712) to work around `bash`'s inadequacies at dealing with decimal fractions.
+- January 5, 2021
+    + If you try `z foo`, and `foo` is not in the database but `${PWD}/foo` is a valid directory, Zsh-z will `cd` to it.
+- December 22, 2020
+    + `ZSHZ_CASE`: when set to `ignore`, pattern matching is case-insensitive; when set to `smart`, patterns are matched case-insensitively when they are all lowercase and case-sensitively when they have uppercase characters in them (a behavior very much like Vim's `smartcase` setting).
+    + `ZSHZ_KEEP_DIRS` is an array of directory names that should not be removed from the database, even if they are not currently available (useful when a drive is not always mounted).
+    + Symlinked datafiles were having their symlinks overwritten; this bug has been fixed.
 
 </details>
 
@@ -186,14 +150,19 @@ Add the line
 
 to your `.zshrc`, somewhere above the line that says `antigen apply`.
 
-### For [oh-my-zsh](http://ohmyz.sh/) users
+### For [Oh My Zsh](http://ohmyz.sh/) users
 
-Execute the following command:
+Zsh-z is now included as part of Oh My Zsh! As long as you are using an up-to-date installation of Oh My Zsh, you can activate Zsh-z simply by adding `z` to your `plugins` array in your `.zshrc`, e.g.,
+
+    plugins=( git z )
+
+It is as simple as that.
+
+If, however, you prefer always to use the latest version of Zsh-z from the `agkozak/zsh-z` repo, you may install it thus:
 
     git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 
-and add `zsh-z` to the line of your `.zshrc` that specifies `plugins=()`, e.g.,
-`plugins=( git zsh-z )`.
+and activate it by adding `zsh-z` to the line of your `.zshrc` that specifies `plugins=()`, e.g., `plugins=( git zsh-z )`.
 
 ### For [prezto](https://github.com/sorin-ionescu/prezto) users
 
@@ -322,30 +291,19 @@ Zsh-z has environment variables (they all begin with `ZSHZ_`) that change its
 behavior if you set them; you can also keep your old ones if you have been using
 `rupa/z` (they begin with `_Z_`).
 
--   `ZSHZ_CMD` changes the command name (default: `z`)
--   `ZSHZ_COMPLETION` can be `'frecent'` (default) or `'legacy'`, depending on
-    whether you want your completion results sorted according to frecency or
-    simply sorted alphabetically
--   `ZSHZ_DATA` changes the database file (default: `~/.z`)
--   `ZSHZ_ECHO` displays the new path name when changing directories (default:
-    `0`)
--   `ZSHZ_EXCLUDE_DIRS` is an array of directories to keep out of the database
-    (default: empty)
--   `ZSHZ_KEEP_DIRS` is an array of directories that should not be removed from
-    the database, even if they are not currently available (useful when a drive
-    is not always mounted) (default: empty)
--   `ZSHZ_MAX_SCORE` is the maximum combined score the database entries can have
-    before they begin to age and potentially drop out of the database
-    (default: 9000)
--   `ZSHZ_NO_RESOLVE_SYMLINKS` prevents symlink resolution (default: `0`)
--   `ZSHZ_OWNER` allows usage when in `sudo -s` mode (default: empty)
--   `ZSHZ_TILDE` displays the name of the `HOME` directory as a `~` (default:
-    `0`)
--   `ZSHZ_TRAILING_SLASH` makes it so that a search pattern ending in `/` can
-    match the final element in a path; e.g., `z foo/` can match `/path/to/foo`
-    (default: `0`)
--   `ZSHZ_UNCOMMON` changes the logic used to calculate the directory jumped to;
-    [see below](#zshz_uncommon`) (default: `0`)
+* `ZSHZ_CMD` changes the command name (default: `z`)
+* `ZSHZ_CD` specifies the default directory-changing command (default: `builtin cd`)
+* `ZSHZ_COMPLETION` can be `'frecent'` (default) or `'legacy'`, depending on whether you want your completion results sorted according to frecency or simply sorted alphabetically
+* `ZSHZ_DATA` changes the database file (default: `~/.z`)
+* `ZSHZ_ECHO` displays the new path name when changing directories (default: `0`)
+* `ZSHZ_EXCLUDE_DIRS` is an array of directories to keep out of the database (default: empty)
+* `ZSHZ_KEEP_DIRS` is an array of directories that should not be removed from the database, even if they are not currently available (useful when a drive is not always mounted) (default: empty)
+* `ZSHZ_MAX_SCORE` is the maximum combined score the database entries can have before they begin to age and potentially drop out of the database (default: 9000)
+* `ZSHZ_NO_RESOLVE_SYMLINKS` prevents symlink resolution (default: `0`)
+* `ZSHZ_OWNER` allows usage when in `sudo -s` mode (default: empty)
+* `ZSHZ_TILDE` displays the name of the `HOME` directory as a `~` (default: `0`)
+* `ZSHZ_TRAILING_SLASH` makes it so that a search pattern ending in `/` can match the final element in a path; e.g., `z foo/` can match `/path/to/foo` (default: `0`)
+* `ZSHZ_UNCOMMON` changes the logic used to calculate the directory jumped to; [see below](#zshz_uncommon`) (default: `0`)
 
 ## Case sensitivity
 

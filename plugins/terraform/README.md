@@ -20,6 +20,7 @@ plugins=(... terraform)
 | ----- | -------------------- |
 | `tf`  | `terraform`          |
 | `tfa` | `terraform apply`    |
+| `tfc` | `terraform console`  |
 | `tfd` | `terraform destroy`  |
 | `tff` | `terraform fmt`      |
 | `tfi` | `terraform init`     |

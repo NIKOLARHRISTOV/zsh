@@ -24,6 +24,7 @@ RPROMPT='$(toolbox_prompt_info)'
 
 ## Aliases
 
-| Alias | Command         | Description                    |
-| ----- | --------------- | ------------------------------ |
-| tb    | `toolbox enter` | Enters the toolbox environment |
+| Alias | Command              | Description                            |
+|-------|----------------------|----------------------------------------|
+| tbe   | `toolbox enter`      | Enters the toolbox environment         |
+| tbr   | `toolbox run`        | Run a command in an existing toolbox   |
