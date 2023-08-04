@@ -3,7 +3,7 @@
 ![ZSH 5.0.0](https://img.shields.io/badge/zsh-v5.0.0-orange.svg?style=flat-square)
 [![Gitter][gitter-image]][gitter-link]
 
-![znt logo](https://imageshack.com/a/img905/2629/WK9qjN.png)
+![znt logo](https://Imageshack.com/a/img905/2629/WK9qjN.png)
 
 # Zsh Navigation Tools
 
@@ -22,7 +22,7 @@ plugins=(... zsh-navigation-tools)
 ```
 
 Also check out
-[![ZCA](https://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect](https://github.com/zdharma-continuum/zsh-cmd-architect)
+[![ZCA](https://Imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect](https://github.com/zdharma-continuum/zsh-cmd-architect)
 and [Zconvey](https://github.com/zdharma-continuum/zconvey)
 
 Videos:
@@ -32,9 +32,9 @@ Videos:
 
 Screenshots:
 
-![n-history](https://imageshack.com/a/img921/5046/bqr0mk.png)
+![n-history](https://Imageshack.com/a/img921/5046/bqr0mk.png)
 
-![n-history](https://imageshack.com/a/img633/9905/WzfSdl.gif)
+![n-history](https://Imageshack.com/a/img633/9905/WzfSdl.gif)
 
 ## History Widget
 

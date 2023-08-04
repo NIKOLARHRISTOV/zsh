@@ -5,7 +5,7 @@ This plugin remaps keys in `zsh`'s
 for a [Colemak](https://colemak.com/) keyboard layout, to match the QWERTY
 position:
 
-![Colemak layout on a US keyboard](https://colemak.com/wiki/images/6/6c/Colemak2.png)
+![Colemak layout on a US keyboard](https://colemak.com/wiki/Images/6/6c/Colemak2.png)
 
 To use it, add it to the plugins array in your `~/.zshrc` file:
 
