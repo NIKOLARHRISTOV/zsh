@@ -13,5 +13,5 @@ It looks for scripts in the following paths:
 
 -   `$GRAILS_HOME/scripts`
 -   `~/.grails/scripts`
--   `./scripts`
+-   `./Scripts`
 -   `./plugins/*/scripts`
