@@ -31,7 +31,7 @@ _is_rails_app () {
 
 _tasks_changed () {
   local -a files
-  files=(lib/tasks lib/tasks/**/*(N))
+  files=(Library/tasks Library/tasks/**/*(N))
 
   for file in $files; do
     if [[ "$file" -nt .rake_tasks ]]; then

@@ -348,7 +348,7 @@ The default behaviour in Oh My Zsh is to use BSD `ls` in macOS and freeBSD syste
 sourcing `oh-my-zsh.sh`:
 
 ```zsh
-zstyle ':omz:lib:theme-and-appearance' gnu-ls yes
+zstyle ':omz:Library:theme-and-appearance' gnu-ls yes
 ```
 
 _Note: this is not compatible with `DISABLE_LS_COLORS=true`_
@@ -366,9 +366,9 @@ there are many different ways to skip aliases, depending on your needs.
 zstyle ':omz:*' aliases no
 
 # Skip all aliases in lib files
-zstyle ':omz:lib:*' aliases no
+zstyle ':omz:Library:*' aliases no
 # Skip only aliases defined in the directories.zsh lib file
-zstyle ':omz:lib:directories' aliases no
+zstyle ':omz:Library:directories' aliases no
 
 # Skip all plugin aliases
 zstyle ':omz:plugins:*' aliases no
@@ -393,7 +393,7 @@ zstyle ':omz:directories' aliases no
 Instead, you can now use the following:
 
 ```sh
-zstyle ':omz:lib:directories' aliases no
+zstyle ':omz:Library:directories' aliases no
 ```
 
 #### Notice <!-- omit in toc -->

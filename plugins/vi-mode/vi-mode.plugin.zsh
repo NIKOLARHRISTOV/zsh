@@ -76,7 +76,7 @@ function zle-keymap-select() {
 }
 zle -N zle-keymap-select
 
-# These "echoti" statements were originally set in lib/key-bindings.zsh
+# These "echoti" statements were originally set in Library/key-bindings.zsh
 # Not sure the best way to extend without overriding.
 function zle-line-init() {
   local prev_vi_keymap="${VI_KEYMAP:-}"

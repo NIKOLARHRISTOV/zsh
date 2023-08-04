@@ -655,7 +655,7 @@ case "$words[2]" in
       "ipc:Inter-process communication"
       "init:Generate a Podfile for the current directory."
       "install:Install project dependencies"
-      "lib:Develop pods"
+      "Library:Develop pods"
       "list:List pods"
       "outdated:Show outdated project dependencies"
       "plugins:Show available CocoaPods plugins"

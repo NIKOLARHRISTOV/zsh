@@ -34,7 +34,7 @@ function pyuserpaths() {
     # Add version specific path, if:
     # - it exists in the filesystem
     # - it isn't in $PYTHONPATH already.
-    site_pkgs="${user_base}/lib/python${version}/site-packages"
+    site_pkgs="${user_base}/Library/python${version}/site-packages"
     [[ -d "$site_pkgs" && ! "$PYTHONPATH" =~ (^|:)"$site_pkgs"(:|$) ]] || continue
     export PYTHONPATH="${site_pkgs}${PYTHONPATH+":${PYTHONPATH}"}"
   done
