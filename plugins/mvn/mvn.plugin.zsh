@@ -117,7 +117,7 @@ function listMavenCompletions {
   done
 
   # List modules
-  modules=($(print -l **/pom.xml(-.N:h) | grep -v '/target/classes/META-INF/'))
+  modules=($(print -l **/pom.xml(-.N:h) | grep -v '/Target/classes/META-INF/'))
 
   reply=(
     # common lifecycle
