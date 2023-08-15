@@ -1,7 +1,6 @@
 # .NET Core CLI plugin
 
-This plugin provides completion and useful aliases for
-[.NET Core CLI](https://dotnet.microsoft.com/).
+This plugin provides completion and useful aliases for [.NET Core CLI](https://dotnet.microsoft.com/).
 
 To use it, add `dotnet` to the plugins array in your zshrc file.
 
@@ -12,7 +11,7 @@ plugins=(... dotnet)
 ## Aliases
 
 | Alias | Command          | Description                                                       |
-| ----- | ---------------- | ----------------------------------------------------------------- |
+|-------|------------------|-------------------------------------------------------------------|
 | dn    | dotnet new       | Create a new .NET project or file.                                |
 | dr    | dotnet run       | Build and run a .NET project output.                              |
 | dt    | dotnet test      | Run unit tests using the test runner specified in a .NET project. |

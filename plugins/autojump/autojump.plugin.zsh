@@ -16,22 +16,22 @@ autojump_paths=(
 )
 
 for file in $autojump_paths; do
-	if [[ -f "$file" ]]; then
-		source "$file"
-		found=1
-		break
-	fi
+  if [[ -f "$file" ]]; then
+    source "$file"
+    found=1
+    break
+  fi
 done
 
 # if no path found, try Homebrew
-if ((!found && $ + commands[brew])); then
-	file=$(brew --prefix)/etc/profile.d/autojump.sh
-	if [[ -f "$file" ]]; then
-		source "$file"
-		found=1
-	fi
+if (( ! found && $+commands[brew] )); then
+  file=$(brew --prefix)/etc/profile.d/autojump.sh
+  if [[ -f "$file" ]]; then
+    source "$file"
+    found=1
+  fi
 fi
 
-((!found)) && echo '[oh-my-zsh] autojump not found. Please install it first.'
+(( ! found )) && echo '[oh-my-zsh] autojump not found. Please install it first.'
 
 unset autojump_paths file found

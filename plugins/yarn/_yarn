@@ -400,7 +400,7 @@ _yarn() {
 
         workspace)
           _arguments \
-            '1:_yarn_workspaces' \
+            '1:workspace:_yarn_workspaces' \
             '*:: :_yarn_global_commands'
         ;;
 

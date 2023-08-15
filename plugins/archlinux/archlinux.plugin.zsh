@@ -36,7 +36,7 @@ function pacdisowned() {
 
   trap "rm -rf $tmp_dir" EXIT
 
-	pacman -Qlq | sort -u > "$db"
+  pacman -Qlq | sort -u > "$db"
 
   find /etc /usr ! -name lost+found \
     \( -type d -printf '%p/\n' -o -print \) | sort > "$fs"
@@ -49,35 +49,35 @@ function pacdisowned() {
 alias pacmanallkeys='sudo pacman-key --refresh-keys'
 
 function pacmansignkeys() {
-	local key
-	for key in $@; do
-		sudo pacman-key --recv-keys $key
-		sudo pacman-key --lsign-key $key
-		printf 'trust\n3\n' | sudo gpg --homedir /etc/pacman.d/gnupg \
-			--no-permission-warning --command-fd 0 --edit-key $key
-	done
+  local key
+  for key in $@; do
+    sudo pacman-key --recv-keys $key
+    sudo pacman-key --lsign-key $key
+    printf 'trust\n3\n' | sudo gpg --homedir /etc/pacman.d/gnupg \
+      --no-permission-warning --command-fd 0 --edit-key $key
+  done
 }
 
-if (($ + commands[xdg - open])); then
-	function pacweb() {
-		if [[ $# = 0 || "$1" =~ '--help|-h' ]]; then
-			local underline_color="\e[${color[underline]}m"
-			echo "$0 - open the website of an ArchLinux package"
-			echo
-			echo "Usage:"
-			echo "    $bold_color$0$reset_color ${underline_color}target${reset_color}"
-			return 1
-		fi
+if (( $+commands[xdg-open] )); then
+  function pacweb() {
+    if [[ $# = 0 || "$1" =~ '--help|-h' ]]; then
+      local underline_color="\e[${color[underline]}m"
+      echo "$0 - open the website of an ArchLinux package"
+      echo
+      echo "Usage:"
+      echo "    $bold_color$0$reset_color ${underline_color}target${reset_color}"
+      return 1
+    fi
 
-		local pkg="$1"
-		local infos="$(LANG=C pacman -Si "$pkg")"
-		if [[ -z "$infos" ]]; then
-			return
-		fi
-		local repo="$(grep -m 1 '^Repo' <<< "$infos" | grep -oP '[^ ]+$')"
-		local arch="$(grep -m 1 '^Arch' <<< "$infos" | grep -oP '[^ ]+$')"
-		xdg-open "https://www.archlinux.org/packages/$repo/$arch/$pkg/" &> /dev/null
-	}
+    local pkg="$1"
+    local infos="$(LANG=C pacman -Si "$pkg")"
+    if [[ -z "$infos" ]]; then
+      return
+    fi
+    local repo="$(grep -m 1 '^Repo' <<< "$infos" | grep -oP '[^ ]+$')"
+    local arch="$(grep -m 1 '^Arch' <<< "$infos" | grep -oP '[^ ]+$')"
+    xdg-open "https://www.archlinux.org/packages/$repo/$arch/$pkg/" &>/dev/null
+  }
 fi
 
 #######################################
@@ -107,11 +107,11 @@ if (( $+commands[aura] )); then
   alias auupg='sudo sh -c "aura -Syu              && aura -Au"'
   alias ausu='sudo sh -c "aura -Syu --no-confirm && aura -Au --no-confirm"'
 
-	# extra bonus specially for aura
-	alias auown="aura -Qqo"
-	alias auls="aura -Qql"
-	function auownloc() { aura -Qi $(aura -Qqo $@); }
-	function auownls() { aura -Qql $(aura -Qqo $@); }
+  # extra bonus specially for aura
+  alias auown="aura -Qqo"
+  alias auls="aura -Qql"
+  function auownloc() { aura -Qi  $(aura -Qqo $@); }
+  function auownls () { aura -Qql $(aura -Qqo $@); }
 fi
 
 if (( $+commands[pacaur] )); then

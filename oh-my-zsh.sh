@@ -117,7 +117,7 @@ if ! command grep -q -Fx "$zcompdump_revision" "$ZSH_COMPDUMP" 2>/dev/null \
 fi
 
 if [[ "$ZSH_DISABLE_COMPFIX" != true ]]; then
-  source "$ZSH/Library/compfix.zsh"
+  source "$ZSH/lib/compfix.zsh"
   # Load only from secure directories
   compinit -i -d "$ZSH_COMPDUMP"
   # If completion insecurities exist, warn the user
@@ -151,7 +151,7 @@ _omz_source() {
 
   # Construct zstyle context based on path
   case "$filepath" in
-  Library/*) context="Library:${filepath:t:r}" ;;         # :t = lib_name.zsh, :r = lib_name
+  lib/*) context="lib:${filepath:t:r}" ;;         # :t = lib_name.zsh, :r = lib_name
   plugins/*) context="plugins:${filepath:h:t}" ;; # :h = plugins/plugin_name, :t = plugin_name
   esac
 
@@ -189,8 +189,8 @@ _omz_source() {
 
 # Load all of the config files in ~/oh-my-zsh that end in .zsh
 # TIP: Add files you don't want in git to .gitignore
-for config_file ("$ZSH"/Library/*.zsh); do
-  _omz_source "Library/${config_file:t}"
+for config_file ("$ZSH"/lib/*.zsh); do
+  _omz_source "lib/${config_file:t}"
 done
 unset custom_config_file
 

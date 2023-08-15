@@ -11,11 +11,11 @@ on:
       - master
 
 concurrency:
-    group: ci-${{ github.workflow }}-${{ github.head_ref || github.run_id }}
-    cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 
 permissions:
-    contents: read # to fetch code (actions/checkout)
+  contents: read # to fetch code (actions/checkout)
 
 jobs:
   tests:
@@ -27,14 +27,14 @@ jobs:
         os: [ubuntu-latest, macos-latest]
     steps:
       - name: Set up git repository
-        uses: actions/checkout@v3.5.3
+        uses: actions/checkout@v3
       - name: Install zsh
         if: runner.os == 'Linux'
         run: sudo apt-get update; sudo apt-get install zsh
       - name: Check syntax
         run: |
           for file in ./oh-my-zsh.sh \
-                      ./Library/*.zsh \
+                      ./lib/*.zsh \
                       ./plugins/*/*.plugin.zsh \
                       ./plugins/*/_* \
                       ./themes/*.zsh-theme; do

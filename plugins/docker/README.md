@@ -1,7 +1,6 @@
 # Docker plugin
 
-This plugin adds auto-completion and aliases for
-[docker](https://www.docker.com/).
+This plugin adds auto-completion and aliases for [docker](https://www.docker.com/).
 
 To use it add `docker` to the plugins array in your zshrc file.
 

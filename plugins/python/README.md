@@ -1,7 +1,6 @@
 # Python plugin
 
-The plugin adds several aliases for useful [Python](https://www.python.org/)
-commands.
+The plugin adds several aliases for useful [Python](https://www.python.org/) commands.
 
 To use it, add `python` to the plugins array in your zshrc file:
 
@@ -25,8 +24,6 @@ plugins=(... python)
 
 The plugin provides two utilities to manage Python venvs:
 
--   `mkv [name]`: make a new virtual environment called `name` (default: `venv`)
-    in current directory.
+- `mkv [name]`: make a new virtual environment called `name` (default: `venv`) in current directory.
 
--   `vrun [name]`: activate virtual environment called `name` (default: `venv`)
-    in current directory.
+- `vrun [name]`: activate virtual environment called `name` (default: `venv`) in current directory.

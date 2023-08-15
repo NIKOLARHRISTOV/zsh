@@ -1,7 +1,6 @@
 # Ember CLI
 
-This plugin adds completion and aliases for using
-[`ember-cli`](https://cli.emberjs.com/).
+This plugin adds completion and aliases for using [`ember-cli`](https://cli.emberjs.com/).
 
 To use it, add `ember-cli` to the plugins array in your zshrc file:
 
@@ -28,7 +27,7 @@ plugins=(... ember-cli)
 
 ## Maintainers
 
--   [BilalBudhani](https://github.com/BilalBudhani)
--   [eubenesa](https://github.com/eubenesa)
--   [scottkidder](https://github.com/scottkidder]
--   [t-sauer](https://www.github.com/t-sauer)
+- [BilalBudhani](https://github.com/BilalBudhani)
+- [eubenesa](https://github.com/eubenesa)
+- [scottkidder](https://github.com/scottkidder]
+- [t-sauer](https://www.github.com/t-sauer)

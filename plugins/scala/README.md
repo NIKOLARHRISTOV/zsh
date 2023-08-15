@@ -11,6 +11,6 @@ plugins=(... scala)
 ## Aliases
 
 | Command  | Description                     |
-| -------- | ------------------------------- |
+|----------|---------------------------------|
 | `scala`  | Run code in the Scala language  |
 | `scalac` | Compiler for the Scala language |

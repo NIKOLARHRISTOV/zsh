@@ -55,7 +55,6 @@ case "$state" in
 			if($i ~ /model:/) { split($i,m,":") } \
 			else if($i ~ /product:/) { split($i,p,":") } } \
 		printf "%s[%s(%s)] ",$1, p[2], m[2]}'):-""}
-
 	return
 	;;
 esac

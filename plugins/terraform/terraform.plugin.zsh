@@ -5,7 +5,7 @@ function tf_prompt_info() {
   [[ -d .terraform && -r .terraform/environment ]] || return
 
   local workspace="$(< .terraform/environment)"
-  echo "${ZSH_THEME_TF_PROMPT_PREFIX-[}${gs/%/%%}${ZSH_THEME_TF_PROMPT_SUFFIX-]}"
+  echo "${ZSH_THEME_TF_PROMPT_PREFIX-[}${workspace:gs/%/%%}${ZSH_THEME_TF_PROMPT_SUFFIX-]}"
 }
 
 alias tf='terraform'

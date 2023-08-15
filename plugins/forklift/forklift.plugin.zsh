@@ -14,19 +14,16 @@
 #
 # https://gist.github.com/3313481
 function fl {
-	if [ ! -z "$1" ]; then
-		DIR=$1
-		if [ ! -d "$DIR" ]; then
-			DIR=$(dirname $DIR)
-		fi
-		if [ "$DIR" != "." ]; then
-			PWD=$(
-				cd "$DIR"
-				pwd
-			)
-		fi
-	fi
-	osascript 2>&1 1> /dev/null << END
+  if [ ! -z "$1" ]; then
+    DIR=$1
+    if [ ! -d "$DIR" ]; then
+      DIR=$(dirname $DIR)
+    fi
+    if [ "$DIR" != "." ]; then
+      PWD=`cd "$DIR";pwd`
+    fi
+  fi
+  osascript 2>&1 1>/dev/null <<END
 
   try
     tell application "Finder"

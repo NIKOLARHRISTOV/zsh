@@ -20,23 +20,21 @@ plugins=(... aws)
 * `asr [<region>]`: sets `$AWS_REGION` and `$AWS_DEFAULT_REGION` (legacy) to `<region>`.
   Run `asr` without arguments to clear the profile.
 
--   `acp [<profile>] [<mfa_token>]`: in addition to `asp` functionality, it
-    actually changes the profile by assuming the role specified in the
-    `<profile>` configuration. It supports MFA and sets `$AWS_ACCESS_KEY_ID`,
-    `$AWS_SECRET_ACCESS_KEY` and `$AWS_SESSION_TOKEN`, if obtained. It requires
-    the roles to be configured as per the
-    [official guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html).
-    Run `acp` without arguments to clear the profile.
+* `acp [<profile>] [<mfa_token>]`: in addition to `asp` functionality, it actually changes
+   the profile by assuming the role specified in the `<profile>` configuration. It supports
+   MFA and sets `$AWS_ACCESS_KEY_ID`, `$AWS_SECRET_ACCESS_KEY` and `$AWS_SESSION_TOKEN`, if
+   obtained. It requires the roles to be configured as per the
+   [official guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html).
+   Run `acp` without arguments to clear the profile.
 
--   `agp`: gets the current value of `$AWS_PROFILE`.
+* `agp`: gets the current value of `$AWS_PROFILE`.
 
 * `agr`: gets the current value of `$AWS_REGION`.
 
 * `aws_change_access_key`: changes the AWS access key of a profile.
 
--   `aws_profiles`: lists the available profiles in the `$AWS_CONFIG_FILE`
-    (default: `~/.aws/config`). Used to provide completion for the `asp`
-    function.
+* `aws_profiles`: lists the available profiles in the  `$AWS_CONFIG_FILE` (default: `~/.aws/config`).
+  Used to provide completion for the `asp` function.
 
 * `aws_regions`: lists the available regions.
   Used to provide completion for the `asr` function.
@@ -64,8 +62,7 @@ the current `$AWS_PROFILE` and `$AWS_REGION`. It uses four variables to control 
 
 ## Configuration
 
-[Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
-by AWS
+[Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) by AWS
 
 ### Scenario: IAM roles with a source profile and MFA authentication
 

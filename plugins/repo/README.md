@@ -12,7 +12,7 @@ plugins=(... repo)
 ## Aliases
 
 | Alias   | Command                                |
-| ------- | -------------------------------------- |
+|---------|----------------------------------------|
 | `r`     | `repo`                                 |
 | `rra`   | `repo rebase --auto-stash`             |
 | `rs`    | `repo sync`                            |

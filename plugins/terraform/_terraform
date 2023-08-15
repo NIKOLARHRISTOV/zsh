@@ -23,7 +23,7 @@ _terraform_cmds=(
     'untaint:Manually unmark a resource as tainted'
     'validate:Validates the Terraform files'
     'version:Prints the Terraform version'
-    'Workspace management'
+    'workspace:Workspace management'
     '0.12upgrade:Rewrites pre-0.12 module source code for v0.12'
     '0.13upgrade:Rewrites pre-0.13 module source code for v0.13'
 )

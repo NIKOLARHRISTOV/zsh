@@ -15,3 +15,4 @@ plugins=(... themes)
 `theme ` - Changes the ZSH theme to some random theme.
 
 `lstheme ` - Lists installed ZSH themes.
+

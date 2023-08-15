@@ -1,7 +1,6 @@
 # Pipenv
 
 ## Installation
-
 In your `.zshrc` file, add `pipenv` to the plugins section
 
 ```

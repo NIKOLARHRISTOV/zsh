@@ -25,6 +25,7 @@ alias paml='php artisan make:listener'
 alias pamn='php artisan make:notification'
 alias pampp='php artisan make:provider'
 
+
 # Clears
 alias pacac='php artisan cache:clear'
 alias pacoc='php artisan config:clear'

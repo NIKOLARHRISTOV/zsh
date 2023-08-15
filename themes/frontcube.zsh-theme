@@ -1,3 +1,4 @@
+
 PROMPT='
 %{$fg_bold[gray]%}%~%{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}
 %{$fg[green]%}➞  %{$reset_color%}'

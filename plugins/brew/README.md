@@ -10,10 +10,10 @@ plugins=(... brew)
 
 ## Shellenv
 
-If `brew` is not found in the PATH, this plugin will attempt to find it in
-common locations, and execute `brew shellenv` to set the environment
-appropriately. This plugin will also export `HOMEBREW_PREFIX="$(brew --prefix)"`
-if not previously defined for convenience.
+If `brew` is not found in the PATH, this plugin will attempt to find it in common
+locations, and execute `brew shellenv` to set the environment appropriately.
+This plugin will also export `HOMEBREW_PREFIX="$(brew --prefix)"` if not previously
+defined for convenience.
 
 ## Aliases
 

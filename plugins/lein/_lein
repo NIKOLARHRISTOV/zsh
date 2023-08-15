@@ -61,7 +61,7 @@ _lein_namespaces() {
 
 
 _lein_run() {
-  _lein_namespaces "Source/"
+  _lein_namespaces "src/"
 }
 
 _lein_test() {
