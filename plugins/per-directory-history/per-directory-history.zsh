@@ -65,17 +65,17 @@
 #-------------------------------------------------------------------------------
 
 function per-directory-history-toggle-history() {
-  if [[ $_per_directory_history_is_global == true ]]; then
-    _per-directory-history-set-directory-history
-    _per_directory_history_is_global=false
-    print -n "\nusing local history"
-  else
-    _per-directory-history-set-global-history
-    _per_directory_history_is_global=true
-    print -n "\nusing global history"
-  fi
-  zle .push-line
-  zle .accept-line
+	if [[ $_per_directory_history_is_global == true ]]; then
+		_per-directory-history-set-directory-history
+		_per_directory_history_is_global=false
+		print -n "\nusing local history"
+	else
+		_per-directory-history-set-global-history
+		_per_directory_history_is_global=true
+		print -n "\nusing global history"
+	fi
+	zle .push-line
+	zle .accept-line
 }
 
 autoload per-directory-history-toggle-history
@@ -90,77 +90,77 @@ bindkey -M vicmd $PER_DIRECTORY_HISTORY_TOGGLE per-directory-history-toggle-hist
 _per_directory_history_directory="$HISTORY_BASE${PWD:A}/history"
 
 function _per-directory-history-change-directory() {
-  _per_directory_history_directory="$HISTORY_BASE${PWD:A}/history"
-  mkdir -p ${_per_directory_history_directory:h}
-  if [[ $_per_directory_history_is_global == false ]]; then
-    #save to the global history
-    fc -AI $HISTFILE
-    #save history to previous file
-    local prev="$HISTORY_BASE${OLDPWD:A}/history"
-    mkdir -p ${prev:h}
-    fc -AI $prev
+	_per_directory_history_directory="$HISTORY_BASE${PWD:A}/history"
+	mkdir -p ${_per_directory_history_directory:h}
+	if [[ $_per_directory_history_is_global == false ]]; then
+		#save to the global history
+		fc -AI $HISTFILE
+		#save history to previous file
+		local prev="$HISTORY_BASE${OLDPWD:A}/history"
+		mkdir -p ${prev:h}
+		fc -AI $prev
 
-    #discard previous directory's history
-    local original_histsize=$HISTSIZE
-    HISTSIZE=0
-    HISTSIZE=$original_histsize
+		#discard previous directory's history
+		local original_histsize=$HISTSIZE
+		HISTSIZE=0
+		HISTSIZE=$original_histsize
 
-    #read history in new file
-    if [[ -e $_per_directory_history_directory ]]; then
-      fc -R $_per_directory_history_directory
-    fi
-  fi
+		#read history in new file
+		if [[ -e $_per_directory_history_directory ]]; then
+			fc -R $_per_directory_history_directory
+		fi
+	fi
 }
 
 function _per-directory-history-addhistory() {
-  # respect hist_ignore_space
-  if [[ -o hist_ignore_space ]] && [[ "$1" == \ * ]]; then
-      true
-  else
-      print -Sr -- "${1%%$'\n'}"
-      # instantly write history if set options require it.
-      if [[ -o share_history ]] || \
-         [[ -o inc_append_history ]] || \
-         [[ -o inc_append_history_time ]]; then
-          fc -AI $HISTFILE
-          fc -AI $_per_directory_history_directory
-      fi
-      fc -p $_per_directory_history_directory
-  fi
+	# respect hist_ignore_space
+	if [[ -o hist_ignore_space ]] && [[ "$1" == \ * ]]; then
+		true
+	else
+		print -Sr -- "${1%%$'\n'}"
+		# instantly write history if set options require it.
+		if [[ -o share_history ]] \
+			|| [[ -o inc_append_history ]] \
+			|| [[ -o inc_append_history_time ]]; then
+			fc -AI $HISTFILE
+			fc -AI $_per_directory_history_directory
+		fi
+		fc -p $_per_directory_history_directory
+	fi
 }
 
 function _per-directory-history-precmd() {
-  if [[ $_per_directory_history_initialized == false ]]; then
-    _per_directory_history_initialized=true
+	if [[ $_per_directory_history_initialized == false ]]; then
+		_per_directory_history_initialized=true
 
-    if [[ $HISTORY_START_WITH_GLOBAL == true ]]; then
-      _per-directory-history-set-global-history
-      _per_directory_history_is_global=true
-    else
-      _per-directory-history-set-directory-history
-      _per_directory_history_is_global=false
-    fi
-  fi
+		if [[ $HISTORY_START_WITH_GLOBAL == true ]]; then
+			_per-directory-history-set-global-history
+			_per_directory_history_is_global=true
+		else
+			_per-directory-history-set-directory-history
+			_per_directory_history_is_global=false
+		fi
+	fi
 }
 
 function _per-directory-history-set-directory-history() {
-  fc -AI $HISTFILE
-  local original_histsize=$HISTSIZE
-  HISTSIZE=0
-  HISTSIZE=$original_histsize
-  if [[ -e "$_per_directory_history_directory" ]]; then
-    fc -R "$_per_directory_history_directory"
-  fi
+	fc -AI $HISTFILE
+	local original_histsize=$HISTSIZE
+	HISTSIZE=0
+	HISTSIZE=$original_histsize
+	if [[ -e "$_per_directory_history_directory" ]]; then
+		fc -R "$_per_directory_history_directory"
+	fi
 }
 
 function _per-directory-history-set-global-history() {
-  fc -AI $_per_directory_history_directory
-  local original_histsize=$HISTSIZE
-  HISTSIZE=0
-  HISTSIZE=$original_histsize
-  if [[ -e "$HISTFILE" ]]; then
-    fc -R "$HISTFILE"
-  fi
+	fc -AI $_per_directory_history_directory
+	local original_histsize=$HISTSIZE
+	HISTSIZE=0
+	HISTSIZE=$original_histsize
+	if [[ -e "$HISTFILE" ]]; then
+		fc -R "$HISTFILE"
+	fi
 }
 
 mkdir -p ${_per_directory_history_directory:h}

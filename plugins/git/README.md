@@ -1,6 +1,7 @@
 # git plugin
 
-The git plugin provides many [aliases](#aliases) and a few useful [functions](#functions).
+The git plugin provides many [aliases](#aliases) and a few useful
+[functions](#functions).
 
 To use it, add `git` to the plugins array in your zshrc file:
 
@@ -11,7 +12,7 @@ plugins=(... git)
 ## Aliases
 
 | Alias                | Command                                                                                                                                                                                  |
-| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------ | ------------------- |
 | g                    | git                                                                                                                                                                                      |
 | ga                   | git add                                                                                                                                                                                  |
 | gaa                  | git add --all                                                                                                                                                                            |
@@ -25,9 +26,9 @@ plugins=(... git)
 | gbd                  | git branch --delete                                                                                                                                                                      |
 | gbda                 | git branch --no-color --merged \| grep -vE "^([+*]\|\s*(<span>$</span>(git_main_branch)\|<span>$</span>(git_develop_branch))\s*<span>$</span>)" \| xargs git branch --delete 2>/dev/null |
 | gbD                  | git branch --delete --force                                                                                                                                                              |
-| gbg                  | git branch -vv | grep ": gone\]"                                                                                                                                                         |
-| gbgd                 | git branch --no-color -vv | grep ": gone\]" | awk '"'"'{print $1}'"'"' | xargs git branch -d                                                                                             |
-| gbgD                 | git branch --no-color -vv | grep ": gone\]" | awk '"'"'{print $1}'"'"' | xargs git branch -D                                                                                             |
+| gbg                  | git branch -vv                                                                                                                                                                           | grep ": gone\]" |
+| gbgd                 | git branch --no-color -vv                                                                                                                                                                | grep ": gone\]" | awk '"'"'{print $1}'"'"' | xargs git branch -d |
+| gbgD                 | git branch --no-color -vv                                                                                                                                                                | grep ": gone\]" | awk '"'"'{print $1}'"'"' | xargs git branch -D |
 | gbl                  | git blame -b -w                                                                                                                                                                          |
 | gbnm                 | git branch --no-merged                                                                                                                                                                   |
 | gbr                  | git branch --remote                                                                                                                                                                      |
@@ -116,7 +117,7 @@ plugins=(... git)
 | gloga                | git log --oneline --decorate --graph --all                                                                                                                                               |
 | glp                  | git log --pretty=\<format\>                                                                                                                                                              |
 | gm                   | git merge                                                                                                                                                                                |
-| gms                  | git merge --squash |
+| gms                  | git merge --squash                                                                                                                                                                       |
 | gmom                 | git merge origin/$(git_main_branch)                                                                                                                                                      |
 | gmtl                 | git mergetool --no-prompt                                                                                                                                                                |
 | gmtlvim              | git mergetool --no-prompt --tool=vimdiff                                                                                                                                                 |
@@ -186,7 +187,7 @@ plugins=(... git)
 | gtv                  | git tag \| sort -V                                                                                                                                                                       |
 | gtl                  | gtl(){ git tag --sort=-v:refname -n --list ${1}\* }; noglob gtl                                                                                                                          |
 | gunignore            | git update-index --no-assume-unchanged                                                                                                                                                   |
-| gunwip               | git rev-list --max-count=1 --format="%s" HEAD \| grep -q "\-\-wip\-\-" && git reset HEAD~1                                                                                                   |
+| gunwip               | git rev-list --max-count=1 --format="%s" HEAD \| grep -q "\-\-wip\-\-" && git reset HEAD~1                                                                                               |
 | gup                  | git pull --rebase                                                                                                                                                                        |
 | gupv                 | git pull --rebase --verbose                                                                                                                                                              |
 | gupa                 | git pull --rebase --autostash                                                                                                                                                            |
@@ -209,14 +210,16 @@ plugins=(... git)
 
 ### Main branch preference
 
-Following the recent push for removing racially-charged words from our technical vocabulary, the git plugin favors using
-a branch name other than `master`. In this case, we favor the shorter, neutral and descriptive term `main`. This means
-that any aliases and functions that previously used `master`, will use `main` if that branch exists. We do this via the
-function `git_main_branch`.
+Following the recent push for removing racially-charged words from our technical
+vocabulary, the git plugin favors using a branch name other than `master`. In
+this case, we favor the shorter, neutral and descriptive term `main`. This means
+that any aliases and functions that previously used `master`, will use `main` if
+that branch exists. We do this via the function `git_main_branch`.
 
 ### Deprecated aliases
 
-These are aliases that have been removed, renamed, or otherwise modified in a way that may, or may not, receive further support.
+These are aliases that have been removed, renamed, or otherwise modified in a
+way that may, or may not, receive further support.
 
 | Alias  | Command                                                | Modification                                           |
 | :----- | :----------------------------------------------------- | :----------------------------------------------------- |
@@ -247,7 +250,8 @@ These are aliases that have been removed, renamed, or otherwise modified in a wa
 
 ### Work in Progress (WIP)
 
-These features allow to pause a branch development and switch to another one (_"Work in Progress"_,  or wip). When you want to go back to work, just unwip it.
+These features allow to pause a branch development and switch to another one
+(_"Work in Progress"_, or wip). When you want to go back to work, just unwip it.
 
 | Command          | Description                                     |
 | :--------------- | :---------------------------------------------- |

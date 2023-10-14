@@ -1,6 +1,6 @@
 sprunge() {
-  if [[ "$1" = --help ]]; then
-    fmt -s >&2 << EOF
+	if [[ "$1" = --help ]]; then
+		fmt -s >&2 << EOF
 
 DESCRIPTION
   Upload data and fetch URL from the pastebin http://sprunge.us
@@ -26,27 +26,27 @@ NOTES
   If a filename is misspelled or doesn't have the necessary path description, it will NOT generate an error, but will instead treat it as a text string and upload it.
 
 EOF
-    return
-  fi
+		return
+	fi
 
-  if [ -t 0 ]; then
-    echo Running interactively, checking for arguments... >&2
-    if [ "$*" ]; then
-      echo Arguments present... >&2
-      if [ -f "$*" ]; then
-        echo Uploading the contents of "$*"... >&2
-        cat "$*"
-      else
-        echo Uploading the text: \""$*"\"... >&2
-        echo "$*"
-      fi | curl -F 'sprunge=<-' http://sprunge.us
-    else
-      echo No arguments found, printing USAGE and exiting. >&2
-      sprunge --help
-      return 1
-    fi
-  else
-    echo Using input from a pipe or STDIN redirection... >&2
-    curl -F 'sprunge=<-' http://sprunge.us
-  fi
+	if [ -t 0 ]; then
+		echo Running interactively, checking for arguments... >&2
+		if [ "$*" ]; then
+			echo Arguments present... >&2
+			if [ -f "$*" ]; then
+				echo Uploading the contents of "$*"... >&2
+				cat "$*"
+			else
+				echo Uploading the text: \""$*"\"... >&2
+				echo "$*"
+			fi | curl -F 'sprunge=<-' http://sprunge.us
+		else
+			echo No arguments found, printing USAGE and exiting. >&2
+			sprunge --help
+			return 1
+		fi
+	else
+		echo Using input from a pipe or STDIN redirection... >&2
+		curl -F 'sprunge=<-' http://sprunge.us
+	fi
 }

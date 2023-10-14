@@ -1,6 +1,7 @@
 # rand-quote plugin
 
-Displays a random quote taken from [quotationspage.com](http://www.quotationspage.com/random.php)
+Displays a random quote taken from
+[quotationspage.com](http://www.quotationspage.com/random.php)
 
 Created by [Eduardo San Martin Morote, aka Posva](https://posva.github.io)
 

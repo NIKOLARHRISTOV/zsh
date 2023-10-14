@@ -1,6 +1,7 @@
 # Git-Flow plugin
 
-This plugin adds completion and aliases for the [`git-flow` command](https://github.com/nvie/gitflow).
+This plugin adds completion and aliases for the
+[`git-flow` command](https://github.com/nvie/gitflow).
 
 To use it, add `git-flow` to the plugins array in your zshrc file:
 

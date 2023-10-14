@@ -32,9 +32,9 @@ ys_hg_prompt_info() {
 	# make sure this is a hg dir
 	if [ -d '.hg' ]; then
 		echo -n "${YS_VCS_PROMPT_PREFIX1}hg${YS_VCS_PROMPT_PREFIX2}"
-		echo -n $(hg branch 2>/dev/null)
-		if [[ "$(hg config oh-my-zsh.hide-dirty 2>/dev/null)" != "1" ]]; then
-			if [ -n "$(hg status 2>/dev/null)" ]; then
+		echo -n $(hg branch 2> /dev/null)
+		if [[ "$(hg config oh-my-zsh.hide-dirty 2> /dev/null)" != "1" ]]; then
+			if [ -n "$(hg status 2> /dev/null)" ]; then
 				echo -n "$YS_VCS_PROMPT_DIRTY"
 			else
 				echo -n "$YS_VCS_PROMPT_CLEAN"
@@ -62,7 +62,7 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 #
 # For example:
 #
-# % ys @ ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] C:0
+# % ys @ ys-mbp in ~/ZSH on git:master x [21:47:42] C:0
 # $
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \

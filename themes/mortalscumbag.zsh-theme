@@ -1,54 +1,54 @@
 function my_git_prompt() {
-  tester=$(git rev-parse --git-dir 2> /dev/null) || return
-  
-  INDEX=$(git status --porcelain 2> /dev/null)
-  STATUS=""
+	tester=$(git rev-parse --git-dir 2> /dev/null) || return
 
-  # is branch ahead?
-  if $(echo "$(git log origin/$(git_current_branch)..HEAD 2> /dev/null)" | grep '^commit' &> /dev/null); then
-    STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_AHEAD"
-  fi
+	INDEX=$(git status --porcelain 2> /dev/null)
+	STATUS=""
 
-  # is branch behind?
-  if $(echo "$(git log HEAD..origin/$(git_current_branch) 2> /dev/null)" | grep '^commit' &> /dev/null); then
-    STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_BEHIND"
-  fi
+	# is branch ahead?
+	if $(echo "$(git log origin/$(git_current_branch)..HEAD 2> /dev/null)" | grep '^commit' &> /dev/null); then
+		STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_AHEAD"
+	fi
 
-  # is anything staged?
-  if $(echo "$INDEX" | command grep -E -e '^(D[ M]|[MARC][ MD]) ' &> /dev/null); then
-    STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_STAGED"
-  fi
+	# is branch behind?
+	if $(echo "$(git log HEAD..origin/$(git_current_branch) 2> /dev/null)" | grep '^commit' &> /dev/null); then
+		STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_BEHIND"
+	fi
 
-  # is anything unstaged?
-  if $(echo "$INDEX" | command grep -E -e '^[ MARC][MD] ' &> /dev/null); then
-    STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_UNSTAGED"
-  fi
+	# is anything staged?
+	if $(echo "$INDEX" | command grep -E -e '^(D[ M]|[MARC][ MD]) ' &> /dev/null); then
+		STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_STAGED"
+	fi
 
-  # is anything untracked?
-  if $(echo "$INDEX" | grep '^?? ' &> /dev/null); then
-    STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_UNTRACKED"
-  fi
+	# is anything unstaged?
+	if $(echo "$INDEX" | command grep -E -e '^[ MARC][MD] ' &> /dev/null); then
+		STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_UNSTAGED"
+	fi
 
-  # is anything unmerged?
-  if $(echo "$INDEX" | command grep -E -e '^(A[AU]|D[DU]|U[ADU]) ' &> /dev/null); then
-    STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_UNMERGED"
-  fi
+	# is anything untracked?
+	if $(echo "$INDEX" | grep '^?? ' &> /dev/null); then
+		STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_UNTRACKED"
+	fi
 
-  if [[ -n $STATUS ]]; then
-    STATUS=" $STATUS"
-  fi
+	# is anything unmerged?
+	if $(echo "$INDEX" | command grep -E -e '^(A[AU]|D[DU]|U[ADU]) ' &> /dev/null); then
+		STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_UNMERGED"
+	fi
 
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(my_current_branch)$STATUS$ZSH_THEME_GIT_PROMPT_SUFFIX"
+	if [[ -n $STATUS ]]; then
+		STATUS=" $STATUS"
+	fi
+
+	echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(my_current_branch)$STATUS$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
 function my_current_branch() {
-  echo $(git_current_branch || echo "(no branch)")
+	echo $(git_current_branch || echo "(no branch)")
 }
 
 function ssh_connection() {
-  if [[ -n $SSH_CONNECTION ]]; then
-    echo "%{$fg_bold[red]%}(ssh) "
-  fi
+	if [[ -n $SSH_CONNECTION ]]; then
+		echo "%{$fg_bold[red]%}(ssh) "
+	fi
 }
 
 local ret_status="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})%?%{$reset_color%}"
