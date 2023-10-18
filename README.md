@@ -30,39 +30,39 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
 <details>
 <summary>Table of Contents</summary>
 
-- [Getting Started](#getting-started)
-  - [Operating System Compatibility](#operating-system-compatibility)
-  - [Prerequisites](#prerequisites)
-  - [Basic Installation](#basic-installation)
-    - [Manual Inspection](#manual-inspection)
-- [Using Oh My Zsh](#using-oh-my-zsh)
-  - [Plugins](#plugins)
-    - [Enabling Plugins](#enabling-plugins)
-    - [Using Plugins](#using-plugins)
-  - [Themes](#themes)
-    - [Selecting A Theme](#selecting-a-theme)
-  - [FAQ](#faq)
-- [Advanced Topics](#advanced-topics)
-  - [Advanced Installation](#advanced-installation)
-    - [Custom Directory](#custom-directory)
-    - [Unattended Install](#unattended-install)
-    - [Installing From A Forked Repository](#installing-from-a-forked-repository)
-    - [Manual Installation](#manual-installation)
-  - [Installation Problems](#installation-problems)
-  - [Custom Plugins And Themes](#custom-plugins-and-themes)
-  - [Enable GNU ls In macOS And freeBSD Systems](#enable-gnu-ls-in-macos-and-freebsd-systems)
-  - [Skip Aliases](#skip-aliases)
-- [Getting Updates](#getting-updates)
-  - [Updates Verbosity](#updates-verbosity)
-  - [Manual Updates](#manual-updates)
-- [Uninstalling Oh My Zsh](#uninstalling-oh-my-zsh)
-- [How Do I Contribute To Oh My Zsh?](#how-do-i-contribute-to-oh-my-zsh)
-  - [Do Not Send Us Themes](#do-not-send-us-themes)
-- [Contributors](#contributors)
-- [Follow Us](#follow-us)
-- [Merchandise](#merchandise)
-- [License](#license)
-- [About Planet Argon](#about-planet-argon)
+-   [Getting Started](#getting-started)
+    -   [Operating System Compatibility](#operating-system-compatibility)
+    -   [Prerequisites](#prerequisites)
+    -   [Basic Installation](#basic-installation)
+        -   [Manual Inspection](#manual-inspection)
+-   [Using Oh My Zsh](#using-oh-my-zsh)
+    -   [Plugins](#plugins)
+        -   [Enabling Plugins](#enabling-plugins)
+        -   [Using Plugins](#using-plugins)
+    -   [Themes](#themes)
+        -   [Selecting A Theme](#selecting-a-theme)
+    -   [FAQ](#faq)
+-   [Advanced Topics](#advanced-topics)
+    -   [Advanced Installation](#advanced-installation)
+        -   [Custom Directory](#custom-directory)
+        -   [Unattended Install](#unattended-install)
+        -   [Installing From A Forked Repository](#installing-from-a-forked-repository)
+        -   [Manual Installation](#manual-installation)
+    -   [Installation Problems](#installation-problems)
+    -   [Custom Plugins And Themes](#custom-plugins-and-themes)
+    -   [Enable GNU ls In macOS And freeBSD Systems](#enable-gnu-ls-in-macos-and-freebsd-systems)
+    -   [Skip Aliases](#skip-aliases)
+-   [Getting Updates](#getting-updates)
+    -   [Updates Verbosity](#updates-verbosity)
+    -   [Manual Updates](#manual-updates)
+-   [Uninstalling Oh My Zsh](#uninstalling-oh-my-zsh)
+-   [How Do I Contribute To Oh My Zsh?](#how-do-i-contribute-to-oh-my-zsh)
+    -   [Do Not Send Us Themes](#do-not-send-us-themes)
+-   [Contributors](#contributors)
+-   [Follow Us](#follow-us)
+-   [Merchandise](#merchandise)
+-   [License](#license)
+-   [About Planet Argon](#about-planet-argon)
 
 </details>
 
@@ -70,22 +70,24 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
 
 ### Operating System Compatibility
 
-| O/S            | Status  |
-| :------------- | :-----: |
-| Android        |   ✅    |
-| freeBSD        |   ✅    |
-| LCARS          |   🛸    |
-| Linux          |   ✅    |
-| macOS          |   ✅    |
-| OS/2 Warp      |   ❌    |
-| Windows (WSL2) |   ✅    |
-
+| O/S            | Status |
+| :------------- | :----: |
+| Android        |   ✅   |
+| freeBSD        |   ✅   |
+| LCARS          |   🛸   |
+| Linux          |   ✅   |
+| macOS          |   ✅   |
+| OS/2 Warp      |   ❌   |
+| Windows (WSL2) |   ✅   |
 
 ### Prerequisites
 
-- [Zsh](https://www.zsh.org) should be installed (v4.3.9 or more recent is fine but we prefer 5.0.8 and newer). If not pre-installed (run `zsh --version` to confirm), check the following wiki instructions here: [Installing ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
-- `curl` or `wget` should be installed
-- `git` should be installed (recommended v2.4.11 or higher)
+-   [Zsh](https://www.zsh.org) should be installed (v4.3.9 or more recent is
+    fine but we prefer 5.0.8 and newer). If not pre-installed (run
+    `zsh --version` to confirm), check the following wiki instructions here:
+    [Installing ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+-   `curl` or `wget` should be installed
+-   `git` should be installed (recommended v2.4.11 or higher)
 
 ### Basic Installation
 

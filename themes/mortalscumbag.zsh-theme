@@ -52,9 +52,9 @@ function ssh_connection() {
 }
 
 function _toolbox_prompt_info() {
-  if typeset -f toolbox_prompt_info > /dev/null; then
-    toolbox_prompt_info
-  fi
+	if typeset -f toolbox_prompt_info > /dev/null; then
+		toolbox_prompt_info
+	fi
 }
 
 local ret_status="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})%?%{$reset_color%}"

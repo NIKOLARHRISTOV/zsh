@@ -26,18 +26,18 @@ For this directory tree:
 here are the results of calling `shrink_path <option> /home/me/foo/bar/quux`:
 
 ```sh
-Option        Result
-<none>        /h/m/f o/ba/q
--l|--last     /h/m/f o/ba/q
--s|--short    /h/m/f/b/q
--t|--tilde    ~/f o/ba/q
--f|--fish     ~/f/b/quux
--g|--glob     /h*/m*/f o*/ba*/q*
--3            /hom/me/f o/bar/quu
--e '$' -3     /hom$/me/f o$/bar/quu$
--q            /h/m/f\ o/ba/q
--g -q         /h*/m*/f\ o*/ba*/q*
--x            /home/me/foo/bar/quux
+Option Result
+o/ba/q < none > /h/m/f
+-l | --last /h/m/f o/ba/q
+-s | --short /h/m/f/b/q
+-t | --tilde ~/f o/ba/q
+-f | --fish ~/f/b/quux
+-g | --glob /h*/m*/f o*/ba*/q*
+-3 /hom/me/f o/bar/quu
+-e '$' -3 /hom$/me/f o$/bar/quu$
+-q /h/m/f\ o/ba/q
+-g -q /h*/m*/f\ o*/ba*/q*
+-x /home/me/foo/bar/quux
 ```
 
 ## Usage

@@ -143,24 +143,24 @@ NOTE: this used to be bound to `v`. That is now the default (`visual-mode`).
 
 ### Delete and Insert
 
-- `ctrl-h`      : While in *Insert mode*: delete character before the cursor
-- `ctrl-w`      : While in *Insert mode*: delete word before the cursor
-- `d{motion}`   : Delete text that {motion} moves over
-- `dd`          : Delete line
-- `D`           : Delete characters under the cursor until the end of the line
-- `c{motion}`   : Delete {motion} text and start insert
-- `cc`          : Delete line and start insert
-- `C`           : Delete to the end of the line and start insert
-- `P`           : Insert the contents of the clipboard before the cursor
-- `p`           : Insert the contents of the clipboard after the cursor
-- `r{char}`     : Replace the character under the cursor with {char}
-- `R`           : Enter replace mode: Each character replaces existing one
-- `x`           : Delete `count` characters under and after the cursor
-- `X`           : Delete `count` characters before the cursor
+-   `ctrl-h` : While in _Insert mode_: delete character before the cursor
+-   `ctrl-w` : While in _Insert mode_: delete word before the cursor
+-   `d{motion}` : Delete text that {motion} moves over
+-   `dd` : Delete line
+-   `D` : Delete characters under the cursor until the end of the line
+-   `c{motion}` : Delete {motion} text and start insert
+-   `cc` : Delete line and start insert
+-   `C` : Delete to the end of the line and start insert
+-   `P` : Insert the contents of the clipboard before the cursor
+-   `p` : Insert the contents of the clipboard after the cursor
+-   `r{char}` : Replace the character under the cursor with {char}
+-   `R` : Enter replace mode: Each character replaces existing one
+-   `x` : Delete `count` characters under and after the cursor
+-   `X` : Delete `count` characters before the cursor
 
-NOTE: delete/kill commands (`dd`, `D`, `c{motion}`, `C`, `x`,`X`) and yank commands
-(`y`, `Y`) will copy to the clipboard. Contents can then be put back using paste commands
-(`P`, `p`).
+NOTE: delete/kill commands (`dd`, `D`, `c{motion}`, `C`, `x`,`X`) and yank
+commands (`y`, `Y`) will copy to the clipboard. Contents can then be put back
+using paste commands (`P`, `p`).
 
 ## Known issues
 

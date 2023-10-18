@@ -48,7 +48,7 @@ This is also checks if the prefix is in the name, and adds it if not, so:
 These calling forms are for developers' use, and may change at any time.
 
 ```sh
-jira dumpconfig   # displays the effective configuration
+jira dumpconfig # displays the effective configuration
 ```
 
 ## Setup
