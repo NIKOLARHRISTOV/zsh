@@ -5,6 +5,6 @@ This plugin provides completion for
 
 To use it, add powder to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... powder)
 ```

@@ -5,7 +5,7 @@ password manager.
 
 To use it, add `pass` to the plugins array in your zshrc file.
 
-```
+```sh
 plugins=(... pass)
 ```
 

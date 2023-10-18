@@ -5,7 +5,7 @@ This plugin adds auto-completion of console commands for
 
 To use it, add `eecms` to the plugins array of your `.zshrc` file:
 
-```
+```sh
 plugins=(... eecms)
 ```
 

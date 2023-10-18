@@ -5,7 +5,7 @@ background theming.
 
 To use it, add `virtualenv` to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... virtualenv)
 ```
 

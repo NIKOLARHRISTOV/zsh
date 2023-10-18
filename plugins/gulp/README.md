@@ -5,6 +5,6 @@ grabs all available tasks from the `gulpfile.js` in the current directory.
 
 To use it, add `gulp` to the plugins array of your `.zshrc` file:
 
-```
+```sh
 plugins=(... gulp)
 ```

@@ -9,13 +9,13 @@ position:
 
 To use it, add it to the plugins array in your `~/.zshrc` file:
 
-```
+```sh
 plugins=(... colemak)
 ```
 
 You will also need to enable `vi` mode, so add another line to `~/.zshrc`:
 
-```
+```sh
 bindkey -v
 ```
 

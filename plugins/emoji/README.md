@@ -75,7 +75,7 @@ $> display_emoji people
 
 To use emoji in a prompt:
 
-```
+```sh
 PROMPT="$emoji[penguin]  > ""
 PROMPT='$(random_emoji fruits)  > '
 surfer=$emoji[surfer]
@@ -142,7 +142,7 @@ The `$emoji_skintone` associative array maps skin tone IDs to the variation
 selector characters. To use one, output it immediately following a smiley or
 other human emoji.
 
-```
+```sh
 echo $emoji[waving_hand]$emoji_skintone[5]
 ```
 
@@ -160,7 +160,7 @@ main source for short names and other emoji-related metadata that isn't included
 in the official Unicode reports. So, our list of emojis incorporates some of
 their aliases to make your life more convenient:
 
-```
+```sh
 echo $emoji[grinning_face_with_smiling_eyes]
 echo $emoji[smile]
 ```

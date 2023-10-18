@@ -4,7 +4,7 @@ This plugin allows you to change ZSH theme on the go.
 
 To use it, add `themes` to the plugins array in your zshrc file:
 
-```
+```sh
 plugins=(... themes)
 ```
 

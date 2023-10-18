@@ -5,7 +5,7 @@ This plugin adds a few functions that are useful when using
 
 To use it, add _iterm2_ to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... iterm2)
 ```
 
@@ -14,7 +14,7 @@ Optionally, the plugin also applies the
 You can enable the integration with zstyle. It's important to add this line
 before the line sourcing oh-my-zsh:
 
-```
+```sh
 zstyle :omz:plugins:iterm2 shell-integration yes
 ```
 

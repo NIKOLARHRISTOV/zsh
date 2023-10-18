@@ -19,7 +19,7 @@ You can modify your `$PROMPT` or `$RPROMPT` variables to run `jenv_prompt_info`.
 
 For example:
 
-```
+```sh
 PROMPT="%~$ "
 RPROMPT='$(jenv_prompt_info)'
 ```

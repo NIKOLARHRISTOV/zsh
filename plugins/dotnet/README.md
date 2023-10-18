@@ -5,7 +5,7 @@ This plugin provides completion and useful aliases for
 
 To use it, add `dotnet` to the plugins array in your zshrc file.
 
-```
+```sh
 plugins=(... dotnet)
 ```
 

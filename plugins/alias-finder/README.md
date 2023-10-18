@@ -7,7 +7,7 @@ inputted. This makes learning new aliases easier.
 
 To use it, add `alias-finder` to the `plugins` array of your zshrc file:
 
-```
+```sh
 plugins=(... alias-finder)
 ```
 

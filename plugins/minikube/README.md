@@ -5,6 +5,6 @@ This plugin provides completion for
 
 To use it, add `minikube` to the plugins array in your zshrc file.
 
-```
+```sh
 plugins=(... minikube)
 ```

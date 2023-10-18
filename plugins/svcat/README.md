@@ -5,6 +5,6 @@ This plugin provides completion for the
 
 To use it, add `svcat` to the plugins array in your zshrc file.
 
-```
+```sh
 plugins=(... svcat)
 ```

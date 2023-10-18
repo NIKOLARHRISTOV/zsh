@@ -7,7 +7,7 @@ commands and [aliases](#aliases).
 
 To use it, add `dbt` to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... dbt)
 ```
 

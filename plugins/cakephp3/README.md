@@ -5,7 +5,7 @@ The plugin adds aliases and autocompletion for
 
 To use it, add `cakephp3` to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... cakephp3)
 ```
 

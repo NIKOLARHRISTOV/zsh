@@ -7,6 +7,6 @@ Python code against some of the style conventions in
 
 To use it, add pep8 to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... pep8)
 ```

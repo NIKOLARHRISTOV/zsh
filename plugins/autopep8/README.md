@@ -6,6 +6,6 @@ a tool that automatically formats Python code to conform to the
 
 To use it, add autopep8 to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... autopep8)
 ```

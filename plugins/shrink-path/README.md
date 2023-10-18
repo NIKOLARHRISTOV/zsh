@@ -25,7 +25,7 @@ For this directory tree:
 
 here are the results of calling `shrink_path <option> /home/me/foo/bar/quux`:
 
-```
+```sh
 Option        Result
 <none>        /h/m/f o/ba/q
 -l|--last     /h/m/f o/ba/q

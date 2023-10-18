@@ -5,7 +5,7 @@ prompt.
 
 To use it, add emotty to the plugins array in your zshrc file:
 
-```
+```sh
 plugins=(... emotty)
 ```
 
@@ -20,7 +20,7 @@ The function `emotty` displays an emoji from the current character set (default:
 There are different sets of emoji characters available, to choose a different
 set, set `$emotty_set` to the name of the set you would like to use, e.g.:
 
-```
+```sh
 emotty_set=nature
 ```
 

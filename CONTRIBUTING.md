@@ -169,7 +169,7 @@ message to allow this:
 
 ### Format
 
-```
+```sh
 type(scope)!: subject
 ```
 

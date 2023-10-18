@@ -47,7 +47,7 @@ This is also checks if the prefix is in the name, and adds it if not, so:
 
 These calling forms are for developers' use, and may change at any time.
 
-```
+```sh
 jira dumpconfig   # displays the effective configuration
 ```
 
@@ -65,7 +65,7 @@ added to all issue IDs, which differentiates projects within a JIRA instance.
 
 For example:
 
-```
+```sh
 cd to/my/project
 echo "https://jira.atlassian.com" >> .jira-url
 ```

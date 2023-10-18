@@ -6,7 +6,7 @@ Firewall (UFW), a simple interface for managing iptables. Learn more about
 
 To use it, add ufw to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... ufw)
 ```
 

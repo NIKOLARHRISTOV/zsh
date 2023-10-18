@@ -21,8 +21,8 @@ broadcast address.
 For instance, there might be a file ~/.wakeonlan/leto with the following
 contents:
 
-```
-00:11:22:33:44:55:66 192.168.0.255
+```sh
+10:11:22:33:44:55:66 192.168.0.255
 ```
 
 To wake that device, use the following command:

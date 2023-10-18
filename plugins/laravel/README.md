@@ -4,7 +4,7 @@ This plugin adds aliases and autocompletion for Laravel
 [Artisan](https://laravel.com/docs/artisan) and
 [Bob](http://daylerees.github.io/laravel-bob/) command-line interfaces.
 
-```
+```sh
 plugins=(... laravel)
 ```
 

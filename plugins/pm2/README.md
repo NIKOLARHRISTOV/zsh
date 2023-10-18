@@ -5,7 +5,7 @@ The plugin adds several aliases and completions for common
 
 To use it, add `pm2` to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... pm2)
 ```
 

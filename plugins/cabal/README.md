@@ -6,6 +6,6 @@ prints whether the current working directory is in a sandbox.
 
 To use it, add cabal to the plugins array of your zshrc file:
 
-```
+```sh
 plugins=(... cabal)
 ```

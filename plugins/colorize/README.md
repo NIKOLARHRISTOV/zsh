@@ -12,7 +12,7 @@ cat the file normally, without syntax highlighting.
 
 To use it, add colorize to the plugins array of your `~/.zshrc` file:
 
-```
+```sh
 plugins=(... colorize)
 ```
 
@@ -31,7 +31,7 @@ Colorize supports `pygmentize` and `chroma` as syntax highlighter. By default
 colorize uses `pygmentize` unless it's not installed and `chroma` is. This can
 be overridden by the `ZSH_COLORIZE_TOOL` environment variable:
 
-```
+```sh
 ZSH_COLORIZE_TOOL=chroma
 ```
 
@@ -41,7 +41,7 @@ Pygments offers multiple styles. By default, the `default` style is used, but
 you can choose another theme by setting the `ZSH_COLORIZE_STYLE` environment
 variable:
 
-```
+```sh
 ZSH_COLORIZE_STYLE="colorful"
 ```
 
@@ -51,7 +51,7 @@ Chroma supports terminal output in 8 color, 256 color, and true-color. If you
 need to change the default terminal output style from the standard 8 color
 output, set the `ZSH_COLORIZE_CHROMA_FORMATTER` environment variable:
 
-```
+```sh
 ZSH_COLORIZE_CHROMA_FORMATTER=terminal256
 ```
 

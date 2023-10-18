@@ -61,7 +61,7 @@ installed. Official installation instructions and binaries are available:
 If using this with OpenShift, the `oc` tool needs installed. It can be obtained
 from brew ports:
 
-```
+```sh
 brew install openshift-cli
 ```
 
@@ -71,7 +71,7 @@ or the source can be downloaded:
 
 Set the binary to `oc` with the following environment variable:
 
-```
+```sh
 KUBE_PS1_BINARY=oc
 ```
 
@@ -115,7 +115,7 @@ run `kubeoff`. To disable the prompt for all shell sessions, run `kubeoff -g`.
 You can enable it again in the current shell by running `kubeon`, and globally
 with `kubeon -g`.
 
-```
+```sh
 kubeon     : turn on kube-ps1 status for this shell.  Takes precedence over
              global setting for current session
 kubeon -g  : turn on kube-ps1 status globally
@@ -149,7 +149,7 @@ string `k8s`.
 
 To disable a feature, set it to an empty string:
 
-```
+```sh
 KUBE_PS1_SEPARATOR=''
 ```
 
@@ -173,13 +173,13 @@ namespace.
 Set the variable to an empty string if you do not want color for each prompt
 section:
 
-```
+```sh
 KUBE_PS1_CTX_COLOR=''
 ```
 
 Names are usable for the following colors:
 
-```
+```sh
 black, red, green, yellow, blue, magenta, cyan
 ```
 

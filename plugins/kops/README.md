@@ -6,7 +6,7 @@ Kubernetes cluster up and running.
 
 To use it, add `kops` to the plugins array in your zshrc file.
 
-```
+```sh
 plugins=(... kops)
 ```
 

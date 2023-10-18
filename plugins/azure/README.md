@@ -37,7 +37,7 @@ to control how that is shown:
 -   ZSH_THEME_azure_SUFFIX: sets the suffix of the azure_subscription. Defaults
     to `>`.
 
-```
+```sh
 RPROMPT='$(azure_prompt_info)'
 ```
 
@@ -47,7 +47,7 @@ On ubuntu get a working environment with :
 
 ` docker run -it -v $(pwd):/mnt -w /mnt ubuntu bash`
 
-```
+```sh
 apt install -y curl jq zsh git vim
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -sL https://aka.ms/InstallAzureCLIDeb | bash

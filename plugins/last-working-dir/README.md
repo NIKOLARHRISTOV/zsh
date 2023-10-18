@@ -22,13 +22,13 @@ will use separate lwd files for each one.
 Make sure that your SSH server allows environment variables. You can enable this
 feature within the `/etc/sshd/sshd_config` file:
 
-```
+```sh
 PermitUserEnvironment yes
 ```
 
 Then, add `environment="SSH_USER=<SSH_USERNAME>"` before the SSH keys in your
 `authorized_keys` file:
 
-```
+```sh
 environment="SSH_USER=a.test@example.com" ssh-ed25519 AAAAC3Nz...
 ```
