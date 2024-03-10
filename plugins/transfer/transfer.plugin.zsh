@@ -25,7 +25,7 @@ EOF
 	fi
 
 	if ((!$ + commands[curl])); then
-		echo "Error: curl is not installed"
+		echo "Cannot curl."
 		return 1
 	fi
 
@@ -42,7 +42,7 @@ EOF
 	if [[ "$2" = -ca ]]; then
 		crypt=1
 		if ((!$ + commands[gpg])); then
-			echo "Error: gpg is not installed"
+			echo "Cannot gpg."
 			return 1
 		fi
 	fi
@@ -66,7 +66,7 @@ EOF
 			# tar directory and transfer
 			tarfile=$(mktemp -t transferXXX.tar.gz)
 			cd $(dirname $item) || {
-				echo "Error: Could not change to directory $(dirname $item)"
+				echo "Cannot change."
 				return 1
 			}
 
