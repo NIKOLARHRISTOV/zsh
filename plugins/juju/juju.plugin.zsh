@@ -115,7 +115,7 @@ jclean() {
     return 1
   fi
 
-  local controllers=$(juju controllers --format=json | jq -r '.controllers | keys[]' 2>/dev/null)
+  local controllers=$(juju controllers --format=json | \jq -r '.controllers | keys[]' 2>/dev/null)
   if [[ -z "$controllers" ]]; then
     echo "No controllers registered"
     return 0
