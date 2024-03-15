@@ -14,12 +14,12 @@ _lxc() {
 		'*: :->args'
 
 	case $state in
-		command)
-			compadd $(_lxc_get_command_list)
-			;;
-		*)
-			compadd $(_lxc_get_subcommand_list)
-			;;
+	command)
+		compadd $(_lxc_get_command_list)
+		;;
+	*)
+		compadd $(_lxc_get_subcommand_list)
+		;;
 	esac
 }
 

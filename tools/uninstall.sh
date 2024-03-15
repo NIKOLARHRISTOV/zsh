@@ -1,4 +1,4 @@
-if hash chsh > /dev/null 2>&1 && [ -f ~/.shell.pre-oh-my-zsh ]; then
+if hash chsh >/dev/null 2>&1 && [ -f ~/.shell.pre-oh-my-zsh ]; then
 	old_shell=$(cat ~/.shell.pre-oh-my-zsh)
 	echo "Switching your shell back to '$old_shell':"
 	if chsh -s "$old_shell"; then

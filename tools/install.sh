@@ -48,7 +48,7 @@ USER=${USER:-$(id -u -n)}
 # $HOME is defined at the time of login, but it could be unset. If it is unset,
 # a tilde by itself (~) will not be expanded to the current user's home directory.
 # POSIX: https://pubs.opengroup.org/onlinepubs/009696899/basedefs/xbd_chap08.html#tag_08_03
-HOME="${HOME:-$(getent passwd $USER 2> /dev/null | cut -d: -f6)}"
+HOME="${HOME:-$(getent passwd $USER 2>/dev/null | cut -d: -f6)}"
 # macOS does not have getent, but this works even if $HOME is unset
 HOME="${HOME:-$(eval echo ~$USER)}"
 
@@ -76,7 +76,7 @@ RUNZSH=${RUNZSH:-yes}
 KEEP_ZSHRC=${KEEP_ZSHRC:-no}
 
 command_exists() {
-	command -v "$@" > /dev/null 2>&1
+	command -v "$@" >/dev/null 2>&1
 }
 
 user_can_sudo() {
@@ -84,7 +84,7 @@ user_can_sudo() {
 	command_exists sudo || return 1
 	# Termux can't run sudo, so we can detect it and exit the function early.
 	case "$PREFIX" in
-		*com.termux*) return 1 ;;
+	*com.termux*) return 1 ;;
 	esac
 	# The following command has 3 parts:
 	#
@@ -162,7 +162,7 @@ supports_hyperlinks() {
 
 	# If $TERM_PROGRAM is set, these terminals support hyperlinks
 	case "$TERM_PROGRAM" in
-		Hyper | iTerm.app | terminology | WezTerm) return 0 ;;
+	Hyper | iTerm.app | terminology | WezTerm) return 0 ;;
 	esac
 
 	# kitty supports hyperlinks
@@ -188,15 +188,15 @@ supports_hyperlinks() {
 # Source: https://gist.github.com/XVilka/8346728
 supports_truecolor() {
 	case "$COLORTERM" in
-		truecolor | 24bit) return 0 ;;
+	truecolor | 24bit) return 0 ;;
 	esac
 
 	case "$TERM" in
-		iterm | \
-			tmux-truecolor | \
-			linux-truecolor | \
-			xterm-truecolor | \
-			screen-truecolor) return 0 ;;
+	iterm | \
+		tmux-truecolor | \
+		linux-truecolor | \
+		xterm-truecolor | \
+		screen-truecolor) return 0 ;;
 	esac
 
 	return 1
@@ -210,8 +210,8 @@ fmt_link() {
 	fi
 
 	case "$3" in
-		--text) printf '%s\n' "$1" ;;
-		--url | *) fmt_underline "$2" ;;
+	--text) printf '%s\n' "$1" ;;
+	--url | *) fmt_underline "$2" ;;
 	esac
 }
 
@@ -294,20 +294,20 @@ setup_ohmyzsh() {
 	fi
 
 	# Manual clone with git config options to support git < v1.7.2
-	git init --quiet "$ZSH" && cd "$ZSH" \
-		&& git config core.eol lf \
-		&& git config core.autocrlf false \
-		&& git config fsck.zeroPaddedFilemode ignore \
-		&& git config fetch.fsck.zeroPaddedFilemode ignore \
-		&& git config receive.fsck.zeroPaddedFilemode ignore \
-		&& git config oh-my-zsh.remote origin \
-		&& git config oh-my-zsh.branch "$BRANCH" \
-		&& git remote add origin "$REMOTE" \
-		&& git fetch --depth=1 origin \
-		&& git checkout -b "$BRANCH" "origin/$BRANCH" || {
+	git init --quiet "$ZSH" && cd "$ZSH" &&
+		git config core.eol lf &&
+		git config core.autocrlf false &&
+		git config fsck.zeroPaddedFilemode ignore &&
+		git config fetch.fsck.zeroPaddedFilemode ignore &&
+		git config receive.fsck.zeroPaddedFilemode ignore &&
+		git config oh-my-zsh.remote origin &&
+		git config oh-my-zsh.branch "$BRANCH" &&
+		git remote add origin "$REMOTE" &&
+		git fetch --depth=1 origin &&
+		git checkout -b "$BRANCH" "origin/$BRANCH" || {
 		[ ! -d "$ZSH" ] || {
 			cd -
-			rm -rf "$ZSH" 2> /dev/null
+			rm -rf "$ZSH" 2>/dev/null
 		}
 		fmt_error "git clone of oh-my-zsh repo failed"
 		exit 1
@@ -357,7 +357,7 @@ setup_zshrc() {
 	fi
 	omz=$(echo "$omz" | sed "s|^$HOME/|\$HOME/|")
 
-	sed "s|^export ZSH=.*$|export ZSH=\"${omz}\"|" "$ZSH/templates/zshrc.zsh-template" > "$zdot/.zshrc-omztemp"
+	sed "s|^export ZSH=.*$|export ZSH=\"${omz}\"|" "$ZSH/templates/zshrc.zsh-template" >"$zdot/.zshrc-omztemp"
 	mv -f "$zdot/.zshrc-omztemp" "$zdot/.zshrc"
 
 	echo
@@ -376,7 +376,7 @@ setup_shell() {
 
 	# If this platform doesn't provide a "chsh" command, bail out.
 	if ! command_exists chsh; then
-		cat << EOF
+		cat <<EOF
 I can't change your shell automatically because this system does not have chsh.
 ${FMT_BLUE}Please manually change your default shell to zsh${FMT_RESET}
 EOF
@@ -390,24 +390,24 @@ EOF
 		"$FMT_YELLOW" "$FMT_RESET"
 	read -r opt
 	case $opt in
-		y* | Y* | "") ;;
-		n* | N*)
-			echo "Shell change skipped."
-			return
-			;;
-		*)
-			echo "Invalid choice. Shell change skipped."
-			return
-			;;
+	y* | Y* | "") ;;
+	n* | N*)
+		echo "Shell change skipped."
+		return
+		;;
+	*)
+		echo "Invalid choice. Shell change skipped."
+		return
+		;;
 	esac
 
 	# Check if we're running on Termux
 	case "$PREFIX" in
-		*com.termux*)
-			termux=true
-			zsh=zsh
-			;;
-		*) termux=false ;;
+	*com.termux*)
+		termux=true
+		zsh=zsh
+		;;
+	*) termux=false ;;
 	esac
 
 	if [ "$termux" != true ]; then
@@ -435,9 +435,9 @@ EOF
 
 	# We're going to change the default shell, so back up the current one
 	if [ -n "$SHELL" ]; then
-		echo "$SHELL" > "$zdot/.shell.pre-oh-my-zsh"
+		echo "$SHELL" >"$zdot/.shell.pre-oh-my-zsh"
 	else
-		grep "^$USER:" /etc/passwd | awk -F: '{print $7}' > "$zdot/.shell.pre-oh-my-zsh"
+		grep "^$USER:" /etc/passwd | awk -F: '{print $7}' >"$zdot/.shell.pre-oh-my-zsh"
 	fi
 
 	echo "Changing your shell to $zsh..."
@@ -498,12 +498,12 @@ main() {
 	# Parse arguments
 	while [ $# -gt 0 ]; do
 		case $1 in
-			--unattended)
-				RUNZSH=no
-				CHSH=no
-				;;
-			--skip-chsh) CHSH=no ;;
-			--keep-zshrc) KEEP_ZSHRC=yes ;;
+		--unattended)
+			RUNZSH=no
+			CHSH=no
+			;;
+		--skip-chsh) CHSH=no ;;
+		--keep-zshrc) KEEP_ZSHRC=yes ;;
 		esac
 		shift
 	done
@@ -518,7 +518,7 @@ main() {
 	if [ -d "$ZSH" ]; then
 		echo "${FMT_YELLOW}The \$ZSH folder already exists ($ZSH).${FMT_RESET}"
 		if [ "$custom_zsh" = yes ]; then
-			cat << EOF
+			cat <<EOF
 
 You ran the installer with the \$ZSH setting or the \$ZSH variable is
 exported. You have 3 options:

@@ -62,15 +62,15 @@ zstyle ':vcs_info:*:prompt:*' nvcsformats ""
 
 function steeef_preexec {
 	case "$2" in
-		*git*)
-			PR_GIT_UPDATE=1
-			;;
-		*hub*)
-			PR_GIT_UPDATE=1
-			;;
-		*svn*)
-			PR_GIT_UPDATE=1
-			;;
+	*git*)
+		PR_GIT_UPDATE=1
+		;;
+	*hub*)
+		PR_GIT_UPDATE=1
+		;;
+	*svn*)
+		PR_GIT_UPDATE=1
+		;;
 	esac
 }
 add-zsh-hook preexec steeef_preexec
@@ -83,7 +83,7 @@ add-zsh-hook chpwd steeef_chpwd
 function steeef_precmd {
 	if [[ -n "$PR_GIT_UPDATE" ]]; then
 		# check for untracked files or updated submodules, since vcs_info doesn't
-		if git ls-files --other --exclude-standard 2> /dev/null | grep -q "."; then
+		if git ls-files --other --exclude-standard 2>/dev/null | grep -q "."; then
 			PR_GIT_UPDATE=1
 			FMT_BRANCH="(%{$turquoise%}%b%u%c%{$hotpink%}●${PR_RST})"
 		else

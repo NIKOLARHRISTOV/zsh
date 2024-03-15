@@ -62,15 +62,15 @@ __require_tool_version_compare() {
 '
 		awk "$awk_strverscmp" v1="$1" v2="$2" /dev/null
 		case $? in
-			1) echo '<' ;;
-			0) echo '=' ;;
-			2) echo '>' ;;
+		1) echo '<' ;;
+		0) echo '=' ;;
+		2) echo '>' ;;
 		esac
 	)
 }
 
 __require_tool_fatal() {
-	echo $@ > /dev/stderr
+	echo $@ >/dev/stderr
 	return 1
 }
 
@@ -84,22 +84,22 @@ __require_tool_fatal() {
 require_tool() {
 	envvar_name=$(echo $1 | tr '[:lower:]' '[:upper:]')
 	tool=$(printenv $envvar_name || echo $1)
-	local version=$($tool --version 2> /dev/null \
-		| sed -n 's/.*[^0-9.]\([0-9]*\.[0-9.]*\).*/\1/p;q')
+	local version=$($tool --version 2>/dev/null |
+		sed -n 's/.*[^0-9.]\([0-9]*\.[0-9.]*\).*/\1/p;q')
 	if test x"$version" = x; then
-		echo "$tool is required" > /dev/stderr
+		echo "$tool is required" >/dev/stderr
 		return 1
 	fi
 	case $(__require_tool_version_compare "$2" "$version") in
-		'>')
-			echo "$1 $2 or better is required: this is $tool $version" > /dev/stderr
-			return 1
-			;;
+	'>')
+		echo "$1 $2 or better is required: this is $tool $version" >/dev/stderr
+		return 1
+		;;
 	esac
 }
 
 usage() {
-	cat << EOF
+	cat <<EOF
 NAME
     require_tool.sh - Ensure version of a tool is greater than the one expected
 
@@ -143,10 +143,10 @@ EOF
 
 for arg in $@; do
 	case $arg in
-		-h | --help)
-			usage
-			exit 0
-			;;
+	-h | --help)
+		usage
+		exit 0
+		;;
 	esac
 done
 if [ $# -gt 2 ]; then

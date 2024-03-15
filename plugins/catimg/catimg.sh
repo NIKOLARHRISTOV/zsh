@@ -21,16 +21,16 @@ IMG=""
 
 while getopts qw:c:h opt; do
 	case "$opt" in
-		w) WIDTH="$OPTARG" ;;
-		c) CHAR="$OPTARG" ;;
-		h)
-			help
-			exit
-			;;
-		*)
-			help
-			exit 1
-			;;
+	w) WIDTH="$OPTARG" ;;
+	c) CHAR="$OPTARG" ;;
+	h)
+		help
+		exit
+		;;
+	*)
+		help
+		exit 1
+		;;
 	esac
 done
 
@@ -65,9 +65,9 @@ fi
 
 # Display the image
 I=0
-convert "$IMG" -resize $COLS\> +dither $(echo $REMAP) txt:- 2> /dev/null \
-	| sed -e 's/.*none.*/NO NO NO/g' -e '1d;s/^.*(\(.*\)[,)].*$/\1/g;y/,/ /' \
-	| while read R G B f; do
+convert "$IMG" -resize $COLS\> +dither $(echo $REMAP) txt:- 2>/dev/null |
+	sed -e 's/.*none.*/NO NO NO/g' -e '1d;s/^.*(\(.*\)[,)].*$/\1/g;y/,/ /' |
+	while read R G B f; do
 		if [ ! "$R" = "NO" ]; then
 			if [ "$R" -eq "$G" -a "$G" -eq "$B" ]; then
 				((I++, IDX = 232 + R * 23 / 255))

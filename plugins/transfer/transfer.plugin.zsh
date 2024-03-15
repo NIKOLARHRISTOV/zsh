@@ -7,7 +7,7 @@
 transfer() {
 	# check arguments
 	if [[ $# -eq 0 ]]; then
-		cat << EOF
+		cat <<EOF
 Error: no arguments specified.
 
 Usage: transfer [file/folder] [options]
@@ -50,9 +50,9 @@ EOF
 	if ! tty -s; then
 		# transfer from pipe
 		if ((crypt)); then
-			gpg -aco - | curl -X PUT --progress-bar -T - "https://transfer.sh/$item" >> $tmpfile
+			gpg -aco - | curl -X PUT --progress-bar -T - "https://transfer.sh/$item" >>$tmpfile
 		else
-			curl --progress-bar --upload-file - "https://transfer.sh/$item" >> $tmpfile
+			curl --progress-bar --upload-file - "https://transfer.sh/$item" >>$tmpfile
 		fi
 	else
 		basename=$(basename "$item" | sed -e 's/[^a-zA-Z0-9._-]/-/g')
@@ -72,17 +72,17 @@ EOF
 
 			tar -czf $tarfile $(basename $item)
 			if ((crypt)); then
-				gpg -cao - "$tarfile" | curl --progress-bar -T "-" "https://transfer.sh/$basename.tar.gz.gpg" >> $tmpfile
+				gpg -cao - "$tarfile" | curl --progress-bar -T "-" "https://transfer.sh/$basename.tar.gz.gpg" >>$tmpfile
 			else
-				curl --progress-bar --upload-file "$tarfile" "https://transfer.sh/$basename.tar.gz" >> $tmpfile
+				curl --progress-bar --upload-file "$tarfile" "https://transfer.sh/$basename.tar.gz" >>$tmpfile
 			fi
 			rm -f $tarfile
 		else
 			# transfer file
 			if ((crypt)); then
-				gpg -cao - "$item" | curl --progress-bar -T "-" "https://transfer.sh/$basename.gpg" >> $tmpfile
+				gpg -cao - "$item" | curl --progress-bar -T "-" "https://transfer.sh/$basename.gpg" >>$tmpfile
 			else
-				curl --progress-bar --upload-file "$item" "https://transfer.sh/$basename" >> $tmpfile
+				curl --progress-bar --upload-file "$item" "https://transfer.sh/$basename" >>$tmpfile
 			fi
 		fi
 	fi

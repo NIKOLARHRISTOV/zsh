@@ -14,14 +14,14 @@ fi
 
 # Don't try to load nvm if command already available
 # Note: nvm is a function so we need to use `which`
-which nvm &> /dev/null && return
+which nvm &>/dev/null && return
 
 if [[ -z "$NVM_DIR" ]] || [[ ! -f "$NVM_DIR/nvm.sh" ]]; then
 	return
 fi
 
-if zstyle -t ':omz:plugins:nvm' lazy \
-	&& ! zstyle -t ':omz:plugins:nvm' autoload; then
+if zstyle -t ':omz:plugins:nvm' lazy &&
+	! zstyle -t ':omz:plugins:nvm' autoload; then
 	# Call nvm when first using nvm, node, npm, pnpm, yarn or other commands in lazy-cmd
 	zstyle -a ':omz:plugins:nvm' lazy-cmd nvm_lazy_cmd
 	eval "

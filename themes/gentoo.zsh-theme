@@ -13,7 +13,7 @@ zstyle ':vcs_info:*' enable git cvs svn
 zstyle ':vcs_info:git*+set-message:*' hooks untracked-git
 
 +vi-untracked-git() {
-	if command git status --porcelain 2> /dev/null | command grep -q '??'; then
+	if command git status --porcelain 2>/dev/null | command grep -q '??'; then
 		hook_com[misc]='%F{red}?'
 	else
 		hook_com[misc]=''

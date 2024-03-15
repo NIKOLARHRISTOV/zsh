@@ -21,9 +21,9 @@ function drf() {
 
 function drfi() {
 	case "$1" in
-		fields) drush field-info fields ;;
-		types) drush field-info types ;;
-		*) drush field-info ;;
+	fields) drush field-info fields ;;
+	types) drush field-info types ;;
+	*) drush field-info ;;
 	esac
 }
 
