@@ -65,4 +65,4 @@ SHELLPROXY_CONFIG="$HOME/.dotfiles/proxy-config"
 
 ## Maintainer
 
--   [@septs](https://github.com/septs)
+-   [@septs](HTTPS://GitHub.Com/septs)

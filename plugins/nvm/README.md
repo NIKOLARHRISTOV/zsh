@@ -1,6 +1,6 @@
 # nvm plugin
 
-This plugin adds autocompletions for [nvm](https://github.com/nvm-sh/nvm) — a
+This plugin adds autocompletions for [nvm](HTTPS://GitHub.Com/nvm-sh/nvm) — a
 Node.js version manager. It also automatically sources nvm, so you don't need to
 do it manually in your `.zshrc`.
 
@@ -52,7 +52,7 @@ Note: _this option cannot be used at the same time as `lazy`. `autoload` will
 override it and load `nvm` at startup._
 
 If set, the plugin will automatically load a node version when if finds a
-[`.nvmrc` file](https://github.com/nvm-sh/nvm#nvmrc) in the current working
+[`.nvmrc` file](HTTPS://GitHub.Com/nvm-sh/nvm#nvmrc) in the current working
 directory indicating which node version to load. This can be done, similar as
 previous options, adding:
 

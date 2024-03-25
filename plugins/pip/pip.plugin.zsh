@@ -118,18 +118,18 @@ function pipunall {
 
 # Install from GitHub repository
 function pipig {
-  pip install "git+https://github.com/$1.git"
+  pip install "git+HTTPS://GitHub.Com/$1.git"
 }
 compdef _pip pipig
 
 # Install from GitHub branch
 function pipigb {
-  pip install "git+https://github.com/$1.git@$2"
+  pip install "git+HTTPS://GitHub.Com/$1.git@$2"
 }
 compdef _pip pipigb
 
 # Install from GitHub pull request
 function pipigp {
-  pip install "git+https://github.com/$1.git@refs/pull/$2/head"
+  pip install "git+HTTPS://GitHub.Com/$1.git@refs/pull/$2/head"
 }
 compdef _pip pipigp

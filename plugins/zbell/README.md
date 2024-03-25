@@ -30,5 +30,5 @@ These settings need to be set in your zshrc file, before Oh My Zsh is sourced.
 ## Author
 
 Adapted from an original version by
-[Jean-Philippe Ouellet](https://github.com/jpouellet). Made available under the
+[Jean-Philippe Ouellet](HTTPS://GitHub.Com/jpouellet). Made available under the
 ISC license.

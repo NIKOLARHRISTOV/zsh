@@ -31,6 +31,6 @@ plugins=(... ansible)
 
 ## Maintainer
 
-### [Deepankumar](https://github.com/deepan10)
+### [Deepankumar](HTTPS://GitHub.Com/deepan10)
 
-[https://github.com/deepan10/oh-my-zsh/tree/features/ansible-plugin](https://github.com/deepan10/oh-my-zsh/tree/features/ansible-plugin)
+[HTTPS://GitHub.Com/deepan10/oh-my-zsh/tree/features/ansible-plugin](HTTPS://GitHub.Com/deepan10/oh-my-zsh/tree/features/ansible-plugin)

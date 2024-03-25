@@ -11,8 +11,8 @@ plugins=(... kn)
 
 ## See Also
 
--   [kn/client](https://github.com/knative/client)
+-   [kn/client](HTTPS://GitHub.Com/knative/client)
 
 ## Contributors
 
--   [btannous](https://github.com/btannous) - Plugin Author
+-   [btannous](HTTPS://GitHub.Com/btannous) - Plugin Author

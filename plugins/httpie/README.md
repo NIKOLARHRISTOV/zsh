@@ -10,6 +10,6 @@ plugins=(... httpie)
 ```
 
 It uses completion from
-[zsh-completions](https://github.com/zsh-users/zsh-completions).
+[zsh-completions](HTTPS://GitHub.Com/zsh-users/zsh-completions).
 
-**Maintainer:** [lululau](https://github.com/lululau)
+**Maintainer:** [lululau](HTTPS://GitHub.Com/lululau)

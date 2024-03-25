@@ -22,9 +22,9 @@
 # #
 # # optionally:
 # # -Oh-myzsh vcs plug-ins git and svn.
-# # -Solarized theme (https://github.com/altercation/solarized/)
+# # -Solarized theme (HTTPS://GitHub.Com/altercation/solarized/)
 # # -OS X: iTerm 2 (https://iterm2.com/)
-# # -font Source code pro (https://github.com/adobe/source-code-pro)
+# # -font Source code pro (HTTPS://GitHub.Com/adobe/source-code-pro)
 # #
 # # This theme's look and feel is based on the Aaron Toponce's zsh theme, more info:
 # # https://pthree.org/2008/11/23/727/

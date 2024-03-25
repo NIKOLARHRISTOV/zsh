@@ -59,6 +59,6 @@ can greatly extend its power and usefulness.
 Contributed to `oh_my_zsh` by [benwilcock][2].
 
 [1]: https://docs.cloudfoundry.org/cf-cli/install-go-cli.html
-[2]: https://github.com/benwilcock
+[2]: HTTPS://GitHub.Com/benwilcock
 [3]: https://docs.cloudfoundry.org/cf-cli/getting-started.html
 [4]: https://plugins.cloudfoundry.org/

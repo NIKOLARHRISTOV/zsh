@@ -40,4 +40,4 @@ For shell integration features see the
 
 ## Contributors
 
--   [Aviv Rosenberg](https://github.com/avivrosenberg)
+-   [Aviv Rosenberg](HTTPS://GitHub.Com/avivrosenberg)

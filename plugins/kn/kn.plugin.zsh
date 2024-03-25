@@ -1,6 +1,6 @@
 # Autocompletion for kn, the command line interface for knative
 #
-# Author: https://github.com/btannous
+# Author: HTTPS://GitHub.Com/btannous
 
 if [ $commands[kn] ]; then
 	source <(kn completion zsh)

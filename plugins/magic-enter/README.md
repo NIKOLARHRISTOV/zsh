@@ -16,4 +16,4 @@ MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
 plugins=(... magic-enter)
 ```
 
-**Maintainer:** [@dufferzafar](https://github.com/dufferzafar)
+**Maintainer:** [@dufferzafar](HTTPS://GitHub.Com/dufferzafar)

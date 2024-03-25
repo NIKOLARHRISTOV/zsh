@@ -1,6 +1,6 @@
-[![License (GPL version 3)](https://img.shields.io/badge/license-GNU%20GPL%20version%203-blue.svg?style=flat-square)](./LICENSE)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
-![ZSH 5.0.0](https://img.shields.io/badge/zsh-v5.0.0-orange.svg?style=flat-square)
+[![License (GPL version 3)](HTTPS://IMG.Shields.IO/badge/license-GNU%20GPL%20version%203-blue.svg?style=flat-square)](./LICENSE)
+[![MIT License](HTTPS://IMG.Shields.IO/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
+![ZSH 5.0.0](HTTPS://IMG.Shields.IO/badge/zsh-v5.0.0-orange.svg?style=flat-square)
 [![Gitter][gitter-image]][gitter-link]
 
 ![znt logo](https://imageshack.com/a/img905/2629/WK9qjN.png)
@@ -22,8 +22,8 @@ plugins=(... zsh-navigation-tools)
 ```
 
 Also check out
-[![ZCA](https://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect](https://github.com/zdharma-continuum/zsh-cmd-architect)
-and [Zconvey](https://github.com/zdharma-continuum/zconvey)
+[![ZCA](https://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect](HTTPS://GitHub.Com/zdharma-continuum/zsh-cmd-architect)
+and [Zconvey](HTTPS://GitHub.Com/zdharma-continuum/zconvey)
 
 Videos:
 
@@ -239,7 +239,7 @@ Zsh Navigation Tools installation.
 ## More
 
 -   be aware of
-    [this](https://github.com/zdharma-continuum/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
+    [this](HTTPS://GitHub.Com/zdharma-continuum/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
 
 # Fixing tmux, screen and linux vt
 

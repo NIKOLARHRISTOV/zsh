@@ -67,7 +67,7 @@ ZSH="${ZSH:-$HOME/ZSH}"
 
 # Default settings
 REPO=${REPO:-ohmyzsh/ohmyzsh}
-REMOTE=${REMOTE:-https://github.com/${REPO}.git}
+REMOTE=${REMOTE:-HTTPS://GitHub.Com/${REPO}.git}
 BRANCH=${BRANCH:-master}
 
 # Other options
@@ -123,7 +123,7 @@ fi
 
 # This function uses the logic from supports-hyperlinks[1][2], which is
 # made by Kat Marchán (@zkat) and licensed under the Apache License 2.0.
-# [1] https://github.com/zkat/supports-hyperlinks
+# [1] HTTPS://GitHub.Com/zkat/supports-hyperlinks
 # [2] https://crates.io/crates/supports-hyperlinks
 #
 # Copyright (c) 2021 Kat Marchán
@@ -176,7 +176,7 @@ supports_hyperlinks() {
 	fi
 
 	# Konsole supports hyperlinks, but it's an opt-in setting that can't be detected
-	# https://github.com/ohmyzsh/ohmyzsh/issues/10964
+	# HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/issues/10964
 	# if [ -n "$KONSOLE_VERSION" ]; then
 	#   return 0
 	# fi

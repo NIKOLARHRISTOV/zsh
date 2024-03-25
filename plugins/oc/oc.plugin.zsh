@@ -1,6 +1,6 @@
 # Autocompletion for oc, the command line interface for OpenShift
 #
-# Author: https://github.com/kevinkirkup
+# Author: HTTPS://GitHub.Com/kevinkirkup
 
 if [ $commands[oc] ]; then
 	source <(oc completion zsh)

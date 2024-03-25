@@ -13,9 +13,9 @@ aliases, which appear as named directories in zsh session.
 ## INSTALLATION NOTES
 
 Besides oh-my-zsh, `scd` can be used with _bash_, _dash_ or _tcsh_ shells and is
-also available as Vim plugin [scd.vim](https://github.com/pavoljuhas/scd.vim)
+also available as Vim plugin [scd.vim](HTTPS://GitHub.Com/pavoljuhas/scd.vim)
 and [IPython](https://ipython.org) extension. For installation details, see
-https://github.com/pavoljuhas/smart-change-directory.
+HTTPS://GitHub.Com/pavoljuhas/smart-change-directory.
 
 ## SYNOPSIS
 

@@ -4,15 +4,15 @@
 #  _grunt
 #
 #  Completion script for grunt.
-#   - https://github.com/gruntjs/grunt
-#   - https://github.com/gruntjs/grunt-cli
+#   - HTTPS://GitHub.Com/gruntjs/grunt
+#   - HTTPS://GitHub.Com/gruntjs/grunt-cli
 #
 # -----------------------------------------------------------------------------
 #
 #  Version     : 0.1.2
 #  Author      : Yonchu <yuyuchu3333@gmail.com>
 #  License     : MIT License
-#  Repository  : https://github.com/yonchu/grunt-zsh-completion
+#  Repository  : HTTPS://GitHub.Com/yonchu/grunt-zsh-completion
 #  Last Change : 20 Aug 2014.
 #
 #  Copyright (c) 2013 Yonchu.

@@ -1,5 +1,5 @@
 # This scripts is copied from (MIT License):
-# https://github.com/dotnet/toolset/blob/master/scripts/register-completions.zsh
+# HTTPS://GitHub.Com/dotnet/toolset/blob/master/scripts/register-completions.zsh
 
 _dotnet_zsh_complete() 
 {
@@ -19,7 +19,7 @@ _dotnet_zsh_complete()
 compdef _dotnet_zsh_complete dotnet
 
 # Aliases bellow are here for backwards compatibility
-# added by Shaun Tabone (https://github.com/xontab) 
+# added by Shaun Tabone (HTTPS://GitHub.Com/xontab) 
 
 alias dn='dotnet new'
 alias dr='dotnet run'

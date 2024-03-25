@@ -10,7 +10,7 @@ To use it, add `git-prompt` to the plugins array in your zshrc file:
 plugins=(... git-prompt)
 ```
 
-See the [original repository](https://github.com/olivierverdier/zsh-git-prompt).
+See the [original repository](HTTPS://GitHub.Com/olivierverdier/zsh-git-prompt).
 
 ## Requirements
 

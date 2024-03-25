@@ -42,7 +42,7 @@ Available search contexts are:
 | emberjs       | `https://www.google.com/search?as_sitesearch=emberjs.com/&as_q=`            |
 | flowtype      | `https://google.com/search?as_sitesearch=flow.org/en/docs/&as_q=`           |
 | fontello      | `http://fontello.com/#search=`                                              |
-| github        | `https://github.com/search?q=`                                              |
+| github        | `HTTPS://GitHub.Com/search?q=`                                              |
 | html5please   | `https://html5please.com/#`                                                 |
 | jestjs        | `https://www.google.com/search?as_sitesearch=jestjs.io&as_q=`               |
 | jquery        | `https://api.jquery.com/?s=`                                                |
@@ -73,4 +73,4 @@ file before Oh My Zsh is sourced.
 **Wilson Mendes (willmendesneto)**
 
 -   <https://twitter.com/willmendesneto>
--   <https://github.com/willmendesneto>
+-   <HTTPS://GitHub.Com/willmendesneto>

@@ -27,5 +27,5 @@ gradle build
 ## Completion
 
 This plugin uses
-[the completion from the Gradle project](https://github.com/gradle/gradle-completion),
+[the completion from the Gradle project](HTTPS://GitHub.Com/gradle/gradle-completion),
 which is distributed under the MIT license.

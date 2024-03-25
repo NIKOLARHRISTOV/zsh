@@ -45,4 +45,4 @@ following criteria:
 
 -   Author: Joshua Bedford
 -   URL:
-    [https://github.com/joshuabedford/lando-zsh](https://github.com/joshuabedford/lando-zsh)
+    [HTTPS://GitHub.Com/joshuabedford/lando-zsh](HTTPS://GitHub.Com/joshuabedford/lando-zsh)
