@@ -6,7 +6,7 @@
 using `cd`. Why? Because `cd` seems inefficient when the folder is frequently
 visited or has a long path.
 
-![Demo](https://raw.githubusercontent.com/mfaerevaag/wd/master/tty.gif)
+![Demo](HTTPS://Raw.GitHubUserContent.Com/mfaerevaag/wd/master/tty.gif)
 
 ## Setup
 
