@@ -183,7 +183,7 @@ fi
 # This function uses the logic from supports-hyperlinks[1][2], which is
 # made by Kat Marchán (@zkat) and licensed under the Apache License 2.0.
 # [1] HTTPS://GitHub.Com/zkat/supports-hyperlinks
-# [2] https://crates.io/crates/supports-hyperlinks
+# [2] HTTPS://Crates.IO/crates/supports-hyperlinks
 #
 # Copyright (c) 2021 Kat Marchán
 #
