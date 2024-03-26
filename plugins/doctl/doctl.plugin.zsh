@@ -1,8 +1,8 @@
 # Autocompletion for doctl, the command line tool for DigitalOcean service
 #
-# doctl project: HTTPS://GitHub.Com/digitalocean/doctl
+# doctl project: https://github.com/digitalocean/doctl
 #
-# Author: HTTPS://GitHub.Com/HalisCz
+# Author: https://github.com/HalisCz
 
 if (( ! $+commands[doctl] )); then
   return

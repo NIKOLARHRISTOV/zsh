@@ -13,7 +13,7 @@ To use it, add `wp-cli` to the plugins array in your zshrc file:
 plugins=(... wp-cli)
 ```
 
-**Maintainer:** [joshmedeski](HTTPS://GitHub.Com/joshmedeski)
+**Maintainer:** [joshmedeski](https://github.com/joshmedeski)
 
 ## Aliases
 

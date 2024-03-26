@@ -1,6 +1,6 @@
 if [[ -z $commands[thefuck] ]]; then
 	echo 'thefuck is not installed, you should "pip install thefuck" or "brew install thefuck" first.'
-	echo 'See HTTPS://GitHub.Com/nvbn/thefuck#installation'
+	echo 'See https://github.com/nvbn/thefuck#installation'
 	return 1
 fi
 

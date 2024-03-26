@@ -155,7 +155,7 @@ for details.
 
 #### Gemoji support
 
-The [gemoji project](HTTPS://GitHub.Com/github/gemoji) seems to be the de facto
+The [gemoji project](https://github.com/github/gemoji) seems to be the de facto
 main source for short names and other emoji-related metadata that isn't included
 in the official Unicode reports. So, our list of emojis incorporates some of
 their aliases to make your life more convenient:

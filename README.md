@@ -20,11 +20,11 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
 [@ohmyzsh](https://twitter.com/ohmyzsh) on Twitter, and join us on
 [Discord](https://discord.gg/ohmyzsh).
 
-[![CI](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
-[![X (formerly Twitter) Follow](HTTPS://IMG.Shields.IO/twitter/follow/ohmyzsh?label=%40ohmyzsh&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
-[![Mastodon Follow](HTTPS://IMG.Shields.IO/mastodon/follow/111169632522566717?label=%40ohmyzsh&domain=https%3A%2F%2Fmstdn.social&logo=mastodon&style=flat)](https://mstdn.social/@ohmyzsh)
-[![Discord server](HTTPS://IMG.Shields.IO/discord/642496866407284746)](https://discord.gg/ohmyzsh)
-[![Gitpod ready](HTTPS://IMG.Shields.IO/badge/Gitpod-ready-blue?logo=gitpod)](https://gitpod.io/#HTTPS://GitHub.Com/ohmyzsh/ohmyzsh)
+[![CI](https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
+[![X (formerly Twitter) Follow](https://IMG.Shields.IO/twitter/follow/ohmyzsh?label=%40ohmyzsh&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
+[![Mastodon Follow](https://IMG.Shields.IO/mastodon/follow/111169632522566717?label=%40ohmyzsh&domain=https%3A%2F%2Fmstdn.social&logo=mastodon&style=flat)](https://mstdn.social/@ohmyzsh)
+[![Discord server](https://IMG.Shields.IO/discord/642496866407284746)](https://discord.gg/ohmyzsh)
+[![Gitpod ready](https://IMG.Shields.IO/badge/Gitpod-ready-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ohmyzsh/ohmyzsh)
 [![huntr.dev](https://cdn.huntr.dev/huntr_security_badge_mono.svg)](https://huntr.dev/bounties/disclose/?utm_campaign=ohmyzsh%2Fohmyzsh&utm_medium=social&utm_source=github&target=https%3A%2F%2Fgithub.com%2Fohmyzsh%2Fohmyzsh)
 
 <details>
@@ -85,7 +85,7 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
 -   [Zsh](https://www.zsh.org) should be installed (v4.3.9 or more recent is
     fine but we prefer 5.0.8 and newer). If not pre-installed (run
     `zsh --version` to confirm), check the following wiki instructions here:
-    [Installing ZSH](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+    [Installing ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 -   `curl` or `wget` should be installed
 -   `git` should be installed (recommended v2.4.11 or higher)
 
@@ -97,9 +97,9 @@ or another similar tool.
 
 | Method    | Command                                                                                           |
 | :-------- | :------------------------------------------------------------------------------------------------ |
-| **curl**  | `sh -c "$(curl -fsSL HTTPS://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-| **wget**  | `sh -c "$(wget -O- HTTPS://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
-| **fetch** | `sh -c "$(fetch -o - HTTPS://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **curl**  | `sh -c "$(curl -fsSL https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
 _Note that any previous `.zshrc` will be renamed to `.zshrc.pre-oh-my-zsh`.
 After installation, you can move the configuration you want to preserve into the
@@ -112,7 +112,7 @@ You can do that by downloading the install script first, looking through it so
 everything looks normal, then running it:
 
 ```sh
-wget HTTPS://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh
+wget https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
 
@@ -122,8 +122,8 @@ sh install.sh
 
 Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can
 take a look in the
-[plugins](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/tree/master/plugins) directory
-and/or the [wiki](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's
+[plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory
+and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's
 currently available.
 
 #### Enabling Plugins
@@ -164,7 +164,7 @@ that particular plugin.
 
 We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme
 happy. We have over one hundred and fifty themes now bundled. Most of them have
-[screenshots](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We
+[screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We
 are working on updating this!). Check them out!
 
 #### Selecting A Theme
@@ -185,14 +185,14 @@ desired theme. For example:
 
 ```sh
 ZSH_THEME="agnoster" # (this is one of the fancy ones)
-# see HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
+# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
 ```
 
 _Note: many themes require installing a
-[Powerline Font](HTTPS://GitHub.Com/powerline/fonts) or a
-[Nerd Font](HTTPS://GitHub.Com/ryanoasis/nerd-fonts) in order to render
+[Powerline Font](https://github.com/powerline/fonts) or a
+[Nerd Font](https://github.com/ryanoasis/nerd-fonts) in order to render
 properly. Without them, these themes will render
-[weird prompt symbols](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)_
+[weird prompt symbols](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)_
 
 Open up a new terminal window and your prompt should look something like this:
 
@@ -200,7 +200,7 @@ Open up a new terminal window and your prompt should look something like this:
 
 In case you did not find a suitable theme for your needs, please have a look at
 the wiki for
-[more of them](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/External-themes).
+[more of them](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes).
 
 If you're feeling feisty, you can let the computer select one randomly for you
 each time you open a new terminal window.
@@ -228,7 +228,7 @@ ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
 ### FAQ
 
 If you have some more questions or issues, you might find a solution in our
-[FAQ](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/FAQ).
+[FAQ](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ).
 
 ## Advanced Topics
 
@@ -262,7 +262,7 @@ the effect of not trying to change the default shell, and it also won't run
 `zsh` when the installation has finished.
 
 ```sh
-sh -c "$(curl -fsSL HTTPS://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 ```
 
 #### Installing From A Forked Repository
@@ -272,9 +272,9 @@ different repository:
 
 -   `REPO` (default: `ohmyzsh/ohmyzsh`): this takes the form of
     `owner/repository`. If you set this variable, the installer will look for a
-    repository at `HTTPS://GitHub.Com/{owner}/{repository}`.
+    repository at `https://github.com/{owner}/{repository}`.
 
--   `REMOTE` (default: `HTTPS://GitHub.Com/${REPO}.git`): this is the full URL
+-   `REMOTE` (default: `https://github.com/${REPO}.git`): this is the full URL
     of the git repository clone. You can use this setting if you want to install
     from a fork that is not on GitHub (GitLab, Bitbucket...) or if you want to
     clone with SSH instead of HTTPS (`git@github.com:user/project.git`).
@@ -298,7 +298,7 @@ REPO=apjanke/oh-my-zsh BRANCH=edge sh install.sh
 ##### 1. Clone The Repository <!-- omit in toc -->
 
 ```sh
-git clone HTTPS://GitHub.Com/ohmyzsh/ohmyzsh.git ~/ZSH
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/ZSH
 ```
 
 ##### 2. _Optionally_, Backup Your Existing `~/.zshrc` File <!-- omit in toc -->
@@ -498,7 +498,7 @@ many ways to improve – if you have ideas on how to make the configuration easi
 to maintain (and faster), don't hesitate to fork and send pull requests!
 
 We also need people to test out pull requests. So take a look through
-[the open issues](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/issues) and help where you
+[the open issues](https://github.com/ohmyzsh/ohmyzsh/issues) and help where you
 can.
 
 See [Contributing](CONTRIBUTING.md) for more details.
@@ -506,7 +506,7 @@ See [Contributing](CONTRIBUTING.md) for more details.
 ### Do Not Send Us Themes
 
 We have (more than) enough themes for the time being. Please add your theme to
-the [external themes](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/External-themes)
+the [external themes](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
 wiki page.
 
 ## Contributors

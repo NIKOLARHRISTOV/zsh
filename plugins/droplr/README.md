@@ -10,7 +10,7 @@ To use it, add `droplr` to the `$plugins` variable in your zshrc file:
 plugins=(... droplr)
 ```
 
-Author: [Fabio Fernandes](HTTPS://GitHub.Com/fabiofl)
+Author: [Fabio Fernandes](https://github.com/fabiofl)
 
 ## Examples
 

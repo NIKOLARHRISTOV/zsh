@@ -83,4 +83,4 @@ For example: `fastfile_var_prefix='@'`.
 
 ## Author
 
--   [Karolin Varner](HTTPS://GitHub.Com/koraa)
+-   [Karolin Varner](https://github.com/koraa)

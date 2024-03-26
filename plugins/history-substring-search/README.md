@@ -7,9 +7,9 @@ press chosen keys, such as the UP and DOWN arrows, to cycle through matches.
 [1]: http://fishshell.com
 [2]: http://www.zsh.org/mla/users/2009/msg00818.html
 [3]: http://sourceforge.net/projects/fizsh/
-[4]: HTTPS://GitHub.Com/robbyrussell/oh-my-zsh/pull/215
-[5]: HTTPS://GitHub.Com/zsh-users/zsh-history-substring-search
-[6]: HTTPS://GitHub.Com/zsh-users/zsh-syntax-highlighting
+[4]: https://github.com/robbyrussell/oh-my-zsh/pull/215
+[5]: https://github.com/zsh-users/zsh-history-substring-search
+[6]: https://github.com/zsh-users/zsh-syntax-highlighting
 
 ## Requirements
 
@@ -22,11 +22,11 @@ Using the [Homebrew](https://brew.sh) package manager:
     brew install zsh-history-substring-search
     echo 'source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
 
-Using [Oh-my-zsh](HTTPS://GitHub.Com/robbyrussell/oh-my-zsh):
+Using [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 
 1.  Clone this repository in oh-my-zsh's plugins directory:
 
-        git clone HTTPS://GitHub.Com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/ZSH/custom}/plugins/zsh-history-substring-search
+        git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/ZSH/custom}/plugins/zsh-history-substring-search
 
 2.  Activate the plugin in `~/.zshrc`:
 
@@ -176,7 +176,7 @@ What you are looking at now is Oh My Zsh's repackaging of
 zsh-history-substring-search as an OMZ module inside the Oh My Zsh distribution.
 
 The upstream repo, zsh-users/zsh-history-substring-search, can be found on
-GitHub at HTTPS://GitHub.Com/zsh-users/zsh-history-substring-search.
+GitHub at https://github.com/zsh-users/zsh-history-substring-search.
 
 This downstream copy was last updated from the following upstream commit:
 

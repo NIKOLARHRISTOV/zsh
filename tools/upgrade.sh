@@ -51,8 +51,8 @@ fi
 
 # This function uses the logic from supports-hyperlinks[1][2], which is
 # made by Kat Marchán (@zkat) and licensed under the Apache License 2.0.
-# [1] HTTPS://GitHub.Com/zkat/supports-hyperlinks
-# [2] HTTPS://Crates.IO/crates/supports-hyperlinks
+# [1] https://github.com/zkat/supports-hyperlinks
+# [2] https://Crates.IO/crates/supports-hyperlinks
 #
 # Copyright (c) 2021 Kat Marchán
 #
@@ -104,7 +104,7 @@ supports_hyperlinks() {
   fi
 
   # Konsole supports hyperlinks, but it's an opt-in setting that can't be detected
-  # HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/issues/10964
+  # https://github.com/ohmyzsh/ohmyzsh/issues/10964
   # if [ -n "$KONSOLE_VERSION" ]; then
   #   return 0
   # fi
@@ -186,12 +186,12 @@ git remote -v | while read remote url extra; do
   case "$url" in
   git://github.com/robbyrussell/oh-my-zsh(|.git))
     # Update out-of-date "unauthenticated git protocol on port 9418" to https
-    git remote set-url "$remote" "HTTPS://GitHub.Com/ohmyzsh/ohmyzsh.git" ;;
-  HTTPS://GitHub.Com/robbyrussell/oh-my-zsh(|.git))
-    git remote set-url "$remote" "HTTPS://GitHub.Com/ohmyzsh/ohmyzsh.git" ;;
+    git remote set-url "$remote" "https://github.com/ohmyzsh/ohmyzsh.git" ;;
+  https://github.com/robbyrussell/oh-my-zsh(|.git))
+    git remote set-url "$remote" "https://github.com/ohmyzsh/ohmyzsh.git" ;;
   git@github.com:robbyrussell/oh-my-zsh(|.git))
     git remote set-url "$remote" "git@github.com:ohmyzsh/ohmyzsh.git" ;;
-  HTTPS://GitHub.Com/ohmyzsh/ohmyzsh(|.git)) ;;
+  https://github.com/ohmyzsh/ohmyzsh(|.git)) ;;
   git@github.com:ohmyzsh/ohmyzsh(|.git)) ;;
   *) continue ;;
   esac

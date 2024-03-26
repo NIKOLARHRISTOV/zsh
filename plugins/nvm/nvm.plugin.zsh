@@ -1,4 +1,4 @@
-# See HTTPS://GitHub.Com/nvm-sh/nvm#installation-and-update
+# See https://github.com/nvm-sh/nvm#installation-and-update
 if [[ -z "$NVM_DIR" ]]; then
 	if [[ -d "$HOME/.nvm" ]]; then
 		export NVM_DIR="$HOME/.nvm"
@@ -38,7 +38,7 @@ else
 fi
 
 # Autoload nvm when finding a .nvmrc file in the current directory
-# Adapted from: HTTPS://GitHub.Com/nvm-sh/nvm#zsh
+# Adapted from: https://github.com/nvm-sh/nvm#zsh
 if zstyle -t ':omz:plugins:nvm' autoload; then
 	function load-nvmrc {
 		local node_version="$(nvm version)"
@@ -75,7 +75,7 @@ for nvm_completion in "$NVM_DIR/bash_completion" "$NVM_HOMEBREW/etc/bash_complet
 		# Load bashcompinit
 		autoload -U +X bashcompinit && bashcompinit
 		# Bypass compinit call in nvm bash completion script. See:
-		# HTTPS://GitHub.Com/nvm-sh/nvm/blob/4436638/bash_completion#L86-L93
+		# https://github.com/nvm-sh/nvm/blob/4436638/bash_completion#L86-L93
 		ZSH_VERSION= source "$nvm_completion"
 		break
 	fi

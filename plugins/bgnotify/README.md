@@ -4,7 +4,7 @@ cross-platform background notifications for long running commands! Supports OSX
 and Ubuntu linux.
 
 Standalone homepage:
-[t413/zsh-background-notify](HTTPS://GitHub.Com/t413/zsh-background-notify)
+[t413/zsh-background-notify](https://github.com/t413/zsh-background-notify)
 
 ---
 
@@ -13,7 +13,7 @@ Standalone homepage:
 Just add bgnotify to your plugins list in your `.zshrc`
 
 -   On OS X you'll need
-    [terminal-notifier](HTTPS://GitHub.Com/alloy/terminal-notifier)
+    [terminal-notifier](https://github.com/alloy/terminal-notifier)
     -   `brew install terminal-notifier` (or `gem install terminal-notifier`)
 -   On ubuntu you're already all set!
 -   On windows you can use [notifu](https://www.paralint.com/projects/notifu/)

@@ -1,11 +1,11 @@
-# Set up hub wrapper for git, if it is available; HTTPS://GitHub.Com/github/hub
+# Set up hub wrapper for git, if it is available; https://github.com/github/hub
 if (( $+commands[hub] )); then
   alias git=hub
 fi
 
 # Functions #################################################################
 
-# Based on HTTPS://GitHub.Com/dbb/githome/blob/master/.config/zsh/functions
+# Based on https://github.com/dbb/githome/blob/master/.config/zsh/functions
 
 # empty_gh <NAME_OF_REPO>
 #
@@ -63,9 +63,9 @@ exist_gh() { # [DIRECTORY]
 # git.io "GitHub URL"
 #
 # Shorten GitHub url, example:
-#   HTTPS://GitHub.Com/nvogel/dotzsh    >   https://git.io/8nU25w
-# source: HTTPS://GitHub.Com/nvogel/dotzsh
-# documentation: HTTPS://GitHub.Com/blog/985-git-io-github-url-shortener
+#   https://github.com/nvogel/dotzsh    >   https://git.io/8nU25w
+# source: https://github.com/nvogel/dotzsh
+# documentation: https://github.com/blog/985-git-io-github-url-shortener
 #
 git.io() {
   # emulate -L zsh

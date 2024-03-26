@@ -4,7 +4,7 @@
 #                                                                              #
 # Output the content of an image to the stdout using the 256 colors of the     #
 # terminal.                                                                    #
-# GitHub: HTTPS://GitHub.Com/posva/catimg                                      #
+# GitHub: https://github.com/posva/catimg                                      #
 ################################################################################
 
 function help() {

@@ -1,8 +1,8 @@
 ## asdf
 
-**Maintainer:** [@RobLoach](HTTPS://GitHub.Com/RobLoach)
+**Maintainer:** [@RobLoach](https://github.com/RobLoach)
 
-Adds integration with [asdf](HTTPS://GitHub.Com/asdf-vm/asdf), the extendable
+Adds integration with [asdf](https://github.com/asdf-vm/asdf), the extendable
 version manager, with support for Ruby, Node.js, Elixir, Erlang and more.
 
 ### Installation
@@ -11,7 +11,7 @@ version manager, with support for Ruby, Node.js, Elixir, Erlang and more.
    by running the following:
 
 ```sh
-git clone HTTPS://GitHub.Com/asdf-vm/asdf.git ~/.asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 ```
 
 2. [Enable asdf](https://asdf-vm.com/guide/getting-started.html#_3-install-asdf)
@@ -28,7 +28,7 @@ See the
 for information on how to use asdf:
 
 ```sh
-asdf plugin add nodejs HTTPS://GitHub.Com/asdf-vm/asdf-nodejs.git
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf install nodejs latest
 asdf global nodejs latest
 asdf local nodejs latest

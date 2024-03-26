@@ -1,6 +1,6 @@
 # ---------------------------------------------------------- #
 # Aliases and Completions for MicroK8s (https://microk8s.io) #
-# Author: Shaun Tabone (HTTPS://GitHub.Com/xontab)           #
+# Author: Shaun Tabone (https://github.com/xontab)           #
 # ---------------------------------------------------------- #
 
 # Helper function to cache and load completions

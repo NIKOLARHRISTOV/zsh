@@ -9,7 +9,7 @@ To start using it, add the `macos` plugin to your plugins array in `~/.zshrc`:
 plugins=(... macos)
 ```
 
-Original author: [Sorin Ionescu](HTTPS://GitHub.Com/sorin-ionescu)
+Original author: [Sorin Ionescu](https://github.com/sorin-ionescu)
 
 ## Commands
 
@@ -40,7 +40,7 @@ Original author: [Sorin Ionescu](HTTPS://GitHub.Com/sorin-ionescu)
 
 This application makes use of the following third party scripts:
 
-[shpotify](HTTPS://GitHub.Com/hnarayanan/shpotify)
+[shpotify](https://github.com/hnarayanan/shpotify)
 
 Copyright (c) 2012–2019 [Harish Narayanan](https://harishnarayanan.org/).
 

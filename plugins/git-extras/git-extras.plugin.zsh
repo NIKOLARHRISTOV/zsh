@@ -2,7 +2,7 @@
 # Description
 # -----------
 #
-#  Completion script for git-extras (HTTPS://GitHub.Com/tj/git-extras).
+#  Completion script for git-extras (https://github.com/tj/git-extras).
 #
 #  This depends on and reuses some of the internals of the _git completion
 #  function that ships with zsh itself. It will not work with the _git that ships
@@ -12,15 +12,15 @@
 # Authors
 # -------
 #
-#  * Alexis GRIMALDI (HTTPS://GitHub.Com/agrimaldi)
-#  * spacewander (HTTPS://GitHub.Com/spacewander)
+#  * Alexis GRIMALDI (https://github.com/agrimaldi)
+#  * spacewander (https://github.com/spacewander)
 #
 # ------------------------------------------------------------------------------
 # Inspirations
 # -----------
 #
-#  * git-extras (HTTPS://GitHub.Com/tj/git-extras)
-#  * git-flow-completion (HTTPS://GitHub.Com/bobthecow/git-flow-completion)
+#  * git-extras (https://github.com/tj/git-extras)
+#  * git-flow-completion (https://github.com/bobthecow/git-flow-completion)
 #
 # ------------------------------------------------------------------------------
 

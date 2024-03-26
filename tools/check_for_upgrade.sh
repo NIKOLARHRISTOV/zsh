@@ -47,7 +47,7 @@ function is_update_available() {
 
   local repo
   case "$remote_url" in
-  HTTPS://GitHub.Com/*) repo=${${remote_url#HTTPS://GitHub.Com/}%.git} ;;
+  https://github.com/*) repo=${${remote_url#https://github.com/}%.git} ;;
   git@github.com:*) repo=${${remote_url#git@github.com:}%.git} ;;
   *)
     # If the remote is not using GitHub we can't check for updates

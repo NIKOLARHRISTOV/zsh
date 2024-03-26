@@ -2,7 +2,7 @@
 # Zsh-z - jump around with Zsh - A native Zsh version of z without awk, sort,
 # date, or sed
 #
-# HTTPS://GitHub.Com/agkozak/zsh-z
+# https://github.com/agkozak/zsh-z
 #
 # Copyright (c) 2018-2023 Alexandros Kozak
 #
@@ -24,7 +24,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# z (HTTPS://GitHub.Com/rupa/z) is copyright (c) 2009 rupa deadwyler and
+# z (https://github.com/rupa/z) is copyright (c) 2009 rupa deadwyler and
 # licensed under the WTFPL license, Version 2.
 #
 # Zsh-z maintains a jump-list of the directories you actually use.
@@ -219,7 +219,7 @@ zshz() {
     # A temporary file that gets copied over the datafile if all goes well
     local tempfile="${datafile}.${RANDOM}"
 
-    # See HTTPS://GitHub.Com/rupa/z/pull/199/commits/ed6eeed9b70d27c1582e3dd050e72ebfe246341c
+    # See https://github.com/rupa/z/pull/199/commits/ed6eeed9b70d27c1582e3dd050e72ebfe246341c
     if (( ZSHZ[USE_FLOCK] )); then
 
       local lockfd
@@ -324,7 +324,7 @@ zshz() {
     local -A rank time
 
     # Characters special to the shell (such as '[]') are quoted with backslashes
-    # See HTTPS://GitHub.Com/rupa/z/issues/246
+    # See https://github.com/rupa/z/issues/246
     local add_path=${(q)2}
 
     local -a existing_paths
@@ -450,7 +450,7 @@ zshz() {
     #
     # The bug was fixed in late 2020:
     #
-    #   HTTPS://GitHub.Com/zsh-users/zsh/commit/b6ba74cd4eaec2b6cb515748cf1b74a19133d4a4#diff-32bbef18e126b837c87b06f11bfc61fafdaa0ed99fcb009ec53f4767e246b129
+    #   https://github.com/zsh-users/zsh/commit/b6ba74cd4eaec2b6cb515748cf1b74a19133d4a4#diff-32bbef18e126b837c87b06f11bfc61fafdaa0ed99fcb009ec53f4767e246b129
     #
     # In order to support shells with the bug, we must use a form of `printf`,
     # which does not exhibit the undesired behavior. See
@@ -904,7 +904,7 @@ _zshz_precmd() {
       (zshz --add "$PWD" &)
   fi
 
-  # See HTTPS://GitHub.Com/rupa/z/pull/247/commits/081406117ea42ccb8d159f7630cfc7658db054b6
+  # See https://github.com/rupa/z/pull/247/commits/081406117ea42ccb8d159f7630cfc7658db054b6
   : $RANDOM
 }
 
@@ -970,7 +970,7 @@ ZSHZ[FUNCTIONS]='_zshz_usage
 ############################################################
 # Unload function
 #
-# See HTTPS://GitHub.Com/agkozak/Zsh-100-Commits-Club/blob/master/Zsh-Plugin-Standard.adoc#unload-fun
+# See https://github.com/agkozak/Zsh-100-Commits-Club/blob/master/Zsh-Plugin-Standard.adoc#unload-fun
 #
 # Globals:
 #   ZSHZ

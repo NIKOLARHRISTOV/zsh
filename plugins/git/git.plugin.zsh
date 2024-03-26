@@ -124,7 +124,7 @@ alias gbd='git branch --delete'
 alias gbD='git branch --delete --force'
 
 # Copied and modified from James Roeder (jmaroeder) under MIT License
-# HTTPS://GitHub.Com/jmaroeder/plugin-git/blob/216723ef4f9e8dde399661c39c80bdf73f4076c4/functions/gbda.fish
+# https://github.com/jmaroeder/plugin-git/blob/216723ef4f9e8dde399661c39c80bdf73f4076c4/functions/gbda.fish
 function gbda() {
   git branch --no-color --merged | command grep -vE "^([+*]|\s*($(git_main_branch)|$(git_develop_branch))\s*$)" | command xargs git branch --delete 2>/dev/null
 
