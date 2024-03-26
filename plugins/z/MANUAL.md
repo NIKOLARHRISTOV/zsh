@@ -2,7 +2,7 @@
 
 [![MIT License](img/mit_license.svg)](https://opensource.org/licenses/MIT)
 ![Zsh version 4.3.11 and higher](img/zsh_4.3.11_plus.svg)
-[![GitHub stars](https://IMG.Shields.IO/github/stars/agkozak/zsh-z.svg)](https://github.com/agkozak/zsh-z/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/agkozak/zsh-z.svg)](https://github.com/agkozak/zsh-z/stargazers)
 
 Zsh-z is a command line tool that allows you to jump quickly to directories that
 you have visited frequently in the past, or recently -- but most often a
