@@ -1,6 +1,6 @@
 #!/bin/sh
 
-url="https://Raw.GitHubUserContent.Com/felipec/git-completion"
+url="https://raw.githubusercontent.com/felipec/git-completion"
 version="1.3.7"
 
 curl -s -o _git "${url}/v${version}/git-completion.zsh" &&

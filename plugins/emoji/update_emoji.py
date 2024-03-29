@@ -150,7 +150,7 @@ spec.close()
 
 # Aliases for emojis are retrieved through the DB of Gemoji
 # Retrieved on Aug 9 2019 from the following URL:
-# https://Raw.GitHubUserContent.Com/github/gemoji/master/db/emoji.json
+# https://raw.githubusercontent.com/github/gemoji/master/db/emoji.json
 
 gemoji_db = open("gemoji_db.json")
 j = json.load(gemoji_db)

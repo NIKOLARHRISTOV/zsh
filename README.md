@@ -97,9 +97,9 @@ or another similar tool.
 
 | Method    | Command                                                                                           |
 | :-------- | :------------------------------------------------------------------------------------------------ |
-| **curl**  | `sh -c "$(curl -fsSL https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-| **wget**  | `sh -c "$(wget -O- https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
-| **fetch** | `sh -c "$(fetch -o - https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
 _Note that any previous `.zshrc` will be renamed to `.zshrc.pre-oh-my-zsh`.
 After installation, you can move the configuration you want to preserve into the
@@ -112,7 +112,7 @@ You can do that by downloading the install script first, looking through it so
 everything looks normal, then running it:
 
 ```sh
-wget https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
 
@@ -262,7 +262,7 @@ the effect of not trying to change the default shell, and it also won't run
 `zsh` when the installation has finished.
 
 ```sh
-sh -c "$(curl -fsSL https://Raw.GitHubUserContent.Com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 ```
 
 #### Installing From A Forked Repository
