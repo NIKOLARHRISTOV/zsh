@@ -44,7 +44,7 @@ the table below for details.
 For help and advice on what any of the commands does, consult the built in `cf`
 help functions as follows:-
 
-```bash
+```sh
 cf help                    # List the most popular and commonly used commands
 cf help -a                 # Complete list of all possible commands
 cf < COMMAND_NAME > --help # Help on a specific command including arguments and examples

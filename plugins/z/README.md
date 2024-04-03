@@ -10,7 +10,7 @@ Assume that you have previously visited directory `~/ZSH/plugins`. From any
 folder in your command line, you can quickly access it by using a regex match to
 this folder:
 
-```bash
+```sh
 /usr/bin$ z plug # Even 'z p' might suffice
 ~/ZSH/plugins$
 ```

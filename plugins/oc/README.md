@@ -6,7 +6,7 @@ commands, building, managing and updating operations.
 
 To use it, add `oc` to the plugins array of your zshrc file:
 
-```bash
+```sh
 plugins=(... oc)
 ```
 

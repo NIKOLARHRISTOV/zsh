@@ -17,7 +17,7 @@ which is inspired by
 
 Just add the plugin to your `.zshrc`:
 
-```bash
+```sh
 plugins=(foo bar mix-fast)
 ```
 

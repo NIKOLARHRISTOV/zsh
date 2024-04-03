@@ -5,6 +5,6 @@ This plugin provides completion for
 
 To use it add doctl to the plugins array in your zshrc file.
 
-```bash
+```sh
 plugins=(... doctl)
 ```

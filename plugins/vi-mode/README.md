@@ -64,7 +64,7 @@ indicator information.
 
 Here are some examples:
 
-```bash
+```sh
 source $ZSH/oh-my-zsh.sh
 
 PROMPT="$PROMPT\$(vi_mode_prompt_info)"

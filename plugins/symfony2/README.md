@@ -5,7 +5,7 @@ as aliases for frequent Symfony commands.
 
 To use it add symfony2 to the plugins array in your zshrc file.
 
-```bash
+```sh
 plugins=(... symfony2)
 ```
 

@@ -233,13 +233,13 @@ This can be done as follows for each shell before loading kube-ps1:
 
 Bash:
 
-```bash
+```sh
 bash --norc
 ```
 
 Zsh:
 
-```bash
+```sh
 zsh -f
 or
 zsh --no-rcs

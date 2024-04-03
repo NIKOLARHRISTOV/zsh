@@ -13,7 +13,7 @@ plugins=(... pow)
 
 -   `kapow` will restart an app.
 
-    ```bash
+    ```sh
     kapow myapp
     ```
 
