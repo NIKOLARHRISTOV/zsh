@@ -1,7 +1,7 @@
 # https://github.com/blinks zsh theme
 
 function _prompt_char() {
-	if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
+	if $(git rev-parse --is-inside-work-tree > /dev/null 2>&1); then
 		echo "%{%F{blue}%}±%{%f%k%b%}"
 	else
 		echo ' '
@@ -14,8 +14,8 @@ function _prompt_char() {
 # using the "dark" variant.
 
 case ${SOLARIZED_THEME:-dark} in
-light) bkg=white ;;
-*) bkg=black ;;
+	light) bkg=white ;;
+	*) bkg=black ;;
 esac
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" [%{%B%F{blue}%}"

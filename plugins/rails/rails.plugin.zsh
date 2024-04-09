@@ -22,7 +22,7 @@ function _rake_command() {
 		bin/stubs/rake $@
 	elif [ -e "bin/rake" ]; then
 		bin/rake $@
-	elif type bundle &>/dev/null && [[ -e "Gemfile" || -e "gems.rb" ]]; then
+	elif type bundle &> /dev/null && [[ -e "Gemfile" || -e "gems.rb" ]]; then
 		bundle exec rake $@
 	else
 		command rake $@

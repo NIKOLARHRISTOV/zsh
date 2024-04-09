@@ -36,10 +36,10 @@ function pacdisowned() {
 
 	trap "rm -rf $tmp_dir" EXIT
 
-	pacman -Qlq | sort -u >"$db"
+	pacman -Qlq | sort -u > "$db"
 
 	find /etc /usr ! -name lost+found \
-		\( -type d -printf '%p/\n' -o -print \) | sort >"$fs"
+		\( -type d -printf '%p/\n' -o -print \) | sort > "$fs"
 
 	comm -23 "$fs" "$db"
 
@@ -74,9 +74,9 @@ if (($ + commands[xdg - open])); then
 		if [[ -z "$infos" ]]; then
 			return
 		fi
-		local repo="$(grep -m 1 '^Repo' <<<"$infos" | grep -oP '[^ ]+$')"
-		local arch="$(grep -m 1 '^Arch' <<<"$infos" | grep -oP '[^ ]+$')"
-		xdg-open "https://www.archlinux.org/packages/$repo/$arch/$pkg/" &>/dev/null
+		local repo="$(grep -m 1 '^Repo' <<< "$infos" | grep -oP '[^ ]+$')"
+		local arch="$(grep -m 1 '^Arch' <<< "$infos" | grep -oP '[^ ]+$')"
+		xdg-open "https://www.archlinux.org/packages/$repo/$arch/$pkg/" &> /dev/null
 	}
 fi
 

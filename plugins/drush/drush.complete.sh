@@ -13,7 +13,7 @@
 #   source /path/to/your/drush.complete.sh
 
 # Ensure drush is available.
-which drush >/dev/null || alias drush &>/dev/null || return
+which drush > /dev/null || alias drush &> /dev/null || return
 
 __drush_ps1() {
 	f="${TMPDIR:-/tmp/}/drush-env-${USER}/drush-drupal-site-$$"
@@ -42,7 +42,7 @@ _drush_completion() {
 	# The '< /dev/null' is a work around for a bug in php libedit stdin handling.
 	# Note that libedit in place of libreadline in some distributions. See:
 	# https://bugs.launchpad.net/ubuntu/+source/php5/+bug/322214
-	COMPREPLY=($(drush --early=includes/complete.inc "${COMP_WORDS[@]}" </dev/null 2>/dev/null))
+	COMPREPLY=($(drush --early=includes/complete.inc "${COMP_WORDS[@]}" < /dev/null 2> /dev/null))
 }
 
 # Register our completion function. We include common short aliases for Drush.

@@ -7,7 +7,7 @@
 			COMP_LINE=$BUFFER \
 			COMP_POINT=0 \
 			npm completion -- "${words[@]}" \
-			2>/dev/null)
+			2> /dev/null)
 		IFS=$si
 	}
 	compdef _npm_completion npm
@@ -80,23 +80,23 @@ npm_toggle_install_uninstall() {
 		"${history[$((HISTCMD - 1))]}" \
 		"${history[$((HISTCMD - 2))]}"; do
 		case "$line" in
-		"npm uninstall"*)
-			BUFFER="${line/npm uninstall/npm install}"
-			((CURSOR = CURSOR + 2)) # uninstall -> install: 2 chars removed
-			;;
-		"npm install"*)
-			BUFFER="${line/npm install/npm uninstall}"
-			((CURSOR = CURSOR + 2)) # install -> uninstall: 2 chars added
-			;;
-		"npm un "*)
-			BUFFER="${line/npm un/npm install}"
-			((CURSOR = CURSOR + 5)) # un -> install: 5 chars added
-			;;
-		"npm i "*)
-			BUFFER="${line/npm i/npm uninstall}"
-			((CURSOR = CURSOR + 8)) # i -> uninstall: 8 chars added
-			;;
-		*) continue ;;
+			"npm uninstall"*)
+				BUFFER="${line/npm uninstall/npm install}"
+				((CURSOR = CURSOR + 2)) # uninstall -> install: 2 chars removed
+				;;
+			"npm install"*)
+				BUFFER="${line/npm install/npm uninstall}"
+				((CURSOR = CURSOR + 2)) # install -> uninstall: 2 chars added
+				;;
+			"npm un "*)
+				BUFFER="${line/npm un/npm install}"
+				((CURSOR = CURSOR + 5)) # un -> install: 5 chars added
+				;;
+			"npm i "*)
+				BUFFER="${line/npm i/npm uninstall}"
+				((CURSOR = CURSOR + 8)) # i -> uninstall: 8 chars added
+				;;
+			*) continue ;;
 		esac
 		return 0
 	done

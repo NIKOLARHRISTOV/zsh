@@ -2,12 +2,12 @@ export OTP_HOME=~/.otp
 mkdir -p $OTP_HOME
 
 function ot() {
-	if ! command -v oathtool >/dev/null 2>&1; then
+	if ! command -v oathtool > /dev/null 2>&1; then
 		echo "Note: you need to install oathtool or oath-toolkit, depending on your OS or distribution."
 		return 1
 	fi
 
-	if ! command -v gpg >/dev/null 2>&1; then
+	if ! command -v gpg > /dev/null 2>&1; then
 		echo "Note: you need to install gpg and create an ID using 'gpg --gen-key', unless you have one already."
 		return 1
 	fi

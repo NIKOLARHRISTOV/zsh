@@ -19,7 +19,7 @@ ZSH_THEME_GIT_PROMPT_DELETED="!"
 ZSH_THEME_GIT_PROMPT_UNMERGED="?"
 
 function zsh_essembeh_gitstatus {
-	ref=$(git symbolic-ref HEAD 2>/dev/null) || return
+	ref=$(git symbolic-ref HEAD 2> /dev/null) || return
 	GIT_STATUS=$(git_prompt_status)
 	if [[ -n $GIT_STATUS ]]; then
 		GIT_STATUS=" $GIT_STATUS"

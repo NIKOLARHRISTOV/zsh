@@ -15,10 +15,10 @@ _n98_magerun() {
 	_arguments '1: :->command' '*:optional arg:_files'
 
 	case $state in
-	command)
-		compadd $(_n98_magerun_get_command_list)
-		;;
-	*) ;;
+		command)
+			compadd $(_n98_magerun_get_command_list)
+			;;
+		*) ;;
 	esac
 }
 

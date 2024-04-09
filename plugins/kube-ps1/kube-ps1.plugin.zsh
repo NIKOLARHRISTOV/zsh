@@ -56,41 +56,41 @@ _kube_ps1_init() {
 	[[ -f "${KUBE_PS1_DISABLE_PATH}" ]] && KUBE_PS1_ENABLED=off
 
 	case "${KUBE_PS1_SHELL}" in
-	"zsh")
-		_KUBE_PS1_OPEN_ESC="%{"
-		_KUBE_PS1_CLOSE_ESC="%}"
-		_KUBE_PS1_DEFAULT_BG="%k"
-		_KUBE_PS1_DEFAULT_FG="%f"
-		setopt PROMPT_SUBST
-		autoload -U add-zsh-hook
-		add-zsh-hook precmd _kube_ps1_update_cache
-		zmodload -F zsh/stat b:zstat
-		zmodload zsh/datetime
-		;;
-	"bash")
-		_KUBE_PS1_OPEN_ESC=$'\001'
-		_KUBE_PS1_CLOSE_ESC=$'\002'
-		_KUBE_PS1_DEFAULT_BG=$'\033[49m'
-		_KUBE_PS1_DEFAULT_FG=$'\033[39m'
-		[[ $PROMPT_COMMAND =~ _kube_ps1_update_cache ]] || PROMPT_COMMAND="_kube_ps1_update_cache;${PROMPT_COMMAND:-:}"
-		;;
+		"zsh")
+			_KUBE_PS1_OPEN_ESC="%{"
+			_KUBE_PS1_CLOSE_ESC="%}"
+			_KUBE_PS1_DEFAULT_BG="%k"
+			_KUBE_PS1_DEFAULT_FG="%f"
+			setopt PROMPT_SUBST
+			autoload -U add-zsh-hook
+			add-zsh-hook precmd _kube_ps1_update_cache
+			zmodload -F zsh/stat b:zstat
+			zmodload zsh/datetime
+			;;
+		"bash")
+			_KUBE_PS1_OPEN_ESC=$'\001'
+			_KUBE_PS1_CLOSE_ESC=$'\002'
+			_KUBE_PS1_DEFAULT_BG=$'\033[49m'
+			_KUBE_PS1_DEFAULT_FG=$'\033[39m'
+			[[ $PROMPT_COMMAND =~ _kube_ps1_update_cache ]] || PROMPT_COMMAND="_kube_ps1_update_cache;${PROMPT_COMMAND:-:}"
+			;;
 	esac
 }
 
 _kube_ps1_color_fg() {
 	local KUBE_PS1_FG_CODE
 	case "${1}" in
-	black) KUBE_PS1_FG_CODE=0 ;;
-	red) KUBE_PS1_FG_CODE=1 ;;
-	green) KUBE_PS1_FG_CODE=2 ;;
-	yellow) KUBE_PS1_FG_CODE=3 ;;
-	blue) KUBE_PS1_FG_CODE=4 ;;
-	magenta) KUBE_PS1_FG_CODE=5 ;;
-	cyan) KUBE_PS1_FG_CODE=6 ;;
-	white) KUBE_PS1_FG_CODE=7 ;;
-	# 256
-	[0-9] | [1-9][0-9] | [1][0-9][0-9] | [2][0-4][0-9] | [2][5][0-6]) KUBE_PS1_FG_CODE="${1}" ;;
-	*) KUBE_PS1_FG_CODE=default ;;
+		black) KUBE_PS1_FG_CODE=0 ;;
+		red) KUBE_PS1_FG_CODE=1 ;;
+		green) KUBE_PS1_FG_CODE=2 ;;
+		yellow) KUBE_PS1_FG_CODE=3 ;;
+		blue) KUBE_PS1_FG_CODE=4 ;;
+		magenta) KUBE_PS1_FG_CODE=5 ;;
+		cyan) KUBE_PS1_FG_CODE=6 ;;
+		white) KUBE_PS1_FG_CODE=7 ;;
+		# 256
+		[0-9] | [1-9][0-9] | [1][0-9][0-9] | [2][0-4][0-9] | [2][5][0-6]) KUBE_PS1_FG_CODE="${1}" ;;
+		*) KUBE_PS1_FG_CODE=default ;;
 	esac
 
 	if [[ "${KUBE_PS1_FG_CODE}" == "default" ]]; then
@@ -99,7 +99,7 @@ _kube_ps1_color_fg() {
 	elif [[ "${KUBE_PS1_SHELL}" == "zsh" ]]; then
 		KUBE_PS1_FG_CODE="%F{$KUBE_PS1_FG_CODE}"
 	elif [[ "${KUBE_PS1_SHELL}" == "bash" ]]; then
-		if tput setaf 1 &>/dev/null; then
+		if tput setaf 1 &> /dev/null; then
 			KUBE_PS1_FG_CODE="$(tput setaf ${KUBE_PS1_FG_CODE})"
 		elif [[ $KUBE_PS1_FG_CODE -ge 0 ]] && [[ $KUBE_PS1_FG_CODE -le 256 ]]; then
 			KUBE_PS1_FG_CODE="\033[38;5;${KUBE_PS1_FG_CODE}m"
@@ -113,17 +113,17 @@ _kube_ps1_color_fg() {
 _kube_ps1_color_bg() {
 	local KUBE_PS1_BG_CODE
 	case "${1}" in
-	black) KUBE_PS1_BG_CODE=0 ;;
-	red) KUBE_PS1_BG_CODE=1 ;;
-	green) KUBE_PS1_BG_CODE=2 ;;
-	yellow) KUBE_PS1_BG_CODE=3 ;;
-	blue) KUBE_PS1_BG_CODE=4 ;;
-	magenta) KUBE_PS1_BG_CODE=5 ;;
-	cyan) KUBE_PS1_BG_CODE=6 ;;
-	white) KUBE_PS1_BG_CODE=7 ;;
-	# 256
-	[0-9] | [1-9][0-9] | [1][0-9][0-9] | [2][0-4][0-9] | [2][5][0-6]) KUBE_PS1_BG_CODE="${1}" ;;
-	*) KUBE_PS1_BG_CODE=$'\033[0m' ;;
+		black) KUBE_PS1_BG_CODE=0 ;;
+		red) KUBE_PS1_BG_CODE=1 ;;
+		green) KUBE_PS1_BG_CODE=2 ;;
+		yellow) KUBE_PS1_BG_CODE=3 ;;
+		blue) KUBE_PS1_BG_CODE=4 ;;
+		magenta) KUBE_PS1_BG_CODE=5 ;;
+		cyan) KUBE_PS1_BG_CODE=6 ;;
+		white) KUBE_PS1_BG_CODE=7 ;;
+		# 256
+		[0-9] | [1-9][0-9] | [1][0-9][0-9] | [2][0-4][0-9] | [2][5][0-6]) KUBE_PS1_BG_CODE="${1}" ;;
+		*) KUBE_PS1_BG_CODE=$'\033[0m' ;;
 	esac
 
 	if [[ "${KUBE_PS1_BG_CODE}" == "default" ]]; then
@@ -132,7 +132,7 @@ _kube_ps1_color_bg() {
 	elif [[ "${KUBE_PS1_SHELL}" == "zsh" ]]; then
 		KUBE_PS1_BG_CODE="%K{$KUBE_PS1_BG_CODE}"
 	elif [[ "${KUBE_PS1_SHELL}" == "bash" ]]; then
-		if tput setaf 1 &>/dev/null; then
+		if tput setaf 1 &> /dev/null; then
 			KUBE_PS1_BG_CODE="$(tput setab ${KUBE_PS1_BG_CODE})"
 		elif [[ $KUBE_PS1_BG_CODE -ge 0 ]] && [[ $KUBE_PS1_BG_CODE -le 256 ]]; then
 			KUBE_PS1_BG_CODE="\033[48;5;${KUBE_PS1_BG_CODE}m"
@@ -144,29 +144,29 @@ _kube_ps1_color_bg() {
 }
 
 _kube_ps1_binary_check() {
-	command -v $1 >/dev/null
+	command -v $1 > /dev/null
 }
 
 _kube_ps1_symbol() {
 	[[ "${KUBE_PS1_SYMBOL_ENABLE}" == false ]] && return
 
 	case "${KUBE_PS1_SHELL}" in
-	bash)
-		if ((BASH_VERSINFO[0] >= 4)) && [[ $'\u2388' != "\\u2388" ]]; then
+		bash)
+			if ((BASH_VERSINFO[0] >= 4)) && [[ $'\u2388' != "\\u2388" ]]; then
+				KUBE_PS1_SYMBOL="${KUBE_PS1_SYMBOL_DEFAULT}"
+				KUBE_PS1_SYMBOL_IMG=$'\u2638\ufe0f'
+			else
+				KUBE_PS1_SYMBOL=$'\xE2\x8E\x88'
+				KUBE_PS1_SYMBOL_IMG=$'\xE2\x98\xB8'
+			fi
+			;;
+		zsh)
 			KUBE_PS1_SYMBOL="${KUBE_PS1_SYMBOL_DEFAULT}"
-			KUBE_PS1_SYMBOL_IMG=$'\u2638\ufe0f'
-		else
-			KUBE_PS1_SYMBOL=$'\xE2\x8E\x88'
-			KUBE_PS1_SYMBOL_IMG=$'\xE2\x98\xB8'
-		fi
-		;;
-	zsh)
-		KUBE_PS1_SYMBOL="${KUBE_PS1_SYMBOL_DEFAULT}"
-		KUBE_PS1_SYMBOL_IMG="\u2638"
-		;;
-	*)
-		KUBE_PS1_SYMBOL="k8s"
-		;;
+			KUBE_PS1_SYMBOL_IMG="\u2638"
+			;;
+		*)
+			KUBE_PS1_SYMBOL="k8s"
+			;;
 	esac
 
 	if [[ "${KUBE_PS1_SYMBOL_USE_IMG}" == true ]]; then
@@ -182,7 +182,7 @@ _kube_ps1_symbol() {
 }
 
 _kube_ps1_split() {
-	type setopt >/dev/null 2>&1 && setopt SH_WORD_SPLIT
+	type setopt > /dev/null 2>&1 && setopt SH_WORD_SPLIT
 	local IFS=$1
 	echo $2
 }
@@ -194,7 +194,7 @@ _kube_ps1_file_newer_than() {
 
 	if [[ "${KUBE_PS1_SHELL}" == "zsh" ]]; then
 		mtime=$(zstat +mtime "${file}")
-	elif stat -c "%s" /dev/null &>/dev/null; then
+	elif stat -c "%s" /dev/null &> /dev/null; then
 		# GNU stat
 		mtime=$(stat -L -c %Y "${file}")
 	else
@@ -240,7 +240,7 @@ _kube_ps1_update_cache() {
 
 _kube_ps1_get_context() {
 	if [[ "${KUBE_PS1_CONTEXT_ENABLE}" == true ]]; then
-		KUBE_PS1_CONTEXT="$(${KUBE_PS1_BINARY} config current-context 2>/dev/null)"
+		KUBE_PS1_CONTEXT="$(${KUBE_PS1_BINARY} config current-context 2> /dev/null)"
 		# Set namespace to 'N/A' if it is not defined
 		KUBE_PS1_CONTEXT="${KUBE_PS1_CONTEXT:-N/A}"
 
@@ -252,7 +252,7 @@ _kube_ps1_get_context() {
 
 _kube_ps1_get_ns() {
 	if [[ "${KUBE_PS1_NS_ENABLE}" == true ]]; then
-		KUBE_PS1_NAMESPACE="$(${KUBE_PS1_BINARY} config view --minify --output 'jsonpath={..namespace}' 2>/dev/null)"
+		KUBE_PS1_NAMESPACE="$(${KUBE_PS1_BINARY} config view --minify --output 'jsonpath={..namespace}' 2> /dev/null)"
 		# Set namespace to 'default' if it is not defined
 		KUBE_PS1_NAMESPACE="${KUBE_PS1_NAMESPACE:-default}"
 
@@ -282,7 +282,7 @@ _kube_ps1_get_context_ns() {
 _kube_ps1_init
 
 _kubeon_usage() {
-	cat <<"EOF"
+	cat << "EOF"
 Toggle kube-ps1 prompt on
 
 Usage: kubeon [-g | --global] [-h | --help]
@@ -295,7 +295,7 @@ EOF
 }
 
 _kubeoff_usage() {
-	cat <<"EOF"
+	cat << "EOF"
 Toggle kube-ps1 prompt off
 
 Usage: kubeoff [-g | --global] [-h | --help]

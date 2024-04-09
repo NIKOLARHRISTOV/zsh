@@ -5,7 +5,7 @@ function collapse_pwd {
 }
 function prompt_char {
 	echo -n "%{$bg[white]%}%{$fg[red]%}"
-	git branch >/dev/null 2>/dev/null && echo "±%{$reset_color%}" && return
+	git branch > /dev/null 2> /dev/null && echo "±%{$reset_color%}" && return
 	echo "≥%{$reset_color%}"
 }
 RIXIUS_PRE="%{$bg[white]%}%{$fg[red]%}"

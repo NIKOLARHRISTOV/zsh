@@ -34,7 +34,7 @@ if [[ -o interactive ]]; then
 		# e.g., iterm2_set_user_var currentDirectory $PWD
 		# Accessible in iTerm2 (in a badge now, elsewhere in the future) as
 		# \(user.currentDirectory).
-		whence -v iterm2_print_user_vars >/dev/null 2>&1
+		whence -v iterm2_print_user_vars > /dev/null 2>&1
 		if [ $? -ne 0 ]; then
 			iterm2_print_user_vars() {
 				true
@@ -44,7 +44,7 @@ if [[ -o interactive ]]; then
 		iterm2_print_state_data() {
 			local _iterm2_hostname="${iterm2_hostname-}"
 			if [ -z "${iterm2_hostname:-}" ]; then
-				_iterm2_hostname=$(hostname -f 2>/dev/null)
+				_iterm2_hostname=$(hostname -f 2> /dev/null)
 			fi
 			printf "\033]1337;RemoteHost=%s@%s\007" "$USER" "${_iterm2_hostname-}"
 			printf "\033]1337;CurrentDir=%s\007" "$PWD"
@@ -158,7 +158,7 @@ if [[ -o interactive ]]; then
 		# to a VPN.
 		if [ -z "${iterm2_hostname-}" ]; then
 			if [ "$(uname)" != "Darwin" ]; then
-				iterm2_hostname=$(hostname -f 2>/dev/null)
+				iterm2_hostname=$(hostname -f 2> /dev/null)
 				# Some flavors of BSD (i.e. NetBSD and OpenBSD) don't have the -f option.
 				if [ $? -ne 0 ]; then
 					iterm2_hostname=$(hostname)

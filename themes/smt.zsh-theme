@@ -21,9 +21,9 @@ ZSH_THEME_GIT_PROMPT_SHA_BEFORE="➤ %{$fg_bold[yellow]%}"
 ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$reset_color%}"
 
 function prompt_char() {
-	command git branch &>/dev/null && echo "%{$fg[green]%}±%{$reset_color%}" && return
-	command hg root &>/dev/null && echo "%{$fg_bold[red]%}☿%{$reset_color%}" && return
-	command darcs show repo &>/dev/null && echo "%{$fg_bold[green]%}❉%{$reset_color%}" && return
+	command git branch &> /dev/null && echo "%{$fg[green]%}±%{$reset_color%}" && return
+	command hg root &> /dev/null && echo "%{$fg_bold[red]%}☿%{$reset_color%}" && return
+	command darcs show repo &> /dev/null && echo "%{$fg_bold[green]%}❉%{$reset_color%}" && return
 	echo "%{$fg[cyan]%}◯%{$reset_color%}"
 }
 
@@ -40,7 +40,7 @@ function git_time_since_commit() {
 	local last_commit seconds_since_last_commit
 
 	# Only proceed if there is actually a commit
-	if ! last_commit=$(command git -c log.showSignature=false log --pretty=format:'%at' -1 2>/dev/null); then
+	if ! last_commit=$(command git -c log.showSignature=false log --pretty=format:'%at' -1 2> /dev/null); then
 		echo "[$ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL~%{$reset_color%}]"
 		return
 	fi
@@ -55,7 +55,7 @@ function git_time_since_commit() {
 	SUB_HOURS=$((HOURS % 24))
 	SUB_MINUTES=$((MINUTES % 60))
 
-	if [[ -z "$(command git status -s 2>/dev/null)" ]]; then
+	if [[ -z "$(command git status -s 2> /dev/null)" ]]; then
 		COLOR="$ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL"
 	else
 		if [[ "$MINUTES" -gt 30 ]]; then

@@ -4,11 +4,11 @@
 #
 
 git_repo_path() {
-	command git rev-parse --git-dir 2>/dev/null
+	command git rev-parse --git-dir 2> /dev/null
 }
 
 git_commit_id() {
-	command git rev-parse --short HEAD 2>/dev/null
+	command git rev-parse --short HEAD 2> /dev/null
 }
 
 git_mode() {

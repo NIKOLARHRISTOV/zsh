@@ -49,7 +49,7 @@ alias mdi='microk8s.disable'
 # ---------------------------------------------------------- #
 _microk8s_kubectl_completion() {
 	if [ $commands[microk8s.kubectl] ]; then
-		microk8s.kubectl 2>/dev/null >/dev/null && microk8s.kubectl completion zsh | sed 's/__start_kubectl kubectl/__start_kubectl microk8s.kubectl/g' >$1
+		microk8s.kubectl 2> /dev/null > /dev/null && microk8s.kubectl completion zsh | sed 's/__start_kubectl kubectl/__start_kubectl microk8s.kubectl/g' > $1
 	fi
 }
 
@@ -63,7 +63,7 @@ alias mk='microk8s.kubectl'
 # ---------------------------------------------------------- #
 _microk8s_helm_completion() {
 	if [ $commands[microk8s.helm] ]; then
-		microk8s.helm completion zsh | sed 's/__start_helm helm/__start_helm microk8s.helm/g' >$1
+		microk8s.helm completion zsh | sed 's/__start_helm helm/__start_helm microk8s.helm/g' > $1
 	fi
 }
 

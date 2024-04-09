@@ -16,9 +16,9 @@ alias stn=create_project
 	if [[ "$OSTYPE" == linux* ]]; then
 		if [[ "$(uname -r)" = *icrosoft* ]]; then
 			_sublime_paths=(
-				"$(wslpath -u 'C:\Program Files\Sublime Text\sublime_text.exe' 2>/dev/null)"
-				"$(wslpath -u 'C:\Program Files\Sublime Text 3\subl.exe' 2>/dev/null)"
-				"$(wslpath -u 'C:\Program Files\Sublime Text 2\subl.exe' 2>/dev/null)"
+				"$(wslpath -u 'C:\Program Files\Sublime Text\sublime_text.exe' 2> /dev/null)"
+				"$(wslpath -u 'C:\Program Files\Sublime Text 3\subl.exe' 2> /dev/null)"
+				"$(wslpath -u 'C:\Program Files\Sublime Text 2\subl.exe' 2> /dev/null)"
 			)
 		else
 			_sublime_paths=(
@@ -110,13 +110,13 @@ function create_project() {
 	if [[ ! -f $_sublime_project_file ]]; then
 		touch $_sublime_project_file
 
-		echo -e "{" >>$_sublime_project_file
-		echo -e "\t\"folders\":" >>$_sublime_project_file
-		echo -e "\t\t[{" >>$_sublime_project_file
-		echo -e "\t\t\t\"path\": \".\"," >>$_sublime_project_file
-		echo -e "\t\t\t\"file_exclude_patterns\": []" >>$_sublime_project_file
-		echo -e "\t\t}]" >>$_sublime_project_file
-		echo -e "}" >>$_sublime_project_file
+		echo -e "{" >> $_sublime_project_file
+		echo -e "\t\"folders\":" >> $_sublime_project_file
+		echo -e "\t\t[{" >> $_sublime_project_file
+		echo -e "\t\t\t\"path\": \".\"," >> $_sublime_project_file
+		echo -e "\t\t\t\"file_exclude_patterns\": []" >> $_sublime_project_file
+		echo -e "\t\t}]" >> $_sublime_project_file
+		echo -e "}" >> $_sublime_project_file
 
 		echo -e "New Sublime Text project created:\n\t${_sublime_project_file}"
 	fi

@@ -28,7 +28,7 @@ function fastfile() {
 	name=$(echo "$1" | tr " " "_")
 
 	mkdir -p "${fastfile_dir}"
-	echo "$file" >"$(fastfile_resolv "$name")"
+	echo "$file" > "$(fastfile_resolv "$name")"
 
 	fastfile_sync
 	fastfile_print "$name"

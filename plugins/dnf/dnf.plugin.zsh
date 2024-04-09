@@ -2,7 +2,7 @@
 local dnfprog="dnf"
 
 # Prefer dnf5 if installed
-command -v dnf5 >/dev/null && dnfprog=dnf5
+command -v dnf5 > /dev/null && dnfprog=dnf5
 
 alias dnfl="${dnfprog} list"            # List packages
 alias dnfli="${dnfprog} list installed" # List installed packages

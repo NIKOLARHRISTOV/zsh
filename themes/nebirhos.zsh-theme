@@ -5,7 +5,7 @@
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
 	RUBY_PROMPT_="%{$fg_bold[blue]%}rvm:(%{$fg[green]%}\$(~/.rvm/bin/rvm-prompt s i v g)%{$fg_bold[blue]%})%{$reset_color%} "
 else
-	if which rbenv &>/dev/null; then
+	if which rbenv &> /dev/null; then
 		RUBY_PROMPT_="%{$fg_bold[blue]%}rbenv:(%{$fg[green]%}\$(rbenv version | sed -e 's/ (set.*$//')%{$fg_bold[blue]%})%{$reset_color%} "
 	fi
 fi
