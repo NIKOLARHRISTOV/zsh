@@ -32,7 +32,7 @@ case "$JSONTOOLS_METHOD" in
           json = JSON.parse(process.argv[1]);
           console.log("true");
           process.exit(0);
-        } catch (e) {
+        } catch (_Error) {
           console.log("false");
           process.exit(1);
         }
