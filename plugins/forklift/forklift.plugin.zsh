@@ -26,7 +26,7 @@ function fl {
 			)
 		fi
 	fi
-	osascript 2>&1 1> /dev/null << END
+	osascript 2>&1 1>/dev/null <<END
 
   try
     tell application "Finder"

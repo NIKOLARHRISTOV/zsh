@@ -13,5 +13,5 @@ function magnet_to_torrent() {
 		filename=$hashh
 	fi
 
-	echo "d10:magnet-uri${#1}:${1}e" > "$filename.torrent"
+	echo "d10:magnet-uri${#1}:${1}e" >"$filename.torrent"
 }

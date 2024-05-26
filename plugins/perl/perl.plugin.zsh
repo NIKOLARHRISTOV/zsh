@@ -34,7 +34,7 @@ newpl() {
 
 	# if it doesn't, make it, and open it
 	[[ ! -e $1 ]] && print '#!/usr/bin/perl'"\n"'use strict;'"\n"'use warnings;' \
-		"\n\n" > $1 && $EDITOR $1
+		"\n\n" >$1 && $EDITOR $1
 }
 
 # pgs - Perl Global Substitution

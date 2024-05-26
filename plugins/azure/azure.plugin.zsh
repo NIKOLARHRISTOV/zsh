@@ -1,13 +1,13 @@
 # AZ Get Subscriptions
 function azgs() {
-	az account show --output tsv --query 'name' 2> /dev/null
+	az account show --output tsv --query 'name' 2>/dev/null
 }
 
 # AZ Subscription Selection
 alias azss="az account set --subscription"
 
 function az_subscriptions() {
-	az account list --all --output tsv --query '[*].name' 2> /dev/null
+	az account list --all --output tsv --query '[*].name' 2>/dev/null
 }
 
 function _az_subscriptions() {

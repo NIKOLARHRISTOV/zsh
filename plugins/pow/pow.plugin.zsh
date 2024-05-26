@@ -26,11 +26,11 @@ rack_root() {
 
 	while [[ $basedir != '/' ]]; do
 		test -e "$basedir/config.ru" && break
-		builtin cd ".." 2> /dev/null
+		builtin cd ".." 2>/dev/null
 		basedir="$PWD"
 	done
 
-	builtin cd "$orgdir" 2> /dev/null
+	builtin cd "$orgdir" 2>/dev/null
 	[[ ${basedir} == "/" ]] && return 1
 	echo $basedir
 }

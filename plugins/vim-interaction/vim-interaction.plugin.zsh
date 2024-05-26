@@ -6,7 +6,7 @@
 
 function callvim {
 	if [[ $# == 0 ]]; then
-		cat << EOH
+		cat <<EOH
 usage: callvim [-b cmd] [-a cmd] [-n name] [file ... fileN]
 
   -b cmd     Run this command in GVIM before editing the first file
@@ -34,15 +34,15 @@ EOH
 
 	while getopts ":b:a:n:" option; do
 		case $option in
-			a)
-				after="$OPTARG"
-				;;
-			b)
-				before="$OPTARG"
-				;;
-			n)
-				name="$OPTARG"
-				;;
+		a)
+			after="$OPTARG"
+			;;
+		b)
+			before="$OPTARG"
+			;;
+		n)
+			name="$OPTARG"
+			;;
 		esac
 	done
 	shift $((OPTIND - 1))

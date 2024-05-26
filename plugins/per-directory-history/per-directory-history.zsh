@@ -119,9 +119,9 @@ function _per-directory-history-addhistory() {
 	else
 		print -Sr -- "${1%%$'\n'}"
 		# instantly write history if set options require it.
-		if [[ -o share_history ]] \
-			|| [[ -o inc_append_history ]] \
-			|| [[ -o inc_append_history_time ]]; then
+		if [[ -o share_history ]] ||
+			[[ -o inc_append_history ]] ||
+			[[ -o inc_append_history_time ]]; then
 			fc -AI $HISTFILE
 			fc -AI $_per_directory_history_directory
 		fi

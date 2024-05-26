@@ -5,7 +5,7 @@ alias bl="bower list"
 alias bs="bower search"
 
 _bower_installed_packages() {
-	bower_package_list=$(bower ls --no-color 2> /dev/null | awk 'NR>3{print p}{p=$0}' | cut -d ' ' -f 2 | sed 's/#.*//')
+	bower_package_list=$(bower ls --no-color 2>/dev/null | awk 'NR>3{print p}{p=$0}' | cut -d ' ' -f 2 | sed 's/#.*//')
 }
 _bower() {
 	local -a _1st_arguments _no_color _dopts _save_dev _force_latest _production
@@ -49,33 +49,33 @@ _bower() {
 	fi
 
 	case "$words[1]" in
-		install)
-			_arguments \
-				$_dopts \
-				$_save_dev \
-				$_force_latest \
-				$_no_color \
-				$_production
-			;;
-		update)
-			_arguments \
-				$_dopts \
-				$_no_color \
-				$_force_latest
-			_bower_installed_packages
-			compadd "$@" $(echo $bower_package_list)
-			;;
-		uninstall)
-			_arguments \
-				$_no_color \
-				$_dopts
-			_bower_installed_packages
-			compadd "$@" $(echo $bower_package_list)
-			;;
-		*)
-			_arguments \
-				$_no_color
-			;;
+	install)
+		_arguments \
+			$_dopts \
+			$_save_dev \
+			$_force_latest \
+			$_no_color \
+			$_production
+		;;
+	update)
+		_arguments \
+			$_dopts \
+			$_no_color \
+			$_force_latest
+		_bower_installed_packages
+		compadd "$@" $(echo $bower_package_list)
+		;;
+	uninstall)
+		_arguments \
+			$_no_color \
+			$_dopts
+		_bower_installed_packages
+		compadd "$@" $(echo $bower_package_list)
+		;;
+	*)
+		_arguments \
+			$_no_color
+		;;
 	esac
 
 }
