@@ -29,11 +29,11 @@ alias arls='arc list'
 #
 
 ardu() {
-	# Both `ardu https://arcanist-url.com/<REVISION>`, and `ardu <REVISION>` work.
-	arc diff --update "${1:t}"
+  # Both `ardu https://arcanist-url.com/<REVISION>`, and `ardu <REVISION>` work.
+  arc diff --update "${1:t}"
 }
 
 arpa() {
-	# Both `arpa https://arcanist-url.com/<REVISION>`, and `arpa <REVISION>` work.
-	arc patch "${1:t}"
+  # Both `arpa https://arcanist-url.com/<REVISION>`, and `arpa <REVISION>` work.
+  arc patch "${1:t}"
 }

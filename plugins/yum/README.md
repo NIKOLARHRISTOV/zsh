@@ -1,7 +1,6 @@
 # Yum plugin
 
-This plugin adds useful aliases for common [Yum](http://yum.baseurl.org/)
-commands.
+This plugin adds useful aliases for common [Yum](http://yum.baseurl.org/) commands.
 
 To use it, add `yum` to the plugins array in your zshrc file:
 
@@ -12,7 +11,7 @@ plugins=(... yum)
 ## Aliases
 
 | Alias | Command                           | Description                  |
-| ----- | --------------------------------- | ---------------------------- |
+|-------|-----------------------------------|------------------------------|
 | ys    | `yum search`                      | Search package               |
 | yp    | `yum info`                        | Show package info            |
 | yl    | `yum list`                        | List packages                |

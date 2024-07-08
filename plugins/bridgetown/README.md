@@ -1,7 +1,6 @@
 # Bridgetown plugin
 
-This plugin adds some aliases and autocompletion for common
-[Bridgetown](https://bridgetownrb.com/) commands.
+This plugin adds some aliases and autocompletion for common [Bridgetown](https://bridgetownrb.com/) commands.
 
 To use it, add `bridgetown` to the plugins array in your zshrc file:
 
@@ -11,8 +10,8 @@ plugins=(... bridgetown)
 
 ## Aliases
 
-| Alias   | Command                   |
-| ------- | ------------------------- |
+| Alias | Command                    |
+|-------|----------------------------|
 | br      | `bridgetown`              |
 | bra     | `bin/bridgetown apply`    |
 | brb     | `bin/bridgetown build`    |

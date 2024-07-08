@@ -5,12 +5,12 @@
 
 # Helper function to cache and load completions
 _microk8s_cache_completion() {
-	local cache="${ZSH_CACHE_DIR}/microk8s_$(echo $1)_completion"
-	if [[ ! -f $cache ]]; then
-		$2 $cache
-	fi
+  local cache="${ZSH_CACHE_DIR}/microk8s_$(echo $1)_completion"
+  if [[ ! -f $cache ]]; then
+    $2 $cache
+  fi
 
-	[[ -f $cache ]] && source $cache
+  [[ -f $cache ]] && source $cache
 }
 
 # ---------------------------------------------------------- #
@@ -18,11 +18,11 @@ _microk8s_cache_completion() {
 # ALIAS: me                                                  #
 # ---------------------------------------------------------- #
 _microk8s_enable_get_command_list() {
-	microk8s.enable --help | tail -n +7 | awk '{$1=$1;print}'
+  microk8s.enable --help | tail -n +7 | awk '{$1=$1;print}'
 }
 
 _microk8s_enable() {
-	compadd -X "MicroK8s Addons" $(_microk8s_enable_get_command_list)
+   compadd -X "MicroK8s Addons" $(_microk8s_enable_get_command_list)
 }
 
 compdef _microk8s_enable microk8s.enable
@@ -33,11 +33,11 @@ alias me='microk8s.enable'
 # ALIAS: mdi                                                 #
 # ---------------------------------------------------------- #
 _microk8s_disable_get_command_list() {
-	microk8s.disable --help | tail -n +7 | awk '{$1=$1;print}'
+  microk8s.disable --help | tail -n +7 | awk '{$1=$1;print}'
 }
 
 _microk8s_disable() {
-	compadd -X "MicroK8s Addons" $(_microk8s_disable_get_command_list)
+  compadd -X "MicroK8s Addons" $(_microk8s_disable_get_command_list)
 }
 
 compdef _microk8s_disable microk8s.disable
@@ -48,9 +48,9 @@ alias mdi='microk8s.disable'
 # ALIAS: mk                                                  #
 # ---------------------------------------------------------- #
 _microk8s_kubectl_completion() {
-	if [ $commands[microk8s.kubectl] ]; then
-		microk8s.kubectl 2>/dev/null >/dev/null && microk8s.kubectl completion zsh | sed 's/__start_kubectl kubectl/__start_kubectl microk8s.kubectl/g' >$1
-	fi
+  if [ $commands[microk8s.kubectl] ]; then
+    microk8s.kubectl 2>/dev/null >/dev/null && microk8s.kubectl completion zsh | sed 's/__start_kubectl kubectl/__start_kubectl microk8s.kubectl/g' >$1
+  fi
 }
 
 _microk8s_cache_completion 'kubectl' _microk8s_kubectl_completion
@@ -62,9 +62,9 @@ alias mk='microk8s.kubectl'
 # ALIAS: mh                                                  #
 # ---------------------------------------------------------- #
 _microk8s_helm_completion() {
-	if [ $commands[microk8s.helm] ]; then
-		microk8s.helm completion zsh | sed 's/__start_helm helm/__start_helm microk8s.helm/g' >$1
-	fi
+  if [ $commands[microk8s.helm] ]; then
+    microk8s.helm completion zsh | sed 's/__start_helm helm/__start_helm microk8s.helm/g' >$1
+  fi
 }
 
 _microk8s_cache_completion 'helm' _microk8s_helm_completion

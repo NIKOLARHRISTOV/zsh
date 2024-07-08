@@ -2,6 +2,7 @@
 # Author: Adam Strzelecki nanoant.com, modified by Bodo Tasche bitboxer.de
 #         Updated to support ForkLift 2 and ForkLift 3 by Johan Kaving
 #         Updated to support ForkLift from Setapp by Paul Rudkin
+#         Updated to support ForkLift 4 by Michal Szymanski (misiektoja)
 #
 # Usage:
 #   fl [<folder>]
@@ -14,19 +15,16 @@
 #
 # https://gist.github.com/3313481
 function fl {
-	if [ ! -z "$1" ]; then
-		DIR=$1
-		if [ ! -d "$DIR" ]; then
-			DIR=$(dirname $DIR)
-		fi
-		if [ "$DIR" != "." ]; then
-			PWD=$(
-				cd "$DIR"
-				pwd
-			)
-		fi
-	fi
-	osascript 2>&1 1>/dev/null <<END
+  if [ ! -z "$1" ]; then
+    DIR=$1
+    if [ ! -d "$DIR" ]; then
+      DIR=$(dirname $DIR)
+    fi
+    if [ "$DIR" != "." ]; then
+      PWD=`cd "$DIR";pwd`
+    fi
+  fi
+  osascript 2>&1 1>/dev/null <<END
 
   try
     tell application "Finder"
@@ -61,7 +59,7 @@ function fl {
     tell application forkLiftSetapp
         activate
         set forkLiftVersion to version
-    end tell	
+    end tell
   else if forkLift3 is not null and application forkLift3 is running then
     tell application forkLift3
         activate
@@ -87,7 +85,7 @@ function fl {
     else if forkLift is not null then
         set appName to forkLift
     end if
-    
+
     tell application appName
         activate
         set forkLiftVersion to version
@@ -112,6 +110,11 @@ function fl {
         if forkLiftVersion starts with "3" then
             tell pop over of list of group of splitter group of splitter group of topWindow
                 set value of text field 1 to "$PWD"
+            end tell
+        else if forkLiftVersion starts with "4" then
+            tell pop over of list of group of splitter group of splitter group of topWindow
+                keystroke "$PWD"
+                delay 0.1
             end tell
         else
             tell sheet 1 of topWindow

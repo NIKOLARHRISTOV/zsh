@@ -4,9 +4,9 @@
 # -u1 under certain circumstances on Solaris.
 
 if [ "$1,$2,$3" = "-u0,-Tlp,-man" ]; then
-	shift
-	exec /usr/bin/nroff -u1 "$@"
+  shift
+  exec /usr/bin/nroff -u1 "$@"
 else
-	# Some other invocation of nroff
-	exec /usr/bin/nroff "$@"
+  # Some other invocation of nroff
+  exec /usr/bin/nroff "$@"
 fi

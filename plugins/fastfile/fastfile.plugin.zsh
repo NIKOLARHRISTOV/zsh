@@ -5,7 +5,7 @@
 # If they are not set yet, they will be
 # overwritten with their default values
 
-default fastfile_dir "${HOME}/.fastfile"
+default fastfile_dir        "${HOME}/.fastfile"
 default fastfile_var_prefix "§"
 
 ###########################
@@ -21,17 +21,18 @@ default fastfile_var_prefix "§"
 #    => fastfile_print
 #
 function fastfile() {
-	test "$2" || 2="."
-	file=$(readlink -f "$2")
+    test "$2" || 2="."
+    file=$(readlink -f "$2")
 
-	test "$1" || 1="$(basename "$file")"
-	name=$(echo "$1" | tr " " "_")
+    test "$1" || 1="$(basename "$file")"
+    name=$(echo "$1" | tr " " "_")
 
-	mkdir -p "${fastfile_dir}"
-	echo "$file" >"$(fastfile_resolv "$name")"
 
-	fastfile_sync
-	fastfile_print "$name"
+    mkdir -p "${fastfile_dir}"
+    echo "$file" > "$(fastfile_resolv "$name")"
+
+    fastfile_sync
+    fastfile_print "$name"
 }
 
 #
@@ -43,7 +44,7 @@ function fastfile() {
 #   The path to the shortcut file
 #
 function fastfile_resolv() {
-	echo "${fastfile_dir}/${1}"
+    echo "${fastfile_dir}/${1}"
 }
 
 #
@@ -55,7 +56,7 @@ function fastfile_resolv() {
 #    The path
 #
 function fastfile_get() {
-	cat "$(fastfile_resolv "$1")"
+    cat "$(fastfile_resolv "$1")"
 }
 
 #
@@ -67,7 +68,7 @@ function fastfile_get() {
 #    Name and value of the shortcut
 #
 function fastfile_print() {
-	echo "${fastfile_var_prefix}${1} -> $(fastfile_get "$1")"
+    echo "${fastfile_var_prefix}${1} -> $(fastfile_get "$1")"
 }
 
 #
@@ -77,13 +78,13 @@ function fastfile_print() {
 #    (=> fastfile_print) for each shortcut
 #
 function fastfile_ls() {
-	for f in "${fastfile_dir}"/*(N); do
-		file=$(basename "$f") # To enable simpler handling of spaces in file names
-		varkey=$(echo "$file" | tr " " "_")
+    for f in "${fastfile_dir}"/*(N); do
+        file=$(basename "$f") # To enable simpler handling of spaces in file names
+        varkey=$(echo "$file" | tr " " "_")
 
-		# Special format for columns
-		echo "${fastfile_var_prefix}${varkey}|->|$(fastfile_get "$file")"
-	done | column -t -s "|"
+        # Special format for columns
+        echo "${fastfile_var_prefix}${varkey}|->|$(fastfile_get "$file")"
+    done | column -t -s "|"
 }
 
 #
@@ -95,21 +96,21 @@ function fastfile_ls() {
 #    => fastfile_print
 #
 function fastfile_rm() {
-	fastfile_print "$1"
-	rm "$(fastfile_resolv "$1")"
-	unalias "${fastfile_var_prefix}${1}"
+    fastfile_print "$1"
+    rm "$(fastfile_resolv "$1")"
+    unalias "${fastfile_var_prefix}${1}"
 }
 
 #
 # Generate the aliases for the shortcuts
 #
 function fastfile_sync() {
-	for f in "${fastfile_dir}"/*(N); do
-		file=$(basename "$f") # To enable simpler handling of spaces in file names
-		varkey=$(echo "$file" | tr " " "_")
+    for f in "${fastfile_dir}"/*(N); do
+        file=$(basename "$f") # To enable simpler handling of spaces in file names
+        varkey=$(echo "$file" | tr " " "_")
 
-		alias -g "${fastfile_var_prefix}${varkey}"="'$(fastfile_get "$file")'"
-	done
+        alias -g "${fastfile_var_prefix}${varkey}"="'$(fastfile_get "$file")'"
+    done
 }
 
 ##################################

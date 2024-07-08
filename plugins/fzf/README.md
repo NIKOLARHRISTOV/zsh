@@ -1,8 +1,7 @@
 # fzf
 
-This plugin tries to find [junegunn's fzf](https://github.com/junegunn/fzf)
-based on where it's been installed, and enables its fuzzy auto-completion and
-key bindings.
+This plugin tries to find [junegunn's fzf](https://github.com/junegunn/fzf) based on where
+it's been installed, and enables its fuzzy auto-completion and key bindings.
 
 To use it, add `fzf` to the plugins array in your zshrc file:
 
@@ -30,12 +29,11 @@ Set default command to use when input is tty:
 export FZF_DEFAULT_COMMAND='<your fzf default command>'
 ```
 
-If not set, the plugin will try to set it to these, in the order in which
-they're found:
+If not set, the plugin will try to set it to these, in the order in which they're found:
 
--   [`fd`](https://github.com/sharkdp/fd)
--   [`rg`](https://github.com/BurntSushi/ripgrep)
--   [`ag`](https://github.com/ggreer/the_silver_searcher)
+- [`fd`](https://github.com/sharkdp/fd)
+- [`rg`](https://github.com/BurntSushi/ripgrep)
+- [`ag`](https://github.com/ggreer/the_silver_searcher)
 
 ### `DISABLE_FZF_AUTO_COMPLETION`
 

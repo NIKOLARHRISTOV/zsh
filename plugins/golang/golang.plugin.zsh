@@ -4,8 +4,8 @@ compctl -g "*.go" gccgo # gccgo
 
 # gc
 for p in 5 6 8; do
-	compctl -g "*.${p}" ${p}l
-	compctl -g "*.go" ${p}g
+  compctl -g "*.${p}" ${p}l
+  compctl -g "*.go" ${p}g
 done
 unset p
 
@@ -22,6 +22,7 @@ alias goga='go get ./...'
 alias goi='go install'
 alias gol='go list'
 alias gom='go mod'
+alias gomt='go mod tidy'
 alias gopa='cd $GOPATH'
 alias gopb='cd $GOPATH/bin'
 alias gops='cd $GOPATH/src'

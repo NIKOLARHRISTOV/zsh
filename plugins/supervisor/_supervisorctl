@@ -1,23 +1,23 @@
 #compdef supervisorctl
 
-typeset -A opt_args local context state line
+typeset -A opt_args
+local context state line
 
-\_supervisorctl() { \_arguments -s -S \
- {--configuration,-c}"[configuration file path (default
-/etc/supervisor.conf)]:FILENAME:\_files" \
- {--help,-h}"[print usage message and exit]:" \
- {--interactive,-i}"[start an interactive shell after executing commands]" \
- {--serverurl,-s}"[URL on which supervisord server is listening (default
-"http://localhost:9001").]" \
- {--username,-u}"[username to use for authentication with
-server]:USERNAME:\_users" \
- {--password,-p}"[password to use for authentication with server]:PASSWORD:" \
- {--history-file,-r}"[keep a readline history (if readline is
-available)]:FILENAME:\_files" \
- "\*::supervisorctl commands:\_supervisorctl_command" }
+_supervisorctl() {
+    _arguments -s -S \
+        {--configuration,-c}"[configuration file path (default /etc/supervisor.conf)]:FILENAME:_files" \
+        {--help,-h}"[print usage message and exit]:" \
+        {--interactive,-i}"[start an interactive shell after executing commands]" \
+        {--serverurl,-s}"[URL on which supervisord server is listening (default "http://localhost:9001").]" \
+        {--username,-u}"[username to use for authentication with server]:USERNAME:_users" \
+        {--password,-p}"[password to use for authentication with server]:PASSWORD:" \
+        {--history-file,-r}"[keep a readline history (if readline is available)]:FILENAME:_files" \
+        "*::supervisorctl commands:_supervisorctl_command"
+}
 
-(( $+functions[_supervisorctl_command] )) || \_supervisorctl_command() { local
-cmd ret=1
+(( $+functions[_supervisorctl_command] )) ||
+_supervisorctl_command() {
+    local cmd ret=1
 
     (( $+supervisorctl_cmds )) || _supervisorctl_cmds=(
         "add:Activates any updates in config for process/group" \
@@ -58,18 +58,16 @@ cmd ret=1
         fi
         return ret
     fi
-
 }
 
 # get supervisor contoroll processes
-
-((
-$+functions[_get_supervisor_procs] )) ||
+(( $+functions[_get_supervisor_procs] )) ||
 _get_supervisor_procs() {
     local cache_policy
-    zstyle -s ":completion:${curcontext}:"
-cache-policy cache_policy if [[-z "$cache_policy"]]; then zstyle
-":completion:${curcontext}:" cache-policy \_supervisor_procs_caching_policy fi
+    zstyle -s ":completion:${curcontext}:" cache-policy cache_policy
+    if [[ -z "$cache_policy" ]]; then
+        zstyle ":completion:${curcontext}:" cache-policy _supervisor_procs_caching_policy
+    fi
 
     if ( [[ ${+_supervisor_procs} -eq 0 ]] || _cache_invalid supervisor_procs ) \
         && ! _retrieve_cache supervisor_procs; then
@@ -80,44 +78,66 @@ cache-policy cache_policy if [[-z "$cache_policy"]]; then zstyle
 
     local expl
     _wanted supervisor_procs expl 'supervisor processes' compadd -a _supervisor_procs
-
 }
 
-\_supervisor_procs_caching_policy() { local -a oldp oldp=( "$1"(Nmw+1) ) ((
-$#oldp )) }
+_supervisor_procs_caching_policy() {
+    local -a oldp
+    oldp=( "$1"(Nmw+1) )
+    (( $#oldp ))
+}
 
-(( $+functions[_supervisorctl_add] )) || \_supervisorctl_add() { \_arguments -s
-\
- "--help[use help system]" \
- "\*::supervisorctl commands:\_supervisorctl" }
+(( $+functions[_supervisorctl_add] )) ||
+_supervisorctl_add() {
+    _arguments -s \
+        "--help[use help system]" \
+        "*::supervisorctl commands:_supervisorctl"
+}
 
-(( $+functions[_supervisorctl_help] )) || \_supervisorctl_help() { \_arguments
--s \
- "\*:supervisorctl commands:\_supervisorctl" }
+(( $+functions[_supervisorctl_help] )) ||
+_supervisorctl_help() {
+    _arguments -s \
+        "*:supervisorctl commands:_supervisorctl"
+}
 
-(( $+functions[_supervisorctl_maintail] )) || \_supervisorctl_maintail() {
-\_arguments -s \
- '-f[Continuous tail of supervisor main log file (Ctrl-C to exit)]' }
+(( $+functions[_supervisorctl_maintail] )) ||
+_supervisorctl_maintail() {
+    _arguments -s \
+        '-f[Continuous tail of supervisor main log file (Ctrl-C to exit)]'
+}
 
-(( $+functions[_supervisorctl_start] )) || \_supervisorctl_start() { # TODO: add
-'all' \_arguments -s \
- '\*::supervisor process:\_get_supervisor_procs' }
+(( $+functions[_supervisorctl_start] )) ||
+_supervisorctl_start() {
+    # TODO: add 'all'
+    _arguments -s \
+        '*::supervisor process:_get_supervisor_procs'
+}
 
-(( $+functions[_supervisorctl_restart] )) || \_supervisorctl_restart() { # TODO:
-add 'all' \_arguments -s \
- '\*::supervisor process:\_get_supervisor_procs' }
+(( $+functions[_supervisorctl_restart] )) ||
+_supervisorctl_restart() {
+    # TODO: add 'all'
+    _arguments -s \
+        '*::supervisor process:_get_supervisor_procs'
+}
 
-(( $+functions[_supervisorctl_status] )) || \_supervisorctl_status() {
-\_arguments \
- '\*::supervisor process:\_get_supervisor_procs' }
+(( $+functions[_supervisorctl_status] )) ||
+_supervisorctl_status() {
+    _arguments \
+        '*::supervisor process:_get_supervisor_procs'
+}
 
-(( $+functions[_supervisorctl_stop] )) || \_supervisorctl_stop() { # TODO: add
-'all' \_arguments -s \
- '\*::supervisor process:\_get_supervisor_procs' }
+(( $+functions[_supervisorctl_stop] )) ||
+_supervisorctl_stop() {
+    # TODO: add 'all'
+    _arguments -s \
+        '*::supervisor process:_get_supervisor_procs'
+}
 
-(( $+functions[_supervisorctl_tail] )) || \_supervisorctl_tail() { # TODO: add
-'stderr' \_arguments -s \
- '-f[Continuous tail of named process stdout Ctrl-C to exit.]' \
- '\*::supervisor process:\_get_supervisor_procs' }
+(( $+functions[_supervisorctl_tail] )) ||
+_supervisorctl_tail() {
+    # TODO: add 'stderr'
+    _arguments -s \
+        '-f[Continuous tail of named process stdout Ctrl-C to exit.]' \
+        '*::supervisor process:_get_supervisor_procs'
+}
 
-\_supervisorctl "$@"
+_supervisorctl "$@"

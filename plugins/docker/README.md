@@ -1,7 +1,6 @@
 # Docker plugin
 
-This plugin adds auto-completion and aliases for
-[docker](https://www.docker.com/).
+This plugin adds auto-completion and aliases for [docker](https://www.docker.com/).
 
 To use it add `docker` to the plugins array in your zshrc file.
 
@@ -14,17 +13,15 @@ https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
 ## Settings
 
-By default, the completion doesn't allow option-stacking, meaning if you try to
-complete `docker run -it <TAB>` it won't work, because you're _stacking_ the
-`-i` and `-t` options.
+By default, the completion doesn't allow option-stacking, meaning if you try to complete
+`docker run -it <TAB>` it won't work, because you're _stacking_ the `-i` and `-t` options.
 
-[You can enable it](https://github.com/docker/cli/commit/b10fb43048) by **adding
-the lines below to your zshrc file**, but be aware of the side effects:
+[You can enable it](https://github.com/docker/cli/commit/b10fb43048) by **adding the lines below to your zshrc
+file**, but be aware of the side effects:
 
-> This enables Zsh to understand commands like `docker run -it ubuntu`. However,
-> by enabling this, this also makes Zsh complete `docker run -u<tab>` with
-> `docker run -uapprox` which is not valid. The users have to put the space or
-> the equal sign themselves before trying to complete.
+> This enables Zsh to understand commands like `docker run -it ubuntu`. However, by enabling this, this also
+> makes Zsh complete `docker run -u<tab>` with `docker run -uapprox` which is not valid. The users have to put
+> the space or the equal sign themselves before trying to complete.
 >
 > Therefore, this behavior is disabled by default. To enable it:
 >
@@ -35,9 +32,8 @@ the lines below to your zshrc file**, but be aware of the side effects:
 
 ### Use old-style completion
 
-If the current completion does not work well for you, you can enable legacy
-completion instead with the following setting. See
-https://github.com/ohmyzsh/ohmyzsh/issues/11789 for more information.
+If the current completion does not work well for you, you can enable legacy completion instead with the
+following setting. See https://github.com/ohmyzsh/ohmyzsh/issues/11789 for more information.
 
 ```zsh
 zstyle ':omz:plugins:docker' legacy-completion yes
@@ -65,6 +61,8 @@ zstyle ':omz:plugins:docker' legacy-completion yes
 | dnls    | `docker network ls`           | List all networks the engine daemon knows about, including those spanning multiple hosts |
 | dnrm    | `docker network rm`           | Remove one or more networks                                                              |
 | dpo     | `docker container port`       | List port mappings or a specific mapping for the container                               |
+| dps     | `docker ps`                   | List all the running docker containers                                                   |
+| dpsa    | `docker ps -a`                | List all running and stopped containers                                                  |
 | dpu     | `docker pull`                 | Pull an image or a repository from a registry                                            |
 | dr      | `docker container run`        | Create a new container and start it using the specified command                          |
 | drit    | `docker container run -it`    | Create a new container and start it in an interactive shell                              |

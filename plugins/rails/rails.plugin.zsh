@@ -1,32 +1,32 @@
 # rails command wrapper
-function _rails_command() {
-	if [ -e "bin/stubs/rails" ]; then
-		bin/stubs/rails $@
-	elif [ -e "bin/rails" ]; then
-		bin/rails $@
-	elif [ -e "script/rails" ]; then
-		ruby script/rails $@
-	elif [ -e "script/server" ]; then
-		ruby script/$@
-	else
-		command rails $@
-	fi
+function _rails_command () {
+  if [ -e "bin/stubs/rails" ]; then
+    bin/stubs/rails $@
+  elif [ -e "bin/rails" ]; then
+    bin/rails $@
+  elif [ -e "script/rails" ]; then
+    ruby script/rails $@
+  elif [ -e "script/server" ]; then
+    ruby script/$@
+  else
+    command rails $@
+  fi
 }
 
 alias rails='_rails_command'
 compdef _rails_command=rails
 
 # rake command wrapper
-function _rake_command() {
-	if [ -e "bin/stubs/rake" ]; then
-		bin/stubs/rake $@
-	elif [ -e "bin/rake" ]; then
-		bin/rake $@
-	elif type bundle &>/dev/null && [[ -e "Gemfile" || -e "gems.rb" ]]; then
-		bundle exec rake $@
-	else
-		command rake $@
-	fi
+function _rake_command () {
+  if [ -e "bin/stubs/rake" ]; then
+    bin/stubs/rake $@
+  elif [ -e "bin/rake" ]; then
+    bin/rake $@
+  elif type bundle &> /dev/null && [[ -e "Gemfile" || -e "gems.rb" ]]; then
+    bundle exec rake $@
+  else
+    command rake $@
+  fi
 }
 
 alias rake='_rake_command'
@@ -116,5 +116,5 @@ alias ssp='ruby script/spec'
 alias sstat='thin --stats "/thin/stats" start'
 
 function remote_console() {
-	/usr/bin/env ssh $1 "( cd $2 && ruby script/console production )"
+  /usr/bin/env ssh $1 "( cd $2 && ruby script/console production )"
 }

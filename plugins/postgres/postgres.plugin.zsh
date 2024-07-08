@@ -1,7 +1,7 @@
 # Aliases to control Postgres
 # Paths noted below are for Postgres installed via Homebrew on OSX
-if ((!$ + commands[brew])); then
-	return
+if (( ! $+commands[brew] )); then
+  return
 fi
 
 local PG_BREW_DIR=$(brew --prefix)/var/postgres

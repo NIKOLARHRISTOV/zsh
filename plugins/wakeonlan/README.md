@@ -1,8 +1,7 @@
 # wakeonlan
 
 This plugin provides a wrapper around the "wakeonlan" tool available from most
-distributions' package repositories, or from
-[the following website](https://github.com/jpoliv/wakeonlan).
+distributions' package repositories, or from [the following website](https://github.com/jpoliv/wakeonlan).
 
 To use it, add `wakeonlan` to the plugins array in your zshrc file:
 
@@ -21,8 +20,8 @@ broadcast address.
 For instance, there might be a file ~/.wakeonlan/leto with the following
 contents:
 
-```sh
-10:11:22:33:44:55:66 192.168.0.255
+```
+00:11:22:33:44:55:66 192.168.0.255
 ```
 
 To wake that device, use the following command:

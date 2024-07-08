@@ -1,8 +1,9 @@
-## per-directory-history plugin
+per-directory-history plugin
+----------------------------
 
-This plugin adds per-directory history for zsh, as well as a global history, and
-the ability to toggle between them with a keyboard shortcut. This is a bundle of
-the [official plugin by @jimhester][5].
+This plugin adds per-directory history for zsh, as well as a global history,
+and the ability to toggle between them with a keyboard shortcut. This is a
+bundle of the [official plugin by @jimhester][5].
 
 To use it, add `per-directory-history` to the plugins array in your zshrc file:
 
@@ -27,12 +28,14 @@ toggle set the `PER_DIRECTORY_HISTORY_TOGGLE` environment variable.
 
 ## Configuration
 
--   `HISTORY_BASE` is a global variable that defines the base directory in which
-    the directory histories are stored (default `$HOME/.directory_history`).
--   `per-directory-history-toggle-history` is the function to toggle between
-    local and global histories.
--   `PER_DIRECTORY_HISTORY_TOGGLE` is the key binding used to run the
-    toggle-history function above (default `^G`)
+* `HISTORY_BASE` is a global variable that defines the base directory in which the
+  directory histories are stored (default `$HOME/.directory_history`).
+* `per-directory-history-toggle-history` is the function to toggle between local
+  and global histories.
+* `PER_DIRECTORY_HISTORY_TOGGLE` is the key binding used to run the toggle-history
+  function above (default `^G`)
+* `PER_DIRECTORY_HISTORY_PRINT_MODE_CHANGE` is a variable which toggles whether
+  the current mode is printed to the screen following a mode change (default `true`)
 
 ## History
 
