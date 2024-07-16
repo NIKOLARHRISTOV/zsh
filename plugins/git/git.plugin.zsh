@@ -107,7 +107,7 @@ alias gaa='git add --all'
 alias gapa='git add --patch'
 alias gau='git add --update'
 alias gav='git add --verbose'
-alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"'
+alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git ecommit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"'
 alias gam='git am'
 alias gama='git am --abort'
 alias gamc='git am --continue'
@@ -141,7 +141,7 @@ function gbds() {
   git for-each-ref refs/heads/ "--format=%(refname:short)" | \
     while read branch; do
       local merge_base=$(git merge-base $default_branch $branch)
-      if [[ $(git cherry $default_branch $(git commit-tree $(git rev-parse $branch\^{tree}) -p $merge_base -m _)) = -* ]]; then
+      if [[ $(git cherry $default_branch $(git ecommit-tree $(git rev-parse $branch\^{tree}) -p $merge_base -m _)) = -* ]]; then
         git branch -D $branch
       fi
     done
@@ -182,22 +182,22 @@ function gccd() {
 }
 compdef _git gccd=git-clone
 
-alias gcam='git commit --all --message'
-alias gcas='git commit --all --signoff'
-alias gcasm='git commit --all --signoff --message'
-alias gcs='git commit --gpg-sign'
-alias gcss='git commit --gpg-sign --signoff'
-alias gcssm='git commit --gpg-sign --signoff --message'
-alias gcmsg='git commit --message'
-alias gcsm='git commit --signoff --message'
-alias gc='git commit --verbose'
-alias gca='git commit --verbose --all'
-alias gca!='git commit --verbose --all --amend'
-alias gcan!='git commit --verbose --all --no-edit --amend'
-alias gcans!='git commit --verbose --all --signoff --no-edit --amend'
-alias gcann!='git commit --verbose --all --date=now --no-edit --amend'
-alias gc!='git commit --verbose --amend'
-alias gcn!='git commit --verbose --no-edit --amend'
+alias gcam='git ecommit --all --message'
+alias gcas='git ecommit --all --signoff'
+alias gcasm='git ecommit --all --signoff --message'
+alias gcs='git ecommit --gpg-sign'
+alias gcss='git ecommit --gpg-sign --signoff'
+alias gcssm='git ecommit --gpg-sign --signoff --message'
+alias gcmsg='git ecommit --message'
+alias gcsm='git ecommit --signoff --message'
+alias gc='git ecommit --verbose'
+alias gca='git ecommit --verbose --all'
+alias gca!='git ecommit --verbose --all --amend'
+alias gcan!='git ecommit --verbose --all --no-edit --amend'
+alias gcans!='git ecommit --verbose --all --signoff --no-edit --amend'
+alias gcann!='git ecommit --verbose --all --date=now --no-edit --amend'
+alias gc!='git ecommit --verbose --amend'
+alias gcn!='git ecommit --verbose --no-edit --amend'
 alias gcf='git config --list'
 alias gdct='git describe --tags $(git rev-list --tags --max-count=1)'
 alias gd='git diff'

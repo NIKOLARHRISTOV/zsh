@@ -114,7 +114,7 @@ bindings as mentioned above.
 
 EOF
 
-# Announce success and generate git commit messages
+# Announce success and generate git ecommit messages
 
 cat <<EOF
 Done OK
@@ -122,7 +122,7 @@ Done OK
 Now you can check the results and commit like this:
 
   git add *
-  git commit -m "history-substring-search: update to upstream version $upstream_just_date" \\
+  git ecommit -m "history-substring-search: update to upstream version $upstream_just_date" \\
       -m "Updates OMZ's copy to commit $upstream_sha from $UPSTREAM_REPO"
 
 EOF

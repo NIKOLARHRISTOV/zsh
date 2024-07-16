@@ -38,7 +38,7 @@ new_gh() { # [DIRECTORY]
     || return
   git add -f .gitignore \
     || return
-  git commit -m 'Initial commit.' \
+  git ecommit -m 'Initial commit.' \
     || return
   hub create \
     || return

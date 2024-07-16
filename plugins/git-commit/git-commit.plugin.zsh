@@ -51,7 +51,7 @@ case $1 in
     ;;
 esac
 done
-git commit -m "'$_type'${_scope:+(${_scope})}${_attention}:${_message}"
+git ecommit -m "'$_type'${_scope:+(${_scope})}${_attention}:${_message}"
 }; a'
 
   git config --global alias.$_alias "$_func"

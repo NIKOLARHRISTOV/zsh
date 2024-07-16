@@ -41,7 +41,7 @@ Where `type` is one of the following:
 
 | Git alias                                     | Command                                              |
 | --------------------------------------------- | ---------------------------------------------------- |
-| `git style "remove trailing whitespace"`      | `git commit -m "style: remove trailing whitespace"`  |
-| `git wip "work in progress"`                  | `git commit -m "work in progress"`                   |
-| `git fix -s "router" "correct redirect link"` | `git commit -m "fix(router): correct redirect link"` |
-| `git rev -s "api" "rollback v2"`              | `git commit -m "revert(api): rollback v2"`           |
+| `git style "remove trailing whitespace"`      | `git ecommit -m "style: remove trailing whitespace"`  |
+| `git wip "work in progress"`                  | `git ecommit -m "work in progress"`                   |
+| `git fix -s "router" "correct redirect link"` | `git ecommit -m "fix(router): correct redirect link"` |
+| `git rev -s "api" "rollback v2"`              | `git ecommit -m "revert(api): rollback v2"`           |

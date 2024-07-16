@@ -21,7 +21,7 @@ plugins=(... git)
 | `gapa`                 | `git add --patch`                                                                                                               |
 | `gau`                  | `git add --update`                                                                                                              |
 | `gav`                  | `git add --verbose`                                                                                                             |
-| `gwip`                 | `git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"` |
+| `gwip`                 | `git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git ecommit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"` |
 | `gam`                  | `git am`                                                                                                                        |
 | `gama`                 | `git am --abort`                                                                                                                |
 | `gamc`                 | `git am --continue`                                                                                                             |
@@ -61,22 +61,22 @@ plugins=(... git)
 | `gcl`                  | `git clone --recurse-submodules`                                                                                                |
 | `gclf`                 | `git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules`                                        |
 | `gccd`                 | `git clone --recurse-submodules "$@" && cd "$(basename $\_ .git)"`                                                              |
-| `gcam`                 | `git commit --all --message`                                                                                                    |
-| `gcas`                 | `git commit --all --signoff`                                                                                                    |
-| `gcasm`                | `git commit --all --signoff --message`                                                                                          |
-| `gcmsg`                | `git commit --message`                                                                                                          |
-| `gcsm`                 | `git commit --signoff --message`                                                                                                |
-| `gc`                   | `git commit --verbose`                                                                                                          |
-| `gca`                  | `git commit --verbose --all`                                                                                                    |
-| `gca!`                 | `git commit --verbose --all --amend`                                                                                            |
-| `gcan!`                | `git commit --verbose --all --no-edit --amend`                                                                                  |
-| `gcans!`               | `git commit --verbose --all --signoff --no-edit --amend`                                                                        |
-| `gcann!`               | `git commit --verbose --all --date=now --no-edit --amend`                                                                       |
-| `gc!`                  | `git commit --verbose --amend`                                                                                                  |
-| `gcn!`                 | `git commit --verbose --no-edit --amend`                                                                                        |
-| `gcs`                  | `git commit -S`                                                                                                                 |
-| `gcss`                 | `git commit -S -s`                                                                                                              |
-| `gcssm`                | `git commit -S -s -m`                                                                                                           |
+| `gcam`                 | `git ecommit --all --message`                                                                                                    |
+| `gcas`                 | `git ecommit --all --signoff`                                                                                                    |
+| `gcasm`                | `git ecommit --all --signoff --message`                                                                                          |
+| `gcmsg`                | `git ecommit --message`                                                                                                          |
+| `gcsm`                 | `git ecommit --signoff --message`                                                                                                |
+| `gc`                   | `git ecommit --verbose`                                                                                                          |
+| `gca`                  | `git ecommit --verbose --all`                                                                                                    |
+| `gca!`                 | `git ecommit --verbose --all --amend`                                                                                            |
+| `gcan!`                | `git ecommit --verbose --all --no-edit --amend`                                                                                  |
+| `gcans!`               | `git ecommit --verbose --all --signoff --no-edit --amend`                                                                        |
+| `gcann!`               | `git ecommit --verbose --all --date=now --no-edit --amend`                                                                       |
+| `gc!`                  | `git ecommit --verbose --amend`                                                                                                  |
+| `gcn!`                 | `git ecommit --verbose --no-edit --amend`                                                                                        |
+| `gcs`                  | `git ecommit -S`                                                                                                                 |
+| `gcss`                 | `git ecommit -S -s`                                                                                                              |
+| `gcssm`                | `git ecommit -S -s -m`                                                                                                           |
 | `gcf`                  | `git config --list`                                                                                                             |
 | `gdct`                 | `git describe --tags $(git rev-list --tags --max-count=1)`                                                                      |
 | `gd`                   | `git diff`                                                                                                                      |

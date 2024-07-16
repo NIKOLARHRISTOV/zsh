@@ -37,10 +37,10 @@ plugins=(... lol)
 | `nomnom`     | `killall`                                                       |
 | `nomz`       | `ps aux`                                                        |
 | `nowai`      | `chmod`                                                         |
-| `oanward`    | `git commit -m`                                                 |
+| `oanward`    | `git ecommit -m`                                                 |
 | `obtw`       | `nohup`                                                         |
 | `onoz`       | `cat /var/log/errors.log`                                       |
-| `ooanward`   | `git commit -am`                                                |
+| `ooanward`   | `git ecommit -am`                                                |
 | `plz`        | `pwd`                                                           |
 | `pwned`      | `ssh`                                                           |
 | `rtfm`       | `man`                                                           |
@@ -49,7 +49,7 @@ plugins=(... lol)
 | `violenz`    | `git rebase`                                                    |
 | `visible`    | `echo`                                                          |
 | `wtf`        | `dmesg`                                                         |
-| `yolo`       | `git commit -m "$(curl -s https://whatthecommit.com/index.txt)"` |
+| `yolo`       | `git ecommit -m "$(curl -s https://whatthecommit.com/index.txt)"` |
 
 ## Usage Examples
 
@@ -66,6 +66,6 @@ nowai u=r,go= some.file
 # ssh root@catserver.org
 pwned root@catserver.org
 
-# git commit -m "$(curl -s https://whatthecommit.com/index.txt)"
+# git ecommit -m "$(curl -s https://whatthecommit.com/index.txt)"
 yolo
 ```

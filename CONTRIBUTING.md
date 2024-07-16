@@ -178,7 +178,7 @@ type(scope)!: subject
 
   - Commit that changes the `git` plugin:
   ```
-  feat(git): add alias for `git commit`
+  feat(git): add alias for `git ecommit`
   ```
 
   - Commit that changes many plugins:
