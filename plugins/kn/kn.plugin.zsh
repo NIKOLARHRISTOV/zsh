@@ -3,6 +3,6 @@
 # Author: https://github.com/btannous
 
 if [ $commands[kn] ]; then
-  source <(kn completion zsh)
-  compdef _kn kn
+	source <(kn completion zsh)
+	compdef _kn kn
 fi

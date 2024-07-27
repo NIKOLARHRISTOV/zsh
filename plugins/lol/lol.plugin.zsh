@@ -48,4 +48,3 @@ alias ooanward='git ecommit -am'
 alias yolo='git ecommit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 alias letcat='git checkout'
 alias violenz='git rebase'
-

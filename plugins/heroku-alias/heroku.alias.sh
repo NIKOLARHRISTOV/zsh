@@ -24,13 +24,13 @@ alias hcu='heroku config:unset'
 
 # this function allow to load multi env set in a file
 hcfile() {
-  echo 'Which platform [-r/a name] ?'
-  read platform
-  echo 'Which file ?'
-  read file
-  while read line;
-    do heroku config:set "$platform" "$line";
-  done < "$file"
+	echo 'Which platform [-r/a name] ?'
+	read platform
+	echo 'Which file ?'
+	read file
+	while read line; do
+		heroku config:set "$platform" "$line"
+	done < "$file"
 }
 
 # apps and favorites

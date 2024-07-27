@@ -10,11 +10,12 @@ plugins=(... autoenv)
 
 ## Functions
 
-* `use_env()`: creates and/or activates a virtualenv. For use in `.env` files.
-  See the source code for details.
+-   `use_env()`: creates and/or activates a virtualenv. For use in `.env` files.
+    See the source code for details.
 
 ## Requirements
 
 In order to make this work, you will need to have the autoenv installed.
 
-More info on the usage and install at [the project's homepage](https://github.com/inishchith/autoenv).
+More info on the usage and install at
+[the project's homepage](https://github.com/inishchith/autoenv).

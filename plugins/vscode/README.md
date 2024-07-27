@@ -1,9 +1,10 @@
 # VS Code
 
-This plugin provides useful aliases to simplify the interaction between the command line and VS Code or
-VSCodium editor.
+This plugin provides useful aliases to simplify the interaction between the
+command line and VS Code or VSCodium editor.
 
-To start using it, add the `vscode` plugin to your `plugins` array in `~/.zshrc`:
+To start using it, add the `vscode` plugin to your `plugins` array in
+`~/.zshrc`:
 
 ```zsh
 plugins=(... vscode)
@@ -11,33 +12,38 @@ plugins=(... vscode)
 
 ## Requirements
 
-This plugin requires to have a flavour of VS Code installed and it's executable available in PATH.
+This plugin requires to have a flavour of VS Code installed and it's executable
+available in PATH.
 
 You can install either:
 
-- VS Code (code)
-- VS Code Insiders (code-insiders)
-- VSCodium (codium)
+-   VS Code (code)
+-   VS Code Insiders (code-insiders)
+-   VSCodium (codium)
 
 ### MacOS
 
-While Linux installations will add the executable to PATH, MacOS users might still have to do this manually:
+While Linux installations will add the executable to PATH, MacOS users might
+still have to do this manually:
 
 [For VS Code and VS Code Insiders](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line),
-open the Command Palette via (F1 or ⇧⌘P) and type shell command to find the Shell Command:
+open the Command Palette via (F1 or ⇧⌘P) and type shell command to find the
+Shell Command:
 
 > Shell Command: Install 'code' command in PATH
 
 [For VSCodium](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#how-do-i-open-vscodium-from-the-terminal),
-open the Command Palette via (F1 or ⇧⌘P) and type shell command to find the Shell Command:
+open the Command Palette via (F1 or ⇧⌘P) and type shell command to find the
+Shell Command:
 
 > Shell Command: Install 'codium' command in PATH
 
 ## Using multiple flavours
 
-If for any reason, you ever require to use multiple flavours of VS Code i.e. VS Code (stable) and VS Code
-Insiders, you can manually specify the flavour's executable. Add the following line to the .zshrc file
-(between the `ZSH_THEME` and the `plugins=()` lines). This will make the plugin use your manually defined
+If for any reason, you ever require to use multiple flavours of VS Code i.e. VS
+Code (stable) and VS Code Insiders, you can manually specify the flavour's
+executable. Add the following line to the .zshrc file (between the `ZSH_THEME`
+and the `plugins=()` lines). This will make the plugin use your manually defined
 executable.
 
 ```zsh

@@ -13,7 +13,7 @@ plugins=(... jhbuild)
 ## Aliases
 
 | Alias   | Command                   |
-|---------|---------------------------|
+| ------- | ------------------------- |
 | `jh`    | `jhbuild`                 |
 | `jhb`   | `jhbuild build`           |
 | `jhbo`  | `jhbuild buildone`        |

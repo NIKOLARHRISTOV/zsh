@@ -2,5 +2,5 @@
 #
 
 if [ $commands[svcat] ]; then
-  source <(svcat completion zsh)
+	source <(svcat completion zsh)
 fi

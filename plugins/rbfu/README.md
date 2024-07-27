@@ -13,6 +13,6 @@ plugins=(... rbfu)
 
 ## Functions
 
-- `rbfu-rubies`: lists all installed rubies available to rbfu.
+-   `rbfu-rubies`: lists all installed rubies available to rbfu.
 
-- `rvm_prompt_info`: shows the Ruby version being used with rbfu.
+-   `rvm_prompt_info`: shows the Ruby version being used with rbfu.
