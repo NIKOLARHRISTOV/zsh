@@ -22,33 +22,33 @@
 
 # right prompt default settings
 if [ -z "$MLH_PRINT_EXIT_CODE" ]; then
-	MLH_PRINT_EXIT_CODE=true
+  MLH_PRINT_EXIT_CODE=true
 fi
 
 if [ -z "$MLH_PRINT_TIME" ]; then
-	MLH_PRINT_TIME=false
+  MLH_PRINT_TIME=false
 fi
 
 # left prompt symbols default settings
 
 if [ -z "$MLH_AT_SYMBOL" ]; then
-	MLH_AT_SYMBOL="@"
+  MLH_AT_SYMBOL="@"
 fi
 
 if [ -z "$MLH_IN_SYMBOL" ]; then
-	MLH_IN_SYMBOL=" in "
+  MLH_IN_SYMBOL=" in "
 fi
 
 if [ -z "$MLH_ON_SYMBOL" ]; then
-	MLH_ON_SYMBOL=" on "
+  MLH_ON_SYMBOL=" on "
 fi
 
 if [ -z "$MLH_SHELL_SYMBOL" ]; then
-	MLH_SHELL_SYMBOL="$ "
+  MLH_SHELL_SYMBOL="$ "
 fi
 
 if [ -z "$MLH_SHELL_SYMBOL_ROOT" ]; then
-	MLH_SHELL_SYMBOL_ROOT="# "
+  MLH_SHELL_SYMBOL_ROOT="# "
 fi
 
 # colors
@@ -59,39 +59,39 @@ BRANCH_COLOR="%F{001}"
 TIME_COLOR="%F{033}"
 
 username() {
-	echo "$USER_COLOR%n%f"
+  echo "$USER_COLOR%n%f"
 }
 
 # Prints device name
 device() {
-	echo "$DEVICE_COLOR%m%f"
+  echo "$DEVICE_COLOR%m%f"
 }
 
 # Prints the current directory
 directory() {
-	echo "$DIR_COLOR%1~%f"
+  echo "$DIR_COLOR%1~%f"
 }
 
 # Prints current time
 current_time() {
-	if [ "$MLH_PRINT_TIME" = true ]; then
-		echo " $TIME_COLOR%*%f"
-	fi
+  if [ "$MLH_PRINT_TIME" = true ]; then
+    echo " $TIME_COLOR%*%f"
+  fi
 }
 
 # Prints exit code of the last executed command
 exit_code() {
-	if [ "$MLH_PRINT_EXIT_CODE" = true ]; then
-		echo "%(?..%F{001}exit %?)%f"
-	fi
+  if [ "$MLH_PRINT_EXIT_CODE" = true ]; then
+    echo "%(?..%F{001}exit %?)%f"
+  fi
 }
 
 prompt_end() {
-	if [ "$UID" -eq 0 ]; then
-		printf "\n$MLH_SHELL_SYMBOL_ROOT"
-	else
-		printf "\n$MLH_SHELL_SYMBOL"
-	fi
+  if [ "$UID" -eq 0 ]; then
+    printf "\n$MLH_SHELL_SYMBOL_ROOT"
+  else
+    printf "\n$MLH_SHELL_SYMBOL"
+  fi
 }
 
 # Set git_prompt_info text

@@ -3,5 +3,5 @@
 # If marktext is passed a file, open it in MarkText
 #
 function marktext() {
-	open -a "MarkText.app" "$1"
+    open -a "MarkText.app" "$1"
 }

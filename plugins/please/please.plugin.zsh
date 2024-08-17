@@ -1,5 +1,5 @@
-if (($ + commands[plz])); then
-	source <(plz --completion_script)
+if (( $+commands[plz] )); then
+    source <(plz --completion_script)
 fi
 
 alias pb='plz build'

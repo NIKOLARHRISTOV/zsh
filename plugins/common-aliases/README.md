@@ -64,8 +64,8 @@ plugins=(... common-aliases)
 
 ## Global aliases
 
-These aliases are expanded in any position in the command line, meaning you can
-use them even at the end of the command you've typed. Examples:
+These aliases are expanded in any position in the command line, meaning you can use them even at the
+end of the command you've typed. Examples:
 
 Quickly pipe to less:
 
@@ -80,7 +80,7 @@ Silences stderr output:
 ```zsh
 $ find . -type f NE
 # will run
-$ find . -type f 2> /dev/null
+$ find . -type f 2>/dev/null
 ```
 
 | Alias | Command                     | Description                                                 |
@@ -98,10 +98,9 @@ $ find . -type f 2> /dev/null
 
 ## File extension aliases
 
-These are special aliases that are triggered when a file name is passed as the
-command. For example, if the pdf file extension is aliased to `acroread` (a
-popular Linux pdf reader), when running `file.pdf` that file will be open with
-`acroread`.
+These are special aliases that are triggered when a file name is passed as the command. For example,
+if the pdf file extension is aliased to `acroread` (a popular Linux pdf reader), when running `file.pdf`
+that file will be open with `acroread`.
 
 ### Reading Docs
 
@@ -125,8 +124,7 @@ popular Linux pdf reader), when running `file.pdf` that file will be open with
 
 ### Some other features
 
--   Opens urls in terminal using browser specified by the variable `$BROWSER`
--   Opens C, C++, Tex and text files using editor specified by the variable
-    `$EDITOR`
--   Opens images using image viewer specified by the variable `$XIVIEWER`
--   Opens videos and other media using mplayer
+- Opens urls in terminal using browser specified by the variable `$BROWSER`
+- Opens C, C++, Tex and text files using editor specified by the variable `$EDITOR`
+- Opens images using image viewer specified by the variable `$XIVIEWER`
+- Opens videos and other media using mplayer

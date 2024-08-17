@@ -1,8 +1,7 @@
 # node plugin
 
-This plugin adds `node-docs` function that opens specific section in
-[Node.js](https://nodejs.org) documentation (depending on the installed
-version).
+This plugin adds `node-docs` function that opens specific section in [Node.js](https://nodejs.org)
+documentation (depending on the installed version).
 
 To use it, add `node` to the plugins array of your zshrc file:
 

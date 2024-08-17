@@ -1,14 +1,24 @@
 # heroku-alias
 
-🧬 Full alias for heroku cli
+Full alias list for Heroku CLI.
 
-| 🚀 last maj | 📡 source                                                                   |
-| ----------- | --------------------------------------------------------------------------- |
-| 02/06/2020  | [heroku cli doc](https://devcenter.heroku.com/articles/heroku-cli-commands) |
+To use it, add `heroku-alias` to the plugins array in your zshrc file:
 
-# Alias list
+```zsh
+plugins=(... heroku-alias)
+```
 
-## general
+## Requirements
+
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
+| 🚀 last maj | 📡 source                                                                    |
+| ---------- | --------------------------------------------------------------------------- |
+| 02/06/2020 | [heroku cli doc](https://devcenter.heroku.com/articles/heroku-cli-commands) |
+
+## Aliases
+
+### general
 
 | Alias | Command                            |
 | ----- | ---------------------------------- |
@@ -16,7 +26,7 @@
 | hauto | heroku autocomplete $(echo $SHELL) |
 | hl    | heroku local                       |
 
-## config
+### config
 
 | Alias  | Command                |
 | ------ | ---------------------- |
@@ -25,21 +35,11 @@
 | hcr    | heroku config -r       |
 | hcs    | heroku config:set      |
 | hcu    | heroku config:unset    |
-| hcfile | function hcfile bellow |
 
-```sh
-hcfile() {
-	echo " Which platform [-r/a name] ? "
-	read platform
-	echo " Which file ? "
-	read file
-	while read line; do
-		heroku config:set "$platform" "$line"
-	done < "$file"
-}
-```
+Also, you can use the `hcfile` function to set multiple config variables from a file,
+which asks you for a platform and a config file to read the configuration from.
 
-## apps and favorites
+### apps and favorites
 
 | Alias | Command                      |
 | ----- | ---------------------------- |
@@ -54,14 +54,14 @@ hcfile() {
 | hair  | heroku apps:info -r          |
 | haia  | heroku apps:info -a          |
 
-# auth
+## auth
 
 | Alias | Command                 |
 | ----- | ----------------------- |
 | h2fa  | heroku auth:2fa         |
 | h2far | heroku auth:2fa:disable |
 
-# access
+## access
 
 | Alias | Command              |
 | ----- | -------------------- |
@@ -72,7 +72,7 @@ hcfile() {
 | hdel  | heroku access:remove |
 | hup   | heroku access:update |
 
-## addons
+### addons
 
 | Alias | Command               |
 | ----- | --------------------- |
@@ -85,7 +85,7 @@ hcfile() {
 | hadde | heroku addons:detach  |
 | hadoc | heroku addons:docs    |
 
-## login
+### login
 
 | Alias | Command            |
 | ----- | ------------------ |
@@ -94,7 +94,7 @@ hcfile() {
 | hi    | heroku login -i    |
 | hwho  | heroku auth:whoami |
 
-## authorizations
+### authorizations
 
 | Alias  | Command                      |
 | ------ | ---------------------------- |
@@ -105,20 +105,20 @@ hcfile() {
 | hthrot | heroku authorizations:rotate |
 | hthup  | heroku authorizations:update |
 
-## plugins
+### plugins
 
 | Alias | Command        |
 | ----- | -------------- |
 | hp    | heroku plugins |
 
-# log
+### log
 
 | Alias | Command         |
 | ----- | --------------- |
 | hg    | heroku logs     |
 | hgt   | heroku log tail |
 
-# database
+### database
 
 | Alias | Command                    |
 | ----- | -------------------------- |
@@ -129,7 +129,7 @@ hcfile() {
 | hpbd  | heroku pg:backups:download |
 | hpbr  | heroku pg:backups:restore  |
 
-# certs
+### certs
 
 | Alias | Command             |
 | ----- | ------------------- |

@@ -4,8 +4,8 @@ compctl -g "*.go" gccgo # gccgo
 
 # gc
 for p in 5 6 8; do
-	compctl -g "*.${p}" ${p}l
-	compctl -g "*.go" ${p}g
+  compctl -g "*.${p}" ${p}l
+  compctl -g "*.go" ${p}g
 done
 unset p
 

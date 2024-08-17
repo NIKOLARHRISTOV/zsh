@@ -1,14 +1,14 @@
 # suse
 
-**Maintainer**: [r-darwish](https://github.com/r-darwish)
-
-Alias for Zypper according to the official Zypper's alias
+Aliases for [Zypper](https://en.opensuse.org/Portal:Zypper) according to the official Zypper's alias
 
 To use it add `suse` to the plugins array in you zshrc file.
 
 ```zsh
 plugins=(... suse)
 ```
+
+**Maintainer**: [r-darwish](https://github.com/r-darwish)
 
 ## Main commands
 
@@ -47,22 +47,22 @@ plugins=(... suse)
 
 ## Request commands
 
-| Alias         | Commands              | Description                                          |
-| ------------- | --------------------- | ---------------------------------------------------- |
-| zif           | `zypper if`           | display info about packages                          |
-| zpa           | `zypper pa`           | list packages                                        |
-| zpatch-info   | `zypper patch-info`   | display info about patches                           |
-| zpattern-info | `zypper pattern-info` | display info about patterns                          |
-| zproduct-info | `zypper product-info` | display info about products                          |
-| zpch          | `zypper pch`          | list all patches                                     |
-| zpd           | `zypper pd`           | list products                                        |
-| zpt           | `zypper pt`           | list patterns                                        |
-| zse           | `zypper se`           | search for packages                                  |
-| zwp           | `zypper wp`           | list all packages providing the specified capability |
+| Alias         | Commands                   | Description                                          |
+| ------------- | -------------------------- | ---------------------------------------------------- |
+| zif           | `zypper if`                | display info about packages                          |
+| zpa           | `zypper pa`                | list packages                                        |
+| zpatch-info   | `zypper patch-info`        | display info about patches                           |
+| zpattern-info | `zypper pattern-info`      | display info about patterns                          |
+| zproduct-info | `zypper product-info`      | display info about products                          |
+| zpch          | `zypper pch`               | list all patches                                     |
+| zpd           | `zypper pd`                | list products                                        |
+| zpt           | `zypper pt`                | list patterns                                        |
+| zse           | `zypper se`                | search for packages                                  |
+| zwp           | `zypper wp`                | list all packages providing the specified capability |
 
-NOTE: `--no-refresh` is passed to zypper for speeding up the calls and avoid
-errors due to lack of root privileges. If you need to refresh the repositories,
-call `sudo zypper ref` (`zref` alias) before running these aliases.
+NOTE: `--no-refresh` is passed to zypper for speeding up the calls and avoid errors due to lack
+of root privileges. If you need to refresh the repositories, call `sudo zypper ref` (`zref` alias)
+before running these aliases.
 
 Related: [#9798](https://github.com/ohmyzsh/ohmyzsh/pull/9798).
 
