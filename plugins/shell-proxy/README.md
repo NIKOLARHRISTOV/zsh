@@ -35,7 +35,7 @@ Note that the program file must be executable.
 Example:
 
 ```sh
-#!/bin/sh
+#!/bin/bash
 
 # HTTP Proxy
 if [[ "$(uname)" = Darwin ]]; then
