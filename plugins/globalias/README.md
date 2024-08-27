@@ -4,7 +4,7 @@ Expands all glob expressions, subcommands and aliases (including global).
 
 Idea from: https://blog.patshead.com/2012/11/automatically-expaning-zsh-global-aliases---simplified.html.
 
-## Usage
+## 🛠️ Usage
 
 Add `globalias` to the plugins array in your zshrc file:
 

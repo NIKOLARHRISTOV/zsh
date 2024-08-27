@@ -8,7 +8,7 @@ To use it, add `gradle` to the plugins array in your zshrc file:
 plugins=(... gradle)
 ```
 
-## Usage
+## 🛠️ Usage
 
 This plugin creates a function called `gradle-or-gradlew`, which is aliased
 to `gradle`, which is used to determine whether the current project directory

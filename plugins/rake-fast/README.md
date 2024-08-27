@@ -18,7 +18,7 @@ Since August of 2016, it also checks if it's in a Rails project and looks at
 rake files inside `lib/tasks` and their modification time to know if the
 cache file needs to be regenerated.
 
-## Installation
+## 🚀 Installation
 
 Just add the plugin to your `.zshrc`:
 
@@ -28,7 +28,7 @@ plugins=(... rake-fast)
 
 You might consider adding `.rake_tasks` to your [global .gitignore](https://help.github.com/articles/ignoring-files#global-gitignore)
 
-## Usage
+## 🛠️ Usage
 
 Type `rake`, then press tab.
 

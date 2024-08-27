@@ -8,7 +8,7 @@ To use it, add `git-auto-fetch` to the plugins array in your zshrc file:
 plugins=(... git-auto-fetch)
 ```
 
-## Usage
+## 🛠️ Usage
 
 Every time the command prompt is shown all remotes will be fetched in the background. By default,
 `git-auto-fetch` will be triggered only if the last auto-fetch was done at least 60 seconds ago.

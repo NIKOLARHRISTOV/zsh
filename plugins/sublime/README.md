@@ -11,7 +11,7 @@ plugins=(... sublime)
 
 Sublime Text has to be installed to use the plugin.
 
-## Usage
+## 🛠️ Usage
 
 The plugin defines several aliases, such as:
 

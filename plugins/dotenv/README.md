@@ -10,7 +10,7 @@ To use it, add `dotenv` to the plugins array in your zshrc file:
 plugins=(... dotenv)
 ```
 
-## Usage
+## 🛠️ Usage
 
 Create `.env` file inside your project root directory and put your ENV variables there.
 

@@ -9,7 +9,7 @@ To use it, add `node` to the plugins array of your zshrc file:
 plugins=(... node)
 ```
 
-## Usage
+## 🛠️ Usage
 
 ```zsh
 # Opens https://nodejs.org/docs/latest-v10.x/api/fs.html

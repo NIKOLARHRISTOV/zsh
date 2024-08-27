@@ -12,7 +12,7 @@ plugins=(... forklift)
 
 * [ForkLift](https://binarynights.com/)
 
-## Usage
+## 🛠️ Usage
 
 `fl [<file_or_folder>]`
 

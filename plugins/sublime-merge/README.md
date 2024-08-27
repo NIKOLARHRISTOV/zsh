@@ -6,7 +6,7 @@ Plugin for Sublime Merge, a cross platform text and code editor, available for L
 
  * [Sublime Merge](https://www.sublimemerge.com)
 
-### Usage
+### 🛠️ Usage
 
  * If `sm` command is called without an argument, launch Sublime Merge
 

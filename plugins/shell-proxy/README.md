@@ -15,7 +15,7 @@ plugins=(... shell-proxy)
 - Supports ssh, sftp, scp, slogin and ssh-copy-id via setting aliases
 - Built-in autocomplete
 
-## Usage
+## 🛠️ Usage
 
 ### Method 1
 

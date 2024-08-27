@@ -8,7 +8,7 @@ To use it, add `fasd` to the plugins array in your zshrc file:
 plugins=(... fasd)
 ```
 
-## Installation
+## 🚀 Installation
 
 Please find detailed installation guide [`here`](https://github.com/whjvenyl/fasd#install)
 

@@ -8,7 +8,7 @@ To use it, add `jsontools` to the plugins array in your zshrc file:
 plugins=(... jsontools)
 ```
 
-## Usage
+## 🛠️ Usage
 
 Usage is simple... just take your json data and pipe it into the appropriate jsontool:
 

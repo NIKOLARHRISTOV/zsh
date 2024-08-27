@@ -8,7 +8,7 @@ To use it, add `dnote` to the plugins array in your zshrc file:
 plugins=(dnote)
 ```
 
-## Usage
+## 🛠️ Usage
 
 At the basic level, this plugin completes all Dnote commands.
 

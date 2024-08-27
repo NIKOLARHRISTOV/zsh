@@ -16,7 +16,7 @@ plugins=(... percol)
 - (_Optional_) [`jump`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump) plugin: needs to be
   enabled before the `percol` plugin.
 
-## Usage
+## 🛠️ Usage
 
 - <kbd>CTRL-R</kbd> (bound to `percol_select_history`): you can use it to grep your history with percol.
 

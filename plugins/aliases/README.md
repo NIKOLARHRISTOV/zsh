@@ -13,7 +13,7 @@ Requirements: Python needs to be installed.
 
 **Maintainer:** [@hqingyi](https://github.com/hqingyi)
 
-## Usage
+## 🛠️ Usage
 
 - `als`: show all aliases by group
 

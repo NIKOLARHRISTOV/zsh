@@ -6,7 +6,7 @@ number of amazing things and you'll need to load some files into GVim for
 editing, inspecting, destruction, or other bits of mayhem.  This script lets you
 do that.
 
-## Usage
+## 🛠️ Usage
 
 The plugin presents a function called `callvim` whose usage is:
 

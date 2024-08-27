@@ -9,7 +9,7 @@ To enable it, add `universalarchive` to the plugins array in your zshrc file:
 plugins=(... universalarchive)
 ```
 
-## Usage
+## 🛠️ Usage
 
 Run `ua <format> <files>` to compress `<files>` into an archive file using `<format>`.
 For example:

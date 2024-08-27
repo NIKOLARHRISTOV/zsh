@@ -22,7 +22,7 @@ zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
 
 As you can see, options are also available with zstyle.
 
-## Usage
+## 🛠️ Usage
 
 When you execute a command alias finder will look at your defined aliases and suggest shorter aliases you could have used, for example:
 

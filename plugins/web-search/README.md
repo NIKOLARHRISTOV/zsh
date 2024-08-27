@@ -8,7 +8,7 @@ Open your `~/.zshrc` file and enable the `web-search` plugin:
 plugins=( ... web-search)
 ```
 
-## Usage
+## 🛠️ Usage
 
 You can use the `web-search` plugin in these two forms:
 

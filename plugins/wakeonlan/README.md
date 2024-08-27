@@ -9,7 +9,7 @@ To use it, add `wakeonlan` to the plugins array in your zshrc file:
 plugins=(... wakeonlan)
 ```
 
-## Usage
+## 🛠️ Usage
 
 In order to use this wrapper, create the `~/.wakeonlan` directory, and place in
 that directory one file for each device you would like to be able to wake. Give

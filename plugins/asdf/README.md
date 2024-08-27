@@ -2,7 +2,7 @@
 
 Adds integration with [asdf](https://github.com/asdf-vm/asdf), the extendable version manager, with support for Ruby, Node.js, Elixir, Erlang and more.
 
-### Installation
+### 🚀 Installation
 
 1. [Download asdf](https://asdf-vm.com/guide/getting-started.html#_2-download-asdf) by running the following:
 
@@ -16,7 +16,7 @@ Adds integration with [asdf](https://github.com/asdf-vm/asdf), the extendable ve
   plugins=(asdf)
   ```
 
-### Usage
+### 🛠️ Usage
 
 See the [asdf documentation](https://asdf-vm.com/guide/getting-started.html#_4-install-a-plugin) for information on how to use asdf:
 

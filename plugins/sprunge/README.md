@@ -8,7 +8,7 @@ To enable it, add 'sprunge' to your plugins:
 plugins=(... sprunge)
 ```
 
-## Usage
+## 🛠️ Usage
 
 | Command                      | Description                               |
 |------------------------------|-------------------------------------------|

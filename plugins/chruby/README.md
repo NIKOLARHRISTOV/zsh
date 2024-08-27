@@ -10,7 +10,7 @@ To use it, add `chruby` to the plugins array in your zshrc file:
 plugins=(... chruby)
 ```
 
-## Usage
+## 🛠️ Usage
 
 If you'd prefer to specify an explicit path to load chruby from
 you can set variables like so:

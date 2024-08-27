@@ -4,7 +4,7 @@ Adds integration with [mise](https://github.com/jdx/mise) (formerly `rtx`), a ru
 npm, nodenv, pyenv, etc. mise is written in rust and is very fast. 20x-200x faster than asdf. With that being
 said, mise is compatible with asdf plugins and .tool-versions files. It can be used as a drop-in replacement.
 
-## Installation
+## 🚀 Installation
 
 1. [Download & install mise](https://github.com/jdx/mise#installation) by running the following:
 
@@ -19,7 +19,7 @@ curl https://mise.jdx.dev/install.sh | sh
 plugins=(mise)
 ```
 
-## Usage
+## 🛠️ Usage
 
 See the [mise readme](https://github.com/jdx/mise#table-of-contents) for information on how to use mise. Here
 are a few examples:

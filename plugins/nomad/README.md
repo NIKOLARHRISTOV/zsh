@@ -2,7 +2,7 @@
 
 The `nomad` plugin provides a simple autocompletion for [Nomad](https://nomadproject.io/), a tool from Hashicorp for easily deploy applications at any scale.
 
-## Usage
+## 🛠️ Usage
 
 1. Enable the `nomad` plugin:
 

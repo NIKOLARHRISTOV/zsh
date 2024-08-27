@@ -9,7 +9,7 @@ To use it, add `fastfile` to the plugins array in your zshrc file:
 plugins=(... fastfile)
 ```
 
-## Usage
+## 🛠️ Usage
 
 Example: you access folder `/code/project/backend/database` very frequently.
 

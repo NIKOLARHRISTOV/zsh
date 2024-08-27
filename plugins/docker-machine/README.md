@@ -1,6 +1,6 @@
 # docker-machine plugin for oh my zsh
 
-### Usage
+### 🛠️ Usage
 
 #### docker-vm
 

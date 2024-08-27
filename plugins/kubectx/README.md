@@ -11,7 +11,7 @@ To use this plugin, add `kubectx` to the plugins array in your zshrc file:
 plugins=(... kubectx)
 ```
 
-### Usage
+### 🛠️ Usage
 
 Add to **.zshrc**:
 

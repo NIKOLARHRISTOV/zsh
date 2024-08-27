@@ -4,7 +4,7 @@ Displays a random quote taken from [quotationspage.com](http://www.quotationspag
 
 Created by [Eduardo San Martin Morote, aka Posva](https://posva.github.io)
 
-## Usage
+## 🛠️ Usage
 
 Add the plugin to the plugins array in your zshrc file and restart zsh:
 

@@ -145,7 +145,7 @@ If you want to make use of the `fzf`-powered browse feature to fuzzy search thro
 bindkey ${FZF_WD_BINDKEY:-'^B'} fuzzy_wd_widget
 ```
 
-## Usage
+## 🛠️ Usage
 
 * Add warp point to current working directory:
 

@@ -12,7 +12,7 @@ The interaction is all done through the web. No local installation of JIRA is ne
 
 In this document, "JIRA" refers to the JIRA issue tracking server, and `jira` refers to the command this plugin supplies.
 
-## Usage
+## 🛠️ Usage
 
 This plugin supplies one command, `jira`, through which all its features are exposed. Most forms of this command open a JIRA page in your web browser.
 

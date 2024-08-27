@@ -37,7 +37,7 @@ Option        Result
 -x            /home/me/foo/bar/quux
 ```
 
-## Usage
+## 🛠️ Usage
 
 For a fish-style working directory in your command prompt, add the following to
 your theme or zshrc:

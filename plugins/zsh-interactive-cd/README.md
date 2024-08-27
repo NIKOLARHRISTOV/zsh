@@ -6,7 +6,7 @@ This plugin provides an interactive way to change directories in zsh using fzf.
 
 ![demo](demo.gif)
 
-## Installation
+## 🚀 Installation
 
 1. Install [fzf](https://github.com/junegunn/fzf) by following its [installation instruction](https://github.com/junegunn/fzf#installation).
 
@@ -16,6 +16,6 @@ This plugin provides an interactive way to change directories in zsh using fzf.
    plugins=(... zsh-interactive-cd)
    ```
 
-## Usage
+## 🛠️ Usage
 
 Press tab for completion as usual, it'll launch fzf automatically. Check fzf’s [readme](https://github.com/junegunn/fzf#search-syntax) for more search syntax usage.

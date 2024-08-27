@@ -6,7 +6,7 @@ Plugin for Marked 2, a previewer for Markdown files on Mac OS X
 
  * [Marked 2](http://marked2app.com)
 
-### Usage
+### 🛠️ Usage
 
  * If `marked` is called without an argument, open Marked
 

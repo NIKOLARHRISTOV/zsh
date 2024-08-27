@@ -10,7 +10,7 @@ plugins=(... emotty)
 
 **NOTE:** it requires the [emoji plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/emoji).
 
-## Usage
+## 🛠️ Usage
 
 The function `emotty` displays an emoji from the current character set (default: `emoji`), based
 on the number associated to the `$TTY`.

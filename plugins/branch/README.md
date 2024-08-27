@@ -25,7 +25,7 @@ plugins=(... branch)
   0.00s user 0.01s system 78% cpu 0.014 total
   ```
 
-## Usage
+## 🛠️ Usage
 
 Copy your theme to `$ZSH_CUSTOM/themes/` and modify it to add `$(branch_prompt_info)` in your prompt.
 This example is for the `robbyrussell` theme:

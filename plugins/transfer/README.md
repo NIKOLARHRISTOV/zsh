@@ -8,7 +8,7 @@ To use it, add `transfer` to the plugins array in your zshrc file:
 plugins=(... transfer)
 ```
 
-## Usage
+## 🛠️ Usage
 
 - Transfer a file: `transfer file.txt`.
 

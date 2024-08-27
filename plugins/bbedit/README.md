@@ -7,7 +7,7 @@ Plugin for BBEdit, an HTML and text editor for Mac OS X
  * [BBEdit](https://www.barebones.com/products/bbedit/)
  * [BBEdit Command-Line Tools](https://www.barebones.com/support/bbedit/cmd-line-tools.html)
 
-### Usage
+### 🛠️ Usage
 
  * If the `bb` command is called without an argument, launch BBEdit
 

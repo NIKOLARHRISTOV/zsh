@@ -17,7 +17,7 @@ cases the history is always saved to both the global history and the directory
 history, so the toggle state will not effect the saved histories. Being able to
 switch between global and directory histories on the fly is a novel feature.
 
-## Usage
+## 🛠️ Usage
 
 The default mode is per directory history, interact with your history as normal.
 

@@ -9,7 +9,7 @@ To use it, add `hanami` to the plugins array in your zshrc file:
 plugins=(... hanami)
 ```
 
-## Usage
+## 🛠️ Usage
 
 For example, type `hc` into your console when you're within Hanami project directory to run
 the application console. Have a look at available shortcuts below. You can read more about

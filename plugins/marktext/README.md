@@ -6,7 +6,7 @@ Plugin for MarkText, a previewer for Markdown files on Mac OS X
 
  * [MarkText](https://github.com/marktext/marktext)
 
-### Usage
+### 🛠️ Usage
 
  * If `marktext` is called without an argument, open MarkText
 

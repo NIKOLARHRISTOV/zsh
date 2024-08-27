@@ -8,7 +8,7 @@ To use it, add `virtualenvwrapper` to the plugins array in your zshrc file:
 plugins=(... virtualenvwrapper)
 ```
 
-## Usage
+## 🛠️ Usage
 
 The plugin allows to automatically activate virtualenvs on cd into git repositories with a matching name:
 

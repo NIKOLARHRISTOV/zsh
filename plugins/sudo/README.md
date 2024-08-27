@@ -8,7 +8,7 @@ To use it, add `sudo` to the plugins array in your zshrc file:
 plugins=(... sudo)
 ```
 
-## Usage
+## 🛠️ Usage
 
 ### Current typed commands
 

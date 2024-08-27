@@ -8,7 +8,7 @@ To use it, add `perms` to the plugins array in your zshrc file:
 plugins=(... perms)
 ```
 
-## Usage
+## 🛠️ Usage
 
 > **CAUTION:** these functions are harmful if you don't know what they do.
 

@@ -6,7 +6,7 @@ To use it, add thefuck to the plugins array of your zshrc file:
 
 plugins=(... thefuck)
 
-## Usage
+## 🛠️ Usage
 Press `ESC` twice to correct previous console command.
 
 ## Notes

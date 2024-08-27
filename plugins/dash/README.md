@@ -10,7 +10,7 @@ To use it, add `dash` to the plugins array in your zshrc file:
 plugins=(... dash)
 ```
 
-## Usage
+## 🛠️ Usage
 
 - Open and switch to the dash application.
 ```

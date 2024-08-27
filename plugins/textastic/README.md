@@ -6,7 +6,7 @@ Plugin for Textastic, a text and code editor for Mac OS X
 
  * [Textastic](https://www.textasticapp.com/mac.html)
 
-### Usage
+### 🛠️ Usage
 
  * If `tt` command is called without an argument, launch Textastic
 
