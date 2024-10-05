@@ -1,8 +1,8 @@
 # chruby plugin
 
-This plugin loads [chruby](https://github.com/postmodern/chruby), a tool that changes the
-current Ruby version, and completion and a prompt function to display the Ruby version.
-Supports brew and manual installation of chruby.
+This plugin loads [chruby](https://github.com/postmodern/chruby), a tool that
+changes the current Ruby version, and completion and a prompt function to
+display the Ruby version. Supports brew and manual installation of chruby.
 
 To use it, add `chruby` to the plugins array in your zshrc file:
 
@@ -12,8 +12,8 @@ plugins=(... chruby)
 
 ## 🛠️ Usage
 
-If you'd prefer to specify an explicit path to load chruby from
-you can set variables like so:
+If you'd prefer to specify an explicit path to load chruby from you can set
+variables like so:
 
 ```zsh
 zstyle :omz:plugins:chruby path /local/path/to/chruby.sh

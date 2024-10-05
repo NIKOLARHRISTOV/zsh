@@ -1,7 +1,8 @@
 # OpenTofu plugin
 
-Plugin for OpenTofu, a fork of Terraform that is open-source, community-driven, and managed by the Linux Foundation. It adds
-completion for `tofu` command, as well as aliases and a prompt function.
+Plugin for OpenTofu, a fork of Terraform that is open-source, community-driven,
+and managed by the Linux Foundation. It adds completion for `tofu` command, as
+well as aliases and a prompt function.
 
 To use it, add `opentofu` to the plugins array of your `~/.zshrc` file:
 
@@ -11,33 +12,34 @@ plugins=(... opentofu)
 
 ## Requirements
 
-- [OpenTofu](https://opentofu.org/)
+-   [OpenTofu](https://opentofu.org/)
 
 ## Aliases
 
-| Alias | Command         |
-| ----- | --------------- |
-| `tt`  | `tofu`          |
-| `tta` | `tofu apply`    |
-| `ttc` | `tofu console`  |
-| `ttd` | `tofu destroy`  |
-| `ttf` | `tofu fmt`      |
-| `tti` | `tofu init`     |
-| `tto` | `tofu output`   |
-| `ttp` | `tofu plan`     |
-| `ttv` | `tofu validate` |
-| `tts` | `tofu state`    |
-| `ttsh`| `tofu show`     |
-| `ttr` | `tofu refresh`  |
-| `ttt` | `tofu test`     |
-| `ttws`| `tofu workspace`|
-
+| Alias  | Command          |
+| ------ | ---------------- |
+| `tt`   | `tofu`           |
+| `tta`  | `tofu apply`     |
+| `ttc`  | `tofu console`   |
+| `ttd`  | `tofu destroy`   |
+| `ttf`  | `tofu fmt`       |
+| `tti`  | `tofu init`      |
+| `tto`  | `tofu output`    |
+| `ttp`  | `tofu plan`      |
+| `ttv`  | `tofu validate`  |
+| `tts`  | `tofu state`     |
+| `ttsh` | `tofu show`      |
+| `ttr`  | `tofu refresh`   |
+| `ttt`  | `tofu test`      |
+| `ttws` | `tofu workspace` |
 
 ## Prompt functions
 
-- `tofu_prompt_info`: shows the current workspace when in an OpenTofu project directory.
+-   `tofu_prompt_info`: shows the current workspace when in an OpenTofu project
+    directory.
 
-- `tofu_version_prompt_info`: shows the current version of the `tofu` commmand.
+-   `tofu_version_prompt_info`: shows the current version of the `tofu`
+    commmand.
 
 To use them, add them to a `PROMPT` variable in your theme or `.zshrc` file:
 
@@ -46,7 +48,8 @@ PROMPT='$(tofu_prompt_info)'
 RPROMPT='$(tofu_version_prompt_info)'
 ```
 
-You can also specify the PREFIX and SUFFIX strings for both functions, with the following variables:
+You can also specify the PREFIX and SUFFIX strings for both functions, with the
+following variables:
 
 ```sh
 # for tofu_prompt_info

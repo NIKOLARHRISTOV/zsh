@@ -11,21 +11,23 @@ plugins=(... universalarchive)
 
 ## 🛠️ Usage
 
-Run `ua <format> <files>` to compress `<files>` into an archive file using `<format>`.
-For example:
+Run `ua <format> <files>` to compress `<files>` into an archive file using
+`<format>`. For example:
 
 ```sh
 ua xz *.html
 ```
 
-this command will compress all `.html` files in directory `folder` into `folder.xz`.
+this command will compress all `.html` files in directory `folder` into
+`folder.xz`.
 
-This plugin saves you from having to remember which command line arguments compress a file.
+This plugin saves you from having to remember which command line arguments
+compress a file.
 
 ## Supported compression formats
 
 | Extension        | Description                    |
-|:-----------------|:-------------------------------|
+| :--------------- | :----------------------------- |
 | `7z`             | 7zip file                      |
 | `bz2`            | Bzip2 file                     |
 | `gz`             | Gzip file                      |
@@ -43,4 +45,6 @@ This plugin saves you from having to remember which command line arguments compr
 | `zip`            | Zip archive                    |
 | `zst`            | Zstd archive                   |
 
-See [list of archive formats](https://en.wikipedia.org/wiki/List_of_archive_formats) for more information regarding the archive formats.
+See
+[list of archive formats](https://en.wikipedia.org/wiki/List_of_archive_formats)
+for more information regarding the archive formats.

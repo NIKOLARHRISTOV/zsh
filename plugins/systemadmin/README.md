@@ -1,6 +1,7 @@
 # Systemadmin plugin
 
-This plugin adds a series of aliases and functions which make a System Administrator's life easier.
+This plugin adds a series of aliases and functions which make a System
+Administrator's life easier.
 
 To use it, add `systemadmin` to the plugins array in your zshrc file:
 
@@ -11,7 +12,7 @@ plugins=(... systemadmin)
 ## Aliases
 
 | Alias   | Command                                                                    | Description                                                        |
-|---------|----------------------------------------------------------------------------|--------------------------------------------------------------------|
+| ------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | ping    | `ping -c 5`                                                                | Sends only 5 ICMP Messages                                         |
 | clr     | `clear; echo Currently logged in on $TTY, as $USERNAME in directory $PWD.` | Clears the screen and prints the current user, TTY, and directory  |
 | path    | `print -l $path`                                                           | Displays PATH with each entry on a separate line                   |
@@ -24,8 +25,8 @@ plugins=(... systemadmin)
 
 ## Functions
 
-| Function    |  Description                                                                                                          |
-|-------------|-----------------------------------------------------------------------------------------------------------------------|
+| Function    | Description                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------------------------- |
 | dls         | List only directories in the current directory                                                                        |
 | psgrep      | List all processes that match the pattern input after the command                                                     |
 | killit      | Kills any process that matches a regular expression passed to it                                                      |
