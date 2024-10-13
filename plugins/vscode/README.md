@@ -26,13 +26,13 @@ You can install either:
 While Linux installations will add the executable to PATH, MacOS users might
 still have to do this manually:
 
-[For VS Code and VS Code Insiders](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line),
+[`For VS Code and VS Code Insiders`](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line),
 open the Command Palette via (F1 or ⇧⌘P) and type shell command to find the
 Shell Command:
 
 > Shell Command: Install 'code' command in PATH
 
-[For VSCodium](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#how-do-i-open-vscodium-from-the-terminal),
+[`For VSCodium`](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#how-do-i-open-vscodium-from-the-terminal),
 open the Command Palette via (F1 or ⇧⌘P) and type shell command to find the
 Shell Command:
 

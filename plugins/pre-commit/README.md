@@ -1,7 +1,7 @@
 # Pre-commit plugin
 
 This plugin adds aliases for common commands of
-[pre-commit](https://pre-commit.com/).
+[`pre-commit`](https://pre-commit.com/).
 
 To use this plugin, add it to the plugins array in your zshrc file:
 

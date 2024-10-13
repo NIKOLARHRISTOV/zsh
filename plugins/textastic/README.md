@@ -4,7 +4,7 @@ Plugin for Textastic, a text and code editor for Mac OS X
 
 ### Requirements
 
--   [Textastic](https://www.textasticapp.com/mac.html)
+-   [`Textastic`](https://www.textasticapp.com/mac.html)
 
 ### 🛠️ Usage
 

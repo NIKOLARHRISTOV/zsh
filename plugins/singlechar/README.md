@@ -57,7 +57,7 @@ used by piping the arguments to the xargs aliases.
 ### SUDO
 
 These aliases are versions of the aliases above in
-[CAT, GREP, CURL, WGET](#cat-grep-curl-wget) but using sudo to run them with
+[`CAT, GREP, CURL, WGET`](#cat-grep-curl-wget) but using sudo to run them with
 root permission.
 
 | Alias | Command               | Description                    |
@@ -117,4 +117,4 @@ they are not set yet, they will use their default values:
 
 ## Author
 
--   [Karolin Varner](https://github.com/koraa)
+-   [`Karolin Varner`](https://github.com/koraa)

@@ -1,8 +1,8 @@
 # hitokoto plugin
 
-Displays a random quote taken from [hitokoto.cn](https://v1.hitokoto.cn/)
+Displays a random quote taken from [`hitokoto.cn`](https://v1.hitokoto.cn/)
 
-Created by [Sinrimin](https://github.com/sinrimin)
+Created by [`Sinrimin`](https://github.com/sinrimin)
 
 ## 🛠️ Usage
 

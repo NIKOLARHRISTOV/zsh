@@ -62,5 +62,5 @@ plugins=(... extract)
 | `zpaq`            | Zpaq file                            |
 
 See
-[list of archive formats](https://en.wikipedia.org/wiki/List_of_archive_formats)
+[`list of archive formats`](https://en.wikipedia.org/wiki/List_of_archive_formats)
 for more information regarding archive formats.

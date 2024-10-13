@@ -30,14 +30,14 @@ plugins=(... vi-mode)
     VI_MODE_SET_CURSOR=true
     ```
 
-    See [Cursor Styles](#cursor-styles) for controlling how the cursor looks in
+    See [`Cursor Styles`](#cursor-styles) for controlling how the cursor looks in
     different modes
 
 -   `MODE_INDICATOR`: controls the string displayed when the shell is in normal
-    mode. See [Mode indicators](#mode-indicators) for details.
+    mode. See [`Mode indicators`](#mode-indicators) for details.
 
 -   `INSERT_MODE_INDICATOR`: controls the string displayed when the shell is in
-    insert mode. See [Mode indicators](#mode-indicators) for details.
+    insert mode. See [`Mode indicators`](#mode-indicators) for details.
 
 -   `VI_MODE_DISABLE_CLIPBOARD`: If set, disables clipboard integration on
     yank/paste

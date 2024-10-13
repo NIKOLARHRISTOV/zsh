@@ -13,16 +13,16 @@ press chosen keys, such as the UP and DOWN arrows, to cycle through matches.
 
 ## Requirements
 
--   [ZSH](http://zsh.sourceforge.net) 4.3 or newer
+-   [`ZSH`](http://zsh.sourceforge.net) 4.3 or newer
 
 ## Install
 
-Using the [Homebrew](https://brew.sh) package manager:
+Using the [`Homebrew`](https://brew.sh) package manager:
 
     brew install zsh-history-substring-search
     echo 'source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
 
-Using [Fig](https://fig.io):
+Using [`Fig`](https://fig.io):
 
 Fig adds apps, shortcuts, and autocomplete to your existing terminal.
 
@@ -30,7 +30,7 @@ Install `zsh-history-substring-search` in just one click.
 
 <a href="https://fig.io/plugins/other/zsh-history-substring-search" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
 
-Using [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
+Using [`Oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh):
 
 1.  Clone this repository in oh-my-zsh's plugins directory:
 
@@ -44,13 +44,13 @@ Using [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 
         exec zsh
 
-Using [zplug](https://github.com/zplug/zplug):
+Using [`zplug`](https://github.com/zplug/zplug):
 
 1.  Add this repo to `~/.zshrc`:
 
         zplug "zsh-users/zsh-history-substring-search", as: plugin
 
-Using [antigen](https://github.com/zsh-users/antigen):
+Using [`antigen`](https://github.com/zsh-users/antigen):
 
 1. Add the `antigen bundle` command just before `antigen apply`, like this:
 
@@ -69,7 +69,7 @@ bindkey '^[[B' history-substring-search-down # or '\eOB'
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 ```
 
-Using [Zinit](https://github.com/zdharma-continuum/zinit):
+Using [`Zinit`](https://github.com/zdharma-continuum/zinit):
 
 1.  Use the `Oh-my-zsh` Zinit snippet in `~/.zshrc`:
 

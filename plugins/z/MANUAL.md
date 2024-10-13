@@ -1,15 +1,15 @@
 # Zsh-z
 
 [![MIT License](img/mit_license.svg)](https://opensource.org/licenses/MIT)
-![Zsh version 4.3.11 and higher](img/zsh_4.3.11_plus.svg)
+![`Zsh version 4.3.11 and higher`](img/zsh_4.3.11_plus.svg)
 [![GitHub stars](https://img.shields.io/github/stars/agkozak/zsh-z.svg)](https://github.com/agkozak/zsh-z/stargazers)
 
-![Zsh-z demo](img/demo.gif)
+![`Zsh-z demo`](img/demo.gif)
 
 Zsh-z is a command line tool that allows you to jump quickly to directories that
 you have visited frequently in the past, or recently -- but most often a
 combination of the two (a concept known as
-["frecency"](https://en.wikipedia.org/wiki/Frecency)). It works by keeping track
+[`"frecency"`](https://en.wikipedia.org/wiki/Frecency)). It works by keeping track
 of when you go to directories and how much time you spend in them. It is then in
 the position to guess where you want to go when you type a partial string, e.g.,
 `z src` might take you to `~/src/zsh`. `z zsh` might also get you there, and
@@ -18,7 +18,7 @@ and how much time you have been using Zsh-z to build up a database. After using
 Zsh-z for a little while, you will get to where you want to be by typing
 considerably less than you would need if you were using `cd`.
 
-Zsh-z is a native Zsh port of [rupa/z](https://github.com/rupa/z), a tool
+Zsh-z is a native Zsh port of [`rupa/z`](https://github.com/rupa/z), a tool
 written for `bash` and Zsh that uses embedded `awk` scripts to do the heavy
 lifting. It was quite possibly my most used command line tool for a couple of
 years. I decided to translate it, `awk` parts and all, into pure Zsh script, to
@@ -34,31 +34,31 @@ been a problem with `rupa/z`, and users of that utility will occasionally lose
 their `.z` databases. By having Zsh-z only use Zsh (`rupa/z` uses a hybrid shell
 code that works on `bash` as well), I have been able to implement a
 `zsh/system`-based file-locking mechanism similar to
-[the one @mafredri once proposed for `rupa/z`](https://github.com/rupa/z/pull/199).
+[`the one @mafredri once proposed for `rupa/z``](https://github.com/rupa/z/pull/199).
 It is now nearly impossible to crash the database, even through extreme testing.
 
 There are other, smaller improvements which I try to document in
-[Improvements and Fixes](#improvements-and-fixes). These include the new default
+[`Improvements and Fixes`](#improvements-and-fixes). These include the new default
 behavior of sorting your tab completions by frecency rather than just letting
 Zsh sort the raw results alphabetically (a behavior which can be restored if you
-like it -- [see below](#settings)).
+like it -- [`see below`](#settings)).
 
 Zsh-z is a drop-in replacement for `rupa/z` and will, by default, use the same
 database (`~/.z`), so you can go on using `rupa/z` when you launch `bash`.
 
 ## Table of Contents
 
--   [News](#news)
--   [Installation](#installation)
--   [Command Line Options](#command-line-options)
--   [Settings](#settings)
--   [Case Sensitivity](#case-sensitivity)
--   [`ZSHZ_UNCOMMON`](#zshz_uncommon)
--   [Making `--add` work for you](#making---add-work-for-you)
--   [Other Improvements and Fixes](#other-improvements-and-fixes)
--   [Migrating from Other Tools](#migrating-from-other-tools)
--   [`COMPLETE_ALIASES`](#complete_aliases)
--   [Known Bugs](#known-bugs)
+-   [`News`](#news)
+-   [`Installation`](#installation)
+-   [`Command Line Options`](#command-line-options)
+-   [`Settings`](#settings)
+-   [`Case Sensitivity`](#case-sensitivity)
+-   [`ZSHZ_UNCOMMON``](#zshz_uncommon)
+-   [`Making `--add` work for you`](#making---add-work-for-you)
+-   [`Other Improvements and Fixes`](#other-improvements-and-fixes)
+-   [`Migrating from Other Tools`](#migrating-from-other-tools)
+-   [`COMPLETE_ALIASES``](#complete_aliases)
+-   [`Known Bugs`](#known-bugs)
 
 ## News
 
@@ -85,7 +85,7 @@ database (`~/.z`), so you can go on using `rupa/z` when you launch `bash`.
         @mafredri).
 -   June 27, 2022
     -   A bug was fixed which was preventing paths with spaces in them from
-        being updated ([#61](https://github.com/agkozak/zsh-z/issues/61)).
+        being updated ([`#61`](https://github.com/agkozak/zsh-z/issues/61)).
     -   If writing to the temporary database file fails, the database will not
         be clobbered (props @mafredri).
 -   December 19, 2021
@@ -157,7 +157,7 @@ database (`~/.z`), so you can go on using `rupa/z` when you launch `bash`.
     -   I have corrected the frecency routine so that it matches `rupa/z`'s
         math, but for the present, Zsh-z will continue to display ranks as
         1/10000th of what they are in `rupa/z` --
-        [they had to multiply theirs by 10000](https://github.com/rupa/z/commit/f1f113d9bae9effaef6b1e15853b5eeb445e0712)
+        [`they had to multiply theirs by 10000`](https://github.com/rupa/z/commit/f1f113d9bae9effaef6b1e15853b5eeb445e0712)
         to work around `bash`'s inadequacies at dealing with decimal fractions.
 -   January 5, 2021
     -   If you try `z foo`, and `foo` is not in the database but `${PWD}/foo` is
@@ -200,7 +200,7 @@ If you add
 to your `.zshrc`, your completion menus will look very nice. This `zstyle`
 invocation should work with any of the frameworks below as well.
 
-### For [antigen](https://github.com/zsh-users/antigen) users
+### For [`antigen`](https://github.com/zsh-users/antigen) users
 
 Add the line
 
@@ -208,7 +208,7 @@ Add the line
 
 to your `.zshrc`, somewhere above the line that says `antigen apply`.
 
-### For [Oh My Zsh](http://ohmyz.sh/) users
+### For [`Oh My Zsh`](http://ohmyz.sh/) users
 
 Zsh-z is now included as part of Oh My Zsh! As long as you are using an
 up-to-date installation of Oh My Zsh, you can activate Zsh-z simply by adding
@@ -226,7 +226,7 @@ If, however, you prefer always to use the latest version of Zsh-z from the
 and activate it by adding `zsh-z` to the line of your `.zshrc` that specifies
 `plugins=()`, e.g., `plugins=( git zsh-z )`.
 
-### For [prezto](https://github.com/sorin-ionescu/prezto) users
+### For [`prezto`](https://github.com/sorin-ionescu/prezto) users
 
 Execute the following command:
 
@@ -266,7 +266,7 @@ Add a backslash to the end of the last line add `'zsh-z'` to the list, e.g.,
 
 Then relaunch `zsh`.
 
-### For [zcomet](https://github.com/agkozak/zcomet) users
+### For [`zcomet`](https://github.com/agkozak/zcomet) users
 
 Simply add
 
@@ -275,7 +275,7 @@ Simply add
 to your `.zshrc` (below where you source `zcomet.zsh` and above where you run
 `zcomet compinit`).
 
-### For [zgen](https://github.com/tarjoilija/zgen) users
+### For [`zgen`](https://github.com/tarjoilija/zgen) users
 
 Add the line
 
@@ -288,7 +288,7 @@ somewhere above the line that says `zgen save`. Then run
 
 to refresh your init script.
 
-### For [Zim](https://github.com/zimfw/zimfw)
+### For [`Zim`](https://github.com/zimfw/zimfw)
 
 Add the following line to your `.zimrc`:
 
@@ -300,7 +300,7 @@ Then run
 
 and restart your shell.
 
-### For [Zinit](https://github.com/zdharma-continuum/zinit) users
+### For [`Zinit`](https://github.com/zdharma-continuum/zinit) users
 
 Add the line
 
@@ -312,7 +312,7 @@ to your `.zshrc`.
 `zinit unload agkozak/zshz` to restore the shell to its state before `zsh-z` was
 loaded.
 
-### For [Znap](https://github.com/marlonrichert/zsh-snap) users
+### For [`Znap`](https://github.com/marlonrichert/zsh-snap) users
 
 Add the line
 
@@ -320,7 +320,7 @@ Add the line
 
 somewhere below the line where you `source` Znap itself.
 
-### For [zplug](https://github.com/zplug/zplug) users
+### For [`zplug`](https://github.com/zplug/zplug) users
 
 Add the line
 
@@ -378,7 +378,7 @@ behavior if you set them; you can also keep your old ones if you have been using
     match the final element in a path; e.g., `z foo/` can match `/path/to/foo`
     (default: `0`)
 -   `ZSHZ_UNCOMMON` changes the logic used to calculate the directory jumped to;
-    [see below](#zshz_uncommon`) (default: `0`)
+    [`see below`](#zshz_uncommon`) (default: `0`)
 
 ## Case sensitivity
 
@@ -469,7 +469,7 @@ database format, but it stores it by default in `~/.fasd`, so you will have to
 
 If you are coming to Zsh-z (or even to the original `rupa/z`, for that matter)
 from `autojump`, try using my
-[`jumpstart-z`](https://github.com/agkozak/jumpstart-z/blob/master/jumpstart-z)
+[`jumpstart-z``](https://github.com/agkozak/jumpstart-z/blob/master/jumpstart-z)
 tool to convert your old database to the Zsh-z format, or simply run
 
     awk -F "\t" '{printf("%s|%0.f|%s\n", $2, $1, '"$(date +%s)"')}' < /path/to/autojump.txt > ~/.z

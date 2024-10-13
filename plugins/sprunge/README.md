@@ -35,5 +35,5 @@ http://sprunge.us/XxjnKz
 ## Credits
 
 -   Original code:
-    [shellperson.net](https://web.archive.org/web/20190910065842/https://www.shellperson.net/sprunge-pastebin-script/).
+    [`shellperson.net`](https://web.archive.org/web/20190910065842/https://www.shellperson.net/sprunge-pastebin-script/).
 -   Adapted by: Matt Parnell (@ilikenwf).

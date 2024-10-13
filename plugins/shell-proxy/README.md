@@ -50,7 +50,7 @@ echo "localhost,127.0.0.1"
 
 ### Method 3
 
-Use [method 2](#method-2) but define the location of the program file by setting
+Use [`method 2`](#method-2) but define the location of the program file by setting
 the `SHELLPROXY_CONFIG` environment variable:
 
 ```sh
@@ -65,4 +65,4 @@ SHELLPROXY_CONFIG="$HOME/.dotfiles/proxy-config"
 
 ## Maintainer
 
--   [@septs](https://github.com/septs)
+-   [`@septs`](https://github.com/septs)

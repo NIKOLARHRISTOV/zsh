@@ -1,7 +1,7 @@
 # Lando ZSH (lando-zsh)
 
 This plugin adds aliases for using various languages and frameworks with
-[Lando](https://docs.lando.dev/basics/) for Docker. It will only run within
+[`Lando`](https://docs.lando.dev/basics/) for Docker. It will only run within
 lando-driven project directories.
 
 To use it, add `lando` to the plugins array in your zshrc file:
@@ -24,7 +24,7 @@ plugins=(... lando)
 |   `yarn`   |   `lando yarn`   |
 
 More or different commands can be wrapped by setting the
-`LANDO_ZSH_WRAPPED_COMMANDS` setting, see [Settings](#settings) below.
+`LANDO_ZSH_WRAPPED_COMMANDS` setting, see [`Settings`](#settings) below.
 
 ## How It Works:
 
@@ -68,4 +68,4 @@ following criteria:
 
 -   Author: Joshua Bedford
 -   URL:
-    [https://github.com/joshuabedford/lando-zsh](https://github.com/joshuabedford/lando-zsh)
+    [`https://github.com/joshuabedford/lando-zsh`](https://github.com/joshuabedford/lando-zsh)

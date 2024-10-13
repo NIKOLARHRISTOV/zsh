@@ -1,7 +1,7 @@
 # Yarn plugin
 
 This plugin adds completion for the
-[Yarn package manager](https://yarnpkg.com/en/), as well as some aliases for
+[`Yarn package manager`](https://yarnpkg.com/en/), as well as some aliases for
 common Yarn commands.
 
 To use it, add `yarn` to the plugins array in your zshrc file:
@@ -58,8 +58,8 @@ zstyle ':omz:plugins:yarn' berry yes
 | yt                 | `yarn test`                                                                                           | Run the test script defined in `package.json`                                      |
 | ytc                | `yarn test --coverage`                                                                                | Run the test script defined in `package.json` with coverage                        |
 | yui                | `yarn upgrade-interactive`                                                                            | Prompt for which outdated packages to upgrade                                      |
-| yuil               | `yarn upgrade-interactive --latest` (or see `yui` when using [yarn berry](#yarn-berry))               | Prompt for which outdated packages to upgrade to the latest available version      |
-| yii                | `yarn install --frozen-lockfile` (or `yarn install --immutable` when using [yarn berry](#yarn-berry)) | Install dependencies and abort if the lockfile was to be modified                  |
+| yuil               | `yarn upgrade-interactive --latest` (or see `yui` when using [`yarn berry`](#yarn-berry))               | Prompt for which outdated packages to upgrade to the latest available version      |
+| yii                | `yarn install --frozen-lockfile` (or `yarn install --immutable` when using [`yarn berry`](#yarn-berry)) | Install dependencies and abort if the lockfile was to be modified                  |
 | yifl               | `yii`                                                                                                 | Install dependencies and abort if the lockfile was to be modified                  |
 | yup                | `yarn upgrade`                                                                                        | Upgrade packages to their latest version                                           |
 | yv                 | `yarn version`                                                                                        | Update the version of your package                                                 |

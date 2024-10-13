@@ -1,6 +1,6 @@
 # sublime
 
-Plugin for [Sublime Text](https://www.sublimetext.com/), a cross platform text
+Plugin for [`Sublime Text`](https://www.sublimetext.com/), a cross platform text
 and code editor, available for Linux, macOS, and Windows.
 
 To use the plugin, add `sublime` to the plugins array of your zshrc file:

@@ -1,7 +1,7 @@
 <p align="center"><img src="https://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
 
 Oh My Zsh is an open source, community-driven framework for managing your
-[zsh](https://www.zsh.org/) configuration.
+[`zsh`](https://www.zsh.org/) configuration.
 
 Sounds boring. Let's try again.
 
@@ -16,9 +16,9 @@ Finally, you'll begin to get the sort of attention that you have always felt you
 deserved. ...or maybe you'll use the time that you're saving to start flossing
 more often. 😬
 
-To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
-[@ohmyzsh](https://x.com/ohmyzsh) on X (formerly Twitter), and join us on
-[Discord](https://discord.gg/ohmyzsh).
+To learn more, visit [`ohmyz.sh`](https://ohmyz.sh), follow
+[`@ohmyzsh`](https://x.com/ohmyzsh) on X (formerly Twitter), and join us on
+[`Discord`](https://discord.gg/ohmyzsh).
 
 [![CI](https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/ohmyzsh?label=%40ohmyzsh&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
@@ -29,40 +29,40 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
 <details>
 <summary>Table of Contents</summary>
 
--   [Getting Started](#getting-started)
-    -   [Operating System Compatibility](#operating-system-compatibility)
-    -   [Prerequisites](#prerequisites)
-    -   [Basic Installation](#basic-installation)
-        -   [Manual Inspection](#manual-inspection)
--   [Using Oh My Zsh](#using-oh-my-zsh)
-    -   [Plugins](#plugins)
-        -   [Enabling Plugins](#enabling-plugins)
-        -   [Using Plugins](#using-plugins)
-    -   [Themes](#themes)
-        -   [Selecting A Theme](#selecting-a-theme)
-    -   [FAQ](#faq)
--   [Advanced Topics](#advanced-topics)
-    -   [Advanced Installation](#advanced-installation)
-        -   [Custom Directory](#custom-directory)
-        -   [Unattended Install](#unattended-install)
-        -   [Installing From A Forked Repository](#installing-from-a-forked-repository)
-        -   [Manual Installation](#manual-installation)
-    -   [Installation Problems](#installation-problems)
-    -   [Custom Plugins And Themes](#custom-plugins-and-themes)
-    -   [Enable GNU ls In macOS And freeBSD Systems](#enable-gnu-ls-in-macos-and-freebsd-systems)
-    -   [Skip Aliases](#skip-aliases)
-    -   [Disable async git prompt](#disable-async-git-prompt)
--   [Getting Updates](#getting-updates)
-    -   [Updates Verbosity](#updates-verbosity)
-    -   [Manual Updates](#manual-updates)
--   [Uninstalling Oh My Zsh](#uninstalling-oh-my-zsh)
--   [How Do I Contribute To Oh My Zsh?](#how-do-i-contribute-to-oh-my-zsh)
-    -   [Do Not Send Us Themes](#do-not-send-us-themes)
--   [Contributors](#contributors)
--   [Follow Us](#follow-us)
--   [Merchandise](#merchandise)
--   [License](#license)
--   [About Planet Argon](#about-planet-argon)
+-   [`Getting Started`](#getting-started)
+    -   [`Operating System Compatibility`](#operating-system-compatibility)
+    -   [`Prerequisites`](#prerequisites)
+    -   [`Basic Installation`](#basic-installation)
+        -   [`Manual Inspection`](#manual-inspection)
+-   [`Using Oh My Zsh`](#using-oh-my-zsh)
+    -   [`Plugins`](#plugins)
+        -   [`Enabling Plugins`](#enabling-plugins)
+        -   [`Using Plugins`](#using-plugins)
+    -   [`Themes`](#themes)
+        -   [`Selecting A Theme`](#selecting-a-theme)
+    -   [`FAQ`](#faq)
+-   [`Advanced Topics`](#advanced-topics)
+    -   [`Advanced Installation`](#advanced-installation)
+        -   [`Custom Directory`](#custom-directory)
+        -   [`Unattended Install`](#unattended-install)
+        -   [`Installing From A Forked Repository`](#installing-from-a-forked-repository)
+        -   [`Manual Installation`](#manual-installation)
+    -   [`Installation Problems`](#installation-problems)
+    -   [`Custom Plugins And Themes`](#custom-plugins-and-themes)
+    -   [`Enable GNU ls In macOS And freeBSD Systems`](#enable-gnu-ls-in-macos-and-freebsd-systems)
+    -   [`Skip Aliases`](#skip-aliases)
+    -   [`Disable async git prompt`](#disable-async-git-prompt)
+-   [`Getting Updates`](#getting-updates)
+    -   [`Updates Verbosity`](#updates-verbosity)
+    -   [`Manual Updates`](#manual-updates)
+-   [`Uninstalling Oh My Zsh`](#uninstalling-oh-my-zsh)
+-   [`How Do I Contribute To Oh My Zsh?`](#how-do-i-contribute-to-oh-my-zsh)
+    -   [`Do Not Send Us Themes`](#do-not-send-us-themes)
+-   [`Contributors`](#contributors)
+-   [`Follow Us`](#follow-us)
+-   [`Merchandise`](#merchandise)
+-   [`License`](#license)
+-   [`About Planet Argon`](#about-planet-argon)
 
 </details>
 
@@ -82,10 +82,10 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow
 
 ### Prerequisites
 
--   [Zsh](https://www.zsh.org) should be installed (v4.3.9 or more recent is
+-   [`Zsh`](https://www.zsh.org) should be installed (v4.3.9 or more recent is
     fine but we prefer 5.0.8 and newer). If not pre-installed (run
     `zsh --version` to confirm), check the following wiki instructions here:
-    [Installing ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+    [`Installing ZSH`](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 -   `curl` or `wget` should be installed
 -   `git` should be installed (recommended v2.4.11 or higher)
 
@@ -135,8 +135,8 @@ URL for `https://install.ohmyz.sh` to be able to get the script.
 
 Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can
 take a look in the
-[plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory
-and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's
+[`plugins`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory
+and/or the [`wiki`](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's
 currently available.
 
 #### Enabling Plugins
@@ -177,7 +177,7 @@ that particular plugin.
 
 We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme
 happy. We have over one hundred and fifty themes now bundled. Most of them have
-[screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We
+[`screenshots`](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We
 are working on updating this!). Check them out!
 
 #### Selecting A Theme
@@ -205,11 +205,11 @@ ZSH_THEME="agnoster" # (this is one of the fancy ones)
 > and find that it doesn't look the same for you.
 >
 > This is because many themes require installing a
-> [Powerline Font](https://github.com/powerline/fonts) or a
-> [Nerd Font](https://github.com/ryanoasis/nerd-fonts) in order to render
+> [`Powerline Font`](https://github.com/powerline/fonts) or a
+> [`Nerd Font`](https://github.com/ryanoasis/nerd-fonts) in order to render
 > properly. Without them, these themes will render weird prompt symbols. Check
 > out
-> [the FAQ](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)
+> [`the FAQ`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)
 > for more information.
 >
 > Also, beware that themes only control what your prompt looks like. This is,
@@ -217,15 +217,15 @@ ZSH_THEME="agnoster" # (this is one of the fancy ones)
 > Themes don't control things such as the colors of your terminal window (known
 > as _color scheme_) or the font of your terminal. These are settings that you
 > can change in your terminal emulator. For more information, see
-> [what is a zsh theme](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#what-is-a-zsh-theme).
+> [`what is a zsh theme`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#what-is-a-zsh-theme).
 
 Open up a new terminal window and your prompt should look something like this:
 
-![Agnoster theme](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
+![`Agnoster theme`](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
 
 In case you did not find a suitable theme for your needs, please have a look at
 the wiki for
-[more of them](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes).
+[`more of them`](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes).
 
 If you're feeling feisty, you can let the computer select one randomly for you
 each time you open a new terminal window.
@@ -253,7 +253,7 @@ ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
 ### FAQ
 
 If you have some more questions or issues, you might find a solution in our
-[FAQ](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ).
+[`FAQ`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ).
 
 ## Advanced Topics
 
@@ -533,22 +533,22 @@ configuration.
 ## How Do I Contribute To Oh My Zsh?
 
 Before you participate in our delightful community, please read the
-[code of conduct](CODE_OF_CONDUCT.md).
+[`code of conduct`](CODE_OF_CONDUCT.md).
 
-I'm far from being a [Zsh](https://www.zsh.org/) expert and suspect there are
+I'm far from being a [`Zsh`](https://www.zsh.org/) expert and suspect there are
 many ways to improve – if you have ideas on how to make the configuration easier
 to maintain (and faster), don't hesitate to fork and send pull requests!
 
 We also need people to test out pull requests. So take a look through
-[the open issues](https://github.com/ohmyzsh/ohmyzsh/issues) and help where you
+[`the open issues`](https://github.com/ohmyzsh/ohmyzsh/issues) and help where you
 can.
 
-See [Contributing](CONTRIBUTING.md) for more details.
+See [`Contributing`](CONTRIBUTING.md) for more details.
 
 ### Do Not Send Us Themes
 
 We have (more than) enough themes for the time being. Please add your theme to
-the [external themes](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
+the [`external themes`](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
 wiki page.
 
 ## Contributors
@@ -566,30 +566,30 @@ Thank you so much!
 
 We're on social media:
 
--   [@ohmyzsh](https://x.com/ohmyzsh) on X (formerly Twitter). You should follow
+-   [`@ohmyzsh`](https://x.com/ohmyzsh) on X (formerly Twitter). You should follow
     it.
--   [Facebook](https://www.facebook.com/Oh-My-Zsh-296616263819290/) poke us.
--   [Instagram](https://www.instagram.com/_ohmyzsh/) tag us in your post showing
+-   [`Facebook`](https://www.facebook.com/Oh-My-Zsh-296616263819290/) poke us.
+-   [`Instagram`](https://www.instagram.com/_ohmyzsh/) tag us in your post showing
     Oh My Zsh!
--   [Discord](https://discord.gg/ohmyzsh) to chat with us!
+-   [`Discord`](https://discord.gg/ohmyzsh) to chat with us!
 
 ## Merchandise
 
 We have
-[stickers, shirts, and coffee mugs available](https://shop.planetargon.com/collections/oh-my-zsh?utm_source=github)
+[`stickers, shirts, and coffee mugs available`](https://shop.planetargon.com/collections/oh-my-zsh?utm_source=github)
 for you to show off your love of Oh My Zsh. Again, you will become the talk of
 the town!
 
 ## License
 
-Oh My Zsh is released under the [MIT license](LICENSE.txt).
+Oh My Zsh is released under the [`MIT license`](LICENSE.txt).
 
 ## About Planet Argon
 
-![Planet Argon](https://pa-github-assets.s3.amazonaws.com/PARGON_logo_digital_COL-small.jpg)
+![`Planet Argon`](https://pa-github-assets.s3.amazonaws.com/PARGON_logo_digital_COL-small.jpg)
 
 Oh My Zsh was started by the team at
-[Planet Argon](https://www.planetargon.com/?utm_source=github), a
-[Ruby on Rails development agency](https://www.planetargon.com/services/ruby-on-rails-development?utm_source=github).
+[`Planet Argon`](https://www.planetargon.com/?utm_source=github), a
+[`Ruby on Rails development agency`](https://www.planetargon.com/services/ruby-on-rails-development?utm_source=github).
 Check out our
-[other open source projects](https://www.planetargon.com/open-source?utm_source=github).
+[`other open source projects`](https://www.planetargon.com/open-source?utm_source=github).

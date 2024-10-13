@@ -1,6 +1,6 @@
 # Laravel 5 plugin
 
-This plugin adds some aliases for common [Laravel 5](https://laravel.com/docs)
+This plugin adds some aliases for common [`Laravel 5`](https://laravel.com/docs)
 commands.
 
 To use it, add `laravel5` to the plugins array in your zshrc file:

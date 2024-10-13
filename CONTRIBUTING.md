@@ -3,28 +3,28 @@
 Oh-My-Zsh is a community-driven project. Contribution is welcome, encouraged,
 and appreciated. It is also essential for the development of the project.
 
-First, please take a moment to review our [code of conduct](CODE_OF_CONDUCT.md).
+First, please take a moment to review our [`code of conduct`](CODE_OF_CONDUCT.md).
 
 These guidelines are an attempt at better addressing the huge amount of pending
 issues and pull requests. Please read them closely.
 
-Foremost, be so kind as to [search](#use-the-search-luke). This ensures any
+Foremost, be so kind as to [`search`](#use-the-search-luke). This ensures any
 contribution you would make is not already covered.
 
 <!-- TOC updateonsave:true depthfrom:2 -->
 
--   [Reporting Issues](#reporting-issues)
-    -   [You have a problem](#you-have-a-problem)
-    -   [You have a suggestion](#you-have-a-suggestion)
--   [Submitting Pull Requests](#submitting-pull-requests)
-    -   [Getting started](#getting-started)
-    -   [You have a solution](#you-have-a-solution)
-    -   [You have an addition](#you-have-an-addition)
--   [Use the Search, Luke](#use-the-search-luke)
--   [Commit Guidelines](#commit-guidelines)
-    -   [Format](#format)
-    -   [Style](#style)
--   [Volunteer](#volunteer)
+-   [`Reporting Issues`](#reporting-issues)
+    -   [`You have a problem`](#you-have-a-problem)
+    -   [`You have a suggestion`](#you-have-a-suggestion)
+-   [`Submitting Pull Requests`](#submitting-pull-requests)
+    -   [`Getting started`](#getting-started)
+    -   [`You have a solution`](#you-have-a-solution)
+    -   [`You have an addition`](#you-have-an-addition)
+-   [`Use the Search, Luke`](#use-the-search-luke)
+-   [`Commit Guidelines`](#commit-guidelines)
+    -   [`Format`](#format)
+    -   [`Style`](#style)
+-   [`Volunteer`](#volunteer)
 
 <!-- /TOC -->
 
@@ -32,13 +32,13 @@ contribution you would make is not already covered.
 
 ### You have a problem
 
-Please be so kind as to [search](#use-the-search-luke) for any open issue
+Please be so kind as to [`search`](#use-the-search-luke) for any open issue
 already covering your problem.
 
 If you find one, comment on it, so we know more people are experiencing it.
 
 If not, look at the
-[Troubleshooting](https://github.com/ohmyzsh/ohmyzsh/wiki/Troubleshooting) page
+[`Troubleshooting`](https://github.com/ohmyzsh/ohmyzsh/wiki/Troubleshooting) page
 for instructions on how to gather data to better debug your problem.
 
 Then, you can go ahead and create an issue with as much detail as you can
@@ -56,7 +56,7 @@ We will do our very best to help you.
 
 ### You have a suggestion
 
-Please be so kind as to [search](#use-the-search-luke) for any open issue
+Please be so kind as to [`search`](#use-the-search-luke) for any open issue
 already covering your suggestion.
 
 If you find one, comment on it, so we know more people are supporting it.
@@ -70,22 +70,22 @@ in your message.
 ### Getting started
 
 You should be familiar with the basics of
-[contributing on GitHub](https://help.github.com/articles/using-pull-requests)
+[`contributing on GitHub`](https://help.github.com/articles/using-pull-requests)
 and have a fork
-[properly set up](https://github.com/ohmyzsh/ohmyzsh/wiki/Contribution-Technical-Practices).
+[`properly set up`](https://github.com/ohmyzsh/ohmyzsh/wiki/Contribution-Technical-Practices).
 
 You MUST always create PRs with _a dedicated branch_ based on the latest
 upstream tree.
 
 If you create your own PR, please make sure you do it right. Also be so kind as
 to reference any issue that would be solved in the PR description body,
-[for instance](https://help.github.com/articles/closing-issues-via-commit-messages/)
+[`for instance`](https://help.github.com/articles/closing-issues-via-commit-messages/)
 _"Fixes #XXXX"_ for issue number XXXX.
 
 ### You have a solution
 
-Please be so kind as to [search](#use-the-search-luke) for any open issue
-already covering your [problem](#you-have-a-problem), and any
+Please be so kind as to [`search`](#use-the-search-luke) for any open issue
+already covering your [`problem`](#you-have-a-problem), and any
 pending/merged/rejected PR covering your solution.
 
 If the solution is already reported, try it out and +1 the pull request if the
@@ -99,10 +99,10 @@ your message.
 ### You have an addition
 
 Please
-[do not](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#dont-send-us-your-theme-for-now)
+[`do not`](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#dont-send-us-your-theme-for-now)
 send themes for now.
 
-Please be so kind as to [search](#use-the-search-luke) for any pending, merged
+Please be so kind as to [`search`](#use-the-search-luke) for any pending, merged
 or rejected Pull Requests covering or related to what you want to add.
 
 If you find one, try it out and work with the author on a common solution.
@@ -144,25 +144,25 @@ machines of many people, so it should be justified why they should have it.
 _May the Force (of past experiences) be with you_
 
 GitHub offers
-[many search features](https://help.github.com/articles/searching-github/) to
+[`many search features`](https://help.github.com/articles/searching-github/) to
 help you check whether a similar contribution to yours already exists. Please
 search before making any contribution, it avoids duplicates and eases
 maintenance. Trust me, that works 90% of the time.
 
 You can also take a look at the
-[FAQ](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ) to be sure your contribution
+[`FAQ`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ) to be sure your contribution
 has not already come up.
 
 If all fails, your thing has probably not been reported yet, so you can go ahead
-and [create an issue](#reporting-issues) or
-[submit a PR](#submitting-pull-requests).
+and [`create an issue`](#reporting-issues) or
+[`submit a PR`](#submitting-pull-requests).
 
 ---
 
 ## Commit Guidelines
 
 Oh My Zsh uses the
-[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+[`Conventional Commits`](https://www.conventionalcommits.org/en/v1.0.0/)
 specification. The automatic changelog tool uses these to automatically generate
 a changelog based on the commit messages. Here's a guide to writing a commit
 message to allow this:
@@ -267,5 +267,5 @@ users will know what changed by just looking at the changelog.
 Very nice!! :)
 
 Please have a look at the
-[Volunteer](https://github.com/ohmyzsh/ohmyzsh/wiki/Volunteers) page for
+[`Volunteer`](https://github.com/ohmyzsh/ohmyzsh/wiki/Volunteers) page for
 instructions on where to start and more.

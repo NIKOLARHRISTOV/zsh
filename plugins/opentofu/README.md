@@ -12,7 +12,7 @@ plugins=(... opentofu)
 
 ## Requirements
 
--   [OpenTofu](https://opentofu.org/)
+-   [`OpenTofu`](https://opentofu.org/)
 
 ## Aliases
 

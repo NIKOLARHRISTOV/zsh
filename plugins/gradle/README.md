@@ -1,6 +1,6 @@
 # Gradle plugin
 
-This plugin adds completions and aliases for [Gradle](https://gradle.org/).
+This plugin adds completions and aliases for [`Gradle`](https://gradle.org/).
 
 To use it, add `gradle` to the plugins array in your zshrc file:
 
@@ -27,5 +27,5 @@ gradle build
 ## Completion
 
 This plugin uses
-[the completion from the Gradle project](https://github.com/gradle/gradle-completion),
+[`the completion from the Gradle project`](https://github.com/gradle/gradle-completion),
 which is distributed under the MIT license.

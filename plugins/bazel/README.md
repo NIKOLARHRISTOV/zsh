@@ -1,6 +1,6 @@
 # Bazel plugin
 
-This plugin adds completion and aliases for [bazel](https://bazel.build), an
+This plugin adds completion and aliases for [`bazel`](https://bazel.build), an
 open-source build and test tool that scalably supports multi-language and
 multi-platform projects.
 

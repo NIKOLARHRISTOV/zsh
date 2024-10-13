@@ -1,6 +1,6 @@
 # Lighthouse plugin
 
-This plugin adds commands to manage [Lighthouse](https://lighthouseapp.com/).
+This plugin adds commands to manage [`Lighthouse`](https://lighthouseapp.com/).
 
 To use it, add `lighthouse` to the plugins array in your zshrc file:
 

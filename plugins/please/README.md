@@ -1,6 +1,6 @@
 # please plugin
 
-[Please](https://please.build) is a cross-language build system with an emphasis
+[`Please`](https://please.build) is a cross-language build system with an emphasis
 on high performance, extensibility and reproducibility. It supports a number of
 popular languages and can automate nearly any aspect of your build process.
 
@@ -23,4 +23,4 @@ plugins=(... please)
 
 ## Maintainer
 
-[@thought-machine](https://github.com/thought-machine)
+[`@thought-machine`](https://github.com/thought-machine)

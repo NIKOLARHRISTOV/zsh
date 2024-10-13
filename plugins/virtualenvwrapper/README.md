@@ -1,7 +1,7 @@
 # Virtualenvwrapper plugin
 
 This plugin loads Python's
-[virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) shell
+[`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/) shell
 tools.
 
 To use it, add `virtualenvwrapper` to the plugins array in your zshrc file:

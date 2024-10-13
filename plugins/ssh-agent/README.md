@@ -61,7 +61,7 @@ zstyle :omz:plugins:ssh-agent lazy yes
 
 You can enable `AddKeysToAgent` by passing `-o AddKeysToAgent=yes` to the `ssh`
 command, or by adding `AddKeysToAgent yes` to your `~/.ssh/config` file [1]. See
-the [OpenSSH 7.2 Release Notes](http://www.openssh.com/txt/release-7.2).
+the [`OpenSSH 7.2 Release Notes`](http://www.openssh.com/txt/release-7.2).
 
 ### `lifetime`
 

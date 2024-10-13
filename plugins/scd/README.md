@@ -13,8 +13,8 @@ aliases, which appear as named directories in zsh session.
 ## INSTALLATION NOTES
 
 Besides oh-my-zsh, `scd` can be used with _bash_, _dash_ or _tcsh_ shells and is
-also available as Vim plugin [scd.vim](https://github.com/pavoljuhas/scd.vim)
-and [IPython](https://ipython.org) extension. For installation details, see
+also available as Vim plugin [`scd.vim`](https://github.com/pavoljuhas/scd.vim)
+and [`IPython`](https://ipython.org) extension. For installation details, see
 https://github.com/pavoljuhas/smart-change-directory.
 
 ## SYNOPSIS
@@ -26,7 +26,7 @@ scd [options] [pattern1 pattern2 ...]
 ## PATTERNS
 
 Patterns may use all zsh
-[glob operators](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Glob-Operators)
+[`glob operators`](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Glob-Operators)
 available with _extendedglob_ option. Specified patterns must match the absolute
 path and at least one of them must match in the tail. Several special patterns
 are also recognized as follows:

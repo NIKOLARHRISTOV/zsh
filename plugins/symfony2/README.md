@@ -1,6 +1,6 @@
 # Symfony2
 
-This plugin provides completion for [Symfony 2](https://symfony.com/), as well
+This plugin provides completion for [`Symfony 2`](https://symfony.com/), as well
 as aliases for frequent Symfony commands.
 
 To use it add symfony2 to the plugins array in your zshrc file.

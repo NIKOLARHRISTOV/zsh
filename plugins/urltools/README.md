@@ -9,9 +9,9 @@ To start using it, add the `urltools` plugin to your plugins array in
 plugins=(... urltools)
 ```
 
-Original author: [Ian Chesal](https://github.com/ianchesal) Original idea and
+Original author: [`Ian Chesal`](https://github.com/ianchesal) Original idea and
 aliases:
-[Ruslan Spivak](https://ruslanspivak.wordpress.com/2010/06/02/urlencode-and-urldecode-from-a-command-line/)
+[`Ruslan Spivak`](https://ruslanspivak.wordpress.com/2010/06/02/urlencode-and-urldecode-from-a-command-line/)
 
 ## Commands
 

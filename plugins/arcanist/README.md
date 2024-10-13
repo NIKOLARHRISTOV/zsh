@@ -1,7 +1,7 @@
 ## arcanist
 
 This plugin adds many useful aliases for
-[arcanist](https://github.com/phacility/arcanist).
+[`arcanist`](https://github.com/phacility/arcanist).
 
 To use it, add `arcanist` to the plugins array of your zshrc file:
 

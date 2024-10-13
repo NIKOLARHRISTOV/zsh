@@ -1,11 +1,11 @@
 # Colemak plugin
 
 This plugin remaps keys in `zsh`'s
-[`vi`-style navigation mode](http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Keymaps)
-for a [Colemak](https://colemak.com/) keyboard layout, to match the QWERTY
+[`vi`-style navigation mode`](http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Keymaps)
+for a [`Colemak`](https://colemak.com/) keyboard layout, to match the QWERTY
 position:
 
-![Colemak layout on a US keyboard](https://colemak.com/wiki/images/6/6c/Colemak2.png)
+![`Colemak layout on a US keyboard`](https://colemak.com/wiki/images/6/6c/Colemak2.png)
 
 To use it, add it to the plugins array in your `~/.zshrc` file:
 

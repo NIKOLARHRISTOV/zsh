@@ -20,7 +20,7 @@ If you only want to insert a space without expanding the command line, press
 
 if you would like to filter out any values from expanding set
 `GLOBALIAS_FILTER_VALUES` to an array of said values. See
-[Filtered values](#filtered-values).
+[`Filtered values`](#filtered-values).
 
 ## Examples
 

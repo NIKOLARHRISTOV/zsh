@@ -13,7 +13,7 @@ The plugin creates a `conda_prompt_info` function that you can use in your
 theme, which displays the basename of the current `$CONDA_DEFAULT_ENV`.
 
 You can use this prompt function in your themes, by adding it to the `PROMPT` or
-`RPROMPT` variables. See [Example](#example) for more information.
+`RPROMPT` variables. See [`Example`](#example) for more information.
 
 ## Settings
 

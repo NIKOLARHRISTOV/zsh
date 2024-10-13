@@ -1,7 +1,7 @@
 # Docker plugin
 
 This plugin adds auto-completion and aliases for
-[docker](https://www.docker.com/).
+[`docker`](https://www.docker.com/).
 
 To use it add `docker` to the plugins array in your zshrc file.
 
@@ -18,7 +18,7 @@ By default, the completion doesn't allow option-stacking, meaning if you try to
 complete `docker run -it <TAB>` it won't work, because you're _stacking_ the
 `-i` and `-t` options.
 
-[You can enable it](https://github.com/docker/cli/commit/b10fb43048) by **adding
+[`You can enable it`](https://github.com/docker/cli/commit/b10fb43048) by **adding
 the lines below to your zshrc file**, but be aware of the side effects:
 
 > This enables Zsh to understand commands like `docker run -it ubuntu`. However,
