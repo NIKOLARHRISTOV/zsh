@@ -134,6 +134,6 @@ plugins=(... kubectl)
 This plugin provides 3 wrappers to colorize kubectl output in JSON and YAML
 using various tools (which must be installed):
 
--   `kj`: JSON, colorized with [`jq``](https://stedolan.github.io/jq/).
--   `kjx`: JSON, colorized with [`fx``](https://github.com/antonmedv/fx).
--   `ky`: YAML, colorized with [`yh``](https://github.com/andreazorzetto/yh).
+-   `kj`: JSON, colorized with [`jq`](https://stedolan.github.io/jq/).
+-   `kjx`: JSON, colorized with [`fx`](https://github.com/antonmedv/fx).
+-   `ky`: YAML, colorized with [`yh`](https://github.com/andreazorzetto/yh).

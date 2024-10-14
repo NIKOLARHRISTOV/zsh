@@ -34,7 +34,7 @@ been a problem with `rupa/z`, and users of that utility will occasionally lose
 their `.z` databases. By having Zsh-z only use Zsh (`rupa/z` uses a hybrid shell
 code that works on `bash` as well), I have been able to implement a
 `zsh/system`-based file-locking mechanism similar to
-[`the one @mafredri once proposed for `rupa/z``](https://github.com/rupa/z/pull/199).
+[`the one @mafredri once proposed for `rupa/z`](https://github.com/rupa/z/pull/199).
 It is now nearly impossible to crash the database, even through extreme testing.
 
 There are other, smaller improvements which I try to document in
@@ -53,11 +53,11 @@ database (`~/.z`), so you can go on using `rupa/z` when you launch `bash`.
 -   [`Command Line Options`](#command-line-options)
 -   [`Settings`](#settings)
 -   [`Case Sensitivity`](#case-sensitivity)
--   [`ZSHZ_UNCOMMON``](#zshz_uncommon)
+-   [`ZSHZ_UNCOMMON`](#zshz_uncommon)
 -   [`Making `--add` work for you`](#making---add-work-for-you)
 -   [`Other Improvements and Fixes`](#other-improvements-and-fixes)
 -   [`Migrating from Other Tools`](#migrating-from-other-tools)
--   [`COMPLETE_ALIASES``](#complete_aliases)
+-   [`COMPLETE_ALIASES`](#complete_aliases)
 -   [`Known Bugs`](#known-bugs)
 
 ## News
@@ -469,7 +469,7 @@ database format, but it stores it by default in `~/.fasd`, so you will have to
 
 If you are coming to Zsh-z (or even to the original `rupa/z`, for that matter)
 from `autojump`, try using my
-[`jumpstart-z``](https://github.com/agkozak/jumpstart-z/blob/master/jumpstart-z)
+[`jumpstart-z`](https://github.com/agkozak/jumpstart-z/blob/master/jumpstart-z)
 tool to convert your old database to the Zsh-z format, or simply run
 
     awk -F "\t" '{printf("%s|%0.f|%s\n", $2, $1, '"$(date +%s)"')}' < /path/to/autojump.txt > ~/.z

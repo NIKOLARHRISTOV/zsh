@@ -20,7 +20,7 @@ These settings should go in your zshrc file, before Oh My Zsh is sourced:
 -   **`NVM_HOMEBREW`**: if you installed nvm via Homebrew, in a directory other
     than `/usr/local/opt/nvm`, you can set `NVM_HOMEBREW` to be the directory
     where you installed it. For example, on Apple Silicon-based Macs,
-    [`Homebrew is installed in `/opt/homebrew``](https://docs.brew.sh/Installation).
+    [`Homebrew is installed in `/opt/homebrew`](https://docs.brew.sh/Installation).
     To get the directory where nvm has been installed, regardless of chip
     architecture, use `NVM_HOMEBREW=$(brew --prefix nvm)`.
 

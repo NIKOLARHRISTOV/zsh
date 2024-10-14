@@ -1,6 +1,6 @@
 # keychain plugin
 
-This plugin starts automatically [`keychain``](https://www.funtoo.org/Keychain)
+This plugin starts automatically [`keychain`](https://www.funtoo.org/Keychain)
 to set up and load whichever credentials you want for both gpg and ssh
 connections.
 

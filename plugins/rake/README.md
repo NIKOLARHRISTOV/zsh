@@ -34,7 +34,7 @@ rake namespace:task\['argument'\]
 
 ## Jim Weirich
 
-The plugin also aliases `rake` to [`jimweirich``](https://github.com/jimweirich),
+The plugin also aliases `rake` to [`jimweirich`](https://github.com/jimweirich),
 author of Rake and big time contributor to the Ruby open source community. He
 passed away in 2014:
 

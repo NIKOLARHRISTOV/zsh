@@ -16,7 +16,7 @@ plugins=(... percol)
 -   `percol`: install with `pip install percol`.
 
 -   (_Optional_)
-    [`jump``](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump)
+    [`jump`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump)
     plugin: needs to be enabled before the `percol` plugin.
 
 ## 🛠️ Usage
