@@ -1,6 +1,6 @@
 # zsh-history-substring-search
 
-This is a clean-room implementation of the [Fish shell][1]'s history search
+This is a clean-room implementation of the [`Fish shell`][1]'s history search
 feature, where you can type in any part of any command from history and then
 press chosen keys, such as the UP and DOWN arrows, to cycle through matches.
 
@@ -90,7 +90,7 @@ Using [`Zinit`](https://github.com/zdharma-continuum/zinit):
 
         source zsh-history-substring-search.zsh
 
-    If you want to use [zsh-syntax-highlighting][6] along with this script, then
+    If you want to use [`zsh-syntax-highlighting`][6] along with this script, then
     make sure that you load it _before_ you load this script:
 
         source zsh-syntax-highlighting.zsh
@@ -213,19 +213,19 @@ default values.
 
 ## History
 
--   September 2009: [Peter Stephenson][2] originally wrote this script and it
+-   September 2009: [`Peter Stephenson`][2] originally wrote this script and it
     published to the zsh-users mailing list.
 
 -   January 2011: Guido van Steen (@guidovansteen) revised this script and
-    released it under the 3-clause BSD license as part of [fizsh][3], the
+    released it under the 3-clause BSD license as part of [`fizsh`][3], the
     Friendly Interactive ZSHell.
 
 -   January 2011: Suraj N. Kurapati (@sunaku) extracted this script from
-    [fizsh][3] 1.0.1, refactored it heavily, and finally repackaged it as an
-    [oh-my-zsh plugin][4] and as an independently loadable [ZSH script][5].
+    [`fizsh`][3] 1.0.1, refactored it heavily, and finally repackaged it as an
+    [oh-my-zsh plugin][4] and as an independently loadable [`ZSH script`][5].
 
 -   July 2011: Guido van Steen, Suraj N. Kurapati, and Sorin Ionescu
-    (@sorin-ionescu) [further developed it][4] with Vincent Guerci (@vguerci).
+    (@sorin-ionescu) [`further developed it`][4] with Vincent Guerci (@vguerci).
 
 -   March 2016: Geza Lore (@gezalore) greatly refactored it in pull request #55.
 

@@ -98,5 +98,5 @@ ZSH_THEME_SYSTEMD_PROMPT_CAPS=1
 If `dhcpd` is running, and `httpd` is not, then your prompt will look like this:
 
 ```text
-[DHCPD: +][HTTPD: X]
+[`DHCPD: +`][HTTPD: X]
 ```
