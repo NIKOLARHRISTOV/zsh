@@ -216,10 +216,6 @@ default values.
 -   September 2009: [`Peter Stephenson`][2] originally wrote this script and it
     published to the zsh-users mailing list.
 
--   January 2011: Guido van Steen (@guidovansteen) revised this script and
-    released it under the 3-clause BSD license as part of [`fizsh`][3], the
-    Friendly Interactive ZSHell.
-
 -   January 2011: Suraj N. Kurapati (@sunaku) extracted this script from
     [`fizsh`][3] 1.0.1, refactored it heavily, and finally repackaged it as an
     [oh-my-zsh plugin][4] and as an independently loadable [`ZSH script`][5].

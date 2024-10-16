@@ -103,16 +103,6 @@ zle -N shrink-path-toggle
 bindkey "^[S" shrink-path-toggle
 ```
 
-## License
-
-Copyright (C) 2008 by Daniel Friesel <derf@xxxxxxxxxxxxxxxxxx> Copyright (C)
-2018-2020 by Pavel N. Krivitsky
-
-License: WTFPL <http://www.wtfpl.net>
-
-Ref: https://www.zsh.org/mla/workers/2009/msg00415.html
-https://www.zsh.org/mla/workers/2009/msg00419.html
-
 ## Misc
 
 Keywords: prompt directory truncate shrink collapse fish
