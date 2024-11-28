@@ -44,5 +44,5 @@ You can override this behavior by adding `unset CONDA_CHANGEPS1` in your
 
 References:
 
--   https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#determining-your-current-environment
--   https://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#precedence
+-   HTTPS://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#determining-your-current-environment
+-   HTTPS://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#precedence

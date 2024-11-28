@@ -1,7 +1,7 @@
 # azure
 
 This plugin provides completion support for
-[`azure cli`](https://docs.microsoft.com/en-us/cli/azure/) and a few utilities to
+[`azure cli`](HTTPS://docs.microsoft.com/en-us/cli/azure/) and a few utilities to
 manage azure subscriptions and display them in the prompt.
 
 To use it, add `azure` to the plugins array in your zshrc file.
@@ -49,6 +49,6 @@ On ubuntu get a working environment with :
 
 ```
 apt install -y curl jq zsh git vim
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+sh -c "$(curl -fsSL HTTPS://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -sL HTTPS://aka.ms/InstallAzureCLIDeb | bash
 ```

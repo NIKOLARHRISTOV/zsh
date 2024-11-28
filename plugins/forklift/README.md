@@ -10,7 +10,7 @@ plugins=(... forklift)
 
 ## Requirements
 
--   [`ForkLift`](https://binarynights.com/)
+-   [`ForkLift`](HTTPS://binarynights.com/)
 
 ## 🛠️ Usage
 

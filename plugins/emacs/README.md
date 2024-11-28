@@ -22,7 +22,7 @@ plugins=(... emacs)
 
 The plugin uses a custom launcher (which we'll call here `$EMACS_LAUNCHER`) that
 is just a wrapper around
-[`emacsclient`](https://www.emacswiki.org/emacs/EmacsClient).
+[`emacsclient`](HTTPS://www.emacswiki.org/emacs/EmacsClient).
 
 | Alias  | Command                                            | Description                                                |
 | ------ | -------------------------------------------------- | ---------------------------------------------------------- |

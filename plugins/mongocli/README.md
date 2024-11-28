@@ -1,7 +1,7 @@
 # mongocli plugin
 
 The plugin adds several aliases for common
-[`mongocli`](https://docs.mongodb.com/mongocli/stable/) commands.
+[`mongocli`](HTTPS://docs.mongodb.com/mongocli/stable/) commands.
 
 To use it, add `mongocli` to the plugins array of your zshrc file:
 

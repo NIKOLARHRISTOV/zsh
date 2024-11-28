@@ -1,8 +1,8 @@
 # Rails
 
 This plugin adds completion for
-[`Ruby On Rails Framework`](https://rubyonrails.org/) and
-[`Rake`](https://ruby.github.io/rake/) commands, as well as some aliases for logs
+[`Ruby On Rails Framework`](HTTPS://rubyonrails.org/) and
+[`Rake`](HTTPS://ruby.github.io/rake/) commands, as well as some aliases for logs
 and environment variables.
 
 To use it, add `rails` to the plugins array in your zshrc file:
@@ -87,7 +87,7 @@ separately. For example: `REP rake db:migrate` will migrate the production db.
 The following commands are run [using `rails` instead of `rake` since Rails
 v5][1], but are preserved under the prefix `rk` for backwards compatibility.
 
-[1]: https://guides.rubyonrails.org/v5.2/command_line.html#bin-rails
+[1]: HTTPS://guides.rubyonrails.org/v5.2/command_line.html#bin-rails
 
 | Alias    | Command                         | Description                                            |
 | -------- | ------------------------------- | ------------------------------------------------------ |

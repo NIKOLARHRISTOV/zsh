@@ -1,7 +1,7 @@
 # sfdx plugin
 
 This plugin provides autocompletion for the
-[`Salesforce DX`](https://developer.salesforce.com/tools/sfdxcli) CLI.
+[`Salesforce DX`](HTTPS://developer.salesforce.com/tools/sfdxcli) CLI.
 
 To use it, add `sfdx` to the plugins array in your zshrc file:
 
@@ -9,4 +9,4 @@ To use it, add `sfdx` to the plugins array in your zshrc file:
 plugins=(... sfdx)
 ```
 
-Original repository: https://github.com/wadewegner/salesforce-cli-zsh-completion
+Original repository: HTTPS://github.com/wadewegner/salesforce-cli-zsh-completion

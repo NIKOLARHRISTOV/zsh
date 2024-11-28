@@ -1,7 +1,7 @@
 # gitignore
 
 This plugin enables you the use of
-[`gitignore.io`](https://www.toptal.com/developers/gitignore) from the command
+[`gitignore.io`](HTTPS://www.toptal.com/developers/gitignore) from the command
 line. You need an active internet connection.
 
 To use it, add `gitignore` to the plugins array in your zshrc file:

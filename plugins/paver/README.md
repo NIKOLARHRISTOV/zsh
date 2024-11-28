@@ -1,7 +1,7 @@
 # Paver
 
 This plugin adds completion for the `paver` command-line tool of
-[`Paver`](https://pythonhosted.org/Paver/).
+[`Paver`](HTTPS://pythonhosted.org/Paver/).
 
 To use it, add `paver` to the plugins array of your zshrc file:
 

@@ -1,6 +1,6 @@
 # Lighthouse plugin
 
-This plugin adds commands to manage [`Lighthouse`](https://lighthouseapp.com/).
+This plugin adds commands to manage [`Lighthouse`](HTTPS://lighthouseapp.com/).
 
 To use it, add `lighthouse` to the plugins array in your zshrc file:
 
@@ -20,11 +20,11 @@ plugins=(... lighthouse)
 
     ```console
     $ cat .lighthouse-url
-    https://rails.lighthouseapp.com/projects/8994
+    HTTPS://rails.lighthouseapp.com/projects/8994
     
     $ lho 23
     Opening ticket #23
-    # The browser goes to https://rails.lighthouseapp.com/projects/8994/tickets/23
+    # The browser goes to HTTPS://rails.lighthouseapp.com/projects/8994/tickets/23
     ```
 
-See a demo: http://screencast.com/t/ZDgwNDUwNT
+See a demo: HTTP://screencast.com/t/ZDgwNDUwNT

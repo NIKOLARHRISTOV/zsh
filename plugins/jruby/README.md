@@ -1,6 +1,6 @@
 # JRuby plugin
 
-This plugin adds aliases for [`JRuby`](https://www.jruby.org/).
+This plugin adds aliases for [`JRuby`](HTTPS://www.jruby.org/).
 
 To use it, add `jruby` to the plugins array in your zshrc file:
 
@@ -11,7 +11,7 @@ plugins=(... jruby)
 ## Requirements
 
 This plugin assumes you already have jruby installed and available in your
-[`path`](https://www.jruby.org/getting-started).
+[`path`](HTTPS://www.jruby.org/getting-started).
 
 ## Aliases
 

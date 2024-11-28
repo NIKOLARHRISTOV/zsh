@@ -1,7 +1,7 @@
 # Jira plugin
 
 This plugin provides command line tools for interacting with Atlassian's
-[`JIRA`](https://www.atlassian.com/software/jira) bug tracking software.
+[`JIRA`](HTTPS://www.atlassian.com/software/jira) bug tracking software.
 
 To use it, add `jira` to the plugins array in your zshrc file:
 
@@ -72,7 +72,7 @@ For example:
 
 ```
 cd to/my/project
-echo "https://jira.atlassian.com" >> .jira-url
+echo "HTTPS://jira.atlassian.com" >> .jira-url
 ```
 
 (Note: The current implementation only looks in the current directory for
@@ -96,6 +96,6 @@ change in the future though.)
 
 ### Browser
 
-Your default web browser, as determined by how `open_command` handles `http://`
+Your default web browser, as determined by how `open_command` handles `HTTP://`
 URLs, is used for interacting with the JIRA instance. If you change your
 system's URL handler associations, it will change the browser that `jira` uses.

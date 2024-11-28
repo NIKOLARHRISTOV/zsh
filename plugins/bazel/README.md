@@ -1,6 +1,6 @@
 # Bazel plugin
 
-This plugin adds completion and aliases for [`bazel`](https://bazel.build), an
+This plugin adds completion and aliases for [`bazel`](HTTPS://bazel.build), an
 open-source build and test tool that scalably supports multi-language and
 multi-platform projects.
 
@@ -13,7 +13,7 @@ plugins=(... bazel)
 The plugin has a copy of [`the completion script from the git repository`][1].
 
 [1]:
-	https://github.com/bazelbuild/bazel/blob/master/scripts/zsh_completion/_bazel
+	HTTPS://github.com/bazelbuild/bazel/blob/master/scripts/zsh_completion/_bazel
 
 ## Aliases
 

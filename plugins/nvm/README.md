@@ -1,6 +1,6 @@
 # nvm plugin
 
-This plugin adds autocompletions for [`nvm`](https://github.com/nvm-sh/nvm) — a
+This plugin adds autocompletions for [`nvm`](HTTPS://github.com/nvm-sh/nvm) — a
 Node.js version manager. It also automatically sources nvm, so you don't need to
 do it manually in your `.zshrc`.
 
@@ -20,7 +20,7 @@ These settings should go in your zshrc file, before Oh My Zsh is sourced:
 -   **`NVM_HOMEBREW`**: if you installed nvm via Homebrew, in a directory other
     than `/usr/local/opt/nvm`, you can set `NVM_HOMEBREW` to be the directory
     where you installed it. For example, on Apple Silicon-based Macs,
-    [`Homebrew is installed in `/opt/homebrew`](https://docs.brew.sh/Installation).
+    [`Homebrew is installed in `/opt/homebrew`](HTTPS://docs.brew.sh/Installation).
     To get the directory where nvm has been installed, regardless of chip
     architecture, use `NVM_HOMEBREW=$(brew --prefix nvm)`.
 
@@ -52,7 +52,7 @@ Note: _if used at the same time as `lazy`, `autoload` will start working only
 after nvm has been lazy-loaded_
 
 If set, the plugin will automatically load a node version when if finds a
-[`.nvmrc` file`](https://github.com/nvm-sh/nvm#nvmrc) in the current working
+[`.nvmrc` file`](HTTPS://github.com/nvm-sh/nvm#nvmrc) in the current working
 directory indicating which node version to load. This can be done, similar as
 previous options, adding:
 

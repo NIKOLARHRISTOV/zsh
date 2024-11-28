@@ -1,7 +1,7 @@
 # .NET Core CLI plugin
 
 This plugin provides completion and useful aliases for
-[`.NET Core CLI`](https://dotnet.microsoft.com/).
+[`.NET Core CLI`](HTTPS://dotnet.microsoft.com/).
 
 To use it, add `dotnet` to the plugins array in your zshrc file.
 

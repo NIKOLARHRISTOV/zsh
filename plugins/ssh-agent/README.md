@@ -61,7 +61,7 @@ zstyle :omz:plugins:ssh-agent lazy yes
 
 You can enable `AddKeysToAgent` by passing `-o AddKeysToAgent=yes` to the `ssh`
 command, or by adding `AddKeysToAgent yes` to your `~/.ssh/config` file [1]. See
-the [`OpenSSH 7.2 Release Notes`](http://www.openssh.com/txt/release-7.2).
+the [`OpenSSH 7.2 Release Notes`](HTTP://www.openssh.com/txt/release-7.2).
 
 ### `lifetime`
 
@@ -130,6 +130,6 @@ zstyle :omz:plugins:ssh-agent ssh-add-args --apple-load-keychain
 ## Credits
 
 Based on code from Joseph M. Reagle:
-https://www.cygwin.com/ml/cygwin/2001-06/msg00537.html
+HTTPS://www.cygwin.com/ml/cygwin/2001-06/msg00537.html
 
 Agent-forwarding support based on ideas from Florent Thoumie and Jonas Pfenniger

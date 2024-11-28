@@ -88,6 +88,6 @@ apt_upgr='full-upgrade'
 
 ## Authors
 
--   [`@AlexBio`](https://github.com/AlexBio)
--   [`@dbb`](https://github.com/dbb)
--   [`@Mappleconfusers`](https://github.com/Mappleconfusers)
+-   [`@AlexBio`](HTTPS://github.com/AlexBio)
+-   [`@dbb`](HTTPS://github.com/dbb)
+-   [`@Mappleconfusers`](HTTPS://github.com/Mappleconfusers)

@@ -1,6 +1,6 @@
 # brew plugin
 
-The plugin adds several aliases for common [`brew`](https://brew.sh) commands.
+The plugin adds several aliases for common [`brew`](HTTPS://brew.sh) commands.
 
 To use it, add `brew` to the plugins array of your zshrc file:
 
@@ -58,7 +58,7 @@ In case you installed `brew` in a non-common location, you can still set
 
 This plugin configures paths with Homebrew's completion functions automatically,
 so you don't need to do it manually. See:
-https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh.
+HTTPS://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh.
 
 With the release of Homebrew 1.0, they decided to bundle the zsh completion as
 part of the brew installation, so we no longer ship it with the brew plugin; now

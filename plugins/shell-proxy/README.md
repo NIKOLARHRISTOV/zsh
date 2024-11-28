@@ -22,7 +22,7 @@ plugins=(... shell-proxy)
 Set `SHELLPROXY_URL` environment variable to the URL of the proxy server:
 
 ```sh
-SHELLPROXY_URL="http://127.0.0.1:8123"
+SHELLPROXY_URL="HTTP://127.0.0.1:8123"
 SHELLPROXY_NO_PROXY="localhost,127.0.0.1"
 proxy enable
 ```
@@ -39,9 +39,9 @@ Example:
 
 # HTTP Proxy
 if [[ "$(uname)" = Darwin ]]; then
-	echo "http://127.0.0.1:6152" # Surge Mac
+	echo "HTTP://127.0.0.1:6152" # Surge Mac
 else
-	echo "http://127.0.0.1:8123" # polipo
+	echo "HTTP://127.0.0.1:8123" # polipo
 fi
 
 # No Proxy
@@ -60,9 +60,9 @@ SHELLPROXY_CONFIG="$HOME/.dotfiles/proxy-config"
 ## Reference
 
 -   `$GIT_SSH`:
-    <https://www.git-scm.com/docs/git#Documentation/git.txt-codeGITSSHcode>
--   OpenSSH manual: <https://man.openbsd.org/ssh>
+    <HTTPS://www.git-scm.com/docs/git#Documentation/git.txt-codeGITSSHcode>
+-   OpenSSH manual: <HTTPS://man.openbsd.org/ssh>
 
 ## Maintainer
 
--   [`@septs`](https://github.com/septs)
+-   [`@septs`](HTTPS://github.com/septs)

@@ -2,7 +2,7 @@
 
 This plugin provides a wrapper around the "wakeonlan" tool available from most
 distributions' package repositories, or from
-[`the following website`](https://github.com/jpoliv/wakeonlan).
+[`the following website`](HTTPS://github.com/jpoliv/wakeonlan).
 
 To use it, add `wakeonlan` to the plugins array in your zshrc file:
 

@@ -1,16 +1,16 @@
 # wd
 
-[![Build Status](https://github.com/mfaerevaag/wd/actions/workflows/test.yml/badge.svg)](https://github.com/mfaerevaag/wd/actions)
+[![Build Status](HTTPS://github.com/mfaerevaag/wd/actions/workflows/test.yml/badge.svg)](HTTPS://github.com/mfaerevaag/wd/actions)
 
 `wd` (_warp directory_) lets you jump to custom directories in zsh, without
 using `cd`. Why? Because `cd` seems inefficient when the folder is frequently
 visited or has a long path.
 
-![`Demo`](https://raw.githubusercontent.com/mfaerevaag/wd/master/tty.gif)
+![`Demo`](HTTPS://raw.githubusercontent.com/mfaerevaag/wd/master/tty.gif)
 
 ## Setup
 
-### [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh)
+### [`oh-my-zsh`](HTTPS://github.com/ohmyzsh/ohmyzsh)
 
 `wd` comes bundled with oh-my-zsh!
 
@@ -20,7 +20,7 @@ Just add the plugin in your `.zshrc` file:
 plugins=(... wd)
 ```
 
-### [`Antigen`](https://github.com/zsh-users/antigen)
+### [`Antigen`](HTTPS://github.com/zsh-users/antigen)
 
 In your `.zshrc`:
 
@@ -28,7 +28,7 @@ In your `.zshrc`:
 antigen bundle mfaerevaag/wd
 ```
 
-### [`Antibody`](https://github.com/getantibody/antibody)
+### [`Antibody`](HTTPS://github.com/getantibody/antibody)
 
 In your `.zshrc`:
 
@@ -36,12 +36,12 @@ In your `.zshrc`:
 antibody bundle mfaerevaag/wd
 ```
 
-### [`Fig`](https://fig.io)
+### [`Fig`](HTTPS://fig.io)
 
 Install `wd` here:
-[![Fig plugin store](https://fig.io/badges/install-with-fig.svg)](https://fig.io/plugins/other/wd_mfaerevaag)
+[![Fig plugin store](HTTPS://fig.io/badges/install-with-fig.svg)](HTTPS://fig.io/plugins/other/wd_mfaerevaag)
 
-### Arch ([`AUR`](https://aur.archlinux.org/packages/zsh-plugin-wd-git/))
+### Arch ([`AUR`](HTTPS://aur.archlinux.org/packages/zsh-plugin-wd-git/))
 
 1. Install from the AUR
 
@@ -58,7 +58,7 @@ wd() {
 }
 ```
 
-### [`Home Manager`](https://github.com/nix-community/home-manager)
+### [`Home Manager`](HTTPS://github.com/nix-community/home-manager)
 
 Add the following to your `home.nix` then run `home-manager switch`:
 
@@ -76,7 +76,7 @@ programs.zsh.plugins = [
 ];
 ```
 
-### [`zplug`](https://github.com/zplug/zplug)
+### [`zplug`](HTTPS://github.com/zplug/zplug)
 
 ```zsh
 zplug "mfaerevaag/wd", as:command, use:"wd.sh", hook-load:"wd() { . $ZPLUG_REPOS/mfaerevaag/wd/wd.sh }"
@@ -86,18 +86,18 @@ zplug "mfaerevaag/wd", as:command, use:"wd.sh", hook-load:"wd() { . $ZPLUG_REPOS
 
 _Note: automatic install does not provide the manpage. It is also poor security
 practice to run remote code without first reviewing it, so you ought to look
-[`here`](https://github.com/mfaerevaag/wd/blob/master/install.sh)_
+[`here`](HTTPS://github.com/mfaerevaag/wd/blob/master/install.sh)_
 
 Run either command in your terminal:
 
 ```zsh
-curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
+curl -L HTTPS://github.com/mfaerevaag/wd/raw/master/install.sh | sh
 ```
 
 or
 
 ```zsh
-wget --no-check-certificate https://github.com/mfaerevaag/wd/raw/master/install.sh -O - | sh
+wget --no-check-certificate HTTPS://github.com/mfaerevaag/wd/raw/master/install.sh -O - | sh
 ```
 
 ### Manual
@@ -129,7 +129,7 @@ the manpage change
 
 ## Completion
 
-If you're NOT using [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh) and
+If you're NOT using [`oh-my-zsh`](HTTPS://github.com/robbyrussell/oh-my-zsh) and
 you want to utilize the zsh-completion feature, you will also need to add the
 path to your `wd` installation (`~/bin/wd` if you used the automatic installer)
 to your `fpath`. E.g. in your `~/.zshrc`:
@@ -205,7 +205,7 @@ wd ...
 
 This is a wrapper for the zsh's `dirs` function.  
 _You might need to add `setopt AUTO_PUSHD` to your `.zshrc` if you are not using
-[`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh)._
+[`oh-my-zsh`](HTTPS://github.com/ohmyzsh/ohmyzsh)._
 
 -   Remove warp point:
 
@@ -293,7 +293,7 @@ Defines the path where warp points get stored. Defaults to `$HOME/.warprc`.
 ## Testing
 
 `wd` comes with a small test suite, run with
-[`shunit2`](https://github.com/kward/shunit2). This can be used to confirm that
+[`shunit2`](HTTPS://github.com/kward/shunit2). This can be used to confirm that
 things are working as they should on your setup, or to demonstrate an issue.
 
 To run, simply `cd` into the `test` directory and run the `tests.sh`.
@@ -317,6 +317,6 @@ release notes!
 
 ---
 
-Credit to [`altschuler`](https://github.com/altschuler) for an awesome idea.
+Credit to [`altschuler`](HTTPS://github.com/altschuler) for an awesome idea.
 
 Hope you enjoy!

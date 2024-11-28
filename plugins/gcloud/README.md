@@ -1,7 +1,7 @@
 # gcloud
 
 This plugin provides completion support for the
-[`Google Cloud SDK CLI`](https://cloud.google.com/sdk/gcloud/).
+[`Google Cloud SDK CLI`](HTTPS://cloud.google.com/sdk/gcloud/).
 
 To use it, add `gcloud` to the plugins array in your zshrc file.
 
@@ -10,7 +10,7 @@ plugins=(... gcloud)
 ```
 
 It relies on you having installed the SDK using one of the supported options
-listed [`here`](https://cloud.google.com/sdk/install).
+listed [`here`](HTTPS://cloud.google.com/sdk/install).
 
 ## Plugin Options
 

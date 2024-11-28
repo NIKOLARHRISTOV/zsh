@@ -1,6 +1,6 @@
 # z - jump around
 
-This plugin defines the [`z command`](https://github.com/agkozak/zsh-z) that
+This plugin defines the [`z command`](HTTPS://github.com/agkozak/zsh-z) that
 tracks your most visited directories and allows you to access them with very few
 keystrokes.
 
@@ -26,4 +26,4 @@ plugins=(... z)
 ### Further reading
 
 For advanced usage and details of z, see [`MANUAL`](./MANUAL.md) (copied from
-[`agkozak/zsh-z`](https://github.com/agkozak/zsh-z)).
+[`agkozak/zsh-z`](HTTPS://github.com/agkozak/zsh-z)).

@@ -26,7 +26,7 @@ PROMPT="$PROMPT"'$(kubectx_prompt_info)'
 
 You can rename the default context name for better readability or additional
 formatting. These values accept
-[`prompt expansion sequences`](http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html)
+[`prompt expansion sequences`](HTTP://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html)
 such as `%F{color}`, `%f`, `%K{color}`, `%k`, `%B`, `%b`, `%U`, `%u`, `%S`,
 `%s`, `%{...%}`.
 

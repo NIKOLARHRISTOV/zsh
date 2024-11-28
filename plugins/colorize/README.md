@@ -22,8 +22,8 @@ plugins=(... colorize)
 
 This plugin requires that at least one of the following tools is installed:
 
--   [`Chroma`](https://github.com/alecthomas/chroma)
--   [`Pygments`](https://pygments.org/download/)
+-   [`Chroma`](HTTPS://github.com/alecthomas/chroma)
+-   [`Pygments`](HTTPS://pygments.org/download/)
 
 ### Colorize tool
 

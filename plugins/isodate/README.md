@@ -1,7 +1,7 @@
 # Isodate plugin
 
 This plugin adds completion for the
-[`ISO 8601`](https://en.wikipedia.org/wiki/ISO_8601), as well as some aliases for
+[`ISO 8601`](HTTPS://en.wikipedia.org/wiki/ISO_8601), as well as some aliases for
 common Date commands.
 
 To use it, add `isodate` to the plugins array in your zshrc file:
@@ -10,7 +10,7 @@ To use it, add `isodate` to the plugins array in your zshrc file:
 plugins=(... isodate)
 ```
 
-**Maintainer:** [`@Frani`](https://github.com/frani)
+**Maintainer:** [`@Frani`](HTTPS://github.com/frani)
 
 ## Aliases
 

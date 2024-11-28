@@ -1,7 +1,7 @@
 # repo plugin
 
 This plugin mainly adds some aliases and support for automatic completion for
-the [`repo command line tool`](https://code.google.com/p/git-repo/).
+the [`repo command line tool`](HTTPS://code.google.com/p/git-repo/).
 
 To use it, add `repo` to the plugins array in your zshrc file:
 

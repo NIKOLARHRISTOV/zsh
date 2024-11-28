@@ -1,6 +1,6 @@
 # Scala plugin
 
-Completion script for [`scala and scalac`](https://www.scala-lang.org/) commands.
+Completion script for [`scala and scalac`](HTTPS://www.scala-lang.org/) commands.
 
 To use it, add `scala` to the plugins array of your zshrc file:
 

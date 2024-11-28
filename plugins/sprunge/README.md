@@ -1,6 +1,6 @@
 # Sprunge plugin
 
-This plugin uploads data and fetch URL from the pastebin http://sprunge.us
+This plugin uploads data and fetch URL from the pastebin HTTP://sprunge.us
 
 To enable it, add 'sprunge' to your plugins:
 
@@ -21,7 +21,7 @@ Once sprunge has processed the input it will give you a unique HTTP address:
 
 ```console
 $ sprunge "hello"
-http://sprunge.us/XxjnKz
+HTTP://sprunge.us/XxjnKz
 ```
 
 ## Notes
@@ -35,5 +35,5 @@ http://sprunge.us/XxjnKz
 ## Credits
 
 -   Original code:
-    [`shellperson.net`](https://web.archive.org/web/20190910065842/https://www.shellperson.net/sprunge-pastebin-script/).
+    [`shellperson.net`](HTTPS://web.archive.org/web/20190910065842/HTTPS://www.shellperson.net/sprunge-pastebin-script/).
 -   Adapted by: Matt Parnell (@ilikenwf).

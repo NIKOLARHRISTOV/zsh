@@ -1,7 +1,7 @@
 # Yii2 autocomplete plugin
 
 Adds autocomplete commands and subcommands for
-[`yii`](https://www.yiiframework.com/).
+[`yii`](HTTPS://www.yiiframework.com/).
 
 ## Requirements
 

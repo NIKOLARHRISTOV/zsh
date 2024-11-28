@@ -4,7 +4,7 @@ Plugin for Marked 2, a previewer for Markdown files on Mac OS X
 
 ### Requirements
 
--   [`Marked 2`](http://marked2app.com)
+-   [`Marked 2`](HTTP://marked2app.com)
 
 ### 🛠️ Usage
 

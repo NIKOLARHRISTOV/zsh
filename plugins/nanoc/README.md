@@ -1,7 +1,7 @@
 # Nanoc plugin
 
 This plugin adds some aliases and autocompletion for common
-[`Nanoc`](https://nanoc.ws) commands.
+[`Nanoc`](HTTPS://nanoc.ws) commands.
 
 To use it, add `nanoc` to the plugins array in your zshrc file:
 

@@ -1,6 +1,6 @@
 # fasd
 
-[`Fasd`](https://github.com/clvv/fasd) (pronounced similar to "fast") is a
+[`Fasd`](HTTPS://github.com/clvv/fasd) (pronounced similar to "fast") is a
 command-line productivity booster. Fasd offers quick access to files and
 directories for POSIX shells.
 
@@ -13,7 +13,7 @@ plugins=(... fasd)
 ## 🚀 Installation
 
 Please find detailed installation guide
-[`here`](https://github.com/whjvenyl/fasd#install)
+[`here`](HTTPS://github.com/whjvenyl/fasd#install)
 
 ## Aliases
 

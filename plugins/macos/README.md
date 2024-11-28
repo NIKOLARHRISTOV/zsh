@@ -11,10 +11,10 @@ plugins=(... macos)
 
 ## Supported Terminals
 
--   [`iTerm`](https://iterm.sourceforge.net/)
--   [`iTerm2`](https://iterm2.com/)
--   [`Hyper`](https://hyper.is/)
--   [`Tabby`](https://tabby.sh/)
+-   [`iTerm`](HTTPS://iterm.sourceforge.net/)
+-   [`iTerm2`](HTTPS://iterm2.com/)
+-   [`Hyper`](HTTPS://hyper.is/)
+-   [`Tabby`](HTTPS://tabby.sh/)
 
 ## Commands
 
@@ -43,13 +43,13 @@ plugins=(... macos)
 
 ## Acknowledgements
 
-Original author: [`Sorin Ionescu`](https://github.com/sorin-ionescu)
+Original author: [`Sorin Ionescu`](HTTPS://github.com/sorin-ionescu)
 
 This application makes use of the following third-party scripts:
 
-[`shpotify`](https://github.com/hnarayanan/shpotify)
+[`shpotify`](HTTPS://github.com/hnarayanan/shpotify)
 
-Copyright (c) 2012–2019 [`Harish Narayanan`](https://harishnarayanan.org/).
+Copyright (c) 2012–2019 [`Harish Narayanan`](HTTPS://harishnarayanan.org/).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

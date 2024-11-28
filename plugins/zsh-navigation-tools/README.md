@@ -1,7 +1,7 @@
-![`ZSH 5.0.0`](https://img.shields.io/badge/zsh-v5.0.0-orange.svg?style=flat-square)
+![`ZSH 5.0.0`](HTTPS://img.shields.io/badge/zsh-v5.0.0-orange.svg?style=flat-square)
 [![Gitter][`gitter-image]`][gitter-link]
 
-![`znt logo`](https://imageshack.com/a/img905/2629/WK9qjN.png)
+![`znt logo`](HTTPS://imageshack.com/a/img905/2629/WK9qjN.png)
 
 # Zsh Navigation Tools
 
@@ -20,19 +20,19 @@ plugins=(... zsh-navigation-tools)
 ```
 
 Also check out
-[![ZCA](https://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect`](https://github.com/zdharma-continuum/zsh-cmd-architect)
-and [`Zconvey`](https://github.com/zdharma-continuum/zconvey)
+[![ZCA](HTTPS://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect`](HTTPS://github.com/zdharma-continuum/zsh-cmd-architect)
+and [`Zconvey`](HTTPS://github.com/zdharma-continuum/zconvey)
 
 Videos:
 
--   [`https://youtu.be/QwZ8IJEgXRE`](https://youtu.be/QwZ8IJEgXRE)
--   [`https://youtu.be/DN9QqssAYB8`](https://youtu.be/DN9QqssAYB8)
+-   [`HTTPS://youtu.be/QwZ8IJEgXRE`](HTTPS://youtu.be/QwZ8IJEgXRE)
+-   [`HTTPS://youtu.be/DN9QqssAYB8`](HTTPS://youtu.be/DN9QqssAYB8)
 
 Screenshots:
 
-![`n-history`](https://imageshack.com/a/img921/5046/bqr0mk.png)
+![`n-history`](HTTPS://imageshack.com/a/img921/5046/bqr0mk.png)
 
-![`n-history`](https://imageshack.com/a/img633/9905/WzfSdl.gif)
+![`n-history`](HTTPS://imageshack.com/a/img633/9905/WzfSdl.gif)
 
 ## History Widget
 
@@ -237,7 +237,7 @@ Zsh Navigation Tools installation.
 ## More
 
 -   be aware of
-    [`this`](https://github.com/zdharma-continuum/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
+    [`this`](HTTPS://github.com/zdharma-continuum/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
 
 # Fixing tmux, screen and linux vt
 
@@ -267,5 +267,5 @@ It will not display underline properly, but will instead highlight by a color,
 which is quite nice. The same will not work for FreeBSD's vt, `ZNT` will detect
 if that vt is used and will revert to highlighting elements via `reverse` mode.
 
-[gitter-image]: https://badges.gitter.im/zdharma-continuum/community.svg
-[gitter-link]: https://gitter.im/zdharma-continuum/community
+[gitter-image]: HTTPS://badges.gitter.im/zdharma-continuum/community.svg
+[gitter-link]: HTTPS://gitter.im/zdharma-continuum/community

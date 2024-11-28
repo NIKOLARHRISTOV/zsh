@@ -51,5 +51,5 @@ If `git-auto-fetch` triggers then, you'll have fetched the remote changes
 without knowing it, and even though you're running the push with
 `--force-with-lease`, git will overwrite the recent changes because you already
 have them in your local repository. The
-[`git push --force-with-lease` docs`](https://git-scm.com/docs/git-push) talk
+[`git push --force-with-lease` docs`](HTTPS://git-scm.com/docs/git-push) talk
 about possible solutions to this problem.

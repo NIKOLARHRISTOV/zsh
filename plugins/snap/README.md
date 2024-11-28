@@ -1,7 +1,7 @@
 # snap plugin
 
 This plugin sets up aliases for the common
-[`snap`](https://snapcraft.io/docs/getting-started) commands
+[`snap`](HTTPS://snapcraft.io/docs/getting-started) commands
 
 ## Aliases
 

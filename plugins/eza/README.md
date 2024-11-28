@@ -1,7 +1,7 @@
 # eza plugin
 
 This provides aliases that invoke the
-[`eza`](https://github.com/eza-community/eza) utility rather than `ls`
+[`eza`](HTTPS://github.com/eza-community/eza) utility rather than `ls`
 
 To use it add `eza` to the plugins array in your zshrc file:
 
@@ -78,11 +78,11 @@ zstyle ':omz:plugins:eza' 'size-prefix' (binary|none|si)
 Choose the prefix to be used in displaying file size:
 
 -   `binary` -- use
-    [`binary prefixes`](https://en.wikipedia.org/wiki/Binary_prefix) such as "Ki",
+    [`binary prefixes`](HTTPS://en.wikipedia.org/wiki/Binary_prefix) such as "Ki",
     "Mi", "Gi" and so on
 -   `none` -- don't use any prefix, show size in bytes
 -   `si` (default) -- use
-    [`Metric/S.I. prefixes`](https://en.wikipedia.org/wiki/Metric_prefix)
+    [`Metric/S.I. prefixes`](HTTPS://en.wikipedia.org/wiki/Metric_prefix)
 
 Default: `si`
 

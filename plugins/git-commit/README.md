@@ -1,9 +1,9 @@
 # git-commit plugin
 
 The git-commit plugin adds several
-[`git aliases`](https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-alias)
+[`git aliases`](HTTPS://www.git-scm.com/docs/git-config#Documentation/git-config.txt-alias)
 for
-[`conventional commit`](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+[`conventional commit`](HTTPS://www.conventionalcommits.org/en/v1.0.0/#summary)
 messages.
 
 To use it, add `git-commit` to the plugins array in your zshrc file:

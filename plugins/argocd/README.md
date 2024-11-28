@@ -1,6 +1,6 @@
 # Argo CD plugin
 
-This plugin adds completion for the [`Argo CD`](https://argoproj.github.io/cd/)
+This plugin adds completion for the [`Argo CD`](HTTPS://argoproj.github.io/cd/)
 CLI.
 
 To use it, add `argocd` to the plugins array in your zshrc file:

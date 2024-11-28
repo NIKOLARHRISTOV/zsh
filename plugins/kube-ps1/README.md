@@ -24,7 +24,7 @@ $ brew install kube-ps1
 ### Arch Linux
 
 AUR Package available at
-[`https://aur.archlinux.org/packages/kube-ps1/`](https://aur.archlinux.org/packages/kube-ps1/).
+[`HTTPS://aur.archlinux.org/packages/kube-ps1/`](HTTPS://aur.archlinux.org/packages/kube-ps1/).
 
 #### Zsh
 
@@ -42,7 +42,7 @@ PS1='[\u@\h \W $(kube_ps1)]\$ '
 
 ### Zsh Plugin Managers
 
-#### Using [`zplugin`](https://github.com/zdharma/zplugin)
+#### Using [`zplugin`](HTTPS://github.com/zdharma/zplugin)
 
 Update `.zshrc` with:
 
@@ -56,7 +56,7 @@ PROMPT='$(kube_ps1)'$PROMPT
 The default prompt assumes you have the `kubectl` command line utility
 installed. Official installation instructions and binaries are available:
 
-[`Install and Set up kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+[`Install and Set up kubectl`](HTTPS://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
 If using this with OpenShift, the `oc` tool needs installed. It can be obtained
 from brew ports:
@@ -67,7 +67,7 @@ brew install openshift-cli
 
 or the source can be downloaded:
 
-[`OC Client Tools`](https://www.openshift.org/download.html)
+[`OC Client Tools`](HTTPS://www.openshift.org/download.html)
 
 Set the binary to `oc` with the following environment variable:
 
@@ -85,14 +85,14 @@ If neither binary is available, the prompt will print the following:
 
 There are several great tools that make using kubectl very enjoyable:
 
--   [`kubectx` and `kubens`](https://github.com/ahmetb/kubectx) are great for
+-   [`kubectx` and `kubens`](HTTPS://github.com/ahmetb/kubectx) are great for
     fast switching between clusters and namespaces.
 
 ## Tmux port
 
 I have begun porting kube-ps1 to tmux as a status line plugin. If you prefer
 tmux, and like the functionality provided by kube-ps1, checkout the
-[`kube-tmux`](https://github.com/jonmosco/kube-tmux) project
+[`kube-tmux`](HTTPS://github.com/jonmosco/kube-tmux) project
 
 ## Prompt Structure
 
@@ -248,5 +248,5 @@ zsh --no-rcs
 
 ## Contributors
 
--   [`Ahmet Alp Balkan`](https://github.com/ahmetb)
+-   [`Ahmet Alp Balkan`](HTTPS://github.com/ahmetb)
 -   Jared Yanovich

@@ -20,7 +20,7 @@ jsontool:
 
 ### Supports NDJSON (Newline Delimited JSON)
 
-The plugin also supports [`NDJSON`](http://ndjson.org/) input, which means all
+The plugin also supports [`NDJSON`](HTTP://ndjson.org/) input, which means all
 functions have an alternative function that reads and processes the input line
 by line. These functions have the same name except using `ndjson` instead of
 `json`:
@@ -33,7 +33,7 @@ by line. These functions have the same name except using `ndjson` instead of
 
 ```console
 # curl json data and pretty print the results
-curl https://coderwall.com/bobwilliams.json | pp_json
+curl HTTPS://coderwall.com/bobwilliams.json | pp_json
 ```
 
 -   **is_json**:

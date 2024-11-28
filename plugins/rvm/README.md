@@ -1,7 +1,7 @@
 # Ruby Version Manager plugin
 
 This plugin adds some utility functions and completions for
-[`Ruby Version Manager`](https://rvm.io/).
+[`Ruby Version Manager`](HTTPS://rvm.io/).
 
 To use it, add `rvm` to the plugins array in your zshrc file:
 
@@ -35,4 +35,4 @@ plugins=(... rvm)
 At the time of writing this (2021-12-28), Ruby versions until 2.5 are [`EOL`][1],
 and will be removed in the future.
 
-[1]: https://endoflife.date/ruby
+[1]: HTTPS://endoflife.date/ruby

@@ -1,6 +1,6 @@
 # JHBuild
 
-This plugin adds some [`JHBuild`](https://developer.gnome.org/jhbuild/) aliases.
+This plugin adds some [`JHBuild`](HTTPS://developer.gnome.org/jhbuild/) aliases.
 
 To use it, add `jhbuild` to the plugins array of your zshrc file:
 
@@ -8,7 +8,7 @@ To use it, add `jhbuild` to the plugins array of your zshrc file:
 plugins=(... jhbuild)
 ```
 
-**Maintainer:** [`Miguel Vaello`](https://github.com/miguxbe)
+**Maintainer:** [`Miguel Vaello`](HTTPS://github.com/miguxbe)
 
 ## Aliases
 

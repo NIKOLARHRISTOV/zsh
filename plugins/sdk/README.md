@@ -12,4 +12,4 @@ plugins=(... sdk)
 
 ## Requirements
 
--   [`SDKMAN`](http://sdkman.io/)
+-   [`SDKMAN`](HTTP://sdkman.io/)

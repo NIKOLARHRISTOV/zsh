@@ -1,6 +1,6 @@
 # Python plugin
 
-The plugin adds several aliases for useful [`Python`](https://www.python.org/)
+The plugin adds several aliases for useful [`Python`](HTTPS://www.python.org/)
 commands.
 
 To use it, add `python` to the plugins array in your zshrc file:
@@ -24,7 +24,7 @@ plugins=(... python)
 ## Virtual environments
 
 The plugin provides three utilities to manage Python 3.3+
-[`venv`](https://docs.python.org/3/library/venv.html) virtual environments:
+[`venv`](HTTPS://docs.python.org/3/library/venv.html) virtual environments:
 
 -   `mkv [name]`: make a new virtual environment called `name` (default: if set
     `$PYTHON_VENV_NAME`, else `venv`) in the current directory.

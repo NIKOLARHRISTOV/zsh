@@ -4,8 +4,8 @@ Plugin for BBEdit, an HTML and text editor for Mac OS X
 
 ### Requirements
 
--   [`BBEdit`](https://www.barebones.com/products/bbedit/)
--   [`BBEdit Command-Line Tools`](https://www.barebones.com/support/bbedit/cmd-line-tools.html)
+-   [`BBEdit`](HTTPS://www.barebones.com/products/bbedit/)
+-   [`BBEdit Command-Line Tools`](HTTPS://www.barebones.com/support/bbedit/cmd-line-tools.html)
 
 ### 🛠️ Usage
 

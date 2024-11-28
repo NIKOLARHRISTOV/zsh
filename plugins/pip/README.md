@@ -1,6 +1,6 @@
 # pip plugin
 
-This plugin adds completion for [`pip`](https://pip.pypa.io/en/latest/), the
+This plugin adds completion for [`pip`](HTTPS://pip.pypa.io/en/latest/), the
 Python package manager.
 
 To use it, add `pip` to the plugins array in your zshrc file:

@@ -1,6 +1,6 @@
 # Kind plugin
 
-This plugin adds completion for the [`Kind`](https://kind.sigs.k8s.io/) tool, as
+This plugin adds completion for the [`Kind`](HTTPS://kind.sigs.k8s.io/) tool, as
 well as a few aliases for easier use.
 
 To use it, add `kind` to the plugins array in your zshrc file:

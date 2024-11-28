@@ -4,37 +4,37 @@ This is a clean-room implementation of the [`Fish shell`][1]'s history search
 feature, where you can type in any part of any command from history and then
 press chosen keys, such as the UP and DOWN arrows, to cycle through matches.
 
-[1]: http://fishshell.com
-[2]: http://www.zsh.org/mla/users/2009/msg00818.html
-[3]: http://sourceforge.net/projects/fizsh/
-[4]: https://github.com/robbyrussell/oh-my-zsh/pull/215
-[5]: https://github.com/zsh-users/zsh-history-substring-search
-[6]: https://github.com/zsh-users/zsh-syntax-highlighting
+[1]: HTTP://fishshell.com
+[2]: HTTP://www.zsh.org/mla/users/2009/msg00818.html
+[3]: HTTP://sourceforge.net/projects/fizsh/
+[4]: HTTPS://github.com/robbyrussell/oh-my-zsh/pull/215
+[5]: HTTPS://github.com/zsh-users/zsh-history-substring-search
+[6]: HTTPS://github.com/zsh-users/zsh-syntax-highlighting
 
 ## Requirements
 
--   [`ZSH`](http://zsh.sourceforge.net) 4.3 or newer
+-   [`ZSH`](HTTP://zsh.sourceforge.net) 4.3 or newer
 
 ## Install
 
-Using the [`Homebrew`](https://brew.sh) package manager:
+Using the [`Homebrew`](HTTPS://brew.sh) package manager:
 
     brew install zsh-history-substring-search
     echo 'source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
 
-Using [`Fig`](https://fig.io):
+Using [`Fig`](HTTPS://fig.io):
 
 Fig adds apps, shortcuts, and autocomplete to your existing terminal.
 
 Install `zsh-history-substring-search` in just one click.
 
-<a href="https://fig.io/plugins/other/zsh-history-substring-search" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
+<a href="HTTPS://fig.io/plugins/other/zsh-history-substring-search" target="_blank"><img src="HTTPS://fig.io/badges/install-with-fig.svg" /></a>
 
-Using [`Oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh):
+Using [`Oh-my-zsh`](HTTPS://github.com/robbyrussell/oh-my-zsh):
 
 1.  Clone this repository in oh-my-zsh's plugins directory:
 
-        git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+        git clone HTTPS://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
 2.  Activate the plugin in `~/.zshrc`:
 
@@ -44,13 +44,13 @@ Using [`Oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh):
 
         exec zsh
 
-Using [`zplug`](https://github.com/zplug/zplug):
+Using [`zplug`](HTTPS://github.com/zplug/zplug):
 
 1.  Add this repo to `~/.zshrc`:
 
         zplug "zsh-users/zsh-history-substring-search", as: plugin
 
-Using [`antigen`](https://github.com/zsh-users/antigen):
+Using [`antigen`](HTTPS://github.com/zsh-users/antigen):
 
 1. Add the `antigen bundle` command just before `antigen apply`, like this:
 
@@ -69,7 +69,7 @@ bindkey '^[[B' history-substring-search-down # or '\eOB'
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 ```
 
-Using [`Zinit`](https://github.com/zdharma-continuum/zinit):
+Using [`Zinit`](HTTPS://github.com/zdharma-continuum/zinit):
 
 1.  Use the `Oh-my-zsh` Zinit snippet in `~/.zshrc`:
 
@@ -233,7 +233,7 @@ What you are looking at now is Oh My Zsh's repackaging of
 zsh-history-substring-search as an OMZ module inside the Oh My Zsh distribution.
 
 The upstream repo, zsh-users/zsh-history-substring-search, can be found on
-GitHub at https://github.com/zsh-users/zsh-history-substring-search.
+GitHub at HTTPS://github.com/zsh-users/zsh-history-substring-search.
 
 Everything above this section is a copy of the original upstream's README, so
 things may differ slightly when you're using this inside OMZ. In particular, you

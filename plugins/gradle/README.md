@@ -1,6 +1,6 @@
 # Gradle plugin
 
-This plugin adds completions and aliases for [`Gradle`](https://gradle.org/).
+This plugin adds completions and aliases for [`Gradle`](HTTPS://gradle.org/).
 
 To use it, add `gradle` to the plugins array in your zshrc file:
 

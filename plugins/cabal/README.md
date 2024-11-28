@@ -1,6 +1,6 @@
 # Cabal
 
-This plugin provides completion for [`Cabal`](https://www.haskell.org/cabal/), a
+This plugin provides completion for [`Cabal`](HTTPS://www.haskell.org/cabal/), a
 build tool for Haskell. It also provides a function `cabal_sandbox_info` that
 prints whether the current working directory is in a sandbox.
 
