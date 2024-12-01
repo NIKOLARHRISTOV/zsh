@@ -28,7 +28,7 @@ Fig adds apps, shortcuts, and autocomplete to your existing terminal.
 
 Install `zsh-history-substring-search` in just one click.
 
-<a href="HTTPS://fig.io/plugins/other/zsh-history-substring-search" target="_blank"><img src="HTTPS://fig.io/badges/install-with-fig.svg" /></a>
+<a href="HTTPS://fig.io/plugins/other/zsh-history-substring-search" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
 
 Using [`Oh-my-zsh`](HTTPS://github.com/robbyrussell/oh-my-zsh):
 

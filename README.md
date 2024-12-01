@@ -1,4 +1,4 @@
-<p align="center"><img src="HTTPS://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
+<p align="center"><img src="https://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
 
 Oh My Zsh is an open source, community-driven framework for managing your
 [`zsh`](HTTPS://www.zsh.org/) configuration.
@@ -558,7 +558,7 @@ Without all the time and help from our contributors, it wouldn't be so awesome.
 Thank you so much!
 
 <a href="HTTPS://github.com/ohmyzsh/ohmyzsh/graphs/contributors">
-  <img src="HTTPS://contrib.rocks/image?repo=ohmyzsh/ohmyzsh" width="100%"/>
+  <img src="https://contrib.rocks/image?repo=ohmyzsh/ohmyzsh" width="100%"/>
 </a>
 
 ## Follow Us
