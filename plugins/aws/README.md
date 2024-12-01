@@ -1,10 +1,10 @@
 # aws
 
 This plugin provides completion support for
-[`awscli v2`](HTTPS://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html)
+[`awscli v2`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html)
 and a few utilities to manage AWS profiles/regions and display them in the
 prompt.
-[`awscli v1`](HTTPS://docs.aws.amazon.com/cli/latest/userguide/cliv2-migration.html)
+[`awscli v1`](https://docs.aws.amazon.com/cli/latest/userguide/cliv2-migration.html)
 is no longer supported.
 
 To use it, add `aws` to the plugins array in your zshrc file.
@@ -37,7 +37,7 @@ plugins=(... aws)
     `<profile>` configuration. It supports MFA and sets `$AWS_ACCESS_KEY_ID`,
     `$AWS_SECRET_ACCESS_KEY` and `$AWS_SESSION_TOKEN`, if obtained. It requires
     the roles to be configured as per the
-    [`official guide`](HTTPS://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html).
+    [`official guide`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html).
     Run `acp` without arguments to clear the profile.
 
 -   `agp`: gets the current value of `$AWS_PROFILE`.
@@ -90,7 +90,7 @@ variables to control how that is shown:
 
 ## Configuration
 
-[`Configuration and credential file settings`](HTTPS://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
+[`Configuration and credential file settings`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 by AWS
 
 ### Scenario: IAM roles with a source profile and MFA authentication

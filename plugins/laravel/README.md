@@ -1,7 +1,7 @@
 # Laravel
 
 This plugin adds aliases and autocompletion for Laravel
-[`Artisan`](HTTPS://laravel.com/docs/artisan) and
+[`Artisan`](https://laravel.com/docs/artisan) and
 [`Bob`](HTTP://daylerees.github.io/laravel-bob/) command-line interfaces.
 
 ```

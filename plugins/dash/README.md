@@ -1,6 +1,6 @@
 # Dash plugin
 
-This plugin adds command line functionality for [`Dash`](HTTPS://kapeli.com/dash),
+This plugin adds command line functionality for [`Dash`](https://kapeli.com/dash),
 an API Documentation Browser for macOS. This plugin requires Dash to be
 installed to work.
 

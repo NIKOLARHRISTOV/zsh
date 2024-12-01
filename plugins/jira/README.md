@@ -1,7 +1,7 @@
 # Jira plugin
 
 This plugin provides command line tools for interacting with Atlassian's
-[`JIRA`](HTTPS://www.atlassian.com/software/jira) bug tracking software.
+[`JIRA`](https://www.atlassian.com/software/jira) bug tracking software.
 
 To use it, add `jira` to the plugins array in your zshrc file:
 

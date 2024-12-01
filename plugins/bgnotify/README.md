@@ -4,7 +4,7 @@ cross-platform background notifications for long running commands! Supports OSX
 and Linux.
 
 Standalone homepage:
-[`t413/zsh-background-notify`](HTTPS://github.com/t413/zsh-background-notify)
+[`t413/zsh-background-notify`](https://github.com/t413/zsh-background-notify)
 
 ---
 
@@ -13,26 +13,26 @@ Standalone homepage:
 Just add bgnotify to your plugins list in your `.zshrc`
 
 -   On OS X you'll need
-    [`terminal-notifier`](HTTPS://github.com/alloy/terminal-notifier)
+    [`terminal-notifier`](https://github.com/alloy/terminal-notifier)
     -   `brew install terminal-notifier` (or `gem install terminal-notifier`)
 -   On Linux, make sure you have `notify-send` or `kdialog` installed. If you're
     using Ubuntu you should already be all set!
--   On Windows you can use [`notifu`](HTTPS://www.paralint.com/projects/notifu/)
+-   On Windows you can use [`notifu`](https://www.paralint.com/projects/notifu/)
     or the Cygwin Ports libnotify package
 
 ## Screenshots
 
 **Linux**
 
-![`screenshot from 2014-11-07 15 58 36`](HTTPS://cloud.githubusercontent.com/assets/326829/4962187/256b465c-66da-11e4-927d-cc2fc105e31f.png)
+![`screenshot from 2014-11-07 15 58 36`](https://cloud.githubusercontent.com/assets/326829/4962187/256b465c-66da-11e4-927d-cc2fc105e31f.png)
 
 **OS X**
 
-![`screenshot 2014-11-08 14 15 12`](HTTPS://cloud.githubusercontent.com/assets/326829/4965780/19fa3eac-6795-11e4-8ed6-0355711123a9.png)
+![`screenshot 2014-11-08 14 15 12`](https://cloud.githubusercontent.com/assets/326829/4965780/19fa3eac-6795-11e4-8ed6-0355711123a9.png)
 
 **Windows**
 
-![`screenshot from 2014-11-07 15 55 00`](HTTPS://cloud.githubusercontent.com/assets/326829/4962159/a2625ca0-66d9-11e4-9e91-c5834913190e.png)
+![`screenshot from 2014-11-07 15 55 00`](https://cloud.githubusercontent.com/assets/326829/4962159/a2625ca0-66d9-11e4-9e91-c5834913190e.png)
 
 ## Configuration
 

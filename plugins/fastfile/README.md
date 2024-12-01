@@ -73,7 +73,7 @@ For example: `fastfile_var_prefix='@'`.
 -   `fastfile_var_prefix`: prefix for the global aliases created. Controls the
     prefix of the created global aliases. **Default:** `§` (section sign), easy
     to type in a german keyboard via the combination
-    [`⇧ Shift`+`3`](HTTPS://en.wikipedia.org/wiki/German_keyboard_layout#/media/File:KB_Germany.svg),
+    [`⇧ Shift`+`3`](https://en.wikipedia.org/wiki/German_keyboard_layout#/media/File:KB_Germany.svg),
     or using `⌥ Option`+`6` in macOS.
 
 -   `fastfile_dir`: directory where the fastfile shortcuts are stored. Needs to
@@ -81,4 +81,4 @@ For example: `fastfile_var_prefix='@'`.
 
 ## Author
 
--   [`Karolin Varner`](HTTPS://github.com/koraa)
+-   [`Karolin Varner`](https://github.com/koraa)

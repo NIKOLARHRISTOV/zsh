@@ -1,7 +1,7 @@
 # mvn plugin
 
 The mvn plugin provides many [`useful aliases`](#aliases) as well as completion
-for the [`Apache Maven`](HTTPS://maven.apache.org/) command (`mvn`).
+for the [`Apache Maven`](https://maven.apache.org/) command (`mvn`).
 
 Enable it by adding `mvn` to the plugins array in your zshrc file:
 
@@ -12,7 +12,7 @@ plugins=(... mvn)
 ## Aliases
 
 The plugin aliases mvn to a function that calls `mvnw` (the
-[`Maven Wrapper`](HTTPS://github.com/takari/maven-wrapper)) if it's found, or the
+[`Maven Wrapper`](https://github.com/takari/maven-wrapper)) if it's found, or the
 mvn command otherwise.
 
 | Alias         | Command                                       |
@@ -54,7 +54,7 @@ It's a function that wraps the mvn command to colorize it's output. You can use
 it in place of the `mvn` command. For example: instead of `mvn test`, use
 `mvn-color test`.
 
-Since [`Maven 3.5.0`](HTTPS://maven.apache.org/docs/3.5.0/release-notes.html) the
+Since [`Maven 3.5.0`](https://maven.apache.org/docs/3.5.0/release-notes.html) the
 mvn command has colored output, so this function will be soon removed from the
 plugin.
 
@@ -62,4 +62,4 @@ plugin.
 
 It has a bug where it will swallow mvn prompts for user input, _e.g._ when using
 `archetype:generate`. See
-[`#5052`](HTTPS://github.com/ohmyzsh/ohmyzsh/issues/5052).
+[`#5052`](https://github.com/ohmyzsh/ohmyzsh/issues/5052).

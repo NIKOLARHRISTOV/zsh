@@ -1,6 +1,6 @@
 # Operator SDK
 
-[`Operator SDK`](HTTPS://sdk.operatorframework.io/) is a component of the Operator
+[`Operator SDK`](https://sdk.operatorframework.io/) is a component of the Operator
 Framework, an open source toolkit to manage Kubernetes native applications,
 called Operators, in an effective, automated, and scalable way.
 

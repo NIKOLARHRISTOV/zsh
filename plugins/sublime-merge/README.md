@@ -5,7 +5,7 @@ Linux, Mac OS X, and Windows.
 
 ### Requirements
 
--   [`Sublime Merge`](HTTPS://www.sublimemerge.com)
+-   [`Sublime Merge`](https://www.sublimemerge.com)
 
 ### 🛠️ Usage
 

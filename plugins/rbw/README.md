@@ -1,7 +1,7 @@
 # Bitwarden (unofficial) CLI plugin
 
-This plugin adds completion for [`rbw`](HTTPS://github.com/doy/rbw), an unofficial
-CLI for [`Bitwarden`](HTTPS://bitwarden.com).
+This plugin adds completion for [`rbw`](https://github.com/doy/rbw), an unofficial
+CLI for [`Bitwarden`](https://bitwarden.com).
 
 To use it, add `rbw` to the plugins array in your zshrc file:
 

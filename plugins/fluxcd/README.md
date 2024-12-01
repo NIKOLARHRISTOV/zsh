@@ -1,6 +1,6 @@
 # FluxCD plugin
 
-This plugin adds completion for [`FluxCD`](HTTPS://fluxcd.io), an open and
+This plugin adds completion for [`FluxCD`](https://fluxcd.io), an open and
 extensible continuous delivery solution for Kubernetes. Powered by GitOps
 Toolkit.
 

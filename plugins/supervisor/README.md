@@ -12,4 +12,4 @@ plugins=(... supervisor)
 ```
 
 These scripts are from
-[`zshcompfunc4supervisor`](HTTPS://bitbucket.org/hhatto/zshcompfunc4supervisor).
+[`zshcompfunc4supervisor`](https://bitbucket.org/hhatto/zshcompfunc4supervisor).

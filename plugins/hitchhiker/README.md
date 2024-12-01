@@ -36,7 +36,7 @@ $ hitchhiker_cow
 ## Credits
 
 Fortune file: Andreas Gohr <andi@splitbrain.org>
-([`splitbrain.org`](HTTPS://www.splitbrain.org/projects/fortunes/hg2g))
+([`splitbrain.org`](https://www.splitbrain.org/projects/fortunes/hg2g))
 
 Spelling and formatting fixes: grok@resist.ca
 

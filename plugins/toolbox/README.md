@@ -1,6 +1,6 @@
 # toolbox plugin
 
-Plugin for [`toolbox`](HTTPS://containertoolbx.org), a tool to use containerized
+Plugin for [`toolbox`](https://containertoolbx.org), a tool to use containerized
 CLI environments.
 
 To use it, add `toolbox` to your plugins array in your `.zshrc` file:

@@ -1,6 +1,6 @@
 # fzf
 
-This plugin tries to find [`junegunn's fzf`](HTTPS://github.com/junegunn/fzf)
+This plugin tries to find [`junegunn's fzf`](https://github.com/junegunn/fzf)
 based on where it's been installed, and enables its fuzzy auto-completion and
 key bindings.
 
@@ -33,9 +33,9 @@ export FZF_DEFAULT_COMMAND='<your fzf default command>'
 If not set, the plugin will try to set it to these, in the order in which
 they're found:
 
--   [`fd`](HTTPS://github.com/sharkdp/fd)
--   [`rg`](HTTPS://github.com/BurntSushi/ripgrep)
--   [`ag`](HTTPS://github.com/ggreer/the_silver_searcher)
+-   [`fd`](https://github.com/sharkdp/fd)
+-   [`rg`](https://github.com/BurntSushi/ripgrep)
+-   [`ag`](https://github.com/ggreer/the_silver_searcher)
 
 ### `DISABLE_FZF_AUTO_COMPLETION`
 

@@ -1,7 +1,7 @@
 # Yarn plugin
 
 This plugin adds completion for the
-[`Yarn package manager`](HTTPS://yarnpkg.com/en/), as well as some aliases for
+[`Yarn package manager`](https://yarnpkg.com/en/), as well as some aliases for
 common Yarn commands.
 
 To use it, add `yarn` to the plugins array in your zshrc file:

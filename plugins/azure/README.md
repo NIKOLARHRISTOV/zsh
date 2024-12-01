@@ -1,7 +1,7 @@
 # azure
 
 This plugin provides completion support for
-[`azure cli`](HTTPS://docs.microsoft.com/en-us/cli/azure/) and a few utilities to
+[`azure cli`](https://docs.microsoft.com/en-us/cli/azure/) and a few utilities to
 manage azure subscriptions and display them in the prompt.
 
 To use it, add `azure` to the plugins array in your zshrc file.

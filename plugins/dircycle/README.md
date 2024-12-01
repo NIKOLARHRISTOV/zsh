@@ -68,7 +68,7 @@ Note the last traversal, when pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
 
 Here's an asciinema cast demonstrating the example above:
 
-[![asciicast](HTTPS://asciinema.org/a/204406.png)](HTTPS://asciinema.org/a/204406)
+[![asciicast](https://asciinema.org/a/204406.png)](https://asciinema.org/a/204406)
 
 ## Functions
 

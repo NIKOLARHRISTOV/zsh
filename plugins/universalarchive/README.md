@@ -46,5 +46,5 @@ compress a file.
 | `zst`            | Zstd archive                   |
 
 See
-[`list of archive formats`](HTTPS://en.wikipedia.org/wiki/List_of_archive_formats)
+[`list of archive formats`](https://en.wikipedia.org/wiki/List_of_archive_formats)
 for more information regarding the archive formats.

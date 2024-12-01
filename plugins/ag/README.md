@@ -1,7 +1,7 @@
 # The Silver Searcher
 
 This plugin provides completion support for
-[`ag`](HTTPS://github.com/ggreer/the_silver_searcher).
+[`ag`](https://github.com/ggreer/the_silver_searcher).
 
 To use it, add ag to the plugins array in your zshrc file.
 

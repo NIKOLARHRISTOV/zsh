@@ -1,7 +1,7 @@
 # Kitty plugin
 
 This plugin adds a few aliases and functions that are useful for users of the
-[`Kitty`](HTTPS://sw.kovidgoyal.net/kitty/) terminal.
+[`Kitty`](https://sw.kovidgoyal.net/kitty/) terminal.
 
 To use it, add _kitty_ to the plugins array of your zshrc file:
 
@@ -19,4 +19,4 @@ plugins=(... kitty)
 
 ## Contributors
 
--   [`Ian Chesal`](HTTPS://github.com/ianchesal)
+-   [`Ian Chesal`](https://github.com/ianchesal)

@@ -1,6 +1,6 @@
 # Ant
 
-This plugin provides completion for [`Ant`](HTTPS://ant.apache.org/).
+This plugin provides completion for [`Ant`](https://ant.apache.org/).
 
 To use it, add `ant` to the plugins array in your zshrc file:
 

@@ -3,7 +3,7 @@
 Displays a random quote taken from
 [`quotationspage.com`](HTTP://www.quotationspage.com/random.php)
 
-Created by [`Eduardo San Martin Morote, aka Posva`](HTTPS://posva.github.io)
+Created by [`Eduardo San Martin Morote, aka Posva`](https://posva.github.io)
 
 ## 🛠️ Usage
 

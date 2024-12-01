@@ -1,7 +1,7 @@
 # Bridgetown plugin
 
 This plugin adds some aliases and autocompletion for common
-[`Bridgetown`](HTTPS://bridgetownrb.com/) commands.
+[`Bridgetown`](https://bridgetownrb.com/) commands.
 
 To use it, add `bridgetown` to the plugins array in your zshrc file:
 

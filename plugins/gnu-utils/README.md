@@ -36,4 +36,4 @@ The plugin also documents two other ways to do this:
 
 ## Author
 
--   [`Sorin Ionescu`](HTTPS://github.com/sorin-ionescu).
+-   [`Sorin Ionescu`](https://github.com/sorin-ionescu).

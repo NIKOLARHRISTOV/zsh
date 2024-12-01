@@ -150,12 +150,12 @@ Note that `$emoji_skintone` is an associative array, and its keys are the
 _names_ of "Fitzpatrick Skin Type" groups, not linear indexes into a normal
 array. The names are `1_2`, `3`, `4`, `5`, and `6`. (Types 1 and 2 are combined
 into a single color.) See the
-[`Diversity section in Unicode TR 51`](HTTPS://www.unicode.org/reports/tr51/index.html#Diversity)
+[`Diversity section in Unicode TR 51`](https://www.unicode.org/reports/tr51/index.html#Diversity)
 for details.
 
 #### Gemoji support
 
-The [`gemoji project`](HTTPS://github.com/github/gemoji) seems to be the de facto
+The [`gemoji project`](https://github.com/github/gemoji) seems to be the de facto
 main source for short names and other emoji-related metadata that isn't included
 in the official Unicode reports. So, our list of emojis incorporates some of
 their aliases to make your life more convenient:

@@ -1,6 +1,6 @@
 # Hanami Plugin
 
-This plugin adds convenient aliases to work with [`Hanami`](HTTPS://hanamirb.org/)
+This plugin adds convenient aliases to work with [`Hanami`](https://hanamirb.org/)
 via console. It's inspired by Rails plugin, so if you've used it, you'll feel
 like home.
 
@@ -15,7 +15,7 @@ plugins=(... hanami)
 For example, type `hc` into your console when you're within Hanami project
 directory to run the application console. Have a look at available shortcuts
 below. You can read more about these commands
-[`on the official website`](HTTPS://hanamirb.org/guides/command-line/applications/).
+[`on the official website`](https://hanamirb.org/guides/command-line/applications/).
 
 ## Aliases
 

@@ -12,7 +12,7 @@ plugins=(... terraform)
 
 ## Requirements
 
--   [`Terraform`](HTTPS://terraform.io/)
+-   [`Terraform`](https://terraform.io/)
 
 ## Aliases
 

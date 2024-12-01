@@ -1,7 +1,7 @@
 # QRCode plugin
 
 Generate a QR Code from the command line. Uses
-[`QRcode.show`](HTTPS://qrcode.show) via curl.
+[`QRcode.show`](https://qrcode.show) via curl.
 
 | alias           | command                                                 |
 | --------------- | ------------------------------------------------------- |

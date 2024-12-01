@@ -1,7 +1,7 @@
 # MicroK8s plugin
 
 This plugin provides completion and useful aliases for
-[`MicroK8s`](HTTPS://microk8s.io/).
+[`MicroK8s`](https://microk8s.io/).
 
 To use it, add `microk8s` to the plugins array in your zshrc file.
 

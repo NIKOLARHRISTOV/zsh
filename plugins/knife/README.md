@@ -1,7 +1,7 @@
 # knife plugin
 
-This plugin adds completion for [`knife`](HTTPS://docs.chef.io/knife.html), a
-command-line tool to interact with [`Chef`](HTTPS://chef.io), a platform to
+This plugin adds completion for [`knife`](https://docs.chef.io/knife.html), a
+command-line tool to interact with [`Chef`](https://chef.io), a platform to
 automate and manage infrastructure via code.
 
 To use it, add `knife` to the plugins array in your zshrc file:

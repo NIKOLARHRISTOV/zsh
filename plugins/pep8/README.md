@@ -1,7 +1,7 @@
 # pep8 plugin
 
 This plugin adds completion for
-[`pep8`](HTTPS://pep8.readthedocs.io/en/release-1.7.x/#), a tool to check your
+[`pep8`](https://pep8.readthedocs.io/en/release-1.7.x/#), a tool to check your
 Python code against some of the style conventions in
 [`PEP 8`](HTTP://www.python.org/dev/peps/pep-0008/).
 

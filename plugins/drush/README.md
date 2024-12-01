@@ -1,6 +1,6 @@
 # Drush
 
-This plugin adds aliases and functions for [`Drush`](HTTPS://www.drush.org), a
+This plugin adds aliases and functions for [`Drush`](https://www.drush.org), a
 command-line shell and Unix scripting interface for Drupal. It also adds
 completion for the `drush` command.
 

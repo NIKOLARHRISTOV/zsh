@@ -1,6 +1,6 @@
 # autopep8 plugin
 
-This plugin adds completion for [`autopep8`](HTTPS://pypi.org/project/autopep8/),
+This plugin adds completion for [`autopep8`](https://pypi.org/project/autopep8/),
 a tool that automatically formats Python code to conform to the
 [`PEP 8`](HTTP://www.python.org/dev/peps/pep-0008/) style guide.
 

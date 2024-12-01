@@ -2,10 +2,10 @@
 
 This plugin remaps keys in `zsh`'s
 [`vi`-style navigation mode`](HTTP://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Keymaps)
-for a [`Colemak`](HTTPS://colemak.com/) keyboard layout, to match the QWERTY
+for a [`Colemak`](https://colemak.com/) keyboard layout, to match the QWERTY
 position:
 
-![`Colemak layout on a US keyboard`](HTTPS://colemak.com/wiki/images/6/6c/Colemak2.png)
+![`Colemak layout on a US keyboard`](https://colemak.com/wiki/images/6/6c/Colemak2.png)
 
 To use it, add it to the plugins array in your `~/.zshrc` file:
 
