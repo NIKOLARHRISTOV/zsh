@@ -20,7 +20,7 @@ To learn more, visit [`ohmyz.sh`](https://ohmyz.sh), follow
 [`@ohmyzsh`](https://x.com/ohmyzsh) on X (formerly Twitter), and join us on
 [`Discord`](https://discord.gg/ohmyzsh).
 
-[![CI](https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
+[![CI](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/ohmyzsh?label=%40ohmyzsh&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/111169632522566717?label=%40ohmyzsh&domain=https%3A%2F%2Fmstdn.social&logo=mastodon&style=flat)](https://mstdn.social/@ohmyzsh)
 [![Discord server](https://img.shields.io/discord/642496866407284746)](https://discord.gg/ohmyzsh)
@@ -84,7 +84,7 @@ To learn more, visit [`ohmyz.sh`](https://ohmyz.sh), follow
 -   [`Zsh`](https://www.zsh.org) should be installed (v4.3.9 or more recent is
     fine but we prefer 5.0.8 and newer). If not pre-installed (run
     `zsh --version` to confirm), check the following wiki instructions here:
-    [`Installing ZSH`](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+    [`Installing ZSH`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 -   `curl` or `wget` should be installed
 -   `git` should be installed (recommended v2.4.11 or higher)
 
@@ -134,8 +134,8 @@ URL for `HTTPS://install.ohmyz.sh` to be able to get the script.
 
 Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can
 take a look in the
-[`plugins`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory
-and/or the [`wiki`](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's
+[`plugins`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/tree/master/plugins) directory
+and/or the [`wiki`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's
 currently available.
 
 #### Enabling Plugins
@@ -176,7 +176,7 @@ that particular plugin.
 
 We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme
 happy. We have over one hundred and fifty themes now bundled. Most of them have
-[`screenshots`](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We
+[`screenshots`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We
 are working on updating this!). Check them out!
 
 #### Selecting A Theme
@@ -204,11 +204,11 @@ ZSH_THEME="agnoster" # (this is one of the fancy ones)
 > and find that it doesn't look the same for you.
 >
 > This is because many themes require installing a
-> [`Powerline Font`](https://github.com/powerline/fonts) or a
-> [`Nerd Font`](https://github.com/ryanoasis/nerd-fonts) in order to render
+> [`Powerline Font`](HTTPS://GitHub.Com/powerline/fonts) or a
+> [`Nerd Font`](HTTPS://GitHub.Com/ryanoasis/nerd-fonts) in order to render
 > properly. Without them, these themes will render weird prompt symbols. Check
 > out
-> [`the FAQ`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)
+> [`the FAQ`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)
 > for more information.
 >
 > Also, beware that themes only control what your prompt looks like. This is,
@@ -216,7 +216,7 @@ ZSH_THEME="agnoster" # (this is one of the fancy ones)
 > Themes don't control things such as the colors of your terminal window (known
 > as _color scheme_) or the font of your terminal. These are settings that you
 > can change in your terminal emulator. For more information, see
-> [`what is a zsh theme`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#what-is-a-zsh-theme).
+> [`what is a zsh theme`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/FAQ#what-is-a-zsh-theme).
 
 Open up a new terminal window and your prompt should look something like this:
 
@@ -224,7 +224,7 @@ Open up a new terminal window and your prompt should look something like this:
 
 In case you did not find a suitable theme for your needs, please have a look at
 the wiki for
-[`more of them`](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes).
+[`more of them`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/External-themes).
 
 If you're feeling feisty, you can let the computer select one randomly for you
 each time you open a new terminal window.
@@ -252,7 +252,7 @@ ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
 ### FAQ
 
 If you have some more questions or issues, you might find a solution in our
-[`FAQ`](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ).
+[`FAQ`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/FAQ).
 
 ## Advanced Topics
 
@@ -539,7 +539,7 @@ many ways to improve – if you have ideas on how to make the configuration easi
 to maintain (and faster), don't hesitate to fork and send pull requests!
 
 We also need people to test out pull requests. So take a look through
-[`the open issues`](https://github.com/ohmyzsh/ohmyzsh/issues) and help where you
+[`the open issues`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/issues) and help where you
 can.
 
 See [`Contributing`](CONTRIBUTING.md) for more details.
@@ -547,7 +547,7 @@ See [`Contributing`](CONTRIBUTING.md) for more details.
 ### Do Not Send Us Themes
 
 We have (more than) enough themes for the time being. Please add your theme to
-the [`external themes`](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
+the [`external themes`](HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/wiki/External-themes)
 wiki page.
 
 ## Contributors
@@ -557,7 +557,7 @@ Without all the time and help from our contributors, it wouldn't be so awesome.
 
 Thank you so much!
 
-<a href="HTTPS://github.com/ohmyzsh/ohmyzsh/graphs/contributors">
+<a href="HTTPS://GitHub.Com/ohmyzsh/ohmyzsh/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ohmyzsh/ohmyzsh" width="100%"/>
 </a>
 

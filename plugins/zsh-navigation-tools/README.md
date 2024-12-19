@@ -20,8 +20,8 @@ plugins=(... zsh-navigation-tools)
 ```
 
 Also check out
-[![ZCA](https://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect`](https://github.com/zdharma-continuum/zsh-cmd-architect)
-and [`Zconvey`](https://github.com/zdharma-continuum/zconvey)
+[![ZCA](https://imageshack.com/a/img911/8084/qSpO8a.png) Zsh Command Architect`](HTTPS://GitHub.Com/zdharma-continuum/zsh-cmd-architect)
+and [`Zconvey`](HTTPS://GitHub.Com/zdharma-continuum/zconvey)
 
 Videos:
 
@@ -237,7 +237,7 @@ Zsh Navigation Tools installation.
 ## More
 
 -   be aware of
-    [`this`](https://github.com/zdharma-continuum/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
+    [`this`](HTTPS://GitHub.Com/zdharma-continuum/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
 
 # Fixing tmux, screen and linux vt
 

@@ -1,7 +1,7 @@
 # eecms plugin
 
 This plugin adds auto-completion of console commands for
-[`eecms`](https://github.com/ExpressionEngine/ExpressionEngine).
+[`eecms`](HTTPS://GitHub.Com/ExpressionEngine/ExpressionEngine).
 
 To use it, add `eecms` to the plugins array of your `.zshrc` file:
 

@@ -4,7 +4,7 @@ The swiss army knife for Magento developers, sysadmins and devops. The tool
 provides a huge set of well tested command line commands which save hours of
 work time.
 
-The [`n98-magerun plugin`](https://github.com/netz98/n98-magerun) provides many
+The [`n98-magerun plugin`](HTTPS://GitHub.Com/netz98/n98-magerun) provides many
 [`useful aliases`](#aliases) as well as completion for the `n98-magerun` command.
 
 Enable it by adding `n98-magerun` to the plugins array in your zshrc file:

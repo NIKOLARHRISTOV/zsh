@@ -28,6 +28,6 @@ plugins=(... ansible)
 
 ## Maintainer
 
-### [`Deepankumar`](https://github.com/deepan10)
+### [`Deepankumar`](HTTPS://GitHub.Com/deepan10)
 
-[`HTTPS://github.com/deepan10/oh-my-zsh/tree/features/ansible-plugin`](https://github.com/deepan10/oh-my-zsh/tree/features/ansible-plugin)
+[`HTTPS://github.com/deepan10/oh-my-zsh/tree/features/ansible-plugin`](HTTPS://GitHub.Com/deepan10/oh-my-zsh/tree/features/ansible-plugin)

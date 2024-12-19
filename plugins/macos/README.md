@@ -43,11 +43,11 @@ plugins=(... macos)
 
 ## Acknowledgements
 
-Original author: [`Sorin Ionescu`](https://github.com/sorin-ionescu)
+Original author: [`Sorin Ionescu`](HTTPS://GitHub.Com/sorin-ionescu)
 
 This application makes use of the following third-party scripts:
 
-[`shpotify`](https://github.com/hnarayanan/shpotify)
+[`shpotify`](HTTPS://GitHub.Com/hnarayanan/shpotify)
 
 Copyright (c) 2012–2019 [`Harish Narayanan`](https://harishnarayanan.org/).
 

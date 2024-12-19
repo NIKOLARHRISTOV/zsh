@@ -11,4 +11,4 @@ plugins=(... tugboat)
 ```
 
 Further documentation for Tugboat can be found in the
-[`Tugboat repository`](https://github.com/petems/tugboat).
+[`Tugboat repository`](HTTPS://GitHub.Com/petems/tugboat).

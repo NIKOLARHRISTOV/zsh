@@ -1,7 +1,7 @@
 # Vundle plugin
 
 This plugin adds functions to control
-[`vundle`](https://github.com/VundleVim/Vundle.vim) plug-in manager for vim.
+[`vundle`](HTTPS://GitHub.Com/VundleVim/Vundle.vim) plug-in manager for vim.
 
 To use it, add `vundle` to the plugins array in your zshrc file:
 

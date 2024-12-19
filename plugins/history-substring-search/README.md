@@ -30,7 +30,7 @@ Install `zsh-history-substring-search` in just one click.
 
 <a href="HTTPS://fig.io/plugins/other/zsh-history-substring-search" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
 
-Using [`Oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh):
+Using [`Oh-my-zsh`](HTTPS://GitHub.Com/robbyrussell/oh-my-zsh):
 
 1.  Clone this repository in oh-my-zsh's plugins directory:
 
@@ -44,13 +44,13 @@ Using [`Oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh):
 
         exec zsh
 
-Using [`zplug`](https://github.com/zplug/zplug):
+Using [`zplug`](HTTPS://GitHub.Com/zplug/zplug):
 
 1.  Add this repo to `~/.zshrc`:
 
         zplug "zsh-users/zsh-history-substring-search", as: plugin
 
-Using [`antigen`](https://github.com/zsh-users/antigen):
+Using [`antigen`](HTTPS://GitHub.Com/zsh-users/antigen):
 
 1. Add the `antigen bundle` command just before `antigen apply`, like this:
 
@@ -69,7 +69,7 @@ bindkey '^[[B' history-substring-search-down # or '\eOB'
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 ```
 
-Using [`Zinit`](https://github.com/zdharma-continuum/zinit):
+Using [`Zinit`](HTTPS://GitHub.Com/zdharma-continuum/zinit):
 
 1.  Use the `Oh-my-zsh` Zinit snippet in `~/.zshrc`:
 

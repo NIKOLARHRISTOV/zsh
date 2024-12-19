@@ -1,7 +1,7 @@
 # git-extras
 
 This plugin provides completion definitions for some of the commands defined by
-[`git-extras`](https://github.com/tj/git-extras), which must already be installed.
+[`git-extras`](HTTPS://GitHub.Com/tj/git-extras), which must already be installed.
 
 To use it, add `git-extras` to the plugins array in your zshrc file:
 
