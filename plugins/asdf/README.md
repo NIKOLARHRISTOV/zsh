@@ -3,7 +3,7 @@
 Adds integration with [`asdf`](HTTPS://GitHub.Com/asdf-vm/asdf), the extendable
 version manager, with support for Ruby, Node.js, Elixir, Erlang and more.
 
-### 🚀 Installation
+### Installation 🚀
 
 1. [`Download asdf`](https://asdf-vm.com/guide/getting-started.html#_2-download-asdf)
    by running the following:

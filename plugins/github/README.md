@@ -17,7 +17,7 @@ few things:
     GitHub
 -   `exist_gh` - Takes an existing repo and pushes it to GitHub
 
-## 🚀 Installation
+## Installation 🚀
 
 [`Hub`](HTTPS://GitHub.Com/github/hub) needs to be installed if you want to use
 it. On OS X with Homebrew, this can be done with `brew install hub`. The `hub`

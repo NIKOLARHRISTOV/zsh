@@ -5,7 +5,7 @@ compatible with npm, nodenv, pyenv, etc. rtx is written in rust and is very
 fast. 20x-200x faster than asdf. With that being said, rtx is compatible with
 asdf plugins and .tool-versions files. It can be used as a drop-in replacement.
 
-### 🚀 Installation
+### Installation 🚀
 
 1. [`Download & install rtx`](HTTPS://GitHub.Com/jdx/rtx#installation) by running
    the following:

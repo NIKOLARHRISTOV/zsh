@@ -6,7 +6,7 @@ rust and is very fast. 20x-200x faster than asdf. With that being said, mise is
 compatible with asdf plugins and .tool-versions files. It can be used as a
 drop-in replacement.
 
-## 🚀 Installation
+## Installation 🚀
 
 1. [`Download & install mise`](HTTPS://GitHub.Com/jdx/mise#installation) by
    running the following:

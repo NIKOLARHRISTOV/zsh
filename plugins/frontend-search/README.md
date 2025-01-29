@@ -2,7 +2,7 @@
 
 > Searches for your frontend web development made easier
 
-## 🚀 Installation
+## Installation 🚀
 
 Open your `~/.zshrc` file and enable the `frontend-search` plugin:
 

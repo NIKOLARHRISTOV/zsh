@@ -6,7 +6,7 @@ This plugin provides an interactive way to change directories in zsh using fzf.
 
 ![`demo`](demo.gif)
 
-## 🚀 Installation
+## Installation 🚀
 
 1. Install [`fzf`](HTTPS://GitHub.Com/junegunn/fzf) by following its
    [`installation instruction`](HTTPS://GitHub.Com/junegunn/fzf#installation).

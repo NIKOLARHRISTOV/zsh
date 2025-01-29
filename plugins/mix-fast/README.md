@@ -13,7 +13,7 @@ This is entirely based on
 which is inspired by
 [`this Ruby on Rails trick from 2006`](https://weblog.rubyonrails.org/2006/3/9/fast-rake-task-completion-for-zsh/).
 
-## 🚀 Installation
+## Installation 🚀
 
 Just add the plugin to your `.zshrc`:
 

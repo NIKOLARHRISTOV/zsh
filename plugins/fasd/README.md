@@ -10,7 +10,7 @@ To use it, add `fasd` to the plugins array in your zshrc file:
 plugins=(... fasd)
 ```
 
-## 🚀 Installation
+## Installation 🚀
 
 Please find detailed installation guide
 [`here`](HTTPS://GitHub.Com/whjvenyl/fasd#install)
